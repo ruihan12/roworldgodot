@@ -1,5 +1,21 @@
 # Audio: what was actually playing
 
+## Follow-up after the first zip
+
+The first zip’s music file was `frontline_pad.ogg`, five steady sine partials on one chord. It did play (mixer peak about 0.18) but it is a stuck tone, and an Ogg loop adds a codec seam. That is the “music is bugged” report. It is no longer the bed.
+
+`sounds/music/frontline_bed.wav` is a 24 s original loop: four chords and a repeating figure, every partial an integer number of cycles so the join is a normal sample step (edge 0.0056, median step 0.0009). Playback sets `AudioStreamWAV.LOOP_FORWARD` across the whole buffer. The rejected theme mp3s are still not loaded.
+
+Effects in that zip were MP3s loaded with `res://` bytes. `load("res://sounds/click.mp3")` on a tree with the `.import` files and no `.godot` cache fails (“Make sure resources have been imported”). The game now reads the file from the absolute project path and decodes 16-bit PCM in `sounds/play/`. Those WAVs are ffmpeg renders of the same OpenFront mp3s (still in `sounds/`). `order.wav` is a short original tone played only when the player’s own attack starts; attacking previously called no sound at all. AI boat, conquer, build, and SAM stay blocked. AI nuke launches and impacts still play.
+
+Headless `--regress` (Godot 4.3, Dummy driver — there is no sound card here, ALSA returned “cannot find card 0”, so this is the mix buffer, not a speaker recording):
+
+- Music peak 0.0867, playing `frontline_bed.wav`, length 24 s, 32 effect keys loaded, none missing.
+- After `sfx("click")`, `sfx("order")`, and `sfx("transport")` for the player, mix peak 0.6683. The same calls for an AI owner do not add sound.
+- Random Maps tab returned in 2.69 ms with 12 previews queued. They finished in 36 frames. The slowest of those frames was 6.9 ms.
+
+## Original investigation
+
 Measured on the files in this tree. Event-log lines from `godot --headless -- --audiotest` are listed separately and are not listening evidence. Listening-equivalent numbers are normalized cross-correlation of the decoded waveforms (`tools/audio_evidence.py`, 22050 Hz mono). A copy of the OpenFront boat sample mixed into the pad scores 0.978 at 0 dB, 0.760 at -12 dB, 0.282 at -24 dB, and 0.146 at -30 dB. Anything at or below ~0.12 is the detector floor, not a match.
 
 ## Root cause

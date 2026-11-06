@@ -240,6 +240,8 @@ func _ready() -> void:
 	if "--stress" in OS.get_cmdline_user_args(): _stress.call_deferred()
 	if "--hudshot" in OS.get_cmdline_user_args(): _hudshot.call_deferred()
 	if "--audiotest" in OS.get_cmdline_user_args(): _audiotest.call_deferred()
+	if "--regress" in OS.get_cmdline_user_args(): _regress.call_deferred()
+	if "--speedshot" in OS.get_cmdline_user_args(): _speedshot.call_deferred()
 
 # ---------------- map ----------------
 var map_mat: ShaderMaterial
@@ -525,22 +527,29 @@ func gen_map() -> void:
 		for ly in lh:
 			for lx in lw:
 				lo[ly * lw + lx] = _sample_map_elev(map_i, (lx + 0.5) * 4.0, (ly + 0.5) * 4.0, n, n2)
+			if _async_gen and (ly & 3) == 3:
+				_load_progress(0.08 + 0.16 * float(ly) / float(lh))
+				await get_tree().process_frame
 		var limg := Image.create_from_data(lw, lh, false, Image.FORMAT_RF, lo.to_byte_array())
 		limg.resize(W, H, Image.INTERPOLATE_CUBIC)
 		var full := limg.get_data().to_float32_array()
 		var nf := FastNoiseLite.new(); nf.seed = seed_val + 31; nf.frequency = 0.05; nf.fractal_octaves = 3
 		var fimg := nf.get_image(W, H, false, false, false).get_data()
 		for y in H:
+			var row := y * W
 			for x in W:
-				var ii := y * W + x
+				var ii := row + x
 				var v: float = full[ii] + (fimg[ii] / 127.5 - 1.0) * 0.035
 				var o := NEUTRAL if v > 0.0 else WATER
-				owner_map[y * W + x] = o
-				elev[y * W + x] = v
+				owner_map[ii] = o
+				elev[ii] = v
 				if o == NEUTRAL:
-					if v > 0.40: mtn[y * W + x] = 2
-					elif v > 0.20: mtn[y * W + x] = 1
+					if v > 0.40: mtn[ii] = 2
+					elif v > 0.20: mtn[ii] = 1
 					land_total += 1
+			if _async_gen and (y & 31) == 31:
+				_load_progress(0.26 + 0.04 * float(y) / float(H))
+				await get_tree().process_frame
 	elev_map = elev
 	_gt("decode")
 	if _async_gen: _load_progress(0.3); await get_tree().process_frame
@@ -1476,7 +1485,10 @@ func launch_attack(a: int, t: int, share: float) -> bool:
 	if troops < 1.0:
 		return false
 	n.troops -= troops
-	return sim_atk.start(a, t, troops) != null
+	var started := sim_atk.start(a, t, troops) != null
+	if started and a == PLAYER:
+		sfx("order")
+	return started
 
 func _frontier(a: int, t: int) -> Array:
 	var bb: Rect2i = nations[a].bb.grow(1).intersection(Rect2i(0, 0, W, H))
@@ -3750,6 +3762,7 @@ func _pace_step() -> void:
 			print("  t=%dmin lead=%.2f" % [sim_atk.tick / 600, float(best) / maxf(1.0, land_total)])
 
 func _process_inner(dt: float) -> void:
+	_pump_previews()
 	if not _pace.is_empty() or OS.get_cmdline_user_args().has("--pacetest") : _pace_step(); return
 	boat_launched_frame = false
 	if state == "pick":
@@ -3893,6 +3906,7 @@ func set_speed_x(x: float) -> void:
 	sim_speed = x * SPEED_BASE
 	if speed_slider: speed_slider.set_value_no_signal(x)
 	if speed_lbl: speed_lbl.text = ("%dx" % int(x)) if is_equal_approx(x, roundf(x)) else ("%.1fx" % x)
+	_place_speed_readout()
 
 func _shot(name: String) -> void:
 	var im = get_viewport().get_texture().get_image()
@@ -4960,7 +4974,7 @@ func _wire_anims(n: Node) -> void:
 			var lift: bool = b in build_btns
 			b.mouse_entered.connect(func(): _btn_anim(b, "hover", lift))
 			b.mouse_exited.connect(func(): _btn_anim(b, "idle", lift))
-			b.button_down.connect(func(): _btn_anim(b, "down", lift); sfx("click", -4.0, 0.08))
+			b.button_down.connect(func(): _btn_anim(b, "down", lift); sfx("click", 0.0, 0.02))
 			b.button_up.connect(func(): _btn_anim(b, "hover", lift))
 		_wire_anims(ch)
 
@@ -5368,13 +5382,92 @@ func _set_map_tab(t_idx: int) -> void:
 		reroll_btn.visible = (map_tab == 1)
 	_refresh_map_tab_cards()
 
+var _preview_queue: Array = []
+var _preview_cache := {}
+var _pv_job := {}
+var _preview_blank: ImageTexture
+var preview_pump_us := 0
+
+func _preview_key(k: int) -> String:
+	return "%d:%d:%d" % [map_tab, k, rand_seed_off if map_tab == 1 else 0]
+
+func _blank_preview() -> ImageTexture:
+	if _preview_blank != null:
+		return _preview_blank
+	var im := Image.create(148, 82, false, Image.FORMAT_RGBA8)
+	im.fill(Color(0.10, 0.18, 0.30, 1))
+	_preview_blank = ImageTexture.create_from_image(im)
+	return _preview_blank
+
 func _refresh_map_tab_cards() -> void:
 	var tbl := RANDOM_MAPS if map_tab == 1 else MAPS
+	_pv_job = {}
+	_preview_queue.clear()
 	for k in map_cards.size():
-		map_card_tex[k].texture = _map_preview(k, 148, 82)
 		map_card_title[k].text = tbl[k][0]
 		map_card_sub[k].text = _map_sub(k, map_tab)
 		_card_style(map_cards[k], k == map_i)
+		var key := _preview_key(k)
+		if _preview_cache.has(key):
+			map_card_tex[k].texture = _preview_cache[key]
+		elif map_tab == 0:
+			var tex := _map_preview(k, 148, 82)
+			_preview_cache[key] = tex
+			map_card_tex[k].texture = tex
+		else:
+			map_card_tex[k].texture = _blank_preview()
+			_preview_queue.append(k)
+
+func _pump_previews() -> void:
+	if _loading:
+		return
+	var t0 := Time.get_ticks_usec()
+	var budget := 6000
+	while Time.get_ticks_usec() - t0 < budget:
+		if _pv_job.is_empty():
+			if _preview_queue.is_empty():
+				preview_pump_us = 0
+				return
+			_pv_job = _preview_begin(int(_preview_queue.pop_front()))
+		if not _preview_step():
+			_pv_job = {}
+	preview_pump_us = Time.get_ticks_usec() - t0
+
+func _preview_begin(k: int) -> Dictionary:
+	var pw := 148
+	var ph := 82
+	var im := Image.create(pw, ph, false, Image.FORMAT_RGBA8)
+	var m := _active_map_entry(k)
+	var seed_val: int = int(m[1]) + rand_seed_off
+	var nz := FastNoiseLite.new(); nz.seed = seed_val; nz.frequency = 0.006; nz.fractal_octaves = 6
+	var nz2 := FastNoiseLite.new(); nz2.seed = seed_val + 7; nz2.frequency = 0.025
+	return {"k": k, "key": _preview_key(k), "im": im, "py": 0, "pw": pw, "ph": ph, "n": nz, "n2": nz2}
+
+func _preview_step() -> bool:
+	var k: int = _pv_job.k
+	var im: Image = _pv_job.im
+	var pw: int = _pv_job.pw
+	var ph: int = _pv_job.ph
+	var py: int = _pv_job.py
+	var y1 := mini(ph, py + 3)
+	for y in range(py, y1):
+		for px in pw:
+			var v: float = _sample_map_elev(k, float(px) * W / pw, float(y) * H / ph, _pv_job.n, _pv_job.n2)
+			var c := Color(0.16, 0.33, 0.50, 0.85)
+			if v > 0.0:
+				if v > 0.48: c = Color(0.94, 0.94, 0.96)
+				elif v > 0.40: c = Color(0.70, 0.65, 0.56)
+				elif v > 0.20: c = Color(0.82, 0.76, 0.56)
+				else: c = Color(0.70, 0.82, 0.53)
+			im.set_pixel(px, y, c)
+	_pv_job.py = y1
+	if y1 < ph:
+		return true
+	var tex := ImageTexture.create_from_image(im)
+	_preview_cache[_pv_job.key] = tex
+	if k < map_card_tex.size() and _preview_key(k) == str(_pv_job.key):
+		map_card_tex[k].texture = tex
+	return false
 
 # ---- pick / deploy banner ----
 func _build_pick() -> void:
@@ -5414,28 +5507,79 @@ func _build_top() -> void:
 		c.draw_colored_polygon(PackedVector2Array([Vector2(0, 10), Vector2(0, 2), Vector2(3, 5), Vector2(6, 0), Vector2(9, 5), Vector2(12, 2), Vector2(12, 10)]), ORANGE_Y))
 	top_lead = _T(p, "", Vector2(318, 48), 13, TEXT, f_reg, 190)
 
+var speed_panel: Panel
+var speed_title: Label
+var speed_hint: Label
+var speed_ticks: Control
+
+func _speed_text_width(text: String, font: Font, fs: int) -> float:
+	return font.get_string_size(text, HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x
+
+func _place_speed_readout() -> void:
+	if speed_title == null or speed_lbl == null or speed_hint == null:
+		return
+	var title_w := _speed_text_width(speed_title.text, f_head, 12)
+	var value_w := _speed_text_width(speed_lbl.text, f_bold, 15)
+	var hint_w := _speed_text_width(speed_hint.text, f_reg, 12)
+	speed_title.position = Vector2(14, 8)
+	speed_title.size = Vector2(title_w + 2, 20)
+	speed_lbl.position = Vector2(speed_title.position.x + speed_title.size.x + 18, 6)
+	speed_lbl.size = Vector2(value_w + 4, 22)
+	speed_hint.position = Vector2(speed_lbl.position.x + speed_lbl.size.x + 14, 8)
+	speed_hint.size = Vector2(hint_w + 4, 20)
+	var row_end := speed_hint.position.x + speed_hint.size.x
+	var need := row_end + 16.0 + 36.0 + 12.0
+	if speed_panel:
+		speed_panel.size.x = maxf(speed_panel.size.x, need)
+		speed_panel.size.y = 78
+	if speed_slider:
+		speed_slider.position = Vector2(14, 36)
+		speed_slider.size = Vector2(maxf(120.0, need - 14.0 - 52.0), 22)
+	if speed_ticks:
+		speed_ticks.position = Vector2(14, 60)
+		speed_ticks.size = Vector2(speed_slider.size.x if speed_slider else 170, 10)
+	var gear := speed_panel.get_node_or_null("SpeedGear") if speed_panel else null
+	if gear is Control and speed_slider:
+		gear.position = Vector2(speed_slider.position.x + speed_slider.size.x + 8, 30)
+
 func _build_speed() -> void:
-	var p := _P(ui, Rect2(16, 22, 240, 64))
+	var widest := 0.0
+	for sample in ["0.5x", "1x", "10x"]:
+		widest = maxf(widest, 14 + _speed_text_width("GAME SPEED", f_head, 12) + 18 + _speed_text_width(sample, f_bold, 15) + 14 + _speed_text_width("– / +", f_reg, 12) + 16 + 36 + 12)
+	var p := _P(ui, Rect2(16, 22, widest, 78))
+	speed_panel = p
 	hud_nodes.append(p)
-	_head(p, "GAME SPEED", Vector2(14, 8), 11, MUTED)
-	_T(p, "– / +", Vector2(130, 7), 11, MUTED)
-	speed_lbl = _T(p, "1x", Vector2(84, 6), 13, ORANGE_Y, f_bold)
+	speed_title = _head(p, "GAME SPEED", Vector2(14, 8), 12, MUTED)
+	speed_hint = _T(p, "– / +", Vector2(0, 8), 12, MUTED, f_reg)
+	speed_lbl = _T(p, "1x", Vector2(0, 6), 15, ORANGE_Y, f_bold)
 	var sl := HSlider.new()
 	sl.min_value = 0.5; sl.max_value = 10.0; sl.step = 0.5; sl.value = 1.0
-	sl.position = Vector2(12, 32); sl.size = Vector2(170, 22); sl.focus_mode = Control.FOCUS_NONE
+	sl.position = Vector2(14, 36); sl.size = Vector2(widest - 66, 22); sl.focus_mode = Control.FOCUS_NONE
 	var grab := StyleBoxFlat.new(); grab.bg_color = Color(0.35, 0.80, 1.0, 0.85); grab.set_corner_radius_all(6); grab.content_margin_top = 5; grab.content_margin_bottom = 5
 	var trk := StyleBoxFlat.new(); trk.bg_color = Color(1, 1, 1, 0.12); trk.set_corner_radius_all(6); trk.content_margin_top = 5; trk.content_margin_bottom = 5
 	sl.add_theme_stylebox_override("slider", trk); sl.add_theme_stylebox_override("grabber_area", grab); sl.add_theme_stylebox_override("grabber_area_highlight", grab)
 	sl.value_changed.connect(func(v: float): set_speed_x(v))
 	p.add_child(sl); speed_slider = sl
-	# snap-point ticks at 1, 2, 5, 10
-	_draw_ctl(p, Rect2(12, 54, 170, 8), func(c: Control):
-		for sp in [1.0, 2.0, 5.0, 10.0]:
+	speed_ticks = _draw_ctl(p, Rect2(14, 60, sl.size.x, 10), func(c: Control):
+		for sp in [0.5, 1.0, 2.0, 5.0, 10.0]:
 			var x: float = 8.0 + (sp - 0.5) / 9.5 * (c.size.x - 16.0)
-			c.draw_circle(Vector2(x, 3), 2.0, Color(1, 1, 1, 0.45)))
-	var cfg_b := _card_btn(p, Rect2(192, 24, 36, 32))
+			c.draw_circle(Vector2(x, 4), 2.2, Color(1, 1, 1, 0.55)))
+	var cfg_b := _card_btn(p, Rect2(sl.position.x + sl.size.x + 8, 30, 36, 32))
+	cfg_b.name = "SpeedGear"
 	cfg_b.pressed.connect(_open_settings)
 	_draw_ctl(cfg_b, Rect2(6, 4, 24, 24), func(c: Control): _draw_gear(c, Vector2(12, 12), 9.0, CYAN))
+	_place_speed_readout()
+
+func _speed_labels_overlap() -> bool:
+	if speed_title == null or speed_lbl == null or speed_hint == null:
+		return false
+	var rects: Array[Rect2] = [speed_title.get_global_rect(), speed_lbl.get_global_rect(), speed_hint.get_global_rect()]
+	for i in rects.size():
+		for j in range(i + 1, rects.size()):
+			var hit: Rect2 = rects[i].intersection(rects[j])
+			if hit.size.x > 1.0 and hit.size.y > 1.0:
+				return true
+	return false
 
 # ---- leaderboard ----
 func _build_leaderboard() -> void:
@@ -7019,37 +7163,38 @@ func run_console_cmd(raw: String) -> void:
 
 # ---------------- sound (OpenFront CC BY-SA 4.0 assets, see sounds/LICENSE.txt) ----------------
 const SFX_FILES := {
-	"click": ["click.mp3", "click-1.mp3", "click-2.mp3", "click-3.mp3"],
-	"slider": ["slider.mp3"],
-	"game_start": ["game-start.mp3"],
-	"spawn": ["spawn.mp3"],
-	"atom_launch": ["atom-launch.mp3"],
-	"hydrogen_launch": ["hydrogen-launch.mp3"],
-	"mirv_launch": ["mirv-launch.mp3"],
-	"atom_hit": ["atom-hit.mp3"],
-	"hydrogen_hit": ["hydrogen-hit.mp3"],
-	"nuke_warning": ["nuke-warning.mp3"],
-	"sam_shoot": ["sam-shoot.mp3"],
-	"sam_hit": ["sam-hit.mp3"],
-	"build_city": ["build-city.mp3"],
-	"build_port": ["build-port.mp3"],
-	"build_factory": ["build-factory.mp3"],
-	"build_defense": ["build-defense-post.mp3"],
-	"build_sam": ["sam-built.mp3"],
-	"build_silo": ["silo-built.mp3"],
-	"build_warship": ["build-warship.mp3"],
-	"build_station": ["build-train-station.mp3"],
-	"warship_shot": ["warship-shot.mp3"],
-	"warship_lost": ["warship-lost.mp3"],
-	"transport": ["transport-ship.mp3"],
-	"conquered": ["conquered.mp3"],
-	"ka_ching": ["ka-ching.mp3"],
-	"ally_suggest": ["alliance-suggested.mp3"],
-	"ally_accept": ["alliance-accepted.mp3"],
-	"ally_decline": ["alliance-declined.mp3"],
-	"ally_broken": ["alliance-broken.mp3"],
-	"victory": ["victory.mp3"],
-	"defeat": ["defeat.mp3"],
+	"click": ["play/click.wav", "play/click-1.wav", "play/click-2.wav", "play/click-3.wav"],
+	"order": ["play/order.wav"],
+	"slider": ["play/slider.wav"],
+	"game_start": ["play/game-start.wav"],
+	"spawn": ["play/spawn.wav"],
+	"atom_launch": ["play/atom-launch.wav"],
+	"hydrogen_launch": ["play/hydrogen-launch.wav"],
+	"mirv_launch": ["play/mirv-launch.wav"],
+	"atom_hit": ["play/atom-hit.wav"],
+	"hydrogen_hit": ["play/hydrogen-hit.wav"],
+	"nuke_warning": ["play/nuke-warning.wav"],
+	"sam_shoot": ["play/sam-shoot.wav"],
+	"sam_hit": ["play/sam-hit.wav"],
+	"build_city": ["play/build-city.wav"],
+	"build_port": ["play/build-port.wav"],
+	"build_factory": ["play/build-factory.wav"],
+	"build_defense": ["play/build-defense-post.wav"],
+	"build_sam": ["play/sam-built.wav"],
+	"build_silo": ["play/silo-built.wav"],
+	"build_warship": ["play/build-warship.wav"],
+	"build_station": ["play/build-train-station.wav"],
+	"warship_shot": ["play/warship-shot.wav"],
+	"warship_lost": ["play/warship-lost.wav"],
+	"transport": ["play/transport-ship.wav"],
+	"conquered": ["play/conquered.wav"],
+	"ka_ching": ["play/ka-ching.wav"],
+	"ally_suggest": ["play/alliance-suggested.wav"],
+	"ally_accept": ["play/alliance-accepted.wav"],
+	"ally_decline": ["play/alliance-declined.wav"],
+	"ally_broken": ["play/alliance-broken.wav"],
+	"victory": ["play/victory.wav"],
+	"defeat": ["play/defeat.wav"],
 }
 # minimum seconds between two plays of the same sound key (spam limiter)
 const SFX_GAP := {"click": 0.05, "conquered": 1.2, "ka_ching": 0.8, "atom_hit": 0.25, "hydrogen_hit": 0.4, "sam_shoot": 0.3, "sam_hit": 0.3, "warship_shot": 0.5, "transport": 0.8, "nuke_warning": 3.0, "atom_launch": 0.3, "hydrogen_launch": 0.3, "mirv_launch": 0.5}
@@ -7061,17 +7206,70 @@ var music_player: AudioStreamPlayer
 var sfx_missing := []
 
 func _load_audio(path: String) -> AudioStream:
-	if not FileAccess.file_exists(path): return null
+	# Absolute path first. res:// reads go through the import remap, which is empty
+	# in a freshly unzipped project (the .godot cache is not shipped) and load() then
+	# fails. PCM/MP3 bytes from disk do not need that cache.
+	var abs_path := ProjectSettings.globalize_path(path)
+	var bytes := PackedByteArray()
+	if FileAccess.file_exists(abs_path):
+		bytes = FileAccess.get_file_as_bytes(abs_path)
+	elif FileAccess.file_exists(path):
+		bytes = FileAccess.get_file_as_bytes(path)
 	var ext := path.get_extension().to_lower()
-	var bytes := FileAccess.get_file_as_bytes(path)
-	if bytes.is_empty(): return null
-	if ext == "mp3":
-		var s := AudioStreamMP3.new(); s.data = bytes; return s
-	if ext == "ogg":
-		return AudioStreamOggVorbis.load_from_buffer(bytes)
-	if ext == "wav":
-		return load(path) as AudioStream
+	if not bytes.is_empty():
+		if ext == "wav":
+			var wav := _wav_stream(bytes)
+			if wav != null and wav.get_length() > 0.01:
+				return wav
+		elif ext == "mp3":
+			var mp3 := AudioStreamMP3.new()
+			mp3.data = bytes.duplicate()
+			if mp3.get_length() > 0.01:
+				return mp3
+		elif ext == "ogg":
+			var ogg := AudioStreamOggVorbis.load_from_buffer(bytes)
+			if ogg != null and ogg.get_length() > 0.01:
+				return ogg
+	var imported = load(path)
+	if imported is AudioStream and (imported as AudioStream).get_length() > 0.01:
+		return imported
 	return null
+
+func _wav_stream(bytes: PackedByteArray) -> AudioStreamWAV:
+	if bytes.size() < 44:
+		return null
+	if bytes.slice(0, 4).get_string_from_ascii() != "RIFF":
+		return null
+	var pos := 12
+	var channels := 1
+	var rate := 44100
+	var bits := 16
+	var pcm := PackedByteArray()
+	while pos + 8 <= bytes.size():
+		var id := bytes.slice(pos, pos + 4).get_string_from_ascii()
+		var sz := int(bytes.decode_u32(pos + 4))
+		var start := pos + 8
+		if start + sz > bytes.size():
+			break
+		if id == "fmt " and sz >= 16:
+			var audio_fmt := int(bytes.decode_u16(start))
+			channels = int(bytes.decode_u16(start + 2))
+			rate = int(bytes.decode_u32(start + 4))
+			bits = int(bytes.decode_u16(start + 14))
+			if audio_fmt != 1:
+				return null
+		elif id == "data":
+			pcm = bytes.slice(start, start + sz)
+			break
+		pos = start + sz + (sz & 1)
+	if pcm.is_empty() or bits != 16 or channels < 1:
+		return null
+	var s := AudioStreamWAV.new()
+	s.format = AudioStreamWAV.FORMAT_16_BITS
+	s.mix_rate = rate
+	s.stereo = channels >= 2
+	s.data = pcm
+	return s
 
 func _ensure_bus(nm: String) -> int:
 	var idx := AudioServer.get_bus_index(nm)
@@ -7144,7 +7342,7 @@ func sfx(key: String, vol_db := 0.0, pitch_jitter := 0.04, who := PLAYER) -> voi
 	p.play()
 
 # Only this file may play as music. sounds/rejected/ holds the old themes; they are not scanned.
-const MUSIC_FILE := "res://sounds/music/frontline_pad.ogg"
+const MUSIC_FILE := "res://sounds/music/frontline_bed.wav"
 
 func _play_music() -> void:
 	if music_player == null: return
@@ -7154,10 +7352,12 @@ func _play_music() -> void:
 	if s == null:
 		push_warning("Clean music missing (%s). Rejected themes are not used as a fallback." % MUSIC_FILE)
 		return
-	if s is AudioStreamOggVorbis:
-		(s as AudioStreamOggVorbis).loop = true
-	elif s is AudioStreamMP3:
-		(s as AudioStreamMP3).loop = true
+	if s is AudioStreamWAV:
+		var wav := s as AudioStreamWAV
+		wav.loop_mode = AudioStreamWAV.LOOP_FORWARD
+		wav.loop_begin = 0
+		var frame := 2 * (2 if wav.stereo else 1)
+		wav.loop_end = int(wav.data.size() / frame)
 	music_player.set_meta("music_file", MUSIC_FILE)
 	music_player.stream = s
 	music_player.play()
@@ -7166,6 +7366,107 @@ func _stop_music() -> void:
 	if music_player: music_player.stop()
 
 const BUILD_SFX := {0: "build_city", 1: "build_port", 2: "build_factory", 3: "build_defense", 4: "build_sam", 5: "build_silo", 6: "build_warship", 10: "build_defense", 14: "build_silo"}
+
+func _cap_peak(cap: AudioEffectCapture) -> float:
+	var n := cap.get_frames_available()
+	if n < 32:
+		return 0.0
+	var data := cap.get_buffer(mini(n, 48000 * 4))
+	var peak := 0.0
+	for i in data.size():
+		peak = maxf(peak, absf(data[i].x))
+		peak = maxf(peak, absf(data[i].y))
+	return peak
+
+func _save_viewport(path: String) -> void:
+	var im := get_viewport().get_texture().get_image()
+	if im == null:
+		print("SHOT missing ", path)
+		return
+	DirAccess.make_dir_recursive_absolute(path.get_base_dir())
+	im.save_png(path)
+	var r := speed_panel.get_global_rect() if speed_panel else Rect2()
+	if r.size.x > 4.0 and r.size.y > 4.0:
+		var crop := im.get_region(Rect2i(int(r.position.x), int(r.position.y), int(r.size.x) + 2, int(r.size.y) + 2))
+		crop.save_png(path.get_basename() + "_crop.png")
+	print("SHOT ", path, " ", im.get_width(), "x", im.get_height())
+
+func _regress() -> void:
+	# Mixer capture is the audio server's output buffer (Dummy driver in headless).
+	# It is not a speaker or microphone recording.
+	var cap := AudioEffectCapture.new()
+	cap.buffer_length = 8.0
+	AudioServer.add_bus_effect(AudioServer.get_bus_index("Master"), cap)
+	await get_tree().create_timer(1.4).timeout
+	var music_peak := _cap_peak(cap)
+	var mlen := -1.0
+	if music_player and music_player.stream:
+		mlen = music_player.stream.get_length()
+	print("REGRESS music_peak=%.4f playing=%s len=%.2f file=%s loaded=%d missing=%s" % [music_peak, str(music_player.playing if music_player else false), mlen, str(music_player.get_meta("music_file", "") if music_player else ""), sfx_streams.size(), str(sfx_missing)])
+	cap.clear_buffer()
+	sfx("click", 0.0, 0.0, PLAYER)
+	sfx("order", 0.0, 0.0, PLAYER)
+	sfx("transport", 0.0, 0.0, PLAYER)
+	sfx("conquered", 0.0, 0.0, 2)
+	sfx("build_city", 0.0, 0.0, 2)
+	await get_tree().create_timer(0.9).timeout
+	var sfx_peak := _cap_peak(cap)
+	print("REGRESS sfx_peak=%.4f" % sfx_peak)
+	play_dialog.visible = true
+	var t0 := Time.get_ticks_usec()
+	_set_map_tab(1)
+	var sync_ms := (Time.get_ticks_usec() - t0) / 1000.0
+	print("REGRESS map_sync_ms=%.2f queue=%d" % [sync_ms, _preview_queue.size()])
+	var worst := 0
+	var frames := 0
+	var t_start := Time.get_ticks_msec()
+	while not _preview_queue.is_empty() or not _pv_job.is_empty():
+		var f0 := Time.get_ticks_usec()
+		await get_tree().process_frame
+		worst = maxi(worst, int(Time.get_ticks_usec() - f0))
+		frames += 1
+		if Time.get_ticks_msec() - t_start > 25000:
+			print("REGRESS map_timeout")
+			break
+	print("REGRESS map_frames=%d worst_frame_ms=%.1f pump_us=%d" % [frames, worst / 1000.0, preview_pump_us])
+	menu_panel.visible = false
+	play_dialog.visible = false
+	if speed_panel:
+		speed_panel.visible = true
+	var overlap := false
+	for sp in [0.5, 1.0, 10.0]:
+		set_speed_x(sp)
+		await get_tree().process_frame
+		await get_tree().process_frame
+		var bad := _speed_labels_overlap()
+		if bad:
+			overlap = true
+		print("REGRESS speed=%s overlap=%s title=%s value=%s hint=%s" % [speed_lbl.text, str(bad), speed_title.get_global_rect(), speed_lbl.get_global_rect(), speed_hint.get_global_rect()])
+		_save_viewport("/tmp/speedui/speed_%s.png" % speed_lbl.text.replace(".", "p"))
+	var nukes_ok := is_equal_approx(float(NUKE_R[7]), 19.6) and is_equal_approx(float(NUKE_R[8]), 70.0) and is_equal_approx(float(NUKE_R[9]), 8.4)
+	var fail := music_peak < 0.02 or sfx_peak < 0.05 or sync_ms > 80.0 or worst > 90000 or overlap or not nukes_ok or sfx_streams.size() < 30
+	print("REGRESS nukes_ok=%s" % str(nukes_ok))
+	print("REGRESS %s" % ("FAIL" if fail else "OK"))
+	get_tree().quit(1 if fail else 0)
+
+func _speedshot() -> void:
+	menu_panel.visible = false
+	play_dialog.visible = false
+	for n in hud_nodes:
+		n.visible = false
+	if speed_panel:
+		speed_panel.visible = true
+	var tag := "1600x900"
+	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--res="):
+			tag = arg.substr(6)
+	for sp in [0.5, 1.0, 10.0]:
+		set_speed_x(sp)
+		await get_tree().process_frame
+		await get_tree().process_frame
+		_save_viewport("/tmp/speedui/%s_%s.png" % [tag, speed_lbl.text.replace(".", "p")])
+		print("SPEEDSHOT %s %s overlap=%s" % [tag, speed_lbl.text, str(_speed_labels_overlap())])
+	get_tree().quit(0)
 
 func _audiotest() -> void:
 	# Event log only. Whether a file contains boat or conquer audio is measured outside Godot

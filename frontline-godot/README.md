@@ -2,7 +2,7 @@
 
 A real-time territory-conquest strategy prototype built in **Godot 4.3 (GDScript)**.
 
-Current behavior, audio, and art are documented in `docs/MECHANICS.md`, `docs/AUDIO.md`, and `docs/TEXTURES.md`. Music is only `sounds/music/frontline_pad.ogg`. The older theme mp3s are in `sounds/rejected/` and are not played. Structure and HUD art is the fork's PNG set (AGPL-3.0), byte-checked in `docs/TEXTURES.md`. Sound effects are OpenFront CC BY-SA 4.0 files from commit `030274df` (`sounds/LICENSE.txt`).
+Current behavior, audio, and art are documented in `docs/MECHANICS.md`, `docs/AUDIO.md`, and `docs/TEXTURES.md`. Music is only `sounds/music/frontline_bed.wav` (a looping original bed). The older theme mp3s are in `sounds/rejected/` and are not played. Effects play from `sounds/play/` (PCM copies of the OpenFront files). Structure and HUD art is the fork's PNG set (AGPL-3.0), byte-checked in `docs/TEXTURES.md`. Sound effects are OpenFront CC BY-SA 4.0 files from commit `030274df` (`sounds/LICENSE.txt`).
 
 The feature list under this line is an older prototype note. Where it disagrees with `sim/` and `main.gd` (MIRV, ice, blast sizes), the code and `docs/MECHANICS.md` are the ones that run.
 

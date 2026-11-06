@@ -15,8 +15,11 @@ Hashes are in docs/audio_measurements.json.
 NOT included from OpenFront: resources are the only open set. OpenFront's music and
 game-start-alert live under proprietary/ and are All Rights Reserved. They are not in this project.
 
-sounds/music/frontline_pad.ogg is not from OpenFront. It is an original synthesized pad written for
-this port (public-domain dedication by the port). It is the only file the game plays as music.
+sounds/play/*.wav except order.wav are 16-bit 44100 Hz PCM renders of the mp3s above
+(ffmpeg, one channel). The game plays these so a machine without the Godot import cache
+still decodes them. sounds/play/order.wav and sounds/music/frontline_bed.wav are original
+synthesis for this port (public-domain dedication). frontline_bed.wav is the only music
+the game plays.
 
 sounds/rejected/roworld_menu.mp3 and roworld_war.mp3 are the previous "cleaned" theme encodes.
 They are kept so the failure can be checked, and the game does not load them. See
