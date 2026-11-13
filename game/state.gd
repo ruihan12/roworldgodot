@@ -378,7 +378,7 @@ const NUKE_RANGE_FRAC := {7: 0.5265, 8: 0.585, 9: 1.3, 11: 0.5558, 12: 0.6435}
 const NUKE_RANGE_SCALE := 0.375  # user: all bomb ranges x0.375 (ICBM mode still ignores range)
 var _land_w := -1.0
 # nukes fly 1.5x (short shots) up to 2.5x (>= 1000 tiles) faster
-const NUKE_SPEED_MULT := 2.1  # user: flat 2.1x bomb flight speed (was 1.5x short shots up to 2.5x at 1000+ tiles)
+# NUKE_SPEED_MULT removed: nuke speed now matches upstream (see game/nukes.gd nuke_speed_mult)
 var mirvs_launched := 0  # Rules.nuke_cost: MIRV +15M per MIRV already launched in the match (Rules.luau 785-789)
 const RAIL_KINDS := [0, 1, 2, 3, 4, 5]  # city, port, factory, defense post, SAM, silo: any two can be linked
 var _rail_nb_cache := {}

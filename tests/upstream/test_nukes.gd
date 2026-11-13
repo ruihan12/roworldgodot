@@ -91,8 +91,8 @@ func run(H) -> void:
 	H.expect(_has(src, "7.0 * BLAST_S") and _has(src, "25.0 * BLAST_S") and _has(src, "3.0 * BLAST_S") and _has(src, "15.0 * BLAST_S"),
 		"NUKE_R uses 7/25/3/15/7 * BLAST_S", "intentional radii")
 
-	H.expect(_has(src, "NUKE_SPEED_MULT := 2.1"),
-		"nukes fly a flat 2.1x faster", "intentional")
+	H.expect(_has(src, "UPSTREAM_NUKE_TILES_PER_S := 100.0"),
+		"nukes fly at upstream speed (10 full-size tiles per tick)", "matches Rules.NUKE_SPEED_FULL atom")
 	H.expect(_has(src, "mirv_bus") or _has(src, "split_done") or _has(src, "branched"),
 		"MIRV bus flies to the aim, then branches", "intentional pattern")
 	H.expect(_has(src, "ONLY creates fallout in the circular crater") or _has(src, "fallout in the circular") or _has(src, "real warhead"),

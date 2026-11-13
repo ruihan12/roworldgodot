@@ -15,8 +15,13 @@ func nuke_range(k: int) -> float:
 func nuke_range_label(k: int) -> String:
 	return "%s km (%d%% of map)" % [_fmt_int(int(NUKE_RANGE_FRAC.get(k, 0.1) * NUKE_RANGE_SCALE * 40000.0)), int(round(NUKE_RANGE_FRAC.get(k, 0.1) * NUKE_RANGE_SCALE * 100.0))]
 
+# Upstream Rules.NUKE_SPEED_FULL: an atom bomb flies 10 full-size tiles per tick (100 per game second).
+# The base speeds below (43.2 tiles per missile-clock second, 0.2 clock seconds per game second) are
+# scaled so a bomb covers the same ground per game second as upstream on every map size.
+const UPSTREAM_NUKE_TILES_PER_S := 100.0
 func nuke_speed_mult(_dist: float) -> float:
-	return NUKE_SPEED_MULT
+	var kl: float = sim_rules.k_lin if sim_rules != null else 1.0
+	return UPSTREAM_NUKE_TILES_PER_S / (maxf(kl, 0.01) * 43.2 * SimArsenal.DT_TICK * 10.0)
 
 func nuke_cost(k: int) -> float:
 	var base := float(build_data[k][2]) + (SimRules.MIRV_COST_STEP * mirvs_launched if k == 9 else 0.0)
