@@ -18,7 +18,7 @@ func owned_count(id: int, k: int) -> int:
 	return _oc_cnt.get(id * 64 + k, 0)
 
 func troop_cap(id: int) -> float:
-	return sim_rules.max_troops(kind_of(id), nations[id].land, owned(id, 0), diff_i)
+	return sim_rules.max_troops(troop_kind(id), nations[id].land, owned(id, 0), troop_diff(id))
 
 func gold_rate(id: int) -> float:
 	# passive goldAdditionRate x 10 per second (trade ships, trains and conquests come on top)
@@ -319,6 +319,13 @@ func launch_attack(a: int, t: int, share: float) -> bool:
 		return false
 	if t > 0 and not nations[t].alive:
 		return false
+	if shielded(t):
+		if a == PLAYER: notify(shield_text(t), "info")
+		return false
+	if t > 0 and shielded(a) and kind_of(t) != SimRules.KIND_TRIBE:
+		# attacking a person or a nation ends one's own spawn shield
+		shield_until.erase(a)
+		if a == PLAYER: notify("You attacked %s, so your spawn shield is down" % _nname(t), "info")
 	var n = nations[a]
 	var troops: float = n.troops * clampf(share, 0.0, 1.0)
 	if troops < 1.0:
@@ -590,6 +597,11 @@ func _tick_boats(dt: float) -> void:
 			# RoWorld: the transport takes its landing tile, then attacks from that beachhead
 			if allied(a, o):
 				nations[a].troops += bt.troops; continue
+			if shielded(o):
+				# Sim._landing_allowed: no transport lands on a person under their spawn shield
+				nations[a].troops += floor(bt.troops * SimRules.RETREAT_KEEP)
+				if a == PLAYER: notify(shield_text(o), "info")
+				continue
 			_set_owner(dest, a)
 			if a == PLAYER: notify("Your transport landed on %s's coast" % _nname(o), "good")
 			sim_atk.start(a, o, bt.troops, dest)
@@ -612,9 +624,10 @@ func _economy(dt: float) -> void:
 			if id != PLAYER and (is_prot(id) or rng.randf() < 0.15): notify("%s has been eliminated" % n.name, "info")
 			continue
 		var kd := kind_of(id)
-		var cap := sim_rules.max_troops(kd, n.land, city_lv.get(id, 0), diff_i)
-		n.regen = sim_rules.troop_growth(kd, n.troops, cap, diff_i) * 10.0
-		n.troops += sim_rules.troop_growth_applied(kd, n.troops, cap, diff_i)
+		var tk := troop_kind(id); var tdf := troop_diff(id)  # novice bot players: Easy nation numbers
+		var cap := sim_rules.max_troops(tk, n.land, city_lv.get(id, 0), tdf)
+		n.regen = sim_rules.troop_growth(tk, n.troops, cap, tdf) * 10.0
+		n.troops += sim_rules.troop_growth_applied(tk, n.troops, cap, tdf)
 		n.gold += sim_rules.gold_per_tick(kd)
 		n.reinf_cd = maxf(0.0, n.reinf_cd - dt)
 		if id == PLAYER:
@@ -628,7 +641,8 @@ func _ai(_dt: float) -> void:
 
 
 func is_prot(id: int) -> bool:
-	return id > 0 and id < nations.size() and nations[id].get("prot", false)
+	# protagonist: an AI nation or a bot player (anything that builds, unlike a tribe)
+	return id > 0 and id < nations.size() and (nations[id].get("prot", false) or nations[id].get("bot", false))
 
 func can_build(id: int) -> bool:
 	return id == PLAYER or is_prot(id)

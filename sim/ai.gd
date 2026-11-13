@@ -127,7 +127,11 @@ func setup() -> void:
 
 func _troops(id: int) -> float: return g.nations[id].troops
 func _cap(id: int) -> float: return maxf(g.troop_cap(id), 1.0)
-func _diff() -> int: return clampi(g.diff_i, 0, 2)
+func _diff(id := -1) -> int: return int(g.ai_difficulty(id)) if id > 0 else clampi(g.diff_i, 0, 2)
+# Novice bot players wait this many times longer before attacking a real player.
+const NOVICE_GRACE_MULT := 2
+# An AI commander that counts as a nation for war bookkeeping: nations and bot players.
+func _ai_nation(id: int) -> bool: return g.kind_of(id) == SimRules.KIND_NATION or g.is_bot(id)
 func _L() -> float: return R.legacy_lin
 func _LA() -> float: return R.legacy_lin * R.legacy_lin
 
@@ -144,11 +148,11 @@ func tick() -> void:
 	attackers_on.clear()
 	var pairs := {}
 	for a in g.attacks:
-		if not a.get("counter", false) and a.t > 0 and g.kind_of(a.a) == SimRules.KIND_NATION:
+		if not a.get("counter", false) and a.t > 0 and _ai_nation(a.a):
 			pairs[a.a * 4096 + a.t] = true
 	for bt in g.boats:
 		var tg: int = g.owner_map[bt.dest]
-		if tg > 0 and g.kind_of(tg) == SimRules.KIND_HUMAN and g.kind_of(bt.a) == SimRules.KIND_NATION:
+		if tg > 0 and g.kind_of(tg) == SimRules.KIND_HUMAN and _ai_nation(bt.a):
 			pairs[bt.a * 4096 + tg] = true
 	for k in pairs:
 		attackers_on[k % 4096] = attackers_on.get(k % 4096, 0) + 1
@@ -255,7 +259,7 @@ func _above(id: int, keep: float) -> float:
 func _first_attack(id: int) -> void:
 	var s: Dictionary = st[id]
 	s.started = true
-	var r: Array = NATION_ATTACK_RATE[_diff()]
+	var r: Array = NATION_ATTACK_RATE[_diff(id)]
 	s.attack_rate = int(g.rng.randi_range(r[0], r[1]) * R.ai_rate_mult)
 	s.next_attack = g.sim_atk.tick + g.rng.randi_range(0, s.attack_rate)
 	scan_border(id)
@@ -283,14 +287,17 @@ func _spawn_tile(id: int) -> int:
 
 # Tribes have no human protection beyond the spawn shield (here: the peace window).
 func may_attack_human(id: int, h: int) -> bool:
-	if g.kind_of(id) == SimRules.KIND_TRIBE: return g.elapsed >= g.peace
+	if g.kind_of(id) == SimRules.KIND_TRIBE: return g.elapsed >= g.peace and not g.shielded(h)
 	return _may_attack_human(id, h, g.sim_atk.tick)
 
 # Human protection: the AI's grace (global minimum + its random delay + more for distant nations)
 # has passed and fewer than MAX_AI_WARS_ON_HUMAN nations already fight that human.
 func _may_attack_human(id: int, h: int, age: int) -> bool:
 	if g.elapsed < g.peace: return false
-	var grace: int = R.human_grace_ticks(g.diff_i) + int(st[id].grace_jitter)
+	if g.shielded(h): return false  # a person's spawn shield holds for every attacker
+	var d: int = g.human_difficulty(id)
+	var grace: int = R.human_grace_ticks(d) + int(st[id].grace_jitter)
+	if g.is_novice_bot(id): grace *= NOVICE_GRACE_MULT  # novices leave real players alone twice as long
 	var a := _spawn_tile(id)
 	if a < 0: a = centre_tile(id)
 	var b := _spawn_tile(h)
@@ -299,7 +306,7 @@ func _may_attack_human(id: int, h: int, age: int) -> bool:
 		var dist := int(Vector2(a % W - b % W, a / W - b / W).length() / R.legacy_lin)
 		grace += clampi((dist - HUMAN_GRACE_NEAR) * HUMAN_GRACE_PER_TILE, 0, HUMAN_GRACE_MAX_EXTRA)
 	if age < grace: return false
-	if g.kind_of(id) == SimRules.KIND_NATION and attackers_on.get(h, 0) >= R.MAX_AI_WARS_ON_HUMAN[_diff()]:
+	if _ai_nation(id) and attackers_on.get(h, 0) >= R.MAX_AI_WARS_ON_HUMAN[d]:
 		return false
 	return true
 
@@ -402,7 +409,8 @@ func _consider_war(id: int, fill: float, age: int) -> bool:
 	var s: Dictionary = st[id]
 	if fill < s.reserve_r: return false
 	if fill < s.trigger_r and g.rng.randf() >= 0.1: return false
-	var d := _diff()
+	var d := _diff(id)
+	var hd: int = g.human_difficulty(id)  # towards players a smart bot player is as patient as Easy
 	var mine := _troops(id)
 	var my_share := _land_share(id)
 	var best := -1
@@ -412,7 +420,7 @@ func _consider_war(id: int, fill: float, age: int) -> bool:
 		if sc_count[p] < 2 * L or g.allied(id, p): continue
 		var pk: int = g.kind_of(p)
 		var at_war: bool = g.sim_atk.attack_between(id, p) != null
-		if pk == SimRules.KIND_HUMAN and not at_war and (not _may_attack_human(id, p, age) or g.rng.randf() < HUMAN_SKIP[d]):
+		if pk == SimRules.KIND_HUMAN and not at_war and (not _may_attack_human(id, p, age) or g.rng.randf() < HUMAN_SKIP[hd]):
 			continue
 		var sc := mine / (_troops(p) + 1.0)
 		sc *= pow(0.6, attackers_on.get(p, 0) - (1 if at_war else 0))
@@ -464,7 +472,7 @@ func _coast_body(t: int) -> int:
 
 func _consider_boat(id: int, age: int) -> void:
 	var s: Dictionary = st[id]
-	if age < 600 or g.sim_naval.boats_of(id) >= (2 if _diff() == 2 else 1): return
+	if age < 600 or g.sim_naval.boats_of(id) >= (2 if _diff(id) == 2 else 1): return
 	if g.sim_atk.tick - int(s.last_boat) < int(300.0 / float(s.naval)): return
 	var home := own_coast(id)
 	if home < 0: return
@@ -669,8 +677,8 @@ func _consider_diplomacy(id: int, age: int) -> void:
 		var chance := 0.0
 		if _great_powers(my_share, ps): chance = 0.35
 		elif my_share >= 0.25 and mine > 2.0 * _troops(p): chance = 0.15
-		elif mine > 3.0 * _troops(p) and sc_count.get(p, 0) > 0: chance = 0.04 * float(s.aggression) * (0.5 + 0.5 * _diff())
-		if g.kind_of(p) == SimRules.KIND_HUMAN and age < R.human_grace_ticks(g.diff_i) * 2: chance *= 0.25
+		elif mine > 3.0 * _troops(p) and sc_count.get(p, 0) > 0: chance = 0.04 * float(s.aggression) * (0.5 + 0.5 * _diff(id))
+		if g.kind_of(p) == SimRules.KIND_HUMAN and age < R.human_grace_ticks(g.human_difficulty(id)) * 2: chance *= 0.25
 		if chance > 0.0 and g.rng.randf() < chance:
 			g.break_alliance(id, p)
 			stats.breaks += 1
@@ -706,7 +714,7 @@ func _crowded_map() -> bool:
 	return _crowded
 
 func _structure_due(id: int, kind: int, cities: int, age: int) -> bool:
-	var d := _diff()
+	var d := _diff(id)
 	match kind:
 		K_PORT:
 			return own_coast(id) >= 0 and g.owned(id, K_PORT) < int(cities * PORT_PER_CITY)
@@ -1015,7 +1023,7 @@ func _maybe_spawn_warship(id: int) -> void:
 # Hard only: with 10+ warships at sea and an enemy owning more than 10, one of the three richest AI
 # owners builds a warship on top of one of them.
 func _counter_infestation(id: int) -> void:
-	if _diff() < 2 or g.warships.size() <= WARSHIP_FLEET_CAP or g._count_ws(id) >= WARSHIP_FLEET_CAP: return
+	if _diff(id) < 2 or g.warships.size() <= WARSHIP_FLEET_CAP or g._count_ws(id) >= WARSHIP_FLEET_CAP: return
 	var c6: float = g.build_cost(id, 6)
 	if g.nations[id].gold < c6 or g.owned(id, K_PORT) <= 0: return
 	var richer := 0

@@ -352,7 +352,20 @@ func _build_play_dialog() -> void:
 			diff_i = k
 			for j in diff_cards.size(): _card_style(diff_cards[j], j == k))
 	_card_style(diff_cards[diff_i], true)
-	_T(p, "All land is claimable (Plains, Highlands, Mountains). Protagonist nations build cities, ports, railways, and nukes.", Vector2(32, 748), 14, MUTED)
+	# bot players (upstream public matches): 0 keeps the match solo
+	_head(p, "BOT PLAYERS", Vector2(32, 712), 12, MUTED)
+	var bot_opts := [0, 4, 9, 19, 29]
+	var bot_cards := []
+	for k in bot_opts.size():
+		var bc := _card_btn(p, Rect2(32 + k * 70, 734, 62, 40))
+		_T(bc, "Off" if bot_opts[k] == 0 else str(bot_opts[k]), Vector2(0, 9), 16, TEXT, f_bold, 62, HORIZONTAL_ALIGNMENT_CENTER)
+		bot_cards.append(bc)
+		bc.pressed.connect(func():
+			bot_players = bot_opts[k]
+			for j in bot_cards.size(): _card_style(bot_cards[j], j == k))
+	_card_style(bot_cards[maxi(0, bot_opts.find(bot_players))], true)
+	_T(p, "Bot players look and play like people: 2 play smart, the rest are novices.", Vector2(392, 736), 12, MUTED)
+	_T(p, "Any bot ends solo play, so everyone gets a 30 s spawn shield.", Vector2(392, 756), 12, MUTED)
 	var st := _big_btn(p, Rect2(880, 732, 308, 60), "START GAME", ORANGE_Y, 22)
 	st.pressed.connect(_start_game_ui)
 
@@ -1131,7 +1144,7 @@ func _update_tooltip() -> void:
 		var n = nations[o]
 		var foot := "Click: attack with %s" % _fmt(send)
 		var fc := CYAN
-		var badge := "NATION" if is_prot(o) else "TRIBE"
+		var badge := "PLAYER" if is_bot(o) else ("NATION" if is_prot(o) else "TRIBE")
 		var bcol := ORANGE_Y if is_prot(o) else MUTED
 		var hint := "Right-click: Diplomacy (Ally, Donate Troops & Gold)"
 		if allied(PLAYER, o):
@@ -1140,7 +1153,7 @@ func _update_tooltip() -> void:
 			hint = "Right-click: Donate Troops/Gold or Break Alliance"
 		if is_traitor(o):
 			badge = "TRAITOR"; bcol = RED; hint = "Traitor: 0.5x defense & 0.8x speed for 30 s"
-		d = {"title": n.name, "badge": badge, "badge_col": bcol, "sub": ("Nation" if is_prot(o) else "Tribe") + "  ·  " + terrain, "rows": [["Troops", _fmt(n.troops), TEXT], ["Land", _pct(100.0 * n.land / land_total), TEXT]], "desc": hint, "foot": foot, "foot_col": fc, "foot_icon": "o"}
+		d = {"title": n.name, "badge": badge, "badge_col": bcol, "sub": ("Player" if is_bot(o) else ("Nation" if is_prot(o) else "Tribe")) + "  ·  " + terrain, "rows": [["Troops", _fmt(n.troops), TEXT], ["Land", _pct(100.0 * n.land / land_total), TEXT]], "desc": hint, "foot": foot, "foot_col": fc, "foot_icon": "o"}
 	_show_tip(d, mp, false)
 
 func _fmt_time(s: float) -> String:

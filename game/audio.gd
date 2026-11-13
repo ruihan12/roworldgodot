@@ -1299,6 +1299,7 @@ func sim_start(tab := 0, idx := 0, at := Vector2(0.5, 0.38), claim_r := 0, gold 
 	_start_game()
 	var st := _find_spawn_tile(int(W * at.x), int(H * at.y))
 	_place_start(st); deploy_t = 0.0; state = "play"
+	begin_shields()
 	if claim_r > 0: _claim_blob(PLAYER, st, claim_r)
 	if gold >= 0.0: nations[PLAYER].gold = gold
 	return st

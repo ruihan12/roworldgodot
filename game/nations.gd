@@ -109,6 +109,8 @@ func _start_game() -> void:
 	nations.append({})  # 0 neutral placeholder
 	_new_nation("You", Color(0.15, 0.55, 1.0), false)
 	_rw_spawn_all()
+	shield_until.clear()
+	if bot_players > 0: add_bot_players(bot_players)
 	peace = sim_rules.human_grace_ticks(diff_i) / 10.0  # RoWorld human grace (300/180/120 s)
 	elapsed = 0.0
 	sim_atk = SimAttacks.new(self, sim_rules)
@@ -237,3 +239,90 @@ func _place_start(t: int) -> void:
 	nations[PLAYER].troops = sim_rules.max_troops(SimRules.KIND_HUMAN, nations[PLAYER].land, 0, diff_i)
 	start_tile = t
 	# Do NOT reset deploy_t when placing or switching starting location!
+
+
+# ---------------- bot players and spawn shields (upstream Sim.luau / SimState.luau) ----------------
+func is_bot(id: int) -> bool:
+	return id > 0 and id < nations.size() and bool(nations[id].get("bot", false))
+
+func is_novice_bot(id: int) -> bool:
+	return is_bot(id) and int(nations[id].get("skill", -1)) == NOVICE_SKILL
+
+# The AI difficulty `id` plays at (its own for bot players, else the match's).
+func ai_difficulty(id: int) -> int:
+	if id > 0 and id < nations.size():
+		var s := int(nations[id].get("skill", -1))
+		if s >= 0: return s
+	return clampi(diff_i, 0, 2)
+
+# The difficulty whose human-protection rules `id` follows (SMART_VS_PLAYERS for a smart bot player).
+func human_difficulty(id: int) -> int:
+	var d := ai_difficulty(id)
+	if is_bot(id) and not is_novice_bot(id): return mini(d, SimRules.SMART_VS_PLAYERS)
+	return d
+
+# Troop rules `id` grows by: novice bot players use the Easy nation's cap and growth.
+func troop_kind(id: int) -> int:
+	return SimRules.KIND_NATION if is_novice_bot(id) else kind_of(id)
+
+func troop_diff(id: int) -> int:
+	return NOVICE_SKILL if is_novice_bot(id) else diff_i
+
+func start_troops_of(id: int) -> float:
+	if is_novice_bot(id): return sim_rules.start_troops(SimRules.KIND_NATION, NOVICE_SKILL)
+	return SimRules.START_TROOPS_HUMAN
+
+# A solo match has no other people in it (bot players count as people).
+func is_solo() -> bool:
+	for id in range(2, nations.size()):
+		if is_bot(id): return false
+	return true
+
+# `smart`: plays at SMART_SKILL with human troop numbers; otherwise a novice.
+func add_bot_player(display_name: String, smart: bool) -> int:
+	var col := Color.from_hsv(rng.randf(), rng.randf_range(0.55, 0.85), rng.randf_range(0.8, 0.95))
+	var id := _new_nation(display_name, col, true)
+	nations[id].bot = true
+	nations[id].skill = SMART_SKILL if smart else NOVICE_SKILL
+	nations[id].troops = start_troops_of(id)
+	var t := _random_start()
+	if t >= 0:
+		_claim_disc(id, t, sim_rules.spawn_radius); _spawn_note(t); nations[id].spawn_tile = t
+	else:
+		nations[id].alive = false
+	return id
+
+# Adds `n` bot players: smart_bots of them (random picks, deterministic for the match RNG) smart.
+func add_bot_players(n: int, names: Array = []) -> Array:
+	var smart := {}
+	var left := mini(smart_bots, n)
+	for k in range(1, n + 1):
+		if left > 0 and rng.randi() % (n - k + 1) < left:
+			smart[k] = true; left -= 1
+	if names.is_empty():
+		var taken := {}
+		for nn in nations: if nn is Dictionary and nn.has("name"): taken[nn.name] = true
+		names = BotNames.many(n, func() -> float: return rng.randf(), taken)
+	var out := []
+	for k in range(1, n + 1):
+		var nm: String = names[k - 1] if k - 1 < names.size() else "Player%d" % (1000 + k)
+		out.append(add_bot_player(nm, smart.has(k)))
+	return out
+
+# No one may attack `id` yet (its spawn shield).
+func shielded(id: int) -> bool:
+	return id > 0 and sim_atk != null and int(shield_until.get(id, 0)) > sim_atk.tick
+
+func shield_text(id: int) -> String:
+	var s := maxi(1, ceili((int(shield_until.get(id, 0)) - sim_atk.tick) / 10.0))
+	return "%s has a spawn shield for %d s" % [_nname(id), s]
+
+# Start of play: every person gets a spawn shield, unless the match is solo.
+func begin_shields() -> void:
+	shield_until.clear()
+	if is_solo() or sim_atk == null: return
+	for id in range(1, nations.size()):
+		if nations[id].alive and kind_of(id) == SimRules.KIND_HUMAN:
+			shield_until[id] = sim_atk.tick + SimRules.SPAWN_SHIELD_TICKS
+	if shielded(PLAYER):
+		notify("You have landed. Expand into free land! No one can attack you for %d s" % (SimRules.SPAWN_SHIELD_TICKS / 10), "good")

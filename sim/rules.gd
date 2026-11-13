@@ -58,6 +58,11 @@ const BOAT_ATTACK_FRACTION := 0.2
 const HUMAN_GRACE_TICKS := [3000, 1800, 1200]
 const HUMAN_GRACE_JITTER := 900
 const MAX_AI_WARS_ON_HUMAN := [1, 2, 3]
+# Spawn shield (matches with other people, not solo): no one can attack a person for this many ticks
+# from the start of play; attacking a person or nation drops one's own shield.
+const SPAWN_SHIELD_TICKS := 300
+# Smart bot players are no harsher towards players than this difficulty's AI (Easy).
+const SMART_VS_PLAYERS := 0
 const CAPITULATE_AGE := 12000
 const CAPITULATE_SHARE := 0.02
 const CAPITULATE_RATIO := 8.0

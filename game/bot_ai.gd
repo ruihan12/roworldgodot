@@ -15,15 +15,21 @@ func _ai_sea_tile_near(t: int, r: float) -> int:
 # SimAIEconomy.on_transport_sunk / on_trade_captured -> _retaliate (630-697)
 func ai_ship_loss(victim: int, tile: int, enemy: int) -> void:
 	if victim <= 0 or victim == PLAYER or victim >= nations.size() or enemy == victim or tile < 0: return
-	if kind_of(victim) != SimRules.KIND_NATION or not nations[victim].alive or diff_i <= 0 or owned_count(victim, 1) == 0: return
+	if not _tracks_ships(victim): return
 	if _count_ws(victim) >= WARSHIP_FLEET_CAP:
 		_ai_move_nearest_warship(victim, tile); return
-	if rng.randf() < WARSHIP_RETALIATE_P[clampi(diff_i, 0, 2)]:
+	if rng.randf() < WARSHIP_RETALIATE_P[ai_difficulty(victim)]:
 		var c6 := build_cost(victim, 6)
 		if owner_map[tile] != WATER or nations[victim].gold < c6 or not spawn_warship(victim, tile):
 			_ai_move_nearest_warship(victim, tile)
 		else:
 			nations[victim].gold -= c6
+
+# SimAIEconomy._tracks_ships: AI nations and bot players above Easy that own a port answer ship losses
+func _tracks_ships(id: int) -> bool:
+	return id > 0 and id != PLAYER and id < nations.size() and nations[id].alive \
+		and (kind_of(id) == SimRules.KIND_NATION or is_bot(id)) \
+		and ai_difficulty(id) > 0 and owned_count(id, 1) > 0
 
 # SimAIEconomy._move_nearest_warship: the nearest ship still near its patrol area takes `t` as its patrol tile
 func _ai_move_nearest_warship(id: int, t: int) -> void:

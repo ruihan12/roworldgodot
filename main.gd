@@ -114,6 +114,7 @@ func _process_inner(dt: float) -> void:
 		pick_ring.visible = true; pick_ring.queue_redraw()
 		if picked and deploy_t <= 0:
 			state = "play"
+			begin_shields()
 			if audio_dir != null: audio_dir.begin_match(); audio_dir.set_music_mood("calm")
 			_play_music()
 			_focus_player_smooth(2.6)

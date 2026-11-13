@@ -360,7 +360,7 @@ func _refresh_diplo() -> void:
 	var n = nations[diplo_who]
 	diplo_refs.sq.set_meta("col", n.color); diplo_refs.sq.queue_redraw()
 	diplo_refs.title.text = n.name + (" [TRAITOR]" if is_traitor(diplo_who) else "")
-	var status := "ALLY" if allied(PLAYER, diplo_who) else ("Nation" if is_prot(diplo_who) else "Tribe")
+	var status := "ALLY" if allied(PLAYER, diplo_who) else ("Player" if is_bot(diplo_who) else ("Nation" if is_prot(diplo_who) else "Tribe"))
 	diplo_refs.sub.text = "%s  ·  Troops: %s  ·  Land: %s" % [status, _fmt(n.troops), _pct(100.0 * n.land / maxf(1, land_total))]
 	if allied(PLAYER, diplo_who):
 		var left: float = allies.get(_akey(PLAYER, diplo_who), elapsed) - elapsed

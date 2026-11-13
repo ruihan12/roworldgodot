@@ -14,6 +14,7 @@ const SUITES := [
 	"res://tests/upstream/test_attacks.gd",
 	"res://tests/upstream/test_conquest.gd",
 	"res://tests/upstream/test_bot_ai.gd",
+	"res://tests/upstream/test_parity_godot.gd",
 ]
 
 func _init() -> void:
@@ -50,6 +51,12 @@ func _run() -> void:
 	else:
 		var inst2 = live.new()
 		await inst2.run(H, self)
+	var bots = load("res://tests/upstream/test_bots_live.gd")
+	if bots == null or not bots.can_instantiate():
+		H.section("bots live", "test_bots_live.gd")
+		H.fail("load test_bots_live.gd", "could not load bots live suite")
+	else:
+		await bots.new().run(H, self)
 	H.write_parity_md("res://docs/PARITY.md")
 	var n_pass: int = H.count(H.PASS)
 	var n_fail: int = H.count(H.FAIL)

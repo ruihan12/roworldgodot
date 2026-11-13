@@ -656,6 +656,15 @@ const BUILD_SFX := {0: "build_city", 1: "build_port", 2: "build_factory", 3: "bu
 var _pt_fail := 0
 var _pt_saved_unlocks := []
 
+# ---------------- bot players (upstream Sim.add_bot_players: public matches fill slots with them) ----------------
+# Only SMART_BOTS of them play at SMART_SKILL with human troop numbers; the rest are novices (Easy AI, Easy
+# nation troops). With any bot player in the match it is no longer solo, so spawn shields apply.
+var smart_bots := 2
+const NOVICE_SKILL := 0
+const SMART_SKILL := 1
+var bot_players := 0     # menu setting: how many bot players join the next match
+var shield_until := {}   # owner id -> sim tick its spawn shield ends
+
 
 # ---------------- forward declarations ----------------
 # Functions called from an earlier layer than the one that defines them. The real versions override these.
