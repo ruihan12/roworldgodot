@@ -1,0 +1,15 @@
+{
+ "ref": "src/client/UI/UIInteract.luau:1640-1690; src/client/Main.luau (M, Home)",
+ "keys": {
+  "Esc / X": "cancel (escape)",
+  "H": "toggle help",
+  "Tab": "toggle leaderboard (not on title)",
+  "Space": "primary action at hover (play/spawn)",
+  "Backspace": "retreat latest attack",
+  "Q / E": "attack ratio -/+ one stop (repeats while held)",
+  "Shift+Wheel": "attack ratio",
+  "1..9, 0": "select build/nuke action (UIRules.ACTIONS order)",
+  "M": "music toggle (Main)",
+  "Home": "focus your nation (Main)"
+ }
+}

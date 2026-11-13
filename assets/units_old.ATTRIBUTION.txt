@@ -1,0 +1,5 @@
+units_old.png: RoWorld's original unit atlas (13 x 13 px cells, 12 columns x 2 rows: row 0 territory
+colour, row 1 border colour), as shipped before RoWorld commit 16ae383 "update art assets"
+(2026-10-25 20:10 -0700), file assets/openfront/of_units.png at commit 16ae383^ (d7de3e3) of
+https://github.com/lukechatton/roworld. Upstream attribution for that atlas: "OpenFront (CC BY-SA 4.0)".
+The port uses only its ship columns (0 transport, 1 trade ship, 2 warship).

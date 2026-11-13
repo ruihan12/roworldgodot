@@ -1,0 +1,580 @@
+{
+ "source": "src/client/UI/UITheme.luau",
+ "design_size": [
+  1600,
+  900
+ ],
+ "ui_scale_rule": "desktop: clamp(min(vw/1600, vh/900), 0.75, 2.5); touch: clamp(.., 1.0, 2.0) (UITheme.luau:1312)",
+ "font": {
+  "family": "Rubik",
+  "weights": [
+   100,
+   200,
+   300,
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "roblox_font_id": 12187365977,
+  "line_em": 1.185,
+  "ascent_em": 0.935,
+  "tabular_digit_ratio": 0.975,
+  "ref": "src/client/UI/UITheme.luau:207-270",
+  "note": "Rubik is not shipped in the repo (Roblox asset id only)"
+ },
+ "tokens": {
+  "IS_ROBLOX": {
+   "ref": "src/client/UI/UITheme.luau:20",
+   "src": "IS_ROBLOX",
+   "kind": "other"
+  },
+  "GLASS": {
+   "ref": "src/client/UI/UITheme.luau:147",
+   "src": "UITheme.rgba(0.051, 0.075, 0.149, 0.84)",
+   "kind": "color",
+   "hex": "#0d1326",
+   "rgba": [
+    0.051,
+    0.075,
+    0.149,
+    0.84
+   ],
+   "comment": "#0d1326 @ 84 %"
+  },
+  "GLASS_SOLID": {
+   "ref": "src/client/UI/UITheme.luau:148",
+   "src": "UITheme.rgba(0.043, 0.062, 0.125, 0.96)",
+   "kind": "color",
+   "hex": "#0b1020",
+   "rgba": [
+    0.043,
+    0.062,
+    0.125,
+    0.96
+   ]
+  },
+  "GLASS_RAISED": {
+   "ref": "src/client/UI/UITheme.luau:149",
+   "src": "UITheme.rgba(0.1, 0.13, 0.24, 0.94)",
+   "kind": "color",
+   "hex": "#1a213d",
+   "rgba": [
+    0.1,
+    0.13,
+    0.24,
+    0.94
+   ]
+  },
+  "LINE": {
+   "ref": "src/client/UI/UITheme.luau:150",
+   "src": "UITheme.rgba(1.0, 1.0, 1.0, 0.1)",
+   "kind": "color",
+   "hex": "#ffffff",
+   "rgba": [
+    1.0,
+    1.0,
+    1.0,
+    0.1
+   ]
+  },
+  "LINE_2": {
+   "ref": "src/client/UI/UITheme.luau:151",
+   "src": "UITheme.rgba(1.0, 1.0, 1.0, 0.18)",
+   "kind": "color",
+   "hex": "#ffffff",
+   "rgba": [
+    1.0,
+    1.0,
+    1.0,
+    0.18
+   ]
+  },
+  "FILL": {
+   "ref": "src/client/UI/UITheme.luau:152",
+   "src": "UITheme.rgba(1.0, 1.0, 1.0, 0.06)",
+   "kind": "color",
+   "hex": "#ffffff",
+   "rgba": [
+    1.0,
+    1.0,
+    1.0,
+    0.06
+   ]
+  },
+  "FILL_2": {
+   "ref": "src/client/UI/UITheme.luau:153",
+   "src": "UITheme.rgba(1.0, 1.0, 1.0, 0.11)",
+   "kind": "color",
+   "hex": "#ffffff",
+   "rgba": [
+    1.0,
+    1.0,
+    1.0,
+    0.11
+   ]
+  },
+  "TEXT": {
+   "ref": "src/client/UI/UITheme.luau:154",
+   "src": "Color3.new(0.94, 0.955, 1.0)",
+   "kind": "color",
+   "hex": "#f0f4ff",
+   "rgba": [
+    0.94,
+    0.955,
+    1.0,
+    1.0
+   ]
+  },
+  "TEXT_2": {
+   "ref": "src/client/UI/UITheme.luau:155",
+   "src": "Color3.new(0.68, 0.73, 0.86)",
+   "kind": "color",
+   "hex": "#adbadb",
+   "rgba": [
+    0.68,
+    0.73,
+    0.86,
+    1.0
+   ]
+  },
+  "TEXT_3": {
+   "ref": "src/client/UI/UITheme.luau:156",
+   "src": "Color3.new(0.48, 0.53, 0.67)",
+   "kind": "color",
+   "hex": "#7a87ab",
+   "rgba": [
+    0.48,
+    0.53,
+    0.67,
+    1.0
+   ]
+  },
+  "AMBER": {
+   "ref": "src/client/UI/UITheme.luau:157",
+   "src": "Color3.new(1.0, 0.71, 0.278)",
+   "kind": "color",
+   "hex": "#ffb547",
+   "rgba": [
+    1.0,
+    0.71,
+    0.278,
+    1.0
+   ],
+   "comment": "#ffb547 primary actions"
+  },
+  "AMBER_HI": {
+   "ref": "src/client/UI/UITheme.luau:158",
+   "src": "Color3.new(1.0, 0.8, 0.47)",
+   "kind": "color",
+   "hex": "#ffcc78",
+   "rgba": [
+    1.0,
+    0.8,
+    0.47,
+    1.0
+   ]
+  },
+  "AMBER_LO": {
+   "ref": "src/client/UI/UITheme.luau:159",
+   "src": "Color3.new(0.8, 0.49, 0.13)",
+   "kind": "color",
+   "hex": "#cc7d21",
+   "rgba": [
+    0.8,
+    0.49,
+    0.13,
+    1.0
+   ]
+  },
+  "CYAN": {
+   "ref": "src/client/UI/UITheme.luau:160",
+   "src": "Color3.new(0.31, 0.82, 1.0)",
+   "kind": "color",
+   "hex": "#4fd1ff",
+   "rgba": [
+    0.31,
+    0.82,
+    1.0,
+    1.0
+   ],
+   "comment": "info"
+  },
+  "GREEN": {
+   "ref": "src/client/UI/UITheme.luau:161",
+   "src": "Color3.new(0.37, 0.89, 0.6)",
+   "kind": "color",
+   "hex": "#5ee399",
+   "rgba": [
+    0.37,
+    0.89,
+    0.6,
+    1.0
+   ]
+  },
+  "RED": {
+   "ref": "src/client/UI/UITheme.luau:162",
+   "src": "Color3.new(1.0, 0.33, 0.39)",
+   "kind": "color",
+   "hex": "#ff5463",
+   "rgba": [
+    1.0,
+    0.33,
+    0.39,
+    1.0
+   ]
+  },
+  "SURRENDER_RED": {
+   "ref": "src/client/UI/UITheme.luau:164",
+   "src": "Color3.fromRGB(222, 48, 60)",
+   "kind": "color",
+   "hex": "#de303c",
+   "rgba": [
+    0.8705882352941177,
+    0.18823529411764706,
+    0.23529411764705882,
+    1.0
+   ]
+  },
+  "SURRENDER_RED_HI": {
+   "ref": "src/client/UI/UITheme.luau:165",
+   "src": "Color3.fromRGB(240, 72, 82)",
+   "kind": "color",
+   "hex": "#f04852",
+   "rgba": [
+    0.9411764705882353,
+    0.2823529411764706,
+    0.3215686274509804,
+    1.0
+   ]
+  },
+  "SURRENDER_RED_LO": {
+   "ref": "src/client/UI/UITheme.luau:166",
+   "src": "Color3.fromRGB(140, 20, 32)",
+   "kind": "color",
+   "hex": "#8c1420",
+   "rgba": [
+    0.5490196078431373,
+    0.0784313725490196,
+    0.12549019607843137,
+    1.0
+   ]
+  },
+  "ORANGE": {
+   "ref": "src/client/UI/UITheme.luau:167",
+   "src": "Color3.new(1.0, 0.58, 0.36)",
+   "kind": "color",
+   "hex": "#ff945c",
+   "rgba": [
+    1.0,
+    0.58,
+    0.36,
+    1.0
+   ]
+  },
+  "VIOLET": {
+   "ref": "src/client/UI/UITheme.luau:168",
+   "src": "Color3.new(0.72, 0.62, 1.0)",
+   "kind": "color",
+   "hex": "#b89eff",
+   "rgba": [
+    0.72,
+    0.62,
+    1.0,
+    1.0
+   ]
+  },
+  "GOLD": {
+   "ref": "src/client/UI/UITheme.luau:169",
+   "src": "Color3.new(1.0, 0.84, 0.4)",
+   "kind": "color",
+   "hex": "#ffd666",
+   "rgba": [
+    1.0,
+    0.84,
+    0.4,
+    1.0
+   ]
+  },
+  "INK": {
+   "ref": "src/client/UI/UITheme.luau:170",
+   "src": "Color3.new(0.1, 0.066, 0.02)",
+   "kind": "color",
+   "hex": "#1a1105",
+   "rgba": [
+    0.1,
+    0.066,
+    0.02,
+    1.0
+   ],
+   "comment": "text on amber"
+  },
+  "WHITE": {
+   "ref": "src/client/UI/UITheme.luau:171",
+   "src": "Color3.new(1, 1, 1)",
+   "kind": "color",
+   "hex": "#ffffff",
+   "rgba": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "BLACK": {
+   "ref": "src/client/UI/UITheme.luau:172",
+   "src": "Color3.new(0, 0, 0)",
+   "kind": "color",
+   "hex": "#000000",
+   "rgba": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "CLEAR": {
+   "ref": "src/client/UI/UITheme.luau:173",
+   "src": "UITheme.rgba(0, 0, 0, 0)",
+   "kind": "color",
+   "hex": "#000000",
+   "rgba": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "S1": {
+   "ref": "src/client/UI/UITheme.luau:176",
+   "src": "4",
+   "kind": "number",
+   "value": 4.0
+  },
+  "S2": {
+   "ref": "src/client/UI/UITheme.luau:177",
+   "src": "8",
+   "kind": "number",
+   "value": 8.0
+  },
+  "S3": {
+   "ref": "src/client/UI/UITheme.luau:178",
+   "src": "12",
+   "kind": "number",
+   "value": 12.0
+  },
+  "S4": {
+   "ref": "src/client/UI/UITheme.luau:179",
+   "src": "16",
+   "kind": "number",
+   "value": 16.0
+  },
+  "S5": {
+   "ref": "src/client/UI/UITheme.luau:180",
+   "src": "24",
+   "kind": "number",
+   "value": 24.0
+  },
+  "S6": {
+   "ref": "src/client/UI/UITheme.luau:181",
+   "src": "32",
+   "kind": "number",
+   "value": 32.0
+  },
+  "S7": {
+   "ref": "src/client/UI/UITheme.luau:182",
+   "src": "48",
+   "kind": "number",
+   "value": 48.0
+  },
+  "R_SM": {
+   "ref": "src/client/UI/UITheme.luau:183",
+   "src": "6",
+   "kind": "number",
+   "value": 6.0
+  },
+  "R_MD": {
+   "ref": "src/client/UI/UITheme.luau:184",
+   "src": "10",
+   "kind": "number",
+   "value": 10.0
+  },
+  "R_LG": {
+   "ref": "src/client/UI/UITheme.luau:185",
+   "src": "14",
+   "kind": "number",
+   "value": 14.0
+  },
+  "GLASS_BOOST": {
+   "ref": "src/client/UI/UITheme.luau:191",
+   "src": "0.08",
+   "kind": "number",
+   "value": 0.08
+  },
+  "GLASS_SHEEN": {
+   "ref": "src/client/UI/UITheme.luau:193",
+   "src": "0.045",
+   "kind": "number",
+   "value": 0.045
+  },
+  "FONT_ID": {
+   "ref": "src/client/UI/UITheme.luau:207",
+   "src": "12187365977",
+   "kind": "number",
+   "value": 12187365977.0
+  },
+  "LINE_EM": {
+   "ref": "src/client/UI/UITheme.luau:209",
+   "src": "1.185",
+   "kind": "number",
+   "value": 1.185
+  },
+  "ASCENT_EM": {
+   "ref": "src/client/UI/UITheme.luau:211",
+   "src": "0.935",
+   "kind": "number",
+   "value": 0.935
+  },
+  "TNUM_RATIO": {
+   "ref": "src/client/UI/UITheme.luau:267",
+   "src": "0.975",
+   "kind": "number",
+   "value": 0.975
+  },
+  "RBX_BASELINE": {
+   "ref": "src/client/UI/UITheme.luau:270",
+   "src": "0.935 / 1.185",
+   "kind": "other"
+  },
+  "REF_TS": {
+   "ref": "src/client/UI/UITheme.luau:1132",
+   "src": "100",
+   "kind": "number",
+   "value": 100.0
+  },
+  "DESIGN_W": {
+   "ref": "src/client/UI/UITheme.luau:1305",
+   "src": "1600",
+   "kind": "number",
+   "value": 1600.0
+  },
+  "DESIGN_H": {
+   "ref": "src/client/UI/UITheme.luau:1306",
+   "src": "900",
+   "kind": "number",
+   "value": 900.0
+  },
+  "BUILTIN_ICONS": {
+   "ref": "src/client/UI/UITheme.luau:1333",
+   "src": "{",
+   "kind": "other"
+  }
+ },
+ "button_variants": {
+  "Button/GlassButton": {
+   "bg": "FILL",
+   "hover": "FILL_2",
+   "pressed": "rgba(1,1,1,0.03)",
+   "border": "LINE",
+   "border_hover": "LINE_2",
+   "font": "TEXT",
+   "weight": 600
+  },
+  "PublicButton": {
+   "bg": "CYAN@0.10",
+   "hover": "CYAN@0.18",
+   "pressed": "CYAN@0.06",
+   "border": "CYAN@0.55",
+   "border_hover": "CYAN@0.9",
+   "font": "TEXT",
+   "weight": 600
+  },
+  "GhostButton": {
+   "bg": "clear",
+   "hover": "FILL",
+   "pressed": "rgba(1,1,1,0.03)",
+   "border": "clear",
+   "font": "TEXT_2 (hover TEXT)",
+   "weight": 600
+  },
+  "DangerButton": {
+   "bg": "RED@0.14",
+   "hover": "RED@0.26",
+   "pressed": "RED@0.08",
+   "border": "RED@0.45",
+   "border_hover": "RED@0.8",
+   "font": "#ffc7cc",
+   "weight": 700
+  },
+  "ChipButton": {
+   "bg": "rgba(1,1,1,0.04)",
+   "hover": "FILL_2",
+   "pressed": "AMBER@0.2 border AMBER@0.9",
+   "radius": 999,
+   "pad_h": 14,
+   "font": "TEXT_2 (pressed AMBER_HI)",
+   "weight": 600,
+   "size": 13
+  },
+  "PrimaryButton": {
+   "bg": "AMBER",
+   "hover": "AMBER_HI",
+   "pressed": "lerp(AMBER_LO, AMBER, .5)",
+   "radius": "R_MD (10)",
+   "lip_bottom_px": 3,
+   "lip": "AMBER_LO",
+   "pad": [
+    22,
+    10
+   ],
+   "font": "INK",
+   "weight": 800,
+   "spacing": 2,
+   "size": 17
+  },
+  "SurrenderButton": {
+   "bg": "SURRENDER_RED",
+   "hover": "SURRENDER_RED_HI",
+   "lip": "SURRENDER_RED_LO",
+   "lip_bottom_px": 3,
+   "font": "white",
+   "weight": 800,
+   "spacing": 2,
+   "size": 17
+  },
+  "ref": "src/client/UI/UITheme.luau:1602-1760"
+ },
+ "glass_panel": {
+  "tint": "GLASS #0d1326 @0.84 (+GLASS_BOOST 0.08)",
+  "border": "1 px LINE",
+  "sheen": "top gradient GLASS_SHEEN 0.045 + sheen line",
+  "shadow": "9-slice soft shadow (Assets/UIKit.shadows)",
+  "ref": "src/client/UI/GlassPanel.luau:1-40"
+ },
+ "message_categories": {
+  "0 INFO": {
+   "color": "CYAN",
+   "icon": "info"
+  },
+  "1 GOOD": {
+   "color": "GREEN",
+   "icon": "crown"
+  },
+  "2 BAD": {
+   "color": "ORANGE",
+   "icon": "attack"
+  },
+  "3 ALERT": {
+   "color": "RED",
+   "icon": "target"
+  },
+  "4 ALLIANCE": {
+   "color": "VIOLET",
+   "icon": "alliance"
+  },
+  "ref": "src/client/UI/UITheme.luau:1420-1455; src/shared/Core/Defs.luau:126-130"
+ },
+ "owner_ui_color": "luminance < 0.32 -> lerp(col, white, 0.32 - l + 0.1) (UITheme.luau:1457)"
+}

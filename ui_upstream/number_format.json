@@ -1,0 +1,74 @@
+{
+ "render_number": {
+  "ref": "src/shared/Core/NumberFormat.luau:12-33",
+  "rule": "floored, never rounded; negatives/NaN -> 0",
+  "bands": [
+   [
+    ">=1e10",
+    "floor(n/1e8)/10 -> %.1fB"
+   ],
+   [
+    ">=1e9",
+    "floor(n/1e7)/100 -> %.2fB"
+   ],
+   [
+    ">=1e7",
+    "%.1fM"
+   ],
+   [
+    ">=1e6",
+    "%.2fM"
+   ],
+   [
+    ">=1e5",
+    "floor(n/1000) K (no decimals)"
+   ],
+   [
+    ">=1e4",
+    "%.1fK"
+   ],
+   [
+    ">=1e3",
+    "%.2fK"
+   ],
+   [
+    "<1e3",
+    "floor(n)"
+   ]
+  ],
+  "examples": {
+   "999": "999",
+   "1234": "1.23K",
+   "24567": "24.5K",
+   "123456": "123K",
+   "1259999": "1.25M",
+   "25000000": "25.0M",
+   "1999999999": "1.99B"
+  }
+ },
+ "render_troops": {
+  "ref": "src/shared/Core/NumberFormat.luau:36-38",
+  "rule": "render_number(troops / 10): internal 25,000 reads 2.50K"
+ },
+ "fmt_num (gold etc)": {
+  "ref": "src/client/UI/UITheme.luau:1890-1911",
+  "rule": ">=1e6: %.2fM below 1e7 else %.1fM; >=1e3: %.1fK below 1e5 else %dK; sign kept"
+ },
+ "fmt_cost": {
+  "ref": "src/client/UI/UITheme.luau:1918-1930",
+  "rule": "50K, 125K, 1M, 1.5M, 25M (integer when within 0.05)"
+ },
+ "fmt_pct": {
+  "ref": "src/client/UI/UITheme.luau:1932-1938",
+  "rule": ">=10%: %.1f%%; 0<p<1: %.2f%%; else %.1f%%"
+ },
+ "fmt_time": {
+  "ref": "src/client/UI/UITheme.luau:1940-1946",
+  "rule": "m:ss, h:mm:ss from 3600 s"
+ },
+ "fmt_rate": {
+  "ref": "src/client/UI/UITheme.luau:1948-1953",
+  "rule": "|v|<0.5 -> '±0/s'; else '+'/'−' + fmt_num(|v|) + '/s'"
+ },
+ "godot_port": "ui_upstream/number_format.gd"
+}

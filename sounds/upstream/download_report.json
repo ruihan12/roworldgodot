@@ -1,0 +1,5521 @@
+{
+ "unique_ids": 104,
+ "downloaded": 0,
+ "blocked_auth": 104,
+ "other_failed": 0,
+ "note": "Unauthenticated public routes only. 401/403 (HTTP or JSON error code) counted as blocked_auth; no cookies/tokens used.",
+ "results": [
+  {
+   "id": "119819342827167",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=119819342827167",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=119819342827167",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/119819342827167",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/119819342827167",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=119819342827167",
+     "final_url": "https://www.roblox.com/asset/?id=119819342827167",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "music",
+     "name": "menu",
+     "id": "119819342827167",
+     "length": 106.666667,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "135124812568552",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=135124812568552",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=135124812568552",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/135124812568552",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/135124812568552",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=135124812568552",
+     "final_url": "https://www.roblox.com/asset/?id=135124812568552",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "music",
+     "name": "war",
+     "id": "135124812568552",
+     "length": 160.0,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "80671689390668",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=80671689390668",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=80671689390668",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/80671689390668",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/80671689390668",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=80671689390668",
+     "final_url": "https://www.roblox.com/asset/?id=80671689390668",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "alliance",
+     "id": "80671689390668",
+     "length": 3.0,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "76363667987213",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=76363667987213",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=76363667987213",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/76363667987213",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/76363667987213",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=76363667987213",
+     "final_url": "https://www.roblox.com/asset/?id=76363667987213",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ally_request",
+     "id": "76363667987213",
+     "length": 0.9,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "131037562030943",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=131037562030943",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=131037562030943",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/131037562030943",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/131037562030943",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=131037562030943",
+     "final_url": "https://www.roblox.com/asset/?id=131037562030943",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "attack_launch",
+     "id": "131037562030943",
+     "length": 2.2,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "87171234508336",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=87171234508336",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=87171234508336",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/87171234508336",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/87171234508336",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=87171234508336",
+     "final_url": "https://www.roblox.com/asset/?id=87171234508336",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "betrayal",
+     "id": "87171234508336",
+     "length": 3.4,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "119923663006796",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=119923663006796",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=119923663006796",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/119923663006796",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/119923663006796",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=119923663006796",
+     "final_url": "https://www.roblox.com/asset/?id=119923663006796",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "boat_launch",
+     "id": "119923663006796",
+     "length": 2.6,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "119956264214848",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=119956264214848",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=119956264214848",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/119956264214848",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/119956264214848",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=119956264214848",
+     "final_url": "https://www.roblox.com/asset/?id=119956264214848",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "build",
+     "id": "119956264214848",
+     "length": 1.92839,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "122420079080602",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=122420079080602",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=122420079080602",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/122420079080602",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/122420079080602",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=122420079080602",
+     "final_url": "https://www.roblox.com/asset/?id=122420079080602",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "conquer",
+     "id": "122420079080602",
+     "length": 3.0,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "114459767206640",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=114459767206640",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=114459767206640",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/114459767206640",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/114459767206640",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=114459767206640",
+     "final_url": "https://www.roblox.com/asset/?id=114459767206640",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "countdown_tick",
+     "id": "114459767206640",
+     "length": 0.15,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "131279149950854",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=131279149950854",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=131279149950854",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/131279149950854",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/131279149950854",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=131279149950854",
+     "final_url": "https://www.roblox.com/asset/?id=131279149950854",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "defeat",
+     "id": "131279149950854",
+     "length": 7.8,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "138849772172266",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=138849772172266",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=138849772172266",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/138849772172266",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/138849772172266",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=138849772172266",
+     "final_url": "https://www.roblox.com/asset/?id=138849772172266",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "expand",
+     "id": "138849772172266",
+     "length": 0.6,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "129747968381169",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=129747968381169",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=129747968381169",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/129747968381169",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/129747968381169",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=129747968381169",
+     "final_url": "https://www.roblox.com/asset/?id=129747968381169",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "game_start",
+     "id": "129747968381169",
+     "length": 3.6,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "133482654460663",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=133482654460663",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=133482654460663",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/133482654460663",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/133482654460663",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=133482654460663",
+     "final_url": "https://www.roblox.com/asset/?id=133482654460663",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "nuke_alarm",
+     "id": "133482654460663",
+     "length": 2.799977,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "107524949221122",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=107524949221122",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=107524949221122",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/107524949221122",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/107524949221122",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=107524949221122",
+     "final_url": "https://www.roblox.com/asset/?id=107524949221122",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "nuke_explosion",
+     "id": "107524949221122",
+     "length": 6.0,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "107643516581150",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=107643516581150",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=107643516581150",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/107643516581150",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/107643516581150",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=107643516581150",
+     "final_url": "https://www.roblox.com/asset/?id=107643516581150",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "nuke_launch",
+     "id": "107643516581150",
+     "length": 4.2,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "101812584504363",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=101812584504363",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=101812584504363",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/101812584504363",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/101812584504363",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=101812584504363",
+     "final_url": "https://www.roblox.com/asset/?id=101812584504363",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "order_ack",
+     "id": "101812584504363",
+     "length": 0.25,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "133999046074598",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=133999046074598",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=133999046074598",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/133999046074598",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/133999046074598",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=133999046074598",
+     "final_url": "https://www.roblox.com/asset/?id=133999046074598",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "sam_intercept",
+     "id": "133999046074598",
+     "length": 1.6,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "80384143758890",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=80384143758890",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=80384143758890",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/80384143758890",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/80384143758890",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=80384143758890",
+     "final_url": "https://www.roblox.com/asset/?id=80384143758890",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "sam_launch",
+     "id": "80384143758890",
+     "length": 0.85,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "113814972330030",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=113814972330030",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=113814972330030",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/113814972330030",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/113814972330030",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=113814972330030",
+     "final_url": "https://www.roblox.com/asset/?id=113814972330030",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "shell_fire",
+     "id": "113814972330030",
+     "length": 0.3,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "102762424909390",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=102762424909390",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=102762424909390",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/102762424909390",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/102762424909390",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=102762424909390",
+     "final_url": "https://www.roblox.com/asset/?id=102762424909390",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "shell_hit",
+     "id": "102762424909390",
+     "length": 0.45,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "105503826549566",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=105503826549566",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=105503826549566",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/105503826549566",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/105503826549566",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=105503826549566",
+     "final_url": "https://www.roblox.com/asset/?id=105503826549566",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 68327,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "shell_splash",
+     "id": "105503826549566",
+     "length": 0.4,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "103679838735567",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=103679838735567",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=103679838735567",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/103679838735567",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/103679838735567",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=103679838735567",
+     "final_url": "https://www.roblox.com/asset/?id=103679838735567",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ship_sink",
+     "id": "103679838735567",
+     "length": 2.2,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "112455904288254",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=112455904288254",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=112455904288254",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/112455904288254",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/112455904288254",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=112455904288254",
+     "final_url": "https://www.roblox.com/asset/?id=112455904288254",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "spawn_confirm",
+     "id": "112455904288254",
+     "length": 2.4,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "121275079732861",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=121275079732861",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=121275079732861",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/121275079732861",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/121275079732861",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=121275079732861",
+     "final_url": "https://www.roblox.com/asset/?id=121275079732861",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_click",
+     "id": "121275079732861",
+     "length": 0.09,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "137511615641890",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=137511615641890",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=137511615641890",
+     "http_status": 0,
+     "error_code": 0,
+     "message": "RemoteDisconnected: Remote end closed connection without response",
+     "content_type": "",
+     "bytes": 0,
+     "auth_blocked": false
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/137511615641890",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/137511615641890",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=137511615641890",
+     "final_url": "https://www.roblox.com/asset/?id=137511615641890",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_error",
+     "id": "137511615641890",
+     "length": 0.239977,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "112598302834622",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=112598302834622",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=112598302834622",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/112598302834622",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/112598302834622",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=112598302834622",
+     "final_url": "https://www.roblox.com/asset/?id=112598302834622",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_hover",
+     "id": "112598302834622",
+     "length": 0.06,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "126880759102666",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=126880759102666",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=126880759102666",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/126880759102666",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/126880759102666",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=126880759102666",
+     "final_url": "https://www.roblox.com/asset/?id=126880759102666",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_open",
+     "id": "126880759102666",
+     "length": 0.9,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "123402733728835",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=123402733728835",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=123402733728835",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/123402733728835",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/123402733728835",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=123402733728835",
+     "final_url": "https://www.roblox.com/asset/?id=123402733728835",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "under_attack",
+     "id": "123402733728835",
+     "length": 1.3,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "121797809876876",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=121797809876876",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=121797809876876",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/121797809876876",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/121797809876876",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=121797809876876",
+     "final_url": "https://www.roblox.com/asset/?id=121797809876876",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "victory",
+     "id": "121797809876876",
+     "length": 11.5,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "92182220628518",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=92182220628518",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=92182220628518",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/92182220628518",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/92182220628518",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=92182220628518",
+     "final_url": "https://www.roblox.com/asset/?id=92182220628518",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "warship",
+     "id": "92182220628518",
+     "length": 3.6,
+     "layer": "Audio",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "81273460357550",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=81273460357550",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=81273460357550",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/81273460357550",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/81273460357550",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=81273460357550",
+     "final_url": "https://www.roblox.com/asset/?id=81273460357550",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "card_flip",
+     "id": "81273460357550",
+     "length": 0.300375,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "70407360475754",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=70407360475754",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=70407360475754",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/70407360475754",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/70407360475754",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=70407360475754",
+     "final_url": "https://www.roblox.com/asset/?id=70407360475754",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "card_whoosh",
+     "id": "70407360475754",
+     "length": 0.457625,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "118048118291946",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=118048118291946",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=118048118291946",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/118048118291946",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/118048118291946",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=118048118291946",
+     "final_url": "https://www.roblox.com/asset/?id=118048118291946",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "countdown_gamestart",
+     "id": "118048118291946",
+     "length": 3.25,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "99970982670087",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=99970982670087",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=99970982670087",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/99970982670087",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/99970982670087",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=99970982670087",
+     "final_url": "https://www.roblox.com/asset/?id=99970982670087",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "countdown_tick",
+     "id": "99970982670087",
+     "length": 0.111771,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "109434471633628",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=109434471633628",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=109434471633628",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/109434471633628",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/109434471633628",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=109434471633628",
+     "final_url": "https://www.roblox.com/asset/?id=109434471633628",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "countdown_tick_1",
+     "id": "109434471633628",
+     "length": 1.4,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "114826083997613",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=114826083997613",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=114826083997613",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/114826083997613",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/114826083997613",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=114826083997613",
+     "final_url": "https://www.roblox.com/asset/?id=114826083997613",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "countdown_tick_2",
+     "id": "114826083997613",
+     "length": 1.4,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "74993719691879",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=74993719691879",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=74993719691879",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/74993719691879",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/74993719691879",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=74993719691879",
+     "final_url": "https://www.roblox.com/asset/?id=74993719691879",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "countdown_tick_3",
+     "id": "74993719691879",
+     "length": 1.4,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "133000740914006",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=133000740914006",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=133000740914006",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/133000740914006",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/133000740914006",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=133000740914006",
+     "final_url": "https://www.roblox.com/asset/?id=133000740914006",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "countdown_tick_4",
+     "id": "133000740914006",
+     "length": 1.4,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "80168537102964",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=80168537102964",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=80168537102964",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/80168537102964",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/80168537102964",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=80168537102964",
+     "final_url": "https://www.roblox.com/asset/?id=80168537102964",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "countdown_tick_5",
+     "id": "80168537102964",
+     "length": 1.366667,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "96354123881208",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=96354123881208",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=96354123881208",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/96354123881208",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/96354123881208",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=96354123881208",
+     "final_url": "https://www.roblox.com/asset/?id=96354123881208",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 68327,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "crate_drop",
+     "id": "96354123881208",
+     "length": 1.42575,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "98407471885431",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=98407471885431",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=98407471885431",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/98407471885431",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/98407471885431",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=98407471885431",
+     "final_url": "https://www.roblox.com/asset/?id=98407471885431",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "crate_land",
+     "id": "98407471885431",
+     "length": 0.583333,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "135313643394021",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=135313643394021",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=135313643394021",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/135313643394021",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/135313643394021",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=135313643394021",
+     "final_url": "https://www.roblox.com/asset/?id=135313643394021",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "crate_open",
+     "id": "135313643394021",
+     "length": 1.483333,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "129689342966256",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=129689342966256",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=129689342966256",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/129689342966256",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/129689342966256",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=129689342966256",
+     "final_url": "https://www.roblox.com/asset/?id=129689342966256",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "crate_preview_common",
+     "id": "129689342966256",
+     "length": 2.15,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "100431569551164",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=100431569551164",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=100431569551164",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/100431569551164",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/100431569551164",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=100431569551164",
+     "final_url": "https://www.roblox.com/asset/?id=100431569551164",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "crate_preview_epic",
+     "id": "100431569551164",
+     "length": 2.15,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "105552830951867",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=105552830951867",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=105552830951867",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/105552830951867",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/105552830951867",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=105552830951867",
+     "final_url": "https://www.roblox.com/asset/?id=105552830951867",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "crate_preview_legendary",
+     "id": "105552830951867",
+     "length": 2.15,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "75814857038404",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=75814857038404",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=75814857038404",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/75814857038404",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/75814857038404",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=75814857038404",
+     "final_url": "https://www.roblox.com/asset/?id=75814857038404",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "crate_preview_rare",
+     "id": "75814857038404",
+     "length": 2.15,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "80028193110259",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=80028193110259",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=80028193110259",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/80028193110259",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/80028193110259",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=80028193110259",
+     "final_url": "https://www.roblox.com/asset/?id=80028193110259",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "crate_rattle",
+     "id": "80028193110259",
+     "length": 0.7,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "73738572377218",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=73738572377218",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=73738572377218",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/73738572377218",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/73738572377218",
+     "http_status": 0,
+     "error_code": 0,
+     "message": "RemoteDisconnected: Remote end closed connection without response",
+     "content_type": "",
+     "bytes": 0,
+     "auth_blocked": false
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=73738572377218",
+     "final_url": "https://www.roblox.com/asset/?id=73738572377218",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "crate_shimmer",
+     "id": "73738572377218",
+     "length": 4.333333,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "126270255394718",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=126270255394718",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=126270255394718",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/126270255394718",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/126270255394718",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=126270255394718",
+     "final_url": "https://www.roblox.com/asset/?id=126270255394718",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "game_start",
+     "id": "126270255394718",
+     "length": 6.733333,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "78362569380032",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=78362569380032",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=78362569380032",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/78362569380032",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/78362569380032",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=78362569380032",
+     "final_url": "https://www.roblox.com/asset/?id=78362569380032",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "queue_start",
+     "id": "78362569380032",
+     "length": 1.6,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "87392633895627",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=87392633895627",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=87392633895627",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/87392633895627",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/87392633895627",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=87392633895627",
+     "final_url": "https://www.roblox.com/asset/?id=87392633895627",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "reveal_common",
+     "id": "87392633895627",
+     "length": 2.666667,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "85656892324929",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=85656892324929",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=85656892324929",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/85656892324929",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/85656892324929",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=85656892324929",
+     "final_url": "https://www.roblox.com/asset/?id=85656892324929",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "reveal_epic",
+     "id": "85656892324929",
+     "length": 2.666667,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "96236095223389",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=96236095223389",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=96236095223389",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/96236095223389",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/96236095223389",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=96236095223389",
+     "final_url": "https://www.roblox.com/asset/?id=96236095223389",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "reveal_legendary",
+     "id": "96236095223389",
+     "length": 2.9,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "106670660694606",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=106670660694606",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=106670660694606",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/106670660694606",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/106670660694606",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=106670660694606",
+     "final_url": "https://www.roblox.com/asset/?id=106670660694606",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "reveal_rare",
+     "id": "106670660694606",
+     "length": 2.666667,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "80759209132207",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=80759209132207",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=80759209132207",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/80759209132207",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/80759209132207",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=80759209132207",
+     "final_url": "https://www.roblox.com/asset/?id=80759209132207",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "spawn_confirm",
+     "id": "80759209132207",
+     "length": 0.134172,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "135454629352621",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=135454629352621",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=135454629352621",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/135454629352621",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/135454629352621",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=135454629352621",
+     "final_url": "https://www.roblox.com/asset/?id=135454629352621",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "spectate_switch",
+     "id": "135454629352621",
+     "length": 0.235688,
+     "layer": "AudioExtra",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "135928986609872",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=135928986609872",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=135928986609872",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/135928986609872",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/135928986609872",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=135928986609872",
+     "final_url": "https://www.roblox.com/asset/?id=135928986609872",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "buy_spend",
+     "id": "135928986609872",
+     "length": 1.48424,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "120043172209226",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=120043172209226",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=120043172209226",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/120043172209226",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/120043172209226",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=120043172209226",
+     "final_url": "https://www.roblox.com/asset/?id=120043172209226",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "eliminate",
+     "id": "120043172209226",
+     "length": 0.610272,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "73033892219846",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=73033892219846",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=73033892219846",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/73033892219846",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/73033892219846",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=73033892219846",
+     "final_url": "https://www.roblox.com/asset/?id=73033892219846",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "expand_pop",
+     "id": "73033892219846",
+     "length": 0.12,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "79341616285127",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=79341616285127",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=79341616285127",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/79341616285127",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/79341616285127",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=79341616285127",
+     "final_url": "https://www.roblox.com/asset/?id=79341616285127",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "star_get",
+     "id": "79341616285127",
+     "length": 1.562313,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "101433123814195",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=101433123814195",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=101433123814195",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/101433123814195",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/101433123814195",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=101433123814195",
+     "final_url": "https://www.roblox.com/asset/?id=101433123814195",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "star_tick",
+     "id": "101433123814195",
+     "length": 0.120295,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "97472511838322",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=97472511838322",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=97472511838322",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/97472511838322",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/97472511838322",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=97472511838322",
+     "final_url": "https://www.roblox.com/asset/?id=97472511838322",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_back",
+     "id": "97472511838322",
+     "length": 0.185488,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "74811234814054",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=74811234814054",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=74811234814054",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/74811234814054",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/74811234814054",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=74811234814054",
+     "final_url": "https://www.roblox.com/asset/?id=74811234814054",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_click",
+     "id": "74811234814054",
+     "length": 0.080998,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "116194852281859",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=116194852281859",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=116194852281859",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/116194852281859",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/116194852281859",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=116194852281859",
+     "final_url": "https://www.roblox.com/asset/?id=116194852281859",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_confirm",
+     "id": "116194852281859",
+     "length": 0.797483,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "111088846575870",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=111088846575870",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=111088846575870",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/111088846575870",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/111088846575870",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=111088846575870",
+     "final_url": "https://www.roblox.com/asset/?id=111088846575870",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_error",
+     "id": "111088846575870",
+     "length": 0.163673,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "86373267632742",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=86373267632742",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=86373267632742",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/86373267632742",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/86373267632742",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=86373267632742",
+     "final_url": "https://www.roblox.com/asset/?id=86373267632742",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_hover",
+     "id": "86373267632742",
+     "length": 0.1,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "132883757044770",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=132883757044770",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=132883757044770",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/132883757044770",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/132883757044770",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=132883757044770",
+     "final_url": "https://www.roblox.com/asset/?id=132883757044770",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_locked",
+     "id": "132883757044770",
+     "length": 0.104966,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "127526089248512",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=127526089248512",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=127526089248512",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/127526089248512",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/127526089248512",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=127526089248512",
+     "final_url": "https://www.roblox.com/asset/?id=127526089248512",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_open",
+     "id": "127526089248512",
+     "length": 0.216349,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "114774423918929",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=114774423918929",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=114774423918929",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/114774423918929",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/114774423918929",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=114774423918929",
+     "final_url": "https://www.roblox.com/asset/?id=114774423918929",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "ui_tab",
+     "id": "114774423918929",
+     "length": 0.1,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "128664481828844",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=128664481828844",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=128664481828844",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/128664481828844",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/128664481828844",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=128664481828844",
+     "final_url": "https://www.roblox.com/asset/?id=128664481828844",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "sfx",
+     "name": "unlock",
+     "id": "128664481828844",
+     "length": 3.626417,
+     "layer": "AudioUI",
+     "title": "",
+     "pack": ""
+    }
+   ]
+  },
+  {
+   "id": "103848943777862",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=103848943777862",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=103848943777862",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/103848943777862",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/103848943777862",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=103848943777862",
+     "final_url": "https://www.roblox.com/asset/?id=103848943777862",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "a_moment_of_reflection",
+     "id": "103848943777862",
+     "length": 130.657483,
+     "layer": "Soundtrack",
+     "title": "A Moment of Reflection",
+     "pack": "Orchestral Ambients I: Tranquil"
+    }
+   ]
+  },
+  {
+   "id": "138934610379138",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=138934610379138",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=138934610379138",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/138934610379138",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/138934610379138",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=138934610379138",
+     "final_url": "https://www.roblox.com/asset/?id=138934610379138",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 68332,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "abandoned_fortress",
+     "id": "138934610379138",
+     "length": 137.773016,
+     "layer": "Soundtrack",
+     "title": "Abandoned Fortress",
+     "pack": "Orchestral Ambients V: Epic Heroic"
+    }
+   ]
+  },
+  {
+   "id": "73781218296935",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=73781218296935",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=73781218296935",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/73781218296935",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/73781218296935",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=73781218296935",
+     "final_url": "https://www.roblox.com/asset/?id=73781218296935",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "adventure_ahead",
+     "id": "73781218296935",
+     "length": 123.726213,
+     "layer": "Soundtrack",
+     "title": "Adventure Ahead",
+     "pack": "Orchestral Ambients II: Ominous"
+    }
+   ]
+  },
+  {
+   "id": "121171952566290",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=121171952566290",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=121171952566290",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/121171952566290",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/121171952566290",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=121171952566290",
+     "final_url": "https://www.roblox.com/asset/?id=121171952566290",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "ancient_conflict",
+     "id": "121171952566290",
+     "length": 151.043084,
+     "layer": "Soundtrack",
+     "title": "Ancient Conflict",
+     "pack": "Orchestral Ambients IV: Dark Fantasy"
+    }
+   ]
+  },
+  {
+   "id": "78337859424300",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=78337859424300",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=78337859424300",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/78337859424300",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/78337859424300",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=78337859424300",
+     "final_url": "https://www.roblox.com/asset/?id=78337859424300",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "clashing_destiny",
+     "id": "78337859424300",
+     "length": 128.134059,
+     "layer": "Soundtrack",
+     "title": "Clashing Destiny",
+     "pack": "War & Diplomacy: Strategy Ambients"
+    }
+   ]
+  },
+  {
+   "id": "129185222383065",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=129185222383065",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=129185222383065",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/129185222383065",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/129185222383065",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=129185222383065",
+     "final_url": "https://www.roblox.com/asset/?id=129185222383065",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "corrupt_policies",
+     "id": "129185222383065",
+     "length": 123.515669,
+     "layer": "Soundtrack",
+     "title": "Corrupt Policies",
+     "pack": "Orchestral Ambients II: Ominous"
+    }
+   ]
+  },
+  {
+   "id": "95885495017454",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=95885495017454",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=95885495017454",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/95885495017454",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/95885495017454",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=95885495017454",
+     "final_url": "https://www.roblox.com/asset/?id=95885495017454",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "cultural_heritage",
+     "id": "95885495017454",
+     "length": 128.712404,
+     "layer": "Soundtrack",
+     "title": "Cultural Heritage",
+     "pack": "Orchestral Ambients V: Epic Heroic"
+    }
+   ]
+  },
+  {
+   "id": "105501605636409",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=105501605636409",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=105501605636409",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/105501605636409",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/105501605636409",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=105501605636409",
+     "final_url": "https://www.roblox.com/asset/?id=105501605636409",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "culture_shock",
+     "id": "105501605636409",
+     "length": 130.604104,
+     "layer": "Soundtrack",
+     "title": "Culture Shock",
+     "pack": "Orchestral Ambients I: Tranquil"
+    }
+   ]
+  },
+  {
+   "id": "89609553615149",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=89609553615149",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=89609553615149",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/89609553615149",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/89609553615149",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=89609553615149",
+     "final_url": "https://www.roblox.com/asset/?id=89609553615149",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "dance_of_fate",
+     "id": "89609553615149",
+     "length": 143.402971,
+     "layer": "Soundtrack",
+     "title": "Dance of Fate",
+     "pack": "War & Diplomacy: Strategy Ambients"
+    }
+   ]
+  },
+  {
+   "id": "97137204171064",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=97137204171064",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=97137204171064",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/97137204171064",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/97137204171064",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=97137204171064",
+     "final_url": "https://www.roblox.com/asset/?id=97137204171064",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "defending_our_land",
+     "id": "97137204171064",
+     "length": 130.893107,
+     "layer": "Soundtrack",
+     "title": "Defending Our Land",
+     "pack": "Orchestral Ambients V: Epic Heroic"
+    }
+   ]
+  },
+  {
+   "id": "118865305729632",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=118865305729632",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=118865305729632",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/118865305729632",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/118865305729632",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=118865305729632",
+     "final_url": "https://www.roblox.com/asset/?id=118865305729632",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "diplomatic_exchange",
+     "id": "118865305729632",
+     "length": 122.907347,
+     "layer": "Soundtrack",
+     "title": "Diplomatic Exchange",
+     "pack": "Orchestral Ambients I: Tranquil"
+    }
+   ]
+  },
+  {
+   "id": "109944587012778",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=109944587012778",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=109944587012778",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/109944587012778",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/109944587012778",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=109944587012778",
+     "final_url": "https://www.roblox.com/asset/?id=109944587012778",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "foreign_traditions",
+     "id": "109944587012778",
+     "length": 114.622971,
+     "layer": "Soundtrack",
+     "title": "Foreign Traditions",
+     "pack": "Orchestral Ambients II: Ominous"
+    }
+   ]
+  },
+  {
+   "id": "111728643887700",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=111728643887700",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=111728643887700",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/111728643887700",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/111728643887700",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=111728643887700",
+     "final_url": "https://www.roblox.com/asset/?id=111728643887700",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "forgotten_glories",
+     "id": "111728643887700",
+     "length": 144.097279,
+     "layer": "Soundtrack",
+     "title": "Forgotten Glories",
+     "pack": "Orchestral Ambients I: Tranquil"
+    }
+   ]
+  },
+  {
+   "id": "124776205513186",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=124776205513186",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=124776205513186",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/124776205513186",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/124776205513186",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=124776205513186",
+     "final_url": "https://www.roblox.com/asset/?id=124776205513186",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "formidable_opponent",
+     "id": "124776205513186",
+     "length": 134.698798,
+     "layer": "Soundtrack",
+     "title": "Formidable Opponent",
+     "pack": "Orchestral Ambients V: Epic Heroic"
+    }
+   ]
+  },
+  {
+   "id": "99084679283816",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=99084679283816",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=99084679283816",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/99084679283816",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/99084679283816",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=99084679283816",
+     "final_url": "https://www.roblox.com/asset/?id=99084679283816",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "friend_or_foe",
+     "id": "99084679283816",
+     "length": 125.298866,
+     "layer": "Soundtrack",
+     "title": "Friend or Foe",
+     "pack": "War & Diplomacy: Strategy Ambients"
+    }
+   ]
+  },
+  {
+   "id": "77764187666253",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=77764187666253",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=77764187666253",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/77764187666253",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/77764187666253",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=77764187666253",
+     "final_url": "https://www.roblox.com/asset/?id=77764187666253",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "glorious_fortress",
+     "id": "77764187666253",
+     "length": 120.680159,
+     "layer": "Soundtrack",
+     "title": "Glorious Fortress",
+     "pack": "Orchestral Ambients V: Epic Heroic"
+    }
+   ]
+  },
+  {
+   "id": "79268728091508",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=79268728091508",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=79268728091508",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/79268728091508",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/79268728091508",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=79268728091508",
+     "final_url": "https://www.roblox.com/asset/?id=79268728091508",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 68332,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "glory_of_the_nation",
+     "id": "79268728091508",
+     "length": 135.216259,
+     "layer": "Soundtrack",
+     "title": "Glory of the Nation",
+     "pack": "Orchestral Ambients V: Epic Heroic"
+    }
+   ]
+  },
+  {
+   "id": "80300358179931",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=80300358179931",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=80300358179931",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/80300358179931",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/80300358179931",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=80300358179931",
+     "final_url": "https://www.roblox.com/asset/?id=80300358179931",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "grandiose_court",
+     "id": "80300358179931",
+     "length": 104.804331,
+     "layer": "Soundtrack",
+     "title": "Grandiose Court",
+     "pack": "Orchestral Ambients V: Epic Heroic"
+    }
+   ]
+  },
+  {
+   "id": "106910901244340",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=106910901244340",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=106910901244340",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/106910901244340",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/106910901244340",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=106910901244340",
+     "final_url": "https://www.roblox.com/asset/?id=106910901244340",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "heroes_of_the_past",
+     "id": "106910901244340",
+     "length": 124.120045,
+     "layer": "Soundtrack",
+     "title": "Heroes of the Past",
+     "pack": "War & Diplomacy: Strategy Ambients"
+    }
+   ]
+  },
+  {
+   "id": "78603094999291",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=78603094999291",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=78603094999291",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/78603094999291",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/78603094999291",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=78603094999291",
+     "final_url": "https://www.roblox.com/asset/?id=78603094999291",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "hope_is_our_ally",
+     "id": "78603094999291",
+     "length": 148.387166,
+     "layer": "Soundtrack",
+     "title": "Hope Is Our Ally",
+     "pack": "Orchestral Ambients V: Epic Heroic"
+    }
+   ]
+  },
+  {
+   "id": "92100401231387",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=92100401231387",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=92100401231387",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/92100401231387",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/92100401231387",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=92100401231387",
+     "final_url": "https://www.roblox.com/asset/?id=92100401231387",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "looking_for_answers",
+     "id": "92100401231387",
+     "length": 102.138367,
+     "layer": "Soundtrack",
+     "title": "Looking for Answers",
+     "pack": "Orchestral Ambients I: Tranquil"
+    }
+   ]
+  },
+  {
+   "id": "109777274614339",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=109777274614339",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=109777274614339",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/109777274614339",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/109777274614339",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=109777274614339",
+     "final_url": "https://www.roblox.com/asset/?id=109777274614339",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "march_of_war",
+     "id": "109777274614339",
+     "length": 131.662086,
+     "layer": "Soundtrack",
+     "title": "March of War",
+     "pack": "Orchestral Ambients V: Epic Heroic"
+    }
+   ]
+  },
+  {
+   "id": "131725857760070",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=131725857760070",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=131725857760070",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/131725857760070",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/131725857760070",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=131725857760070",
+     "final_url": "https://www.roblox.com/asset/?id=131725857760070",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "matters_of_the_court",
+     "id": "131725857760070",
+     "length": 122.474444,
+     "layer": "Soundtrack",
+     "title": "Matters of the Court",
+     "pack": "Orchestral Ambients II: Ominous"
+    }
+   ]
+  },
+  {
+   "id": "93812669649322",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=93812669649322",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=93812669649322",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/93812669649322",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/93812669649322",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=93812669649322",
+     "final_url": "https://www.roblox.com/asset/?id=93812669649322",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "national_emblem",
+     "id": "93812669649322",
+     "length": 122.844535,
+     "layer": "Soundtrack",
+     "title": "National Emblem",
+     "pack": "War & Diplomacy: Strategy Ambients"
+    }
+   ]
+  },
+  {
+   "id": "94804630664214",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=94804630664214",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=94804630664214",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/94804630664214",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/94804630664214",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=94804630664214",
+     "final_url": "https://www.roblox.com/asset/?id=94804630664214",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "path_to_greatness",
+     "id": "94804630664214",
+     "length": 138.60678,
+     "layer": "Soundtrack",
+     "title": "Path to Greatness",
+     "pack": "Orchestral Ambients IV: Dark Fantasy"
+    }
+   ]
+  },
+  {
+   "id": "113140343525219",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=113140343525219",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=113140343525219",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/113140343525219",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/113140343525219",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=113140343525219",
+     "final_url": "https://www.roblox.com/asset/?id=113140343525219",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "political_move",
+     "id": "113140343525219",
+     "length": 131.929002,
+     "layer": "Soundtrack",
+     "title": "Political Move",
+     "pack": "Orchestral Ambients II: Ominous"
+    }
+   ]
+  },
+  {
+   "id": "84481896840809",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=84481896840809",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=84481896840809",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/84481896840809",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/84481896840809",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=84481896840809",
+     "final_url": "https://www.roblox.com/asset/?id=84481896840809",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "revolutionary_thoughts",
+     "id": "84481896840809",
+     "length": 114.458141,
+     "layer": "Soundtrack",
+     "title": "Revolutionary Thoughts",
+     "pack": "War & Diplomacy: Strategy Ambients"
+    }
+   ]
+  },
+  {
+   "id": "136881656537600",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=136881656537600",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=136881656537600",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/136881656537600",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/136881656537600",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=136881656537600",
+     "final_url": "https://www.roblox.com/asset/?id=136881656537600",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "state_of_peril",
+     "id": "136881656537600",
+     "length": 152.400907,
+     "layer": "Soundtrack",
+     "title": "State of Peril",
+     "pack": "Orchestral Ambients II: Ominous"
+    }
+   ]
+  },
+  {
+   "id": "110624591560560",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=110624591560560",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=110624591560560",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/110624591560560",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/110624591560560",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=110624591560560",
+     "final_url": "https://www.roblox.com/asset/?id=110624591560560",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "stay_alert",
+     "id": "110624591560560",
+     "length": 97.846961,
+     "layer": "Soundtrack",
+     "title": "Stay Alert!",
+     "pack": "War & Diplomacy: Strategy Ambients"
+    }
+   ]
+  },
+  {
+   "id": "81822743811468",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=81822743811468",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=81822743811468",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/81822743811468",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/81822743811468",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=81822743811468",
+     "final_url": "https://www.roblox.com/asset/?id=81822743811468",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "unavoidable_consequence",
+     "id": "81822743811468",
+     "length": 83.609116,
+     "layer": "Soundtrack",
+     "title": "Unavoidable Consequence",
+     "pack": "Orchestral Ambients V: Epic Heroic"
+    }
+   ]
+  },
+  {
+   "id": "81129170141031",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=81129170141031",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=81129170141031",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/81129170141031",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/81129170141031",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=81129170141031",
+     "final_url": "https://www.roblox.com/asset/?id=81129170141031",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "uncertain_times",
+     "id": "81129170141031",
+     "length": 127.198526,
+     "layer": "Soundtrack",
+     "title": "Uncertain Times",
+     "pack": "War & Diplomacy: Strategy Ambients"
+    }
+   ]
+  },
+  {
+   "id": "83346563778066",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=83346563778066",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=83346563778066",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/83346563778066",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/83346563778066",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=83346563778066",
+     "final_url": "https://www.roblox.com/asset/?id=83346563778066",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67498,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "uncovering_the_past",
+     "id": "83346563778066",
+     "length": 136.226689,
+     "layer": "Soundtrack",
+     "title": "Uncovering the Past",
+     "pack": "War & Diplomacy: Strategy Ambients"
+    }
+   ]
+  },
+  {
+   "id": "82523073642281",
+   "ok": false,
+   "attempts": [
+    {
+     "route": "v1",
+     "url": "https://assetdelivery.roblox.com/v1/asset/?id=82523073642281",
+     "final_url": "https://assetdelivery.roblox.com/v1/asset/?id=82523073642281",
+     "http_status": 403,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json",
+     "bytes": 75,
+     "auth_blocked": true
+    },
+    {
+     "route": "v2",
+     "url": "https://assetdelivery.roblox.com/v2/assetId/82523073642281",
+     "final_url": "https://assetdelivery.roblox.com/v2/assetId/82523073642281",
+     "http_status": 200,
+     "error_code": 403,
+     "message": "User is not authorized to access Asset.",
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 186,
+     "auth_blocked": true
+    },
+    {
+     "route": "legacy",
+     "url": "https://www.roblox.com/asset/?id=82523073642281",
+     "final_url": "https://www.roblox.com/asset/?id=82523073642281",
+     "http_status": 404,
+     "error_code": 404,
+     "message": "HTTP Error 404: Not Found",
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 67503,
+     "auth_blocked": false
+    }
+   ],
+   "blocked_auth": true,
+   "status": 403,
+   "via": "",
+   "uses": [
+    {
+     "kind": "track",
+     "name": "war_declaration",
+     "id": "82523073642281",
+     "length": 141.098435,
+     "layer": "Soundtrack",
+     "title": "War Declaration",
+     "pack": "War & Diplomacy: Strategy Ambients"
+    }
+   ]
+  }
+ ]
+}

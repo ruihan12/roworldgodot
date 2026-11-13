@@ -1,0 +1,1094 @@
+{
+  "repo": "https://github.com/ruihan12/roworldgodot",
+  "commit": "ae7a3505e6f3736aef85fffc1879c0476f819c59",
+  "godot_png_count": 106,
+  "godot_byte_identical": 105,
+  "godot_port_only": [
+    "assets/ui/icbm.png"
+  ],
+  "repo_png_count": 231,
+  "repo_png_unique_hashes": 229,
+  "repo_not_in_godot_count": 125,
+  "repo_not_in_godot": [
+    "assets/branding/experience_icon_512.png",
+    "assets/globe/base_0_0.png",
+    "assets/globe/base_0_1.png",
+    "assets/globe/base_1_0.png",
+    "assets/globe/base_1_1.png",
+    "assets/globe/base_2_0.png",
+    "assets/globe/base_2_1.png",
+    "assets/globe/base_3_0.png",
+    "assets/globe/base_3_1.png",
+    "assets/globe/base_eq.png",
+    "assets/globe/cap_n.png",
+    "assets/globe/cap_s.png",
+    "assets/globe/col_0_0.png",
+    "assets/globe/col_0_1.png",
+    "assets/globe/col_1_0.png",
+    "assets/globe/col_1_1.png",
+    "assets/globe/col_2_0.png",
+    "assets/globe/col_2_1.png",
+    "assets/globe/col_3_0.png",
+    "assets/globe/col_3_1.png",
+    "assets/globe/dat_0_0.png",
+    "assets/globe/dat_0_1.png",
+    "assets/globe/dat_1_0.png",
+    "assets/globe/dat_1_1.png",
+    "assets/globe/dat_2_0.png",
+    "assets/globe/dat_2_1.png",
+    "assets/globe/dat_3_0.png",
+    "assets/globe/dat_3_1.png",
+    "assets/globe/m_col_0_0.png",
+    "assets/globe/m_col_1_0.png",
+    "assets/globe/m_dat_0_0.png",
+    "assets/globe/m_dat_1_0.png",
+    "assets/globe/moon.png",
+    "assets/globe/sky_bk.png",
+    "assets/globe/sky_dn.png",
+    "assets/globe/sky_ft.png",
+    "assets/globe/sky_lf.png",
+    "assets/globe/sky_rt.png",
+    "assets/globe/sky_up.png",
+    "assets/map_sprites/plates_one.png",
+    "assets/map_sprites/src/glyph_sheet.png",
+    "assets/map_sprites/src/status_sheet.png",
+    "assets/map_sprites/src/unit_glyph_sheet.png",
+    "assets/map_sprites/units_one.png",
+    "assets/shop_flags/art/anchor.png",
+    "assets/shop_flags/art/astronaut.png",
+    "assets/shop_flags/art/bat_moon.png",
+    "assets/shop_flags/art/big_red_button.png",
+    "assets/shop_flags/art/capybara.png",
+    "assets/shop_flags/art/cat.png",
+    "assets/shop_flags/art/cauldron.png",
+    "assets/shop_flags/art/comet.png",
+    "assets/shop_flags/art/dragon_dynasty.png",
+    "assets/shop_flags/art/frost_crown.png",
+    "assets/shop_flags/art/grinning_skull.png",
+    "assets/shop_flags/art/jolly_roger.png",
+    "assets/shop_flags/art/kraken.png",
+    "assets/shop_flags/art/lighthouse.png",
+    "assets/shop_flags/art/lion_crest.png",
+    "assets/shop_flags/art/mirv_storm.png",
+    "assets/shop_flags/art/phantom.png",
+    "assets/shop_flags/art/phoenix.png",
+    "assets/shop_flags/art/pizza.png",
+    "assets/shop_flags/art/pumpkin_king.png",
+    "assets/shop_flags/art/radioactive.png",
+    "assets/shop_flags/art/ringed_planet.png",
+    "assets/shop_flags/art/rocket.png",
+    "assets/shop_flags/art/rubber_duck.png",
+    "assets/shop_flags/art/spider_web.png",
+    "assets/shop_flags/art/thunder.png",
+    "assets/shop_flags/art/tornado.png",
+    "assets/shop_flags/art/volcano.png",
+    "assets/shop_flags/art/warhead.png",
+    "assets/shop_flags/art/wolf_pack.png",
+    "assets/ui_shapes/arrow_head.png",
+    "assets/ui_shapes/disc_glow.png",
+    "assets/ui_shapes/over_dim.png",
+    "assets/ui_shapes/radial_page_0.png",
+    "assets/ui_shapes/radial_page_1.png",
+    "assets/ui_shapes/radial_page_2.png",
+    "assets/ui_shapes/radial_page_3.png",
+    "assets/ui_shapes/radial_page_4.png",
+    "assets/ui_shapes/title_glow.png",
+    "assets/ui_shapes/title_vignette.png",
+    "tools/fx/out/blast_ring.png",
+    "tools/fx/out/blast_ring_soft.png",
+    "tools/fx/out/chevron1.png",
+    "tools/fx/out/chevron2.png",
+    "tools/fx/out/chevron3.png",
+    "tools/fx/out/dome.png",
+    "tools/fx/out/fill_disc.png",
+    "tools/fx/out/fill_flat.png",
+    "tools/fx/out/fill_mid.png",
+    "tools/fx/out/fill_out.png",
+    "tools/fx/out/glow_combat.png",
+    "tools/fx/out/glow_core.png",
+    "tools/fx/out/glow_flash.png",
+    "tools/fx/out/glow_soft.png",
+    "tools/fx/out/glow_wide.png",
+    "tools/fx/out/hot_core.png",
+    "tools/fx/out/probe_u0.png",
+    "tools/fx/out/ribbon_soft.png",
+    "tools/fx/out/ribbon_solid.png",
+    "tools/fx/out/ring_line_dash.png",
+    "tools/fx/out/ring_line_dot.png",
+    "tools/fx/out/ring_line_solid.png",
+    "tools/fx/out/ring_shock.png",
+    "tools/fx/out/ring_thin.png",
+    "tools/fx/out/scorch_ash.png",
+    "tools/fx/out/scorch_core.png",
+    "tools/fx/out/scorch_ember.png",
+    "tools/fx/out/sel_ring.png",
+    "tools/fx/out/smoke.png",
+    "tools/fx/out/spark.png",
+    "tools/fx/out/units_128.png",
+    "tools/fx/out/units_32.png",
+    "tools/fx/out/units_64.png",
+    "tools/fx/out/warhead_ring.png",
+    "tools/glyphs/out/chevrons.png",
+    "tools/glyphs/out/glyphs_128.png",
+    "tools/glyphs/out/glyphs_16.png",
+    "tools/glyphs/out/glyphs_32.png",
+    "tools/glyphs/out/glyphs_64.png",
+    "tools/glyphs/out/ring_arc.png",
+    "tools/glyphs/out/ring_track.png"
+  ],
+  "godot_pngs": [
+    {
+      "godot_path": "assets/arsenal/fx/beam.png",
+      "bytes": 443,
+      "sha256": "bd539f5afad010592d860dfe05d0d674251f29d3049ee20319d0f145d9506afd",
+      "repo_paths": [
+        "assets/arsenal/fx/beam.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/bomb.png",
+      "bytes": 2841,
+      "sha256": "250442753fabb54019ead00fb9310c61af51b086ca50862476cbde5c29c064fe",
+      "repo_paths": [
+        "assets/arsenal/fx/bomb.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/chute.png",
+      "bytes": 7637,
+      "sha256": "c5d5a9ae66f8b3a2944c3ac21d3804c6aff38439e70b9fef6e9ca333dd6f6938",
+      "repo_paths": [
+        "assets/arsenal/fx/chute.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/explosion.png",
+      "bytes": 126667,
+      "sha256": "cf0c5b048353f673a1d951eb895c7a5aaf495de3bf0fa4d1b374c8106c0596bb",
+      "repo_paths": [
+        "assets/arsenal/fx/explosion.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/glow.png",
+      "bytes": 3858,
+      "sha256": "43a293092852d3d442c3b677779d75c9e934b102a1209e38470ea621bba72fa7",
+      "repo_paths": [
+        "assets/arsenal/fx/glow.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/mushroom.png",
+      "bytes": 263210,
+      "sha256": "493cb7b634966f9e437ae7fc6aacf1e0a28adba5f0a0447f910df2a0f28b7e6c",
+      "repo_paths": [
+        "assets/arsenal/fx/mushroom.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/reticle.png",
+      "bytes": 4165,
+      "sha256": "57f1ce7e39d919fca053019345d88ef46c447d78554dfe383bff2efabbd67a03",
+      "repo_paths": [
+        "assets/arsenal/fx/reticle.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/ring.png",
+      "bytes": 17972,
+      "sha256": "22386d105f6fe6f63c157edf32036caa4bd65c8b14a63c2c80f4fe0b30f47af1",
+      "repo_paths": [
+        "assets/arsenal/fx/ring.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/scorch.png",
+      "bytes": 8630,
+      "sha256": "11669965dc79ec41af7b0e913a49bbbc38b937fe305b6371eb140fff9730bc13",
+      "repo_paths": [
+        "assets/arsenal/fx/scorch.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/smoke.png",
+      "bytes": 3728,
+      "sha256": "5afd0e06d671148f82736b2c8f968541d8d05e580306e418c794880eda64956a",
+      "repo_paths": [
+        "assets/arsenal/fx/smoke.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/spark.png",
+      "bytes": 946,
+      "sha256": "a56a7e95601de9123fd8892c54cefcd7185f32cd998d7d297c6fea9d8caf45e5",
+      "repo_paths": [
+        "assets/arsenal/fx/spark.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/tracer.png",
+      "bytes": 1126,
+      "sha256": "e3858aab038067f55799c5f394a3de824550c9863ca7329ec03a642d5e4468a5",
+      "repo_paths": [
+        "assets/arsenal/fx/tracer.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/fx/warhead.png",
+      "bytes": 2489,
+      "sha256": "f7f6a560588ab56cdd062e1a8cbe275d9f7f47d09e636312cfc1a164d31f6199",
+      "repo_paths": [
+        "assets/arsenal/fx/warhead.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/renders/airfield.png",
+      "bytes": 54101,
+      "sha256": "92e10999b18111e6320fe3a0d4f1f741838def2e3b60ee78bd5cfaf4e400e607",
+      "repo_paths": [
+        "assets/arsenal/renders/airfield.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/renders/artillery.png",
+      "bytes": 132286,
+      "sha256": "b90b1332c0132ae651081624c33f90d11d583b8d6788689548ab31d31c88552b",
+      "repo_paths": [
+        "assets/arsenal/renders/artillery.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/renders/mega.png",
+      "bytes": 81296,
+      "sha256": "ce2dc6c938393c6422709fab8728cdfe75d3b5e53269a34390bc77ad9e42e41b",
+      "repo_paths": [
+        "assets/arsenal/renders/mega.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/renders/railgun.png",
+      "bytes": 107014,
+      "sha256": "7b95de344727edbb9cc970de4e32e3a4140897bf778bc7fa81dc120e5b169466",
+      "repo_paths": [
+        "assets/arsenal/renders/railgun.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/renders/reinforce.png",
+      "bytes": 169758,
+      "sha256": "b26287f87701e810b7e64f8f3e23ac499c56948e50b8dcb6a8256a571bcee5bf",
+      "repo_paths": [
+        "assets/arsenal/renders/reinforce.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/renders/reload2x.png",
+      "bytes": 163248,
+      "sha256": "e5975751d105bd9aa492bb2117e10f43a8257d2ef3fa1711adba636cfce71794",
+      "repo_paths": [
+        "assets/arsenal/renders/reload2x.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/renders/scatter.png",
+      "bytes": 55748,
+      "sha256": "f220bf0c26935da084b8dde0091e0f2b6127a5877e17f5053d667b4de2d5a477",
+      "repo_paths": [
+        "assets/arsenal/renders/scatter.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/renders/stars2x.png",
+      "bytes": 131035,
+      "sha256": "ff45938ff86daf73e2d698c0dd71d98d3c1d93376090cbe85f70c29ce91d33a9",
+      "repo_paths": [
+        "assets/arsenal/renders/stars2x.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/airfield.png",
+      "bytes": 2459,
+      "sha256": "93da1db2b22b5b83a16e16b6d467abd1ddb62fa07ad47e740834ae354d106e12",
+      "repo_paths": [
+        "assets/arsenal/ui/airfield.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/airstrike.png",
+      "bytes": 5167,
+      "sha256": "f91e68ea3391acc65986e049d5be8bc4177f81878626c4885c41d49471fc72b9",
+      "repo_paths": [
+        "assets/arsenal/ui/airstrike.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/arsenal.png",
+      "bytes": 2817,
+      "sha256": "78ce96b710c1813aa29b5633eb8b27ad54800194933c21aeb91379bd08200bf1",
+      "repo_paths": [
+        "assets/arsenal/ui/arsenal.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/artillery.png",
+      "bytes": 3126,
+      "sha256": "88817a4d5cba06a15d14a3a3887ba612716310465ab3d924d424f754d78ef6f1",
+      "repo_paths": [
+        "assets/arsenal/ui/artillery.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/lock.png",
+      "bytes": 2619,
+      "sha256": "5d90bff463c20ebf172fefcdd28f1c34184d8009c65c62e20162632d6192af7d",
+      "repo_paths": [
+        "assets/arsenal/ui/lock.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/mega.png",
+      "bytes": 2945,
+      "sha256": "aa80f7233155dc6a325220de600517ccc16ee1b7a161a42768c13550597da962",
+      "repo_paths": [
+        "assets/arsenal/ui/mega.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/railgun.png",
+      "bytes": 3931,
+      "sha256": "cb45d163aedbe30ed3c355a3402e873f8ddda21116fb165220ec0c8054dd9673",
+      "repo_paths": [
+        "assets/arsenal/ui/railgun.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/reinforce.png",
+      "bytes": 2202,
+      "sha256": "57a88808aea85d0d4e19caa1392fbc2fed6f64798b7c8afe6473d07448952120",
+      "repo_paths": [
+        "assets/arsenal/ui/reinforce.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/reload.png",
+      "bytes": 3553,
+      "sha256": "922da2d19c626ffc394d6294e7c35377f73b735b72f3a6ca64f867516612d2dc",
+      "repo_paths": [
+        "assets/arsenal/ui/reload.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/scatter.png",
+      "bytes": 3683,
+      "sha256": "c10dad5c2f27fcf0bb98e8b417d6e2edcb33dcd2f0a6f145480319ac057e6bde",
+      "repo_paths": [
+        "assets/arsenal/ui/scatter.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/slug.png",
+      "bytes": 1861,
+      "sha256": "1825c5112c44d18a2839053b1d2620235100c04c6379a7bc2e2a77fd22965553",
+      "repo_paths": [
+        "assets/arsenal/ui/slug.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/arsenal/ui/star.png",
+      "bytes": 2899,
+      "sha256": "f5398805083e6ced53766b2cb1773423f702131d145ec3f3b2bbd0db804897d0",
+      "repo_paths": [
+        "assets/arsenal/ui/star.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/glyphs.png",
+      "bytes": 29639,
+      "sha256": "c3d464ffaee1a1bf4d965f2235e08ae455aeb364eb4453a3664bb363a3d3de46",
+      "repo_paths": [
+        "assets/map_sprites/glyphs.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/map_fx/map_fx.png",
+      "bytes": 18939,
+      "sha256": "3b521537721c3b8cf30e6f779dc9da082eb4e61f35e56b7e329400c90878cb26",
+      "repo_paths": [
+        "assets/map_fx/map_fx.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/plates.png",
+      "bytes": 16110,
+      "sha256": "72d0c62c4866500af80ac8fa257562368d7edda48ca73e5eb80a036f3d94b98d",
+      "repo_paths": [
+        "assets/map_sprites/plates.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/rails/bl.png",
+      "bytes": 122,
+      "sha256": "f0c6762a82fc0f29c88ed667bf75a9f0aa38b78219da6070d813b62d88681905",
+      "repo_paths": [
+        "assets/rails/bl.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/rails/br.png",
+      "bytes": 121,
+      "sha256": "9eb3e1a0b1db802f50ba34465d43b012154b12eef9d3440741f4f8a2f4ddd70a",
+      "repo_paths": [
+        "assets/rails/br.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/rails/h.png",
+      "bytes": 125,
+      "sha256": "071ef216a7d7cf15c47a377f291d8709f1a2e2de7735dccc2fc318c0da7f7d31",
+      "repo_paths": [
+        "assets/rails/h.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/rails/tl.png",
+      "bytes": 118,
+      "sha256": "b2420b9c57f32a0b793b16f9ab15062bd83532ae08933a801ba55cead2167841",
+      "repo_paths": [
+        "assets/rails/tl.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/rails/tr.png",
+      "bytes": 122,
+      "sha256": "757a9071395756c50e8a05bd5bb3cce0f215b993a5c647ecbfe659bd59aa0afc",
+      "repo_paths": [
+        "assets/rails/tr.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/rails/v.png",
+      "bytes": 125,
+      "sha256": "723a6b1261dc0b95ce3b5a7c46efcbc4c203bfe790ddcf995c3b69f2b79654ff",
+      "repo_paths": [
+        "assets/rails/v.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/status.png",
+      "bytes": 586341,
+      "sha256": "8d150a5c71166dd693f5f060a3740444bd4d120913ca2f34fd7bd123a3f3a7d7",
+      "repo_paths": [
+        "assets/map_sprites/status.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/airfield.png",
+      "bytes": 3804,
+      "sha256": "f14a6f5206c22d2cab65e1ed3783d3a0c7afaf369bac7c1e4efe11173d10e478",
+      "repo_paths": [
+        "assets/map_sprites/ui/airfield.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/artillery.png",
+      "bytes": 4747,
+      "sha256": "7f8808a11c73f2c58ff49f9cc1dad54ab7ec195a26ee0b5655e0f46ef762ee51",
+      "repo_paths": [
+        "assets/map_sprites/ui/artillery.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/atom.png",
+      "bytes": 2685,
+      "sha256": "b6973bb74673934e23d7d84f5e16e635ac9ed49f4600a672c30a69f3286fcc4f",
+      "repo_paths": [
+        "assets/map_sprites/ui/atom.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/boat.png",
+      "bytes": 2471,
+      "sha256": "14da4c8c0947ffcf8fb7659d539f50055e39c0a8ecaa57cec25a598f9b5274f1",
+      "repo_paths": [
+        "assets/map_sprites/ui/boat.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/city.png",
+      "bytes": 2144,
+      "sha256": "daffd31c4845c01f42b3ef9c28a9790d076f35acbe18895009963429bb5b75a0",
+      "repo_paths": [
+        "assets/map_sprites/ui/city.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/defense.png",
+      "bytes": 2916,
+      "sha256": "8def6188564f6f78320915edb58b6e7a68a9627fe7abaa98d0517356a65fefca",
+      "repo_paths": [
+        "assets/map_sprites/ui/defense.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/factory.png",
+      "bytes": 3228,
+      "sha256": "21162f9f3f2a161cfbba1ff45710c9ea1950ea94f498bd1694e0cab71fa61d3c",
+      "repo_paths": [
+        "assets/map_sprites/ui/factory.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/hydrogen.png",
+      "bytes": 3053,
+      "sha256": "683809018a63ebfad4faa1d371bad0965489b73f47ef50cc25e60f16932b66c0",
+      "repo_paths": [
+        "assets/map_sprites/ui/hydrogen.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/icbm.png",
+      "bytes": 3369,
+      "sha256": "271d02450e0a929f3852bce66d0c6d78be13218d30778a78ee2b574cedb5f103",
+      "repo_paths": [],
+      "status": "port-only"
+    },
+    {
+      "godot_path": "assets/ui/mirv.png",
+      "bytes": 3913,
+      "sha256": "eb1cab8a72b957201a60fad74c952a2ccfc67d1b44920e64e9d5c2f60d788631",
+      "repo_paths": [
+        "assets/map_sprites/ui/mirv.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/port.png",
+      "bytes": 4411,
+      "sha256": "939ed770dda87735108114f10c24f92f71908784dd02ac5349e1af0b46171580",
+      "repo_paths": [
+        "assets/map_sprites/ui/port.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/railgun.png",
+      "bytes": 3849,
+      "sha256": "a5cc9aefdb6f1d6176979a128f78a7986fb5ec8298845216ebe5fa9c9fa349dd",
+      "repo_paths": [
+        "assets/map_sprites/ui/railgun.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/sam.png",
+      "bytes": 3670,
+      "sha256": "299dae981f3bfd72376746e8ce804fbe259eb0ac469f7405365d0dc7fc2e6807",
+      "repo_paths": [
+        "assets/map_sprites/ui/sam.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/silo.png",
+      "bytes": 2800,
+      "sha256": "986358f25b49b3d7342633046ca10fc3fbd9d10181e82b1131cda54d92a550dc",
+      "repo_paths": [
+        "assets/map_sprites/ui/silo.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui/warship.png",
+      "bytes": 2615,
+      "sha256": "7bfe0d4c1c265c30c5591701977d51c7cbce5fdade12228f00287144172665c2",
+      "repo_paths": [
+        "assets/map_sprites/ui/warship.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/alliance.png",
+      "bytes": 1763,
+      "sha256": "d39b27e7fb371619dfa3e889930c5cf2f0950b7b5bb59ba830c8e2e8ed76e5a6",
+      "repo_paths": [
+        "assets/ui_icons/alliance.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/app_icon.png",
+      "bytes": 123378,
+      "sha256": "4ef53646373457da008353f99db6a98d800db70127a4a4b830a0cabf5a1ac69a",
+      "repo_paths": [
+        "assets/branding/logo_mark_512.png",
+        "assets/ui_icons/app_icon.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/atom.png",
+      "bytes": 2660,
+      "sha256": "7c8a0077cda4aceb24914d32fdbfaf28885052e0cbb515ae5fd0047ff0acf2c6",
+      "repo_paths": [
+        "assets/ui_icons/atom.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/attack.png",
+      "bytes": 1724,
+      "sha256": "cee38d7d22c0b61eb2ace0fe9b4a81bbe71e4530924682cd07ef9a685625904b",
+      "repo_paths": [
+        "assets/ui_icons/attack.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/betray.png",
+      "bytes": 1812,
+      "sha256": "f4ecd57f1a35ddaa4d1a0542028f13d1cc8fc80add84ab05707e8439dad40634",
+      "repo_paths": [
+        "assets/ui_icons/betray.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/boat.png",
+      "bytes": 1274,
+      "sha256": "85c11cb572c94dbacbff270787d697d5ae43737754be535e89e2d42f4b4c0332",
+      "repo_paths": [
+        "assets/ui_icons/boat.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/check.png",
+      "bytes": 1131,
+      "sha256": "d081758771fcff9cf70456d1b5f4de400f4e6b1dd052936a3cafa1ddc7707782",
+      "repo_paths": [
+        "assets/ui_icons/check.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/chevron.png",
+      "bytes": 840,
+      "sha256": "e673b5233cef1b6e1186f31b4c48e78566547c4fb9a6176c87c3efa5275ecd5e",
+      "repo_paths": [
+        "assets/ui_icons/chevron.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/city.png",
+      "bytes": 391,
+      "sha256": "c56ada53c7030a0f296c4a93d04120482e0de2dee852fe15b7680e39fac2e092",
+      "repo_paths": [
+        "assets/ui_icons/city.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/clock.png",
+      "bytes": 2202,
+      "sha256": "8b1aca5c804ef0f46f705d7c113585b23c8d4a818d7e9842b3cf1e2de50fff11",
+      "repo_paths": [
+        "assets/ui_icons/clock.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/close.png",
+      "bytes": 1188,
+      "sha256": "2c204b9ce4baaf183300544509cdff6080f0f605454be324b296566c2cbf561a",
+      "repo_paths": [
+        "assets/ui_icons/close.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/crown.png",
+      "bytes": 1529,
+      "sha256": "823a691ea2aa70a24ddce650e2ed5314073716092d81041b052fae3f7ccbe5b8",
+      "repo_paths": [
+        "assets/ui_icons/crown.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/defense.png",
+      "bytes": 1170,
+      "sha256": "6372b12ff7f5c4929331a3b15f509ae24d8bd80bc81961afb59e27181f0162b5",
+      "repo_paths": [
+        "assets/ui_icons/defense.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/donate.png",
+      "bytes": 1434,
+      "sha256": "e1b7016191304cdab0b01082cc68ec6d0d3246baf526b7853384db1299e6e8ea",
+      "repo_paths": [
+        "assets/ui_icons/donate.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/exit.png",
+      "bytes": 1123,
+      "sha256": "5e7fd59116a84d379e0dad6f22c6c9fa3eac0b5f0418ac2595c5cb107c92789c",
+      "repo_paths": [
+        "assets/ui_icons/exit.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/eye.png",
+      "bytes": 1861,
+      "sha256": "3ca8a89e08d83d0c6c48a63191f6fb0c270b9937b44f590dd559c4a7370d23bb",
+      "repo_paths": [
+        "assets/ui_icons/eye.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/factory.png",
+      "bytes": 536,
+      "sha256": "2c3bb1022730a1f3da734dea4d997f8cf3b0133c1d05b7ecc23f85325dcf1bd6",
+      "repo_paths": [
+        "assets/ui_icons/factory.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/github.png",
+      "bytes": 1999,
+      "sha256": "91b4779aeceea0805e19adb8a33cd2293102fe24a36f9a4516a134287236d642",
+      "repo_paths": [
+        "assets/ui_icons/github.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/globe.png",
+      "bytes": 2204,
+      "sha256": "699f2d1278af8c7932184f6966069be1690fdf048809217c2ac1d87a5481d3a5",
+      "repo_paths": [
+        "assets/ui_icons/globe.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/gold.png",
+      "bytes": 2531,
+      "sha256": "46d40296d14ef570f82f4b52aaef5be91517d369807de9c333a0e21df0d1d9dc",
+      "repo_paths": [
+        "assets/ui_icons/gold.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/help.png",
+      "bytes": 2101,
+      "sha256": "ed4a4a653220d673d184d367dddd9f1338240f166d8ba8e89d19578a5884f263",
+      "repo_paths": [
+        "assets/ui_icons/help.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/hud_exit.png",
+      "bytes": 903,
+      "sha256": "13cde3c4cb45664649c7cf33f8d5892efb86e8a409f7d3bda91816f19952fa60",
+      "repo_paths": [
+        "assets/ui_icons/hud_exit.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/hud_globe.png",
+      "bytes": 1740,
+      "sha256": "cd3e481ec58d9e306e2ed2ffb5ee2b9f8043674b42581a0aaccbe8660c851b6d",
+      "repo_paths": [
+        "assets/ui_icons/hud_globe.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/hud_help.png",
+      "bytes": 1610,
+      "sha256": "e09852744a919537fd837a43623c29117923e458ca9eed88f1ab808261ed53a9",
+      "repo_paths": [
+        "assets/ui_icons/hud_help.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/hud_leaderboard.png",
+      "bytes": 868,
+      "sha256": "82cbbf92d5d78e3d29fe386a8819d8beb62004cfc1b954e48d9007f5914ecb30",
+      "repo_paths": [
+        "assets/ui_icons/hud_leaderboard.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/hud_music_off.png",
+      "bytes": 1109,
+      "sha256": "40f2d1201f175efb896d80e099cd4a8eb8bd8caaf56ff66914f5b34f80c73a13",
+      "repo_paths": [
+        "assets/ui_icons/hud_music_off.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/hud_music_on.png",
+      "bytes": 907,
+      "sha256": "4be041ecc3777801888802407c14263b1c833e2c3e02200b0549f6bbfb69902d",
+      "repo_paths": [
+        "assets/ui_icons/hud_music_on.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/hud_settings.png",
+      "bytes": 1273,
+      "sha256": "654a6836b1a227b1167f3aef42c6eaf8202333099bcb4d44511dc80a66331658",
+      "repo_paths": [
+        "assets/ui_icons/hud_settings.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/hydrogen.png",
+      "bytes": 1281,
+      "sha256": "f61fa902b8eca0a80052b5214e4dabeca9f271b70313086afbff794c3ab52def",
+      "repo_paths": [
+        "assets/ui_icons/hydrogen.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/info.png",
+      "bytes": 1630,
+      "sha256": "5e65793e29fea2161116cc27128b63fb05b6f1285e801a204ba0a8e3667a60a3",
+      "repo_paths": [
+        "assets/ui_icons/info.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/layers.png",
+      "bytes": 1747,
+      "sha256": "db355dcbe718f2e68a02a7464757c2b5f2499710d7c8272c0b6b299c7cce81b8",
+      "repo_paths": [
+        "assets/ui_icons/layers.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/leaderboard.png",
+      "bytes": 1003,
+      "sha256": "5e67002787b9d11ea317d8e27dd4187f84b68109288546ddde28d9ce79690b3c",
+      "repo_paths": [
+        "assets/ui_icons/leaderboard.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/mirv.png",
+      "bytes": 1870,
+      "sha256": "745d98b5f474a511f761c33072c00aac9e11a2dd3b25e391521d6f9aca6ef759",
+      "repo_paths": [
+        "assets/ui_icons/mirv.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/music_off.png",
+      "bytes": 1313,
+      "sha256": "1bbd5cc046b482927f7294d0a51d1bfab1ce681317398b1f5e92dad76af13137",
+      "repo_paths": [
+        "assets/ui_icons/music_off.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/music_on.png",
+      "bytes": 1074,
+      "sha256": "d2c00f9b768eea701aa047d5eae56f6b6fe56759551457e70b4b5d19e011b57a",
+      "repo_paths": [
+        "assets/ui_icons/music_on.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/play.png",
+      "bytes": 1041,
+      "sha256": "d5d028e28c892409536b9bd6564b639fcb76570005aa22702f2a494c616acdc4",
+      "repo_paths": [
+        "assets/ui_icons/play.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/pops.png",
+      "bytes": 2159,
+      "sha256": "0ebf2a5490d8424f685abca919081a209ad7f54eff1105931deb44268c33b80f",
+      "repo_paths": [
+        "assets/ui_icons/pops.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/port.png",
+      "bytes": 1713,
+      "sha256": "d29f63d50da2a8b63bee57876ccdf31307c391263aea6258eac7d516cf360cb0",
+      "repo_paths": [
+        "assets/ui_icons/port.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/retreat.png",
+      "bytes": 1457,
+      "sha256": "2cb5b829e31c09275693fb2b64ae2809d356f424e9fc17cc8074fe834ecb8724",
+      "repo_paths": [
+        "assets/ui_icons/retreat.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/sam.png",
+      "bytes": 1434,
+      "sha256": "2394c0539b82159052f4701a318bd8bd2d0a04a600307acefee9f2ad0502bc79",
+      "repo_paths": [
+        "assets/ui_icons/sam.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/settings.png",
+      "bytes": 1666,
+      "sha256": "c59bc5074af4666871b7bac257521003f458abf7b67d1e0916ce08a83a45ec83",
+      "repo_paths": [
+        "assets/ui_icons/settings.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/silo.png",
+      "bytes": 1359,
+      "sha256": "f89721b610bb8f3a0a170706fd3b7c3d83a303086acb4e571a880feeb1bc33ec",
+      "repo_paths": [
+        "assets/ui_icons/silo.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/skull.png",
+      "bytes": 1687,
+      "sha256": "94bab540b538acb51894e05db432c61f8ebd1e31f8d649a6a9a4a393012f879b",
+      "repo_paths": [
+        "assets/ui_icons/skull.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/target.png",
+      "bytes": 1930,
+      "sha256": "9956de53c9a095d0147c8bca098dd0077aa6160c366f845345a1c3e5f1013c79",
+      "repo_paths": [
+        "assets/ui_icons/target.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/troops.png",
+      "bytes": 1289,
+      "sha256": "cd9e9ae42084cfcb49897ccd7df92cd15982027e2970948c1f7ebc545df8673e",
+      "repo_paths": [
+        "assets/ui_icons/troops.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/users.png",
+      "bytes": 1625,
+      "sha256": "52c78441fa866294757d87bcda096a7c914fb7056dc9c57df37f0faad381c6fa",
+      "repo_paths": [
+        "assets/ui_icons/users.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/ui_icons/warship.png",
+      "bytes": 1155,
+      "sha256": "2f671fd3d99a5ece355d93a01d3cd18c309f8e5b7fc6406fa215db4af210885c",
+      "repo_paths": [
+        "assets/ui_icons/warship.png"
+      ],
+      "status": "byte-identical to repo"
+    },
+    {
+      "godot_path": "assets/units.png",
+      "bytes": 504,
+      "sha256": "b8caa352d837d96c011ba1ab567700c1c5467d3819037439219590e699a3ecbd",
+      "repo_paths": [
+        "assets/map_sprites/units.png"
+      ],
+      "status": "byte-identical to repo"
+    }
+  ]
+}

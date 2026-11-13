@@ -1,0 +1,345 @@
+{
+ "build_kinds": [
+  "city",
+  "port",
+  "factory",
+  "defense",
+  "sam",
+  "silo",
+  "warship"
+ ],
+ "nuke_kinds": [
+  "atom",
+  "hydrogen",
+  "mirv"
+ ],
+ "hotkey_actions": {
+  "order": [
+   "city",
+   "port",
+   "factory",
+   "defense",
+   "sam",
+   "silo",
+   "warship",
+   "atom",
+   "hydrogen",
+   "mirv"
+  ],
+  "keys": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "0"
+  ],
+  "ref": "src/client/UI/UIRules.luau:39-40"
+ },
+ "arsenal": {
+  "build": [
+   "artillery",
+   "airfield",
+   "railgun"
+  ],
+  "nukes": [
+   "mega",
+   "scatter",
+   "airstrike",
+   "slug"
+  ],
+  "all": [
+   "artillery",
+   "airfield",
+   "railgun",
+   "mega",
+   "scatter",
+   "airstrike",
+   "slug",
+   "reinforce"
+  ],
+  "ref": "src/client/UI/UIRules.luau:44-46"
+ },
+ "titles": {
+  "city": {
+   "value": "City",
+   "ref": "src/client/UI/UIRules.luau:49"
+  },
+  "port": {
+   "value": "Port",
+   "ref": "src/client/UI/UIRules.luau:50"
+  },
+  "factory": {
+   "value": "Factory",
+   "ref": "src/client/UI/UIRules.luau:51"
+  },
+  "defense": {
+   "value": "Defense Post",
+   "ref": "src/client/UI/UIRules.luau:52"
+  },
+  "sam": {
+   "value": "SAM Launcher",
+   "ref": "src/client/UI/UIRules.luau:53"
+  },
+  "silo": {
+   "value": "Missile Silo",
+   "ref": "src/client/UI/UIRules.luau:54"
+  },
+  "warship": {
+   "value": "Warship",
+   "ref": "src/client/UI/UIRules.luau:55"
+  },
+  "atom": {
+   "value": "Atom Bomb",
+   "ref": "src/client/UI/UIRules.luau:56"
+  },
+  "hydrogen": {
+   "value": "Hydrogen Bomb",
+   "ref": "src/client/UI/UIRules.luau:57"
+  },
+  "mirv": {
+   "value": "MIRV",
+   "ref": "src/client/UI/UIRules.luau:58"
+  },
+  "artillery": {
+   "value": "Artillery",
+   "ref": "src/client/UI/UIRules.luau:59"
+  },
+  "airfield": {
+   "value": "Airfield",
+   "ref": "src/client/UI/UIRules.luau:60"
+  },
+  "railgun": {
+   "value": "Railgun",
+   "ref": "src/client/UI/UIRules.luau:61"
+  },
+  "mega": {
+   "value": "Mega Nuke",
+   "ref": "src/client/UI/UIRules.luau:62"
+  },
+  "scatter": {
+   "value": "Scattershot",
+   "ref": "src/client/UI/UIRules.luau:63"
+  },
+  "airstrike": {
+   "value": "Air Strike",
+   "ref": "src/client/UI/UIRules.luau:64"
+  },
+  "slug": {
+   "value": "Railgun Shot",
+   "ref": "src/client/UI/UIRules.luau:65"
+  },
+  "reinforce": {
+   "value": "Reinforcements",
+   "ref": "src/client/UI/UIRules.luau:66"
+  }
+ },
+ "short": {
+  "city": {
+   "value": "City",
+   "ref": "src/client/UI/UIRules.luau:69"
+  },
+  "port": {
+   "value": "Port",
+   "ref": "src/client/UI/UIRules.luau:70"
+  },
+  "factory": {
+   "value": "Factory",
+   "ref": "src/client/UI/UIRules.luau:71"
+  },
+  "defense": {
+   "value": "Defense",
+   "ref": "src/client/UI/UIRules.luau:72"
+  },
+  "sam": {
+   "value": "SAM",
+   "ref": "src/client/UI/UIRules.luau:73"
+  },
+  "silo": {
+   "value": "Silo",
+   "ref": "src/client/UI/UIRules.luau:74"
+  },
+  "warship": {
+   "value": "Warship",
+   "ref": "src/client/UI/UIRules.luau:75"
+  },
+  "atom": {
+   "value": "Atom",
+   "ref": "src/client/UI/UIRules.luau:76"
+  },
+  "hydrogen": {
+   "value": "H-Bomb",
+   "ref": "src/client/UI/UIRules.luau:77"
+  },
+  "mirv": {
+   "value": "MIRV",
+   "ref": "src/client/UI/UIRules.luau:78"
+  },
+  "artillery": {
+   "value": "Artillery",
+   "ref": "src/client/UI/UIRules.luau:79"
+  },
+  "airfield": {
+   "value": "Airfield",
+   "ref": "src/client/UI/UIRules.luau:80"
+  },
+  "railgun": {
+   "value": "Railgun",
+   "ref": "src/client/UI/UIRules.luau:81"
+  },
+  "mega": {
+   "value": "Mega",
+   "ref": "src/client/UI/UIRules.luau:82"
+  },
+  "scatter": {
+   "value": "Scatter",
+   "ref": "src/client/UI/UIRules.luau:83"
+  },
+  "airstrike": {
+   "value": "Strike",
+   "ref": "src/client/UI/UIRules.luau:84"
+  },
+  "slug": {
+   "value": "Slug",
+   "ref": "src/client/UI/UIRules.luau:85"
+  },
+  "reinforce": {
+   "value": "Troops",
+   "ref": "src/client/UI/UIRules.luau:86"
+  }
+ },
+ "blurbs": {
+  "city": {
+   "value": "Raises your troop cap by {city}. Joins the road network.",
+   "ref": "src/client/UI/UIRules.luau:89"
+  },
+  "port": {
+   "value": "Coastal. Sends trade ships for gold and builds warships.",
+   "ref": "src/client/UI/UIRules.luau:90"
+  },
+  "factory": {
+   "value": "Road hub. Trucks pay gold at every stop they pass.",
+   "ref": "src/client/UI/UIRules.luau:91"
+  },
+  "defense": {
+   "value": "Land within {def_r} tiles costs attackers {def_mag}x the troops and {def_cost}x the time.",
+   "ref": "src/client/UI/UIRules.luau:92"
+  },
+  "sam": {
+   "value": "Shoots down bombs aimed within {sam_r} tiles. MIRV warheads can't be stopped.",
+   "ref": "src/client/UI/UIRules.luau:93"
+  },
+  "silo": {
+   "value": "Required to launch nuclear weapons.",
+   "ref": "src/client/UI/UIRules.luau:94"
+  },
+  "warship": {
+   "value": "Patrols where you send it: sinks transports, then warships, and captures trade ships. Heals at your ports.",
+   "ref": "src/client/UI/UIRules.luau:95"
+  },
+  "atom": {
+   "value": "Small blast that wipes troops and structures, leaving fallout.",
+   "ref": "src/client/UI/UIRules.luau:96"
+  },
+  "hydrogen": {
+   "value": "Massive blast. Anything inside is erased.",
+   "ref": "src/client/UI/UIRules.luau:97"
+  },
+  "mirv": {
+   "value": "Splits into up to {mirv_n} warheads that rain over one nation.",
+   "ref": "src/client/UI/UIRules.luau:98"
+  },
+  "artillery": {
+   "value": "Shells every enemy within {art_r} tiles on its own: their troops, and the structures it reaches.",
+   "ref": "src/client/UI/UIRules.luau:99"
+  },
+  "airfield": {
+   "value": "Flies Air Strikes on any spot within {air_r} tiles. Rearms in {air_s} s.",
+   "ref": "src/client/UI/UIRules.luau:100"
+  },
+  "railgun": {
+   "value": "Fires at any spot on the map. Reloads in {rail_s} s.",
+   "ref": "src/client/UI/UIRules.luau:101"
+  },
+  "mega": {
+   "value": "Twice an Atom Bomb's radius: four times the ground, gone.",
+   "ref": "src/client/UI/UIRules.luau:102"
+  },
+  "scatter": {
+   "value": "An Atom Bomb with {scat_lo} to {scat_hi} warheads that come down around it.",
+   "ref": "src/client/UI/UIRules.luau:103"
+  },
+  "airstrike": {
+   "value": "Bombs a {air_blast}-tile circle: kills troops and wrecks structures. No SAM can stop it.",
+   "ref": "src/client/UI/UIRules.luau:104"
+  },
+  "slug": {
+   "value": "A slug that takes a level off every structure it hits. Nothing intercepts it.",
+   "ref": "src/client/UI/UIRules.luau:105"
+  },
+  "reinforce": {
+   "value": "Brings a fifth of your troop cap at once. Ready again every {rein_s} s.",
+   "ref": "src/client/UI/UIRules.luau:106"
+  }
+ },
+ "place_reasons": {
+  "not_own": {
+   "value": "Build on your own land",
+   "ref": "src/client/UI/UIRules.luau:769"
+  },
+  "no_room": {
+   "value": "No room here: structures need space",
+   "ref": "src/client/UI/UIRules.luau:770"
+  },
+  "no_coast": {
+   "value": "Ports must be on your coast",
+   "ref": "src/client/UI/UIRules.luau:771"
+  },
+  "no_port": {
+   "value": "Warships need a finished port on this water",
+   "ref": "src/client/UI/UIRules.luau:772"
+  },
+  "gold": {
+   "value": "Not enough gold",
+   "ref": "src/client/UI/UIRules.luau:773"
+  },
+  "invalid": {
+   "value": "Can't build here",
+   "ref": "src/client/UI/UIRules.luau:774"
+  }
+ },
+ "upgradable": [
+  "city",
+  "port",
+  "factory",
+  "sam",
+  "silo"
+ ],
+ "bulk_steps": {
+  "structure": [
+   5,
+   10
+  ],
+  "nuke": [
+   2,
+   5
+  ],
+  "max": 50,
+  "ref": "src/client/UI/UIRules.luau:651-660"
+ },
+ "ratio_stops": {
+  "value": [
+   0.1,
+   0.25,
+   0.35,
+   0.5,
+   0.75
+  ],
+  "default": 0.25,
+  "ref": "src/client/UI/UICtx.luau:52-55"
+ }
+}

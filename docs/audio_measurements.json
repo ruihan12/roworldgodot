@@ -1,0 +1,123 @@
+{
+  "sr": 22050,
+  "tracks": {
+    "pad": {
+      "sha256": "0b6744018e0ed470d741f90b29d4ca95fd1e688507039f91def7d333d6b0e526",
+      "seconds": 32.0,
+      "rms": 0.0641,
+      "ncc": {
+        "transport_ship_2s": {
+          "max": 0.0262,
+          "at_s": 11.191
+        },
+        "conquered_2s": {
+          "max": 0.0114,
+          "at_s": 6.614
+        }
+      }
+    },
+    "rejected_menu": {
+      "sha256": "55bc3a4c6f9fa5e90f6179ba899e42e89d4983b74668ecf2b811c053b52940fc",
+      "seconds": 82.86,
+      "rms": 0.1231,
+      "ncc": {
+        "transport_ship_2s": {
+          "max": 0.1151,
+          "at_s": 20.407
+        },
+        "conquered_2s": {
+          "max": 0.0514,
+          "at_s": 71.371
+        }
+      }
+    },
+    "rejected_war": {
+      "sha256": "8d28c29c3419d545fcf3d0c9afae45ed1d1829062bd7631ffdcd5bbb2d3decd3",
+      "seconds": 128.185,
+      "rms": 0.0978,
+      "ncc": {
+        "transport_ship_2s": {
+          "max": 0.1057,
+          "at_s": 33.981
+        },
+        "conquered_2s": {
+          "max": 0.0791,
+          "at_s": 99.37
+        }
+      }
+    },
+    "city_ambience": {
+      "sha256": "a53937f02e3d2eb938894f515e8cb425b123934199fe9a869f0adb7ebd3190b7",
+      "seconds": 30.067,
+      "rms": 0.1329,
+      "ncc": {
+        "transport_ship_2s": {
+          "max": 0.0778,
+          "at_s": 7.466
+        },
+        "conquered_2s": {
+          "max": 0.0538,
+          "at_s": 7.615
+        }
+      }
+    }
+  },
+  "sfx_sha256": {
+    "alliance-accepted.mp3": "cb1209ef06bc57e47b82dc222e8c817575dd9f371fe77f25fd1742e874ee7921",
+    "alliance-broken.mp3": "fa06751d1e1ac2e829283e6f10eae7c91120c1c3183d3b0f2e8b1ae2d0624246",
+    "alliance-declined.mp3": "5d3a136598dd79715af21e62cbaf08764bc30a398728d9ea2057c47f7bbff16c",
+    "alliance-suggested.mp3": "5801b6a6812274546c70d0c444c1bf32e556da3e45bd5b1db1d87c816d6a3971",
+    "atom-hit.mp3": "142c255f46b5e9c80600ee8a57350142318d73373d6791384da9e19ea4b9a78f",
+    "atom-launch.mp3": "94df59d76a4ed96b1b38f6912a809a60a9178d6c26ea561da8e33ef492a053f8",
+    "build-city.mp3": "afc51ff0589e4ddf77a162a883fb68db432ed1328f00c9b6323c427d888cf7e5",
+    "build-defense-post.mp3": "a5e0f02f6432f2ff77ba073b9a6c2afa1f9f7808bb8524acf7debb7b181aafc1",
+    "build-factory.mp3": "5b4feeed03bf9c60c5c03e1810ef041653ed234414e5a5ce516a11a87293852f",
+    "build-port.mp3": "24d70ddc80a7df26a048c15927658fb8ca6dc5bd7df074f582ff39916107f05d",
+    "build-train-station.mp3": "19c88b88469a098c5559981e0c8f453572c5fdd5695d0da3363cf44010f0b9d9",
+    "build-warship.mp3": "bc7ed6385801a33d256dc46c91200b694d89e9e8ff4968031547973e055fd67c",
+    "city.mp3": "a53937f02e3d2eb938894f515e8cb425b123934199fe9a869f0adb7ebd3190b7",
+    "click-1.mp3": "7ba60358a437c3e7141199345b1e9ee278eb8c1131fc61fcc5e7915db55c067b",
+    "click-2.mp3": "a507ac0c7746731321e2fefec4b3a6914150de407ff58d3bcafa0ce9c6ef12d5",
+    "click-3.mp3": "f179f2c3f0592870621b9d38cd03c2258c3807f872f24988ea55efdb237a1030",
+    "click.mp3": "fcde9d87c193a4f73cfe0655daf2b1b03abc94753edb15eaaf3d726abe24ae98",
+    "conquered.mp3": "96d6eca5ebf2a2befb1cf5689ed49c2e9763d140127971a97733ad5dbcf85663",
+    "defeat.mp3": "c755c9704a8b7409781821185c661edbcdac19db5c05ae28093a00a324399362",
+    "factory.mp3": "09721ba9687fc3761007a31fdce8edecd5fa548441fab0da8b0a516e49929942",
+    "game-start.mp3": "9ed0b5e20b5c655341f7500036360a231819b23aaf77501842f7c2baff58dbba",
+    "hydrogen-hit.mp3": "bce553439c816f4999bdbb78a77aff82cf0001cae5c11fc1ba257acc49b999cb",
+    "hydrogen-launch.mp3": "675f0c49fbb1d23fc10e26aef1c54c1385af5894379ef44ac069a42f55f92b2f",
+    "ka-ching.mp3": "4325327f4935f98d7799a3f5f191dd9337b0210d2cd5a803d8347622c3365faa",
+    "mirv-launch.mp3": "761a0f9efeb00562c9acc907156ee0fff016dd2cacfdcc2b2b322d4ec83367d6",
+    "missile-silo.mp3": "1673192f2484f96ee44535f7969a166ec997970e229b17b3f3a88b14788f71a7",
+    "nuke-warning.mp3": "8c7a75b45ab28ffcab50709087981661f474bc622f261adf3e742327501b91f2",
+    "sam-built.mp3": "beda613d237dc554df6a4954f292c807a88adb9a7b957f6504df7eafd0fa23eb",
+    "sam-hit.mp3": "64fbe7f903435a43f9ef46cdfcb60070998f46a0e9532fd6b87d72676c21cce5",
+    "sam-shoot.mp3": "0346f0d3a4f36bbcb674181a11b08f909c185d849f282f82938e6079031f11cf",
+    "sam-silo.mp3": "acaa7a84980afd97d4076383960530cc3a5636ffb0ac8fc92d1a1aabdcad3763",
+    "silo-built.mp3": "30c724e5233989082e440ae43216e28a488684d3d6afdcd41aa428d5dc209b0a",
+    "slider.mp3": "904ad1e544beebcc3303aa05f89189746484a567a6a504825392b640ab41d758",
+    "spawn.mp3": "d33aeedf2bc46af2ed14e144edbe66a2e1637076d3494f147ea6a415dc961248",
+    "transport-ship.mp3": "92a971ba9361bfcce636bf3b410cbbea3d3d410bcd18ea531f61214eed9a840b",
+    "victory.mp3": "4a01b0a8f93e9ca0b64d7b865e3d22211cce0fc2a1df5b356ddabe5a0a4ca814",
+    "warship-lost.mp3": "b0426fd6d4da12551eb9c2cfd5d273a2b7f4cc9d3ea5f2d3ff701bfe4767bc03",
+    "warship-shot.mp3": "5611afbfa1355abaf9391dc7768e55bb2499e801086eb5d0cf3f2b9c12ddd6a3"
+  },
+  "calibration_boat_mixed_into_pad_db": {
+    "0": {
+      "ncc": 0.9776,
+      "t": 2.0
+    },
+    "-12": {
+      "ncc": 0.7597,
+      "t": 2.0
+    },
+    "-24": {
+      "ncc": 0.2822,
+      "t": 2.0
+    },
+    "-30": {
+      "ncc": 0.1465,
+      "t": 2.0
+    }
+  }
+}

@@ -1,0 +1,550 @@
+{
+ "src/client/Main.luau": {
+  "lines": 645,
+  "header": "Port of scripts/main.gd: the client root. Creates the AudioDirector, the globe (WorldView) and the\ninterface (UIRoot), wires them to the Session, and owns the top-bar buttons that the original put in\nAirship's HUD bar: Music toggle (also key M), Help, Leaderboard, Home → focus your nation (also key\nHome) and the Game menu. The buttons sit in Roblox's own top-bar row, right of Roblox's menu / chat\nbuttons (GuiService.TopbarInset), styled like them. Match-only buttons hide on the title screen.\n\nUIRoot must NOT bind M / Home or call world:bind_state itself (DESIGN.md §10).\nMissing modules (during development) are skipped so boot never errors."
+ },
+ "src/client/Session.luau": {
+  "lines": 1775,
+  "header": "Port of scripts/net/session.gd (client half): match orchestration for the title attract mode, solo\ncampaigns and the shared multiplayer match. Same public API and signals as session.gd.\n\n  MODE_TITLE  local AI-only Sim (88 nations + tribes): a fast warm-up time-lapse, then TITLE_SPEED\n  MODE_SOLO   local Sim with one human, paused while help / game menu are open\n  MODE_MULTI  the server's Sim (src/server/MatchServer.luau): snapshot then per-tick deltas\n\nsession.gd built and stepped local sims on a worker thread. Roblox gives game scripts no worker\nthreads, so here:\n  * match construction (Sim.new, add_human, snapshot, GameState load) and multiplayer snapshot\n    decoding run in a Coop job (Net/Coop.luau) resumed every frame with BUILD_BUDGET_S — the previous\n    world keeps animating meanwhile, and nothing blocks a frame as long as the Core loops call\n    Coop.check();\n  * local stepping is budgeted: a tick's step is itself a Coop job (the Sim's loops call\n    Coop.check()), resumed every frame with STEP_BUDGET_S until it completes, then further ticks\n    while the budget lasts. A time-lapse that can't keep up slows down instead of stalling frames\n    (the accumulator is capped exactly like session.gd's MAX_STEPS_PER_TASK).\n\nThe environment is injectable (`Session.new(env)`) so tests drive the multiplayer path headless\nagainst MatchServer (tests/net_session.luau). On Roblox `Session.new()` builds the real environment.\n\nMaps: local matches run on config.map_id (start_solo's optional map id; the title uses the default\nmap); a multiplayer mirror uses the snapshot's map_id. A map that is not available locally (only\nthe default map is replicated) is downloaded first (env.fetch_map_async → Net/MapFetch) while the\nbuild / join job waits; the lobby info's map_id is prefetched."
+ },
+ "src/client/init.client.luau": {
+  "lines": 19,
+  "header": "Airfront client entry. Owned by the Session/Main agent (see PORT.md §Ownership).\nDev harness hook: if workspace attribute AF_DEV is set (in a developer's own Studio place),\nrun src/client/Dev/<AF_DEV>.luau instead of the game. Never set AF_DEV in the shipped place."
+ },
+ "src/client/Dev/AssetsAudio.luau": {
+  "lines": 223,
+  "header": "Assets agent dev harness: verifies every Audio manifest entry loads and plays (AF_DEV = \"AssetsAudio\").\nSilent: Sounds play at Volume 0; loudness is measured with AudioPlayer -> AudioAnalyzer (not wired\nto any output). Prints \"[AssetsAudio] result {json}\" and shows a table on screen.\n  fetch    ContentProvider:PreloadAsync status\n  loaded   Sound.IsLoaded, TimeLength vs manifest length\n  plays    TimePosition advances after :Play()\n  loop     music only: Looped sound started 0.4 s before the end wraps to ~0.4 s (DidLoop fired)\n  peak     max AudioAnalyzer.PeakLevel while playing (compare with the source WAV's sample peak)"
+ },
+ "src/client/Dev/AssetsIcons.luau": {
+  "lines": 119,
+  "header": "Assets agent dev harness: contact sheet of every UiIcons / Branding image (AF_DEV = \"AssetsIcons\").\nDeterministic layout (tools/assets/contact_sheet.py crops the Studio capture by these offsets):\n  cells of CELL_W x CELL_H from (ORIGIN_X, ORIGIN_Y), COLS per row, sorted keys; per cell a 48 px\n  white icon at (8, 8), 24 px AMBER at (64, 8), 14 px CYAN at (64, 40), name at the bottom.\nAlso reads every uploaded image back (EditableImage) and prints per-image channel sums as JSON so\nthe generator's PNGs can be compared byte-for-byte (\"[AssetsIcons] readback {...}\")."
+ },
+ "src/client/Dev/Film.luau": {
+  "lines": 104,
+  "header": "Studio only (Dev: not published). Films the game a frame at a time for the trailer (2026-10-12: the\ntrailer for the experience's details page): while it runs,\ntime stands still (Map/FrameClock: dt 0) until the capture script asks for the next frame, which\nmoves time on by exactly 1/FPS s. The session, the map, its animations and the HUD's own tweens all\nrun on that time, so frames captured one by one (Studio MCP screen_capture, slow) play back smooth\nat FPS. Roblox's TweenService still runs on real time.\n\nThe capture script sets workspace attribute af_film_req = n (n counting up) and waits for\naf_film_done = n: that frame has been drawn (signalled a frame later), and stays on screen.\n\n  Film.start(Main, fps?)   Film.stop()\nThe camera is moved with `film cam` / `film look` (Dev/SessionDiag): its glides run on its own dt,\nso on film time."
+ },
+ "src/client/Dev/GameplayFixerProbe.luau": {
+  "lines": 330,
+  "header": "gameplay-fixer dev probe (never in the shipped flow): read-only UI/world state plus a few test\nlevers for docs/review_gameplay.md verification. Reached through Dev/SessionDiag (workspace\nattribute AF_DIAG = true): LocalPlayer attribute af_cmd = \"gf <op> ...\" -> af_cmd_result."
+ },
+ "src/client/Dev/README.luau": {
+  "lines": 2,
+  "header": "placeholder so the Dev folder exists"
+ },
+ "src/client/Dev/SessionDiag.luau": {
+  "lines": 2004,
+  "header": "Session dev diagnostics (client). Active only when workspace attribute AF_DIAG == true (never in the\nshipped place). Main.start() requires this with the live Main table. Commands arrive as the\nLocalPlayer attribute \"af_cmd\" (set from Studio's execute_luau, which runs in another VM); the result\nis written to \"af_cmd_result\" and numbers to af_* attributes once per second.\n  title | solo <difficulty> | spawn [ocean] | expand [ratio] | join | joinlobby | jointeam | leaveline | public | leave | pause 0|1 | music 0|1 |\n  theme menu|war | mood [name] | prof [s] | mem | sfx <name> | pops [s] [tiles/s] | menu [settings|game|open|pops|music|done|close] | starter [open|buy|close|new|grant] | burst building|sam | wreck | tutorial [new|next|state|ratio <x>] | mirv [n] | speed <x> | budget <ms> | eliminate | conquer [id] | gold [n] | build <kind> [up] | boat [ratio] [tiles] | focus [owner] | fakelive [n] | adminhuman [n]"
+ },
+ "src/client/Dev/SimBench.luau": {
+  "lines": 148,
+  "header": "sim-core dev harness (client twin of src/server/Dev/SimBench.luau; solo matches run the Sim on the client): times Sim.step (+ GameState:apply_delta) in Roblox.\nEnable in your own place: workspace:SetAttribute(\"AF_DEV\", \"SimBench\"), then Play.\nOptional attributes: SimBenchMinutes (15), SimBenchSeed (1), SimBenchHuman (0), SimBenchTribes (80),\nSimBenchSide (\"server\" default | \"client\": the client harness src/client/Dev/SimBench.luau runs it).\nPrints a line per minute plus a final summary; the summary is also stored in\nworkspace:GetAttribute(\"SimBenchResult\") so tools/studio.py can read it."
+ },
+ "src/client/Dev/UIKitBasics.luau": {
+  "lines": 114,
+  "header": "ui-kit dev harness: design-system smoke test (glass panels, labels, buttons, spacing, fonts)."
+ },
+ "src/client/Dev/UIKitHud.luau": {
+  "lines": 407,
+  "header": "ui-kit dev harness: the in-game HUD (command bar, top status, leaderboard, attacks, event feed,\nnuke alert) over a still of the original's globe, driven by a real GameState built from mock\ndata (Dev/UIKitMock.luau = tests/ui_mock_state.gd). Lays the panels out like ui_root.gd.\n\nworkspace attributes (set in Edit mode before Play):\n  UIKIT_BACKDROP  \"europe\" (default) | \"globe\" | \"plain\"\n  UIKIT_VIEW      \"\" (full viewport) | \"phone\" (844x390 frame, insets 47,0,47,21, touch) |\n                  \"laptop\" (1280x720 frame) | \"desktop\" (1600x900 frame)\n  UIKIT_SCALE     number: force the UI scale (0 = automatic)\n  UIKIT_TOUCH     bool: touch mode\n  UIKIT_SCENE     \"hud\" (default) | \"placing\" | \"tray\" | \"intercept\""
+ },
+ "src/client/Dev/UIKitMock.luau": {
+  "lines": 327,
+  "header": "ui-kit dev: believable GameState for HUD screenshots (port of tests/ui_mock_state.gd's\nplay_snapshot for the \"hud\" scene): 88 nations + 36 tribes grown around their capitals on the\nreal map, a human commander \"Luke\" (id 239) in Poland with structures, an ally (Germany), a\ntraitor (Belarus), an alliance request (Italy), fronts with Ukraine / Russia / Belarus and an\nincoming hydrogen bomb. Tile counts reproduce the original's hud_desktop leaderboard.\nAlso: minimal Session / WorldView stand-ins (tests/ui_mock_session.gd)."
+ },
+ "src/client/Dev/UIKitText.luau": {
+  "lines": 81,
+  "header": "ui-kit dev harness: text rendering at several UI scales (letter spacing, tabular digits, plain,\nbuttons). Cycles the UI scale 0.6 -> 0.8 -> 1.0 -> 1.2 -> 1.4 every 3 s (the current scale is\nprinted and shown top-left); capture each step with studio.py shot."
+ },
+ "src/client/Dev/UIScreensGame.luau": {
+  "lines": 103,
+  "header": "ui-screens dev harness: the real Session + AudioDirector + UIRoot over the WorldView (or a flat\nstand-in world until the globe lands), exactly wired like Main. Exposes _G.UIS for scripted\nchecks from `studio.py luau Client`:\n  _G.UIS.ui, .session, .world, .audio, .W (Widgets)\n  workspace:SetAttribute(\"AF_DEV\", \"UIScreensGame\")   (optional: AF_UIS_REAL_WORLD = true)"
+ },
+ "src/client/Dev/UIScreensRadial.luau": {
+  "lines": 78,
+  "header": "ui-screens dev harness: the radial menu alone over a dark backdrop (Play mode).\nworkspace:SetAttribute(\"AF_DEV\", \"UIScreensRadial\")"
+ },
+ "src/client/Dev/UIScreensScenes.luau": {
+  "lines": 451,
+  "header": "ui-screens dev: named scenes for the UIScreensGame harness, invoked through the\nPlayerGui.UIScreensBridge BindableFunction (see UIScreensGame). Each takes the harness table\n{ui, session, world, audio, W} and returns a short status string."
+ },
+ "src/client/Dev/UIScreensStubs.luau": {
+  "lines": 191,
+  "header": "ui-screens dev: minimal stand-ins for kit components that have not landed yet (Leaderboard,\nEventFeed, AttacksPanel, AlertBanner). Same surface as the GDScript components so UIRoot runs;\nthey draw a plain glass panel so layouts can be checked. Only used by the UIScreens* harnesses."
+ },
+ "src/client/Dev/UIScreensWorld.luau": {
+  "lines": 250,
+  "header": "ui-screens dev: a flat stand-in WorldView (until the globe lands in this place). Shows a lat/lon\nwindow of the map as a coarse grid coloured by owner, and implements the WorldView surface the UI\nuses: tile_hovered / tile_clicked / tile_context signals (mouse + touch, 6/12 px tap slop, 500 ms\nlong-press), tile_at_screen / screen_pos_of_tile (viewport px), focus_tile / focus_owner, and\nno-op recorders for every set_* call."
+ },
+ "src/client/UI/AlertBanner.luau": {
+  "lines": 260,
+  "header": "Port of scripts/ui/alert_banner.gd (UIAlertBanner)\nRed pulsing \"INCOMING NUKE\" banner shown while nukes aimed at your land are in flight; turns\ngreen (\"INTERCEPTED!\") for a moment when a SAM shoots the last one down.\n\nMembers: panel. Methods: apply_layout(y, right_x = -1), clear(), is_green(), track(uid) -> bool,\nresolve(uid, intercepted); per frame update(dt)."
+ },
+ "src/client/UI/Arsenal.luau": {
+  "lines": 1368,
+  "header": "The Arsenal (2026-10-04: units like Artillery and special nukes, unlocked by grinding Stars or\nwith Robux): a modal for the items of Data/Arsenal. It opens from the\ntitle (ArsenalButton), from the command bar's SHOP button, and on its item when a locked unit is\npressed in a match.\n\nOne item at a time (2026-10-24: the old menu was so confusing that players opened it and bought\nnothing; of 4.63M opens in a week,\n164K pressed a price). It was a grid of eight cards, each with an unlabeled Stars pill and an\nunlabeled Robux pill under a small busy scene.\n  list     on the left, the items grouped NUKES / ARMY / BOOSTS: each a row with its render, its name\n           and what it takes: OWNED, its Stars when the player has enough, else its Robux price. A\n           press shows it on the right.\n  item     on the right: what it does in a match, playing big (UI/ArsenalDemo); its name, what kind\n           of thing it is and FOREVER; one plain sentence (Data/Arsenal `plain`) and two facts. Then\n           one big BUY NOW button with the Robux price, and under it the other way: OR UNLOCK WITH\n           ★ 20,000 when the player has the Stars (a press asks once more, the second spends them),\n           else how far along they are with a bar. An item the player has reads OWNED.\n  header   the title, one line of what this is, the Stars balance, close.\nIt opens on the item it was asked for, else the first one the player's Stars can unlock, else the\nfirst one they don't have. An unlock (Session.unlocked, however it was bought) flashes its item.\nIt closes from its close button or a press outside the window, never from a press on the window.\nSignals: closed."
+ },
+ "src/client/UI/ArsenalButton.luau": {
+  "lines": 304,
+  "header": "The title screen's Arsenal button, left of the crate button (its twin, CrateButton.luau): the\nArsenal's shield on a gold glow and slow rays, an ARSENAL pill under it, and a badge with the\nplayer's Stars (Data/Stars: what every match pays, spent in the Arsenal). pressed() -> UIRoot opens\nthe Arsenal. A payout makes the badge pop."
+ },
+ "src/client/UI/ArsenalDemo.luau": {
+  "lines": 1462,
+  "header": "The Arsenal's gameplay previews: each card's art plays a few seconds of what its item does in a\nmatch, over and over (2026-10-12: the shop shows gameplay, as too few players were using it).\nThe scene is drawn like the\nmap: the player's land on the left, a nation's on the right with a city, its name and its troops,\nthe structures' plates (Assets/MapSprites, Assets/ArsenalArt). The ground is a piece of a real map\ndrawn the way a match draws it (Assets/ArsenalMaps: terrain, rivers and coasts, the territories\nblended over them with their borders, a pixel a tile; 2026-10-24: a real map in place of\nthe solid background colours, which looked bad). Flat colours stand in without it.\n\nWhat flies and what blows up is drawn art (the same day: real graphics in place of the pixel\ncircles, so that nukes and the other items look better): the shop\ncards' own renders for the missiles and the bomber (Assets/ArsenalArt.renders), and effects drawn by\ntools/assets/make_arsenal_fx.py (Assets/ArsenalFx): a fireball flipbook, a mushroom cloud, smoke\ntrails, shockwaves, scorch marks, a beam, tracers, bombs, warheads, a reticle, parachutes. Big hits\nshake the scene.\n  mega       the missile arcs from the silo onto the city under a reticle: a white flash, a\n             shockwave, a mushroom cloud, the city gone, fallout\n  scatter    the missile splits over the city into five warheads, five fireballs\n  reinforce  three paratroopers drop in (+2.0K each), then the border advances into the nation\n  artillery  the battery fires a tracer every second or so into its range ring\n  airfield   a bomber takes off, crosses a marked spot and drops three bombs on it\n  railgun    it charges, then a beam crosses the whole scene: no range limit\n  stars2x    a payout, and a \"2X\" stamp doubling it\n  reload2x   two silos, the rapid one firing twice for the other's once\nEverything is a function of the time into the loop (no state carried between frames), so a demo\nstarts anywhere and always shows a whole loop.\n\n  ArsenalDemo.new(parent, item, size_px, u, phase) -> demo;  demo:step(now);  demo:destroy()\n  ArsenalDemo.preload()  fetches the art once (the Arsenal calls it when it opens)"
+ },
+ "src/client/UI/AttacksPanel.luau": {
+  "lines": 462,
+  "header": "Port of scripts/ui/attacks_panel.gd (UIAttacksPanel)\nActive attacks involving you (right side, under the leaderboard): incoming fronts in red with a\nFocus button, outgoing fronts and expansions with their committed troops and a Retreat button.\nPhones show only a small chip (icon + count, red when you are attacked); a tap opens the list\nas a peek that folds itself away again.\n\nSignals: retreat_requested(aid), toggled(collapsed). Members: panel, collapsed, manual, tray_open.\nMethods: apply_layout(top, bottom_limit), peek(), bottom_edge(), mark_dirty(), involved(),\ncommitted(), refresh(); per frame update(dt)."
+ },
+ "src/client/UI/Banner.luau": {
+  "lines": 188,
+  "header": "Port of scripts/ui/banner.gd (UIBanner)\nCentre-screen moment (\"THE WAR BEGINS\"): a wide letter-spaced title over a soft band that fades\nin, holds and fades out, then frees itself."
+ },
+ "src/client/UI/BorderTracker.luau": {
+  "lines": 327,
+  "header": "Port of scripts/ui/border_tracker.gd (class UIBorders)\nIncrementally tracks the local player's border tiles so the UI can answer \"do I border this\nowner?\" and \"can a boat reach that coast?\" instantly (the Sim still validates everything)."
+ },
+ "src/client/UI/BuildButton.luau": {
+  "lines": 486,
+  "header": "Port of scripts/ui/build_button.gd (UIBuildButton)\nOne build / nuke slot of the command bar: icon, cost, hotkey badge, owned count and a clear\ndisabled state. Stays clickable when unavailable so a click can explain why.\nAn Arsenal kind the player hasn't unlocked (UIRules.availability: `arsenal`) wears a gold lock\nwhere its cost would be; its card shows what it does and what unlocks it.\n\nSignals: chosen(kind). Methods as GDScript: set_compact(on, touch), refresh(), is_available(),\nreason(), deny(), hint_spec(); `active` via set_active(on) (GDScript property setter)."
+ },
+ "src/client/UI/BusyChip.luau": {
+  "lines": 118,
+  "header": "Port of scripts/ui/busy_chip.gd (UIBusyChip)\nSmall centred \"Deploying a new world…\" pill with a spinner, shown while Session builds a match."
+ },
+ "src/client/UI/ChestView.luau": {
+  "lines": 117,
+  "header": "The cosmetic crate's 3D chest in a ViewportFrame (Assets/CrateModel: BedWars' voxel block chest), shared\nby the opening show (CrateOpening), the title screen's crate button (CrateButton) and the Locker's crate\ncard. build() makes the camera and the parts; pose() places them from a pose table:\n  y (studs), yaw / roll / pitch (radians), sq (squash, + = flat), s (scale), lid (degrees).\nidle() is the small views' life: a bob, and every `every` seconds a wiggle with the lid cracking."
+ },
+ "src/client/UI/Coach.luau": {
+  "lines": 477,
+  "header": "Port of scripts/ui/coach.gd (UICoach)\nFirst-match coach marks: one short tip at a time with a pulsing arrow to what it talks about\n(a spot on the globe or a HUD control). Each tip shows once per player; \"seen\" ids persist in\nthe [ui] settings (tips_seen) and can be reset from the game menu."
+ },
+ "src/client/UI/CommandBar.luau": {
+  "lines": 965,
+  "header": "Port of scripts/ui/command_bar.gd (UICommandBar)\nBottom command bar: nation chip, troops (with cap, growth and fill), the attack-ratio slider, gold\n(with income, next to the slots it buys) and the ten build / nuke slots. Re-flows between a single\nrow (wide desktop), two rows (laptop / tablet) and a slim phone strip (icons + numbers, a short\nslider and a Build toggle; the slots live in a tray and the details in a tap-for-info card).\n\nThe Arsenal (Data/Arsenal; 2026-10-04): one gold SHOP slot closes the row and opens the\nArsenal; a kind the player has unlocked gets a slot of its own before it, a locked one has none\n(2026-10-04: the build menu was too big, so only the SHOP button shows and it all stays on one\nrow; the first version had a second row of eight locked slots). The SHOP slot is one gold button\nthat shows, in turn, what the player has yet to get (ShopSlot; 2026-10-12: one button instead of\nsix sub-buttons, the locked units' cards it held from 2026-10-05). On phones the slots\nnarrow a little, then the SHOP button, before the tray takes a second row (TrayFit).\n\nSignals: build_chosen(kind), cancel_placement(), footprint_changed(), stats_tapped(),\narsenal_wanted(key?, from?) (the SHOP button; key: the item it showed).\nMembers read by UIRoot / UIInteract: panel, tray, buttons, _place_chip, _slider, _tray_btn, _flow.\nPer frame: update(dt) (GDScript _process)."
+ },
+ "src/client/UI/CountLabel.luau": {
+  "lines": 68,
+  "header": "Port of scripts/ui/count_label.gd (UICount)\nLabel that animates between numeric values (troops, gold, percentages). Fixed-width tabular\nrendering (UITheme.fix_width) keeps the rolling digits from jittering."
+ },
+ "src/client/UI/CrateButton.luau": {
+  "lines": 381,
+  "header": "The title screen's crate button, top right (2026-09-29: on phones the chest button was hard to\nnotice, so it got more to catch the eye). The 3D chest (ChestView) wiggles on a glow and slow\nrays with a twinkle or two, a CRATES pill under it, and a badge:\n  a crate waiting (bought, not opened)  a red count, the pill says OPEN, it wiggles more often;\n  the first crate not bought yet        its price (15) with the Robux icon;\n  otherwise                             no badge.\nWhere paid random items are restricted, or everything is owned, it's a calm LOCKER button (no wiggle,\nno price). pressed() -> UIRoot opens the Locker."
+ },
+ "src/client/UI/CrateOpening.luau": {
+  "lines": 1520,
+  "header": "Opening a cosmetic crate: a Clash Royale-style show around a 3D chest (2026-09-29: the first version\nof opening a crate was not satisfying at all, and it should be super fun; the show was then made\n3D, around a ready-made voxel chest).\nThe chest is BedWars' voxel block chest (Assets/CrateModel) in a\nViewportFrame; the choreography follows Tribes' drop reveal (the same studio's game).\n  land    the screen dims; the chest falls in stretched past air streaks, lands with a squash, dust,\n          a floor ring and a shake; the title slams in;\n  idle    it bobs; every WIGGLE_EVERY_S it wiggles with a rattle, the lid cracks and light leaks out;\n          \"TAP TO OPEN\". It never opens by itself (no auto-open: the player has to click or tap\n          it open);\n  build   tapped: distinct rattles, closer together and bigger, while the light turns the item's\n          rarity colour and BedWars' lucky box preview for that rarity plays; the rarer the item, the\n          longer the build (BUILD_S; Epic and Legendary tease with rays); a roll still on its way\n          keeps it rattling (the network wait hides in there);\n  burst   a crouch, then the lid bursts open: a flash in the rarity colour, rays, a light beam and\n          sparks out of the chest, a shockwave ring, a shake;\n  card    the card flies out of the chest face down while the chest steps down; it glows in its\n          rarity colour (CARD_HOLD_S: longer for the rarer ones, a tap hurries it), then flips: the\n          item, NEW!, the rarity, the name, the rarity's sound;\n  choose  WEAR IT · OPEN ANOTHER (a waiting crate, or the next one's price) · DONE.\nNothing clips to white: flashes are the rarity colour at part strength.\nLocker drives it: play(info) as the crate is opened, resolve(item_id) / fail(text) from the server.\nSignals: wear(item_id), again(), closed(fail_text?), shown(open). `pace` > 1 slows the whole show\n(frame captures)."
+ },
+ "src/client/UI/EventFeed.luau": {
+  "lines": 616,
+  "header": "Port of scripts/ui/event_feed.gd (UIEventFeed)\nLower-left event feed: stacking toasts coloured by message category that fade on their own,\nplus actionable alliance cards with an expiry bar: requests (Accept / Decline) and the\n\"about to expire\" renewal prompt (Renew / Ignore). Phones show one\nsingle-line toast at a time (a newer one replaces it; a tap dismisses it) and one-row cards.\n\nEventFeed.new(ctx, top_mode = false). Members: _stack, top_mode.\nMethods: apply_layout(bottom_y), apply_layout_top(y), stack_rect(), clear(),\ntoast(category, text, icon_name?, seconds?), alliance_request(from_id), close_request(from_id),\nalliance_renewal(other, expires_at, other_asked), close_renewal(other), has_renewal_card(other),\nclose_all_requests(), has_request_card(from_id); per frame update(dt)."
+ },
+ "src/client/UI/FillBar.luau": {
+  "lines": 208,
+  "header": "Port of scripts/ui/fill_bar.gd (UIBar)\nRounded progress track with an animated fill, optional goal line and value markers."
+ },
+ "src/client/UI/FlagShop.luau": {
+  "lines": 867,
+  "header": "The flag shop (2026-10-22: a daily rotating shop of flags for sale; Data/Shop,\ndocs/flag-shop.md): a modal from the title's shop button. A running limited set first (Halloween:\nthe whole set, ENDS IN its clock), then today's flags (Data/Shop.daily, NEW IN the clock to 00:00 UTC).\nEach card: the flag, its name and rarity, and its button: the price (Roblox's for this player:\nUI/Prices), WEAR for one owned, WEARING for the one on. A purchase goes like the Locker's: Roblox's\nprompt, the server stores the flag and puts it on (server/Purchases), the card turns to WEARING.\n2026-10-24 (from the analytics suggestions): a section's Legendary gets a FEATURED card two\ncards wide and two tall, and a set with a bundle (Data/Shop.SETS `bundle`) a banner under its head:\nall of it for one price, what that saves, flags already owned paying back Stars.\nSignals: closed."
+ },
+ "src/client/UI/FloatText.luau": {
+  "lines": 90,
+  "header": "Port of scripts/ui/float_text.gd (UIFloatText)\nBrief confirmation pill that pops near the cursor, drifts up and fades\n(\"Attacking Brazil with 24.5K\", \"Not enough gold\"...).\n\nFloatText.spawn(parent_node, pos_logical, text, icon_name, col, bounds_rect?)\nFloatText.bounds_provider: () -> Rect (logical px) -- live area floats must stay inside, re-read\nevery frame (a tray opening later pushes floats above it)."
+ },
+ "src/client/UI/GameOver.luau": {
+  "lines": 1171,
+  "header": "Port of scripts/ui/game_over.gd (UIGameOver)\nVictory / defeat / eliminated / time-up screen with the winner, your match stats and the next\nsteps (play again, spectate, return to title).\nThe Stars the match paid (Data/Stars; server/Rewards answers a moment after the screen opens) count\nup in a gold pill at the head of the buttons; its card lists what they were for, and a press opens\nthe Arsenal.\nUnder the buttons, once the payout is in, stand what the Stars are for (2026-10-07, to encourage\nmore Robux spending: a day after the Arsenal shipped its unlocks had sold 11\ntimes to 27,000 players a day, and the result screen said nothing of them but a number):\n  * the next unlock (Data/Arsenal.next_goal): \"MEGA NUKE  4,560 / 20,000\", gold and \"UNLOCK\" once\n    the Stars are there. A press opens the Arsenal on that item, where it sells for Stars or Robux;\n  * 2X STARS, until owned, with what this match would have paid with it.\nThey say what is true and prompt nothing by themselves; they step aside for the takeover offer and\non a screen too short for them."
+ },
+ "src/client/UI/GeneralButton.luau": {
+  "lines": 354,
+  "header": "The title screen's RoWorld General button (Data/Subscription; 2026-10-27), under the flag shop's and\nthe starter pack's: a night-blue card edged in gold, a general's three stars on a slowly turning\nsunburst, GENERAL in gold, a line that cycles through what a General gets, a gold MONTHLY tab on its\ncorner, a gold glow breathing behind it, a light that crosses it every few seconds and a star that\nglints now and then. The first\nversion (a plain glass button reading ROWORLD GENERAL) was easy to miss. A General sees GENERAL and\n\"Your perks are on\". pressed() -> UIRoot opens the window (GeneralOffer). Hidden where the\nsubscription doesn't exist (Subscription.id() == \"\")."
+ },
+ "src/client/UI/GeneralOffer.luau": {
+  "lines": 444,
+  "header": "RoWorld General's window (Data/Subscription; 2026-10-27): what the monthly subscription gives, and\nSUBSCRIBE, which opens Roblox's own prompt (MarketplaceService:PromptSubscriptionPurchase). Roblox\nbills and renews it; the server hears of it (server/General, OP.GENERAL) and the window then says\nthe player is a General. Opened from the title's General button.\n\n  GeneralOffer.new(ctx)   :bind(session)   :open(from)   :close()   .closed (Signal)   .is_open"
+ },
+ "src/client/UI/GlassPanel.luau": {
+  "lines": 216,
+  "header": "Port of scripts/ui/glass_panel.gd (UIGlass)\nFrosted-glass panel: navy tint, 1 px light border, a top sheen line and a soft drop shadow.\nLays out its children like a PanelContainer (inside the padding).\n\nRoblox has no backdrop blur, so the glass is drawn as the GDScript no-frost path does (a flat\ntranslucent tint, UITheme.GLASS_BOOST more opaque) plus the frost shader's top sheen gradient.\nParts: shadow (9-slice, Assets/UIKit shadows) < tint (UICorner + inner UIStroke border)\n< sheen gradient < sheen line / accent stripe < content."
+ },
+ "src/client/UI/GlobeNotice.luau": {
+  "lines": 251,
+  "header": "Territory-map notice (review_code.md R2-3). The globe draws territory colours with Editable\nimages / meshes; when the device's editable budget is exhausted, or the experience's Mesh / Image\nAPIs permission is off in a published place, it falls back to the static globe (WorldView\nterritory_status().state == \"unavailable\"). Instead of a silent console warning the player gets\nthis small card: non-blocking (the game keeps running underneath), styled like the Coach tip\ncard, dismissible, hidden again by itself when territories come back. The place owner (Studio, or\nthe account / group that owns the experience) also sees how to enable the APIs.\n\nAPI: GlobeNotice.new(ctx), set_status(status), apply_layout(blockers: { Rect }), card (GlassPanel)."
+ },
+ "src/client/UI/HelpOverlay.luau": {
+  "lines": 712,
+  "header": "Port of scripts/ui/help_overlay.gd (UIHelpOverlay)\n\"How to play\" overlay: illustrated sections (spawn, expand & attack, boats, economy, nukes,\nalliances, victory) and the mouse/keyboard and touch controls. Scrolls on small screens.\n\nAlso defines two small containers the kit does not ship: Scroll (ScrollContainer, vertical)\nand Grid (GridContainer), both with Godot layout semantics."
+ },
+ "src/client/UI/HoldRing.luau": {
+  "lines": 71,
+  "header": "Touch: a ring that closes in around a finger held on the map until the long-press menu opens\n(2026-09-29: the press-and-hold quick build menu felt inconsistent on phones). It shows that the\nhold is counting (keep still) and when it will open. Driven each frame by UIRoot from\nMapInput.hold_state(); drawn on a raw logical-px canvas (UICtx.canvas), input-transparent."
+ },
+ "src/client/UI/Leaderboard.luau": {
+  "lines": 663,
+  "header": "Port of scripts/ui/leaderboard.gd (UILeaderboard)\nRight-side leaderboard: top 10 by land share with colour, name, land % and troops. Your own row\nis pinned when you are outside the top 10; allies and traitors are marked. Clicking a row focuses\nthe camera on that nation. On phones it collapses into a rank pill. Game admins see a person icon on\nreal players' rows, and every real player outside the top is pinned below it (one click away).\n\nEvery match starts with the board closed (close_for_match): the pill (the status pill on phones)\nopens it, and it stays as the player leaves it until the match ends (since 2026-10-09).\nUntil then a desktop started open and remembered the player's\nlast choice in the saved settings (leaderboard_open_desktop / _touch: old records keep the keys,\nnothing reads them); a report of the same week: the logs on the left-hand side blocked parts of the\nmap.\n\nSignals: toggled(open). Members: panel, _pill, expanded, user_hidden, pill_enabled.\nMethods: set_open(on), toggle(), close_for_match(), apply_layout(top), place_pill_left_of(rect),\nbottom_edge(), my_rank(), mark_dirty(), refresh(); per frame update(dt)."
+ },
+ "src/client/UI/Locker.luau": {
+  "lines": 964,
+  "header": "The Locker (2026-09-29: cosmetic loot boxes of territory skins and flags to unlock):\na modal from the title with the crate card on the left and what you own on the right.\n  crate card  the crate art, \"a territory skin or a flag you don't own yet\", the player's own odds\n              per rarity (Cosmetics.odds, shown before every purchase: Roblox's paid random items\n              rules), how many items they own, and the button: 15 Robux for the first crate, 49\n              after (Data/Products), \"Open\" while a bought crate waits; under it three crates for\n              less (Data/Products crate3, _pack_saving). Hidden where paid random\n              items are restricted (Session.inventory.crates_allowed, PolicyService on the server).\n  grid        Skins / Flags tabs: every item (owned bright, the rest dimmed as a preview of what a\n              crate can give); press an owned one to wear it, \"None\" to wear nothing. An exclusive\n              skin (Cosmetics.exclusives) shows only to its owner, first, \"EXCLUSIVE\" in pink.\n  reveal      after a crate opens: the item in its rarity's colour, Equip / Open another / Done.\nThe purchase goes like the takeover's (Takeover.luau): Roblox's prompt, the server stores the crate\n(server/Purchases), the client opens it (Session.open_crate), the server rolls it.\nSignals: closed."
+ },
+ "src/client/UI/MapPicker.luau": {
+  "lines": 340,
+  "header": "Map picker (the single-player map list): a modal grid of map cards (thumbnail, name, size) under\ncategory tabs. The footer names the public-domain data the World map is made from. The grid is a Roblox\nScrollingFrame with a UIGridLayout hosted in a kit Control (the kit has no scroll container); card\nsizes follow UITheme.scale.\nSignals: picked(map_id), closed.\nEntries come from set_entries({ {id, name, width, height, categories, thumb}, ... })."
+ },
+ "src/client/UI/PartyPanel.luau": {
+  "lines": 471,
+  "header": "The party on the title screen (server/Party; team games on: Rofront Staging only for now). Who is\nin it (the leader picks the public match and everyone goes with them; a team game puts them on one\nteam), the invites to answer, and an invite list: the players on this server, and a Roblox invite\nfor friends elsewhere (accepting it brings them to this server).\n  PartyPanel.new(ctx) · set_state(state) · apply_layout() · on_action = function(action, user_id?)\nPhones: a PARTY button that opens and closes the panel."
+ },
+ "src/client/UI/PauseMenu.luau": {
+  "lines": 839,
+  "header": "Port of scripts/ui/pause_menu.gd (UIPauseMenu)\nGame menu: resume, how to play, settings, and leave / surrender with a confirmation step.\n\nThe same window has a second page, SETTINGS (2026-10-07, with a new switch to turn off the\npop expansion sound): the music, border pop, territory label and\n\"select before attacking\" switches and \"Show tips again\", which stood in the game menu itself\nbefore. The top bar's gear opens the window on that page (on the title too); the game menu's\nSettings row turns to it, and DONE turns back."
+ },
+ "src/client/UI/PlaceConfirm.luau": {
+  "lines": 221,
+  "header": "Port of scripts/ui/place_confirm.gd (UIPlaceConfirm)\nTouch placement / launch confirmation: a small caption and two big buttons (✕ cancel, ✓ build\nor launch) floating next to the ghost on the globe, never over it. The buttons follow the\nghost's screen position every frame; UIInteract moves the ghost (tap elsewhere, map drag)."
+ },
+ "src/client/UI/Prices.luau": {
+  "lines": 117,
+  "header": "The Robux prices the interface shows: Roblox's own for this player (MarketplaceService), never\nthe number in Data/Products once Roblox has answered. With Managed Pricing (dynamic pricing,\non since 2026-10-05) a product's price differs by region and while Roblox tests prices, and a\nbutton that prints 49 beside a prompt that charges 20 loses the sale. Roblox asks for prices to be\nread this way before it lets an experience opt in (it looks for hard-coded ones).\n\n  Prices.robux(key)  the price of Data/Products[key]: Roblox's, or the set one until it answers\n  Prices.fetch()     ask Roblox for every product's price (at most once every REFRESH_S), but the\n                     flag shop's (Products' `shop_flag`: dozens, of which the shop shows a few)\n  Prices.fetch_keys(keys)   ask for these products' prices (each at most once every REFRESH_S)\n  Prices.changed     Signal(): a price arrived or moved"
+ },
+ "src/client/UI/RadialMenu.luau": {
+  "lines": 756,
+  "header": "Port of scripts/ui/radial_menu.gd\nCircular context menu (right-click / long-press). Segments carry an icon and a short label;\nunavailable actions are greyed and explain themselves in the caption under the ring. Items with\na `sub` list open a second ring (Build ▸, Nuke ▸); the centre button goes back / closes.\n\nRoblox: drawn with plain instances in a logical-px canvas. Ring segments are static annular\nsector masks (Assets/UiShapes, tools/ui/make_shapes.py) rotated into place and tinted; circles\nare Frames with UICorner / UIStroke. While open, a full-screen button swallows pointer input\n(Godot MOUSE_FILTER_STOP) and the opening finger of a long-press is followed through\nUserInputService (press-slide-release picks)."
+ },
+ "src/client/UI/RatioSlider.luau": {
+  "lines": 254,
+  "header": "The Attack bar: the share of the army an order sends, bound to UICtx.ratio. Five stops in one row\n(UICtx.RATIO_STOPS: 10% 25% 35% 50% 75%), each one a labelled target: tap a stop, or drag across\nthem, and the amber thumb moves to it. The mouse wheel steps one stop.\n\nIt was a slider (a port of scripts/ui/ratio_slider.gd): 1% to 100% in steps of 1%, on a phone a\nknob on a 96 px track, replaced 2026-10-08: it was too small and hard to drag to the right spot,\nand a few fixed stops are simpler, at better breakpoints (10%, 25%, 35%,\n50%, 75%). The tutorial's step on it lost 19.4% of the players who reached it (Tutorial funnel,\n2026-10-07): what it asked for, 27% to 45%, was 17 px of that track.\n\nA stop above UICtx.ratio_max (the tutorial stops at 50%) is drawn faint, and a tap on it sets the\nhighest stop allowed."
+ },
+ "src/client/UI/RotateCard.luau": {
+  "lines": 65,
+  "header": "Port of scripts/ui/rotate_card.gd (UIRotateCard)\nFull-screen \"Rotate your phone\" card shown on touch devices while the viewport is portrait\n(the game is designed for landscape; StarterGui.ScreenOrientation normally keeps us there)."
+ },
+ "src/client/UI/ShopButton.luau": {
+  "lines": 268,
+  "header": "The title screen's flag shop button (Data/Shop; 2026-10-22: a daily rotating shop of flags for\nsale), under the Arsenal and crate buttons: a purple card with the shop's flags taking\nturns on its left, FLAG SHOP, the running set's name (HALLOWEEN FLAGS) or NEW FLAGS DAILY, and the\nclock to the next shop. A NEW sticker until the player has opened today's shop (setting\n\"shop_seen_day\"). pressed() -> UIRoot opens the shop (FlagShop). Shown while the shop has something\non sale here (FlagShop.on_sale)."
+ },
+ "src/client/UI/ShopLayout.luau": {
+  "lines": 59,
+  "header": "The flag shop's layout (UI/FlagShop), apart so tests can run it without Roblox: the order of a\nsection's cards and where each goes, with a section's Legendary on a FEATURED card 2 x 2 cells big\n(2026-10-24)."
+ },
+ "src/client/UI/ShopSlot.luau": {
+  "lines": 356,
+  "header": "The SHOP button that closes the build row (CommandBar): one gold button, a little wider than a build\nslot, that opens the Arsenal (2026-10-12: one button instead of six sub-buttons, as too few players\nwere opening the shop and more of them should click it; from 2026-10-05\nit held a small card for each locked unit, before that it was a plain glass slot).\n\nSolid gold with SHOP on it in dark letters. Over the word, the render of something the player has\nyet to get (Assets/ArsenalArt.renders, the shop cards' pictures), a new one every CYCLE_S; a shine\ncrosses it every SHINE_S. Until the player has opened the Arsenal in this session, a red badge\ncounts what there is to get and the button gives a little shake every WIGGLE_S. With everything\ngot it is the Arsenal's shield over SHOP, still gold.\n\nA press opens the Arsenal on the item it shows.\n\nSignals: wanted(key: string?, from: string) (from: \"match\", for the analytics)."
+ },
+ "src/client/UI/SpawnOverlay.luau": {
+  "lines": 320,
+  "header": "Port of scripts/ui/spawn_overlay.gd (UISpawnOverlay)\nSpawn-phase banner: \"Choose your starting location\", a countdown ring, the solo \"Deploying in 5…\"\ncount and, in multiplayer, how many commanders have placed their capitals.\n\nOne slim row: two lines of text, the count (on a wide screen with a few of the commanders' head\nshots before it) and the ring. It was a tall panel once: an icon disc, a line of advice and a\nchip per commander, up to twelve of them over five rows: too big, so it was redesigned smaller\n(2026-10-05)."
+ },
+ "src/client/UI/StarterButton.luau": {
+  "lines": 340,
+  "header": "The title screen's starter pack button, under the Arsenal and crate buttons, while the starter pack's\noffer runs (Data/Starter; 2026-10-15: available for a limited time only): a red card with the\nMega Nuke's render, STARTER PACK, the regular price struck through\nbeside the offer's, ENDS IN and the clock, a red \"-76%\" sticker on its corner and a light that\ncrosses it every few seconds. pressed() -> UIRoot opens the offer (StarterOffer). Hidden when there\nis no running offer."
+ },
+ "src/client/UI/StarterOffer.luau": {
+  "lines": 776,
+  "header": "The starter pack's offer (Data/Starter; 2026-10-15: the starter pack at 39 Robux, on sale for a\nlimited time only). A window over the title: LIMITED-TIME OFFER,\nSTARTER PACK, the three items it unlocks (their shop renders on a glow of their colour, name and one\nline), the regular price struck through beside the offer's with a red \"-76%\" sticker (both Roblox's\nlive prices: the discount is always the real one), ENDS IN 47:59:12 counting down, \"Then it's gone for\ngood.\" (the pack goes, not just its price), BUY NOW and NOT NOW.\n\nIt opens by itself on the title once nothing else is going on (UIRoot._starter_auto): the first time\n(the server's clock starts then: Session.starter_seen) and once a session after that while the\noffer runs; the title's starter button (StarterButton) opens it any time. NOT NOW or a press outside\nthe window closes it. BUY NOW opens Roblox's prompt; the server's receipt unlocks the items (server/Purchases),\nthe inventory says so and the window closes with the unlock sound.\n\nBuilt at DESIGN logical px and scaled to fit (a UIScale), the same layout on phones and desktop.\nSignals: closed."
+ },
+ "src/client/UI/Takeover.luau": {
+  "lines": 285,
+  "header": "Solo: take over the nation that eliminated you, for 25 Robux (2026-09-28). Offered on the\nELIMINATED screen and the spectating pill while the nation that conquered you is still alive.\nA press pauses the match, then spends a saved credit or opens Roblox's purchase prompt; the server\nstores the purchase as a credit (server/Purchases), spends it, and the player takes over\n(Session.take_over: its land, army, gold and buildings, its AI off). A purchase whose moment passed\nstays saved for the next time a nation conquers the player.\n\nUIRoot drives it: tick() once a second, on_credits() / on_result() from the session, refresh()\nwhen the ELIMINATED screen opens; pending() pauses the solo match."
+ },
+ "src/client/UI/TargetCard.luau": {
+  "lines": 445,
+  "header": "Port of scripts/ui/target_card.gd (UITargetCard)\nTouch \"look before you act\" card: the first tap on a foreign nation (or a coast reached by boat)\nselects it and shows who it is, with a big primary order button (\"Attack · 12.3K\"). A second\ntap on the same target, or the button, fires; Ally proposes an alliance; ✕ or a tap elsewhere\ncloses it. For an ally (kind \"ally\") it offers Donate and Break alliance, which first asks for\nconfirmation and spells out the Traitor penalty."
+ },
+ "src/client/UI/Telemetry.luau": {
+  "lines": 524,
+  "header": "Match milestones for the Creator Dashboard (src/server/Analytics.luau logs them with Roblox's\nAnalyticsService). Solo matches run on this client, so the client reports for every match it plays:\nstarted (mode, map), spawned, first attack, whole minutes alive, eliminated (by whom), the end (won\nor lost, rank) or leaving early; plus the title screen, How to Play and Spectate. Sent through\nSession.report (OP.ANALYTICS); the server validates and dedupes. Nothing here affects the game.\nEvery STATE_EVERY_S (and right before leaving) a snapshot: what is happening to the player, where\nthey stand on land, and the frame rate. The server keeps the latest and logs it when the match ends\nwith the player quitting or leaving (why do players close the game ~2 minutes in? 2026-09-28).\n\nOnce a match, the first SLOW_WINDOW_S in a row under SLOW_FPS is reported with what the frame was\nmade of (\"slow\": Telemetry.slow_cause). A player's report, 2026-10-09: down to about 3 fps\nnear the end of a match, on a desktop, and nothing here could say on what: a MIRV's\nwarheads did that (Map/TrailBudget) and the player had seen none.\n\nUIRoot drives it: bind(state) on every state change, tick() once a second, title_shown(),\nhelp(where), spectate(); UICtx.send passes every intent to on_intent(intent)."
+ },
+ "src/client/UI/TitleScreen.luau": {
+  "lines": 1703,
+  "header": "Port of scripts/ui/title_screen.gd (UITitleScreen)\nTitle screen over the live attract-mode globe: AIRFRONT wordmark, Play Solo with difficulty\nchips, Multiplayer with live server status, How to Play, credits. Also shows the \"joining\nmultiplayer\" queue card while a match is being prepared.\n\nAlso defines GradientText (the wordmark / game-over headline): per-glyph Rubik Heavy with letter\nspacing, the WORD_SHADER vertical gradient, the diagonal shine sweep and the fat drop shadow.\nRoblox caps TextSize at 100, so glyphs render at a smaller TextSize under a UIScale."
+ },
+ "src/client/UI/Tooltip.luau": {
+  "lines": 314,
+  "header": "Port of scripts/ui/tooltip.gd (UITooltip)\nSmall glass info card. Three placements: following the cursor (tile hover), anchored above a\ncontrol (button hints) or pinned in a corner (tap-to-inspect on touch screens).\n\nSpec table: {title, title_color, swatch (Color3), badge, badge_color, sub, rows: {{k, v, color}},\nbody, hint, hint_color, hint_icon, footer}"
+ },
+ "src/client/UI/TopStatus.luau": {
+  "lines": 509,
+  "header": "Port of scripts/ui/top_status.gd (UITopStatus)\nTop-centre status pill: match clock (and time limit), phase, and world-control progress\ntowards the 80 % victory share for you and the current leader. Phones get a one-line mini pill\n(clock · rank · share, a tiny Protected chip) whose tap opens the leaderboard.\n\nSignals: tapped(). Members: panel, rank_provider (() -> number, set by UIRoot).\nMethods: apply_layout(), bottom_edge(), on_phase(phase, ticks_left), on_bind(), refresh(),\ngrace_left(); per frame update(dt)."
+ },
+ "src/client/UI/TouchRouter.luau": {
+  "lines": 120,
+  "header": "Port of scripts/ui/touch_router.gd (UITouchRouter)\nMulti-touch for the HUD. In Godot only the first finger drove the (mouse-based) ratio slider, so\nthis node routed any other finger that lands on the slider to it. Roblox GUI objects receive\nevery finger's InputBegan / InputChanged, so a slider that handles Touch itself needs no routing:\nthe router then only watches (and never double-drives it). It routes fingers only to a slider\nthat declares `handles_touch = false` and exposes drag_to_global(logical_pos).\n\nNothing is consumed here: WorldView tracks every finger too (a HUD finger can still become part\nof a pinch); a finger WorldView:touch_owned_by_world(index) claims stops driving the slider."
+ },
+ "src/client/UI/TrayFit.luau": {
+  "lines": 63,
+  "header": "Widths in the build row (CommandBar): its slots, and the gold SHOP button that closes it (ShopSlot),\na little wider than a slot while there is anything left to get. The row must stay one row wherever\nit can (2026-10-04: the build menu was too big; only the SHOP button shows, so it all stays on\none row), so on a phone the slots narrow first, then the SHOP button narrows to one slot's width,\nand only then does the tray take a second row.\n\nNumbers only (no widgets): tests/tray_fit.luau."
+ },
+ "src/client/UI/Tutorial.luau": {
+  "lines": 652,
+  "header": "A new player's first match, step by step (Data/Tutorial: the steps and why; 2026-10-04: a new\ntutorial for new players, made for phones first). One small goal at a time:\n  * a card at the top of the screen: \"2 / 6\", one short line, a bar for a goal with progress, and\n    Skip. Short enough to read at a glance on a phone; it never covers the map's middle or the\n    command bar;\n  * a tap mark where to tap (two rings closing on a dot, with \"Tap here\" under it): the map spot or\n    the control the step is about. It hides while the player is busy and comes back after\n    Data/Tutorial.NUDGE_S without an order;\n  * a finished step turns the card green for a moment, with a sound, then the next one comes.\nThe spawn step has no card (the spawn banner is up there): only the mark on a roomy spot, which\nis taken for the player after AUTO_SPAWN_S. The City step tops the player's gold up to a City's\nprice. A step nobody finishes in STEP_MAX_S is passed over. While it runs the coach's tips are\noff (UIRoot); they take over afterwards. While it runs the Attack bar starts at its default and\nstops at Data.RATIO_CAP, and an order leaves Data.TROOP_FLOOR of the army's cap at home (UICtx\n.ratio_max / .troop_floor): a new player can't empty their nation.\n\n  Tutorial.new(ctx, ui)\n  :begin()                 the tutorial match was asked for\n  :stop(how)               \"done\" | \"skipped\" | \"left\"\n  .active, .finished (Signal: how), .step_done (Signal: funnel step, name), .closed (Signal: the\n  last card is gone)"
+ },
+ "src/client/UI/UIAdvisor.luau": {
+  "lines": 917,
+  "header": "Port of scripts/ui/ui_advisor.gd\nReactions to the match for the HUD: sounds and toasts for game events that involve you, threat\nwarnings (a neighbour massing 5x your army, being attacked), first-match coach-mark triggers and\nfiltering of Sim messages that the UI already presents in a richer form."
+ },
+ "src/client/UI/UICtx.luau": {
+  "lines": 1490,
+  "header": "Port of scripts/ui/ui_ctx.gd\nShared context for every UI component: duck-typed handles to Session / WorldView / AudioDirector\n(so lightweight stand-ins work in tests), the bound GameState, layout metrics, the attack ratio,\npersisted settings and throttled sound effects. Also a few static helpers the Godot builtins\nprovided (Rect2 maths on Roblox `Rect`, colour conversion, shared-module resolution).\n\nCoordinates: the UI works in LOGICAL px (Godot px of the 1600x900 design; the kit's Widgets.Root\napplies one UI scale, see build/notes/ui-kit.md). WorldView / UserInputService use VIEWPORT px.\nEvery conversion happens here: tile_screen_pos / mouse_pos return logical px, tile_at(pos) takes\nlogical px, to_view / to_logical convert explicitly."
+ },
+ "src/client/UI/UIInteract.luau": {
+  "lines": 1745,
+  "header": "Port of scripts/ui/ui_interact.gd\nGlobe interaction for the HUD: hover tooltips and previews, primary clicks (spawn / expand /\nattack / boat / inspect), build & nuke placement mode, the radial context menu and its actions,\nand the keyboard / wheel / touch detection (hotkeys: H, L, Esc, Space, Backspace, Q/E, 1-0;\nM / Home live in Main).\n\nInput: UserInputService events, respecting gameProcessedEvent (chat typing never triggers a\nhotkey). Positions are viewport coordinates (see UICtx)."
+ },
+ "src/client/UI/UIKern.luau": {
+  "lines": 11,
+  "header": "GENERATED by tools/uikit/make_kern.py from Rubik's GPOS 'kern' pairs. Do not edit.\nPair kerning in em/1000 per weight for letter-spaced (per-glyph) text: 6-char records\n\"<first><second><signed value>\", e.g. \"LT-102\" (printable ASCII, |kern| >= 8)."
+ },
+ "src/client/UI/UILayoutProbe.luau": {
+  "lines": 215,
+  "header": "Port of scripts/ui/ui_layout_probe.gd (UILayoutProbe)\nLayout helpers for UIRoot: measures the platform's own HUD (the Roblox top bar row with Main's\ntop-bar buttons, the chat window) so our panels stay clear of it, reads the device safe area,\ntells the globe which part of the screen is HUD-free, and enforces the 12 px text minimum on\ntouch screens.\n\nAirship -> Roblox: Airship's top bar = the Roblox top bar row (GuiService.TopbarInset: Roblox's\nown buttons sit left of TopbarInset.Min.X, Main's buttons start there); the Airship chat panel\n= the TextChatService chat window (ChatWindowConfiguration.AbsolutePosition / AbsoluteSize)."
+ },
+ "src/client/UI/UIMaps.luau": {
+  "lines": 102,
+  "header": "The playable maps for the UI: the replicated registry (Data/MapList)\njoined with the uploaded thumbnails (Assets/MapThumbs, keyed by the source map folder name). Falls\nback to the one built-in map when the registry is missing."
+ },
+ "src/client/UI/UIRoot.luau": {
+  "lines": 2542,
+  "header": "Port of scripts/ui/ui_root.gd (UIRoot)\nAIRFRONT interface root. Built entirely in code: title screen, spawn banner, HUD (command bar,\nworld-control status, leaderboard, event feed, nuke alert), tooltips, radial menu, help, game\nmenu and the victory / defeat screen. Wire with setup(session, world, audio) (DESIGN.md §10).\n\nRoblox: one ScreenGui \"AirfrontUI\" (DisplayOrder 10, above the map-label layer at 0; below\nMain's top bar at 50) holding a Widgets.Root (the kit's Godot-like node tree, logical px with\none UI scale). One render-step loop (after the camera) runs every per-frame update, then the\nkit's tweens / layout (Widgets.step). Main owns M / Home and the top-bar buttons."
+ },
+ "src/client/UI/UIRules.luau": {
+  "lines": 1383,
+  "header": "Port of scripts/ui/ui_rules.gd\nClient-side game knowledge for the interface: build/nuke catalogue, costs (via Rules), what a\nclick on a tile would do, radial-menu contents and placement checks. These are hints only; the\nSim validates every intent for real.\n(The GDScript's unused private helpers _site_ok / _nearest_own / _neighbours4 are left out.)"
+ },
+ "src/client/UI/UITheme.luau": {
+  "lines": 1955,
+  "header": "Port of scripts/ui/ui_theme.gd\nAIRFRONT design system: colour tokens, the 8 px spacing scale, Rubik weights, text metrics, the\nicon cache, style factories and widget helpers. Everything is static so any component can use it.\n\nRoblox notes (see build/notes/ui-kit.md):\n  * Colours: tokens are Color3; a translucent colour is an RGBA {color: Color3, alpha: number}\n    made with UITheme.c(col, a) (= Godot `Color(col, a)`) or UITheme.rgba(r, g, b, a). Every kit\n    function accepts Color3 or RGBA (or a Core RGBA8 int).\n  * Sizes are Godot logical px. The kit renders them at `UITheme.scale` (set by Widgets.Root).\n  * Godot font size S (em px) -> Roblox TextSize round(S * 1.185 * scale): Roblox TextSize is the\n    line height (ascent + descent), Rubik's is 1.185 em (verified: TextBounds == TTF advances).\n  * Text is measured synchronously with a hidden TextLabel once the Rubik weights are loaded\n    (UITheme.init() yields until they are); Lune falls back to approximate metrics."
+ },
+ "src/client/UI/UnitCard.luau": {
+  "lines": 305,
+  "header": "Port of scripts/ui/unit_card.gd (UIUnitCard)\nSelected-warship card (compact on phones): health bar, veterancy chevrons with kills toward the\nnext rank, state (Patrolling / Returning to port for repairs / Repairing) and, for your own\nship, the hint \"Tap the sea to move\". Enemy warships show owner, health and veterancy only.\nReads GameState unit fields defensively (hp, max_hp, veterancy, vet_progress, state)."
+ },
+ "src/client/UI/Widgets.luau": {
+  "lines": 3151,
+  "header": "Port of scripts/ui/widgets.gd (UIWidgets animation helpers) plus the kit's Control engine.\n\nThe original UI is built from Godot Controls and Containers. Roblox auto-layout cannot express\nthem exactly (expand / shrink flags, minimum sizes, fixed-width tabular numbers, letter\nspacing, synchronous size queries), so this module implements a small Control tree with Godot\nsemantics that renders to Roblox GuiObjects:\n\n  Control   free children placed by anchors / offsets / grow direction (Godot Control)\n  Box       HBoxContainer / VBoxContainer (separation, alignment, size flags, stretch)\n  Panel     PanelContainer with a \"panel\" style (StyleBoxFlat); Margin = MarginContainer\n  Label     Rubik text (alignment, clip / ellipsis, autowrap, letter spacing, tabular digits)\n  Icon      TextureRect (UiIcons glyph, tint);  ColorRect\n  Button    Button with theme variations (UITheme.theme()), icon + text, toggle mode\n  Root      top-level node bound to a ScreenGui / Frame; owns the UI scale & logical viewport\n\nEvery node has `node.gui` (its Roblox GuiObject). Sizes and positions are logical px (Godot px);\nthe engine renders them at UITheme.scale, pixel-snapped. Layout is recomputed for dirty trees\nonce per frame (Widgets.step) and synchronously whenever a size is queried.\nTweens follow Godot's Tween API and easing equations exactly (create_tween, tween_property,\nset_trans / set_ease, set_parallel, chain, tween_interval, tween_callback, tween_method)."
+ },
+ "src/client/Audio/AudioDirector.luau": {
+  "lines": 1330,
+  "header": "Port of scripts/audio/audio_director.gd: music + sound-effect director (client only).\n\n- The soundtrack (Assets/Soundtrack.luau: Rodrigo Flores' Orchestral Ambients, 2026-09-27) plays by\n  mood (set_music_mood: title, wait, calm, war, victory, defeat — UIRoot picks it with MusicMood):\n  whole tracks, intro to ending, the next one (Playlist: shuffled, no recent repeats) fading in over\n  the last TRACK_OVERLAP_S; a new mood crossfades at once, except war -> calm, which lets the battle\n  track play out. Only the next track is preloaded (phones). Two music Sounds crossfade\n  (equal-power). Without the soundtrack the old looping \"menu\" / \"war\" themes play (play_theme).\n- Music on/off is persisted per account through the Session's settings ([audio] music_enabled, as\n  the original's user://settings.cfg) and fades smoothly (0.6 s); switched-off music is paused so it\n  resumes where it was.\n- play_sfx() plays from per-effect voice pools (MAX_SAME Sounds per effect, created once with their\n  SoundId so every play is already loaded — swapping SoundId per play made Sound.Played fire with\n  IsLoaded = false, review P2-7), at most VOICE_COUNT ringing at once, with per-sound throttling,\n  a cap on simultaneous copies and voice-steal priorities; long stings honour cooldowns (a repeat\n  plays a short accent instead).\n- duck_music() dips the music under big moments (nuke explosions etc. duck automatically).\n- \"Music\" and \"SFX\" SoundGroups under SoundService. Levels are the original's dB values converted\n  with Sound.Volume = 10^(dB/20) (Volume is linear gain, 1 = unity; the assets keep the WAVs' levels).\n- Sound ids come from Assets/Audio.luau (assets agent); missing entries are skipped silently.\n  Assets/AudioExtra (the studio's other games) and then Assets/AudioUI (the interface kit, from\n  the same packs: tools/assets/upload_sfx_ui.py) replace same-named entries; a replaced sound stays as that\n  name's stand-in, played while the new one has not loaded (still in moderation, or refused).\n- pop() is the sound of your border growing (added 2026-10-04, so taking land is heard as well as\n  seen): a run of one bubble pop whose rate follows how fast land is being taken, a little\n  higher the longer the run lasts."
+ },
+ "src/client/Audio/MusicMood.luau": {
+  "lines": 75,
+  "header": "Which soundtrack mood fits the moment (AudioDirector.set_music_mood). Pure logic, polled by UIRoot:\n  title    the title screen                     wait     a public match's waiting room\n  calm     a match, no fighting                 war      fighting a nation or a player\n  victory  the match is over and we won          defeat   the match is over for us (lost, or out)\nWar: an attack between us and a nation or a player (tribes don't count — early expansion isn't a\nwar) or a nuke of ours or at our land; it lasts WAR_HOLD_S after the last sign of fighting, so the\nmusic doesn't flip back and forth."
+ },
+ "src/client/Audio/Playlist.luau": {
+  "lines": 90,
+  "header": "The soundtrack's playlists (Assets/Soundtrack.luau): which track plays next in a mood. Pure logic\n(no Roblox services), used by AudioDirector.\n\n  Playlist.new(manifest, rand?)       manifest = {tracks = {key = {id, length, ...}}, moods = {mood = {keys}}}\n  :pool(mood)                         the mood's playable track keys (FALLBACK moods when empty)\n  :next(mood)                         the next key: the title's opener first, then shuffled — never one\n                                      of the last few played (HISTORY, at most half the pool)\n  :after(mood)                        the mood that follows once a track of `mood` ended (victory and\n                                      defeat play once)"
+ },
+ "src/client/Map/AtlasReady.luau": {
+  "lines": 46,
+  "header": "Tells a map layer when an image it would like to switch to can be drawn.\n\nA layer that swaps two stacked images for one combined atlas (Sprites.units_one, Sprites.shapes_one) must not\ndo so before that atlas loads for this player: an image Roblox has not approved yet, or refuses,\ndraws nothing, and every unit or plate on the map would be gone. So the layer starts on the atlases\nit has always used and asks here.\n\nContentProvider:PreloadAsync answers truthfully only for an instance: given the content id as a\nstring it reported Failure for atlases that were on screen (Studio, 2026-10-08), and Success /\nFailure correctly for an ImageLabel holding it."
+ },
+ "src/client/Map/FalloutGlow.luau": {
+  "lines": 713,
+  "header": "The glow of fresh fallout on the 2D map (2026-10-12, so irradiated land looks better and\nglows: the fallout used to be a flat green, with no glow).\nHow it is made:\n  * heat: a tile that turns to fallout is at heat 1, which drains by HEAT_DECAY_PER_TICK / 255 a game\n    tick (gone in 25.5 s); a tile no longer fallout is at 0. Fallout already\n    on the map when the state is bound has none.\n  * the glow is worked out for one tile in every SCALE x SCALE block (its centre tile):\n    a \"broil\" of two value noises, contrast and intensity mixed from\n    cold to hot by the heat, a slower meta noise over it, all faded in by the heat; and, on some\n    blocks (a hash over the threshold), a dot of light flickering at a rate of its own\n    (the extract function). Kept in 0..1 (RGBA8).\n  * a 5-tap Gaussian blur across and down (BLUR), then laid over the map, linearly\n    filtered, times COVERAGE: one EditableImage\n    of the blocks (straight alpha) stretched over the map in one ImageLabel, under the overlays.\nWorked out on the CPU, so redrawn UPDATE_S apart, not every frame, its noise (the costly part)\nfor as many blocks as NOISE_BUDGET_S allows each time, round robin (the noise moves over seconds);\nnot written on a frame the map surface wrote one of its images (MapSurface: Roblox shows one\nEditableImage update a frame), unless it has waited SKIP_MAX frames. (2026-10-26, phones' slow\nframes: its lists, noise and buffers are kept from one draw to the next, and the label is placed\nagain only when the camera moved.)\n(2026-10-27, \"Script - Fallout Glow\" led phones' slow frames: a MIRV's or a few far-apart nukes'\nbox is most of the image, and it was blurred whole every draw (a MIRV: ~32 ms a draw on a Mac,\ninterpreted). Now only what the view can reach is drawn (`_win`: the view's blocks and a quarter\nview more each way, drawn again at once when the view leaves it for glow not drawn), the blur goes\nover the rows with glow and the columns it reaches, sliding along them (one read a cell, not five),\na block's hashes are worked out once, phones redraw at UPDATE_S_MOBILE and a long draw waits DUTY\ntimes as long. The pixels drawn are the same.)"
+ },
+ "src/client/Map/FrameClock.luau": {
+  "lines": 21,
+  "header": "The client's frame time: the real one (os.clock, RenderStepped's dt), except while a Studio film\n(Dev/Film: the trailer, 2026-10-12) steps time itself,\na frame at a time, so a capture of each frame plays back smoothly. The session, the map and the HUD\ntake their dt from here and the map's animations their clock."
+ },
+ "src/client/Map/FrontLayer.luau": {
+  "lines": 411,
+  "header": "Troop counts on the local player's fronts (a label per attack front, floating over the map):\nevery 200 ms, for each attack by the local player on another owner (blue\n#3fa9f5) and each attack on the local player by a player or nation, not a tribe (red #f87171),\nthe front is split into connected clusters (8-neighbours); the two largest (clusters under 30\nfull-size tiles dropped, the largest always kept) get a label with the attack's troops\n(render_troops) at the front tile nearest the cluster's centroid. Labels glide to new positions\nover 250 ms (snap beyond 200 full-size tiles) and keep a constant on-screen size.\n\nThe front: the label belongs on the attack's frontier, the whole shared border; the\nclient has no frontier, so it uses the local player's border tiles (UI BorderTracker, handed\nover with set_borders) that touch the other owner.\n(2026-10-26, phones' slow frames: a poll works in tables kept from one poll to the next, and a label\nis written only what changed.)"
+ },
+ "src/client/Map/FxLayer.luau": {
+  "lines": 1015,
+  "header": "Effects on the 2D map: a nuke's shockwave ring grows to 1.5 x its\nblast radius over 1.5 s behind a white flash, a destroyed ship / shot-down nuke pops a small\nring (0.8 s), and the camera shakes a little for nukes near the view. Pooled GUI circles.\nConquests by the local player (a flag and a gold popup): a victory\nflag planted at the conquered name's location, its banner the conqueror's colour (Assets/MapFx:\n10 frames of 24 x 24 at 90 ms, drawn 22 full-size tiles wide, 2.5 s, fade in over the first 10 % and\nout after 60 %; 2026-10-25: it replaced a sword clash for the elimination), and a\nwhite \"+ 12.3K\" gold line below it (font 6 tiles, fading\nlinearly).\nBoth keep a minimum on-screen size, so a zoomed-out map still shows them.\nIncome (2026-10-07:\ntrains show the little money-increase popup as they pass through cities too): gold the local\nplayer earned at a tile, a train's stop at a station, is a white \"+ 25.0K\" that starts 3 full-size tiles\nabove the tile, rises 3 tiles a second and fades out over 1.5 s (font 6 tiles). It keeps a minimum\nsize on screen and is not drawn on a map zoomed far out (and is never bigger than\n40 px).\nExplosions (Assets/MapFx; added 2026-10-04 for a destroyed defense post and for a\nnuke shot down by a SAM): a\ndestroyed defense post or Arsenal structure plays `building` over a small ring, a nuke shot\ndown plays `sam` where it was. They are seen, not heard (shots and hits were made silent\non 2026-09-27: together they were a constant racket).\nNukes (since\n2026-10-12; the trailer's hydrogen bombs fell flat when a ring and a green stain were all\na nuke left): a nuke that lands plays the explosion (Assets/MapFx: 12 frames of\n60 x 60 at 70 ms, drawn 60 full-size tiles wide) and leaves debris burning: mini fires, smoke, big\nsmoke and smoke with fire (DEBRIS_PLAN, looping) scattered within half its radius, 6 s, fading in\nover the first 10 % and out after 80 %; its ring grows to 1.5 x that radius. The radius is the\nlook's (NUKE_FX_RADIUS), not the blast's.\nEvery pooled object remembers what it was last given and is written only what changed (2026-10-26,\nphones' slow frames: a nuke's 240 debris sprites were written six properties each a frame, with the\nview still and between their frames), and spent effects leave their lists in one pass, in order."
+ },
+ "src/client/Map/MapCamera.luau": {
+  "lines": 554,
+  "header": "2D map camera for a flat tile map drawn in the GUI.\n\nMap space: u = tile column + fraction (0..W), v = tile row + fraction (0 = top edge .. H); a\ntile's centre is (x + 0.5, y + 0.5). Maps are flat rectangles (nothing wraps).\nScreen space: viewport px (Camera.ViewportSize / InputObject.Position + GuiInset).\n\nThe view is (cu, cv, scale): the map point (cu, cv) sits at the view anchor — the viewport centre\nmoved by screen_offset (the middle of the HUD-free area, MapView.set_safe_area) — and one tile is\n`scale` px wide. Once the map is bigger than the view it pans until an edge reaches the view\nanchor; smaller, it stays centred (clamp_axis).\n\nIt also provides the camera-rig API the input controller uses (halt, viewport_size, pan,\nzoom_by, globe_hit, is_moving, begin_drag, drag_by, end_drag), so the input keeps GlobeInput's\ntouch / mouse model.\n(Lune tests load this file with the shared modules from the repo.)"
+ },
+ "src/client/Map/MapInput.luau": {
+  "lines": 731,
+  "header": "Map input (from scripts/view/globe_input.gd): mouse, trackpad and multi-touch for MapView,\ndriving the MapCamera through its camera-rig API (drag pans the map, wheel / pinch zoom about\nthe pointer). \"Globe\" below means the map.\n\nTouch model (Roblox): every touch is tracked by its InputObject from UserInputService. A touch\nwhose press was not processed by the GUI (gameProcessedEvent false: no Active GuiObject took it)\nlanded on free globe (GLOBE); one the GUI processed landed on a HUD control (UI). The GUI keeps\nUI touches (taps, slider drags) unless they become part of a pinch.\n * One GLOBE finger: orbit with inertia once it moves past the slop; a drag that crosses a HUD\n   panel keeps orbiting. Tap = tile_clicked, still 500 ms press = tile_context.\n * A second finger stops any orbit / inertia at once and cancels the first finger's tap. If both\n   fingers are GLOBE the pinch starts immediately; if one started on the HUD it becomes a pinch\n   only when BOTH fingers move (a resting thumb on the globe + a tap / slider drag on the HUD\n   stays a HUD action). While pinching the globe only zooms (around the point under the\n   fingers' start midpoint); no rotation.\n * Lifting fingers after a two-finger gesture never taps; a remaining GLOBE finger may orbit.\n * touch_owned_by_world(io) tells the UI whether the view owns a touch (GLOBE gesture or pinch\n   participant); valid through the frame in which the finger lifts, so a HUD control can ignore\n   the release of a finger that took part in a pinch.\n * Stale touches (review_code.md R2-6): a finger whose InputEnded never arrives (app backgrounded,\n   a system gesture stole it) must not lock the globe. A tracked touch is dropped when its\n   InputObject reports End / Cancel, when it has not moved for STALE_TOUCH_S and a new finger\n   would otherwise be refused (two tracked already: Roblox sends nothing for a finger held still,\n   so age alone never evicts a resting first finger — \"rest a thumb, then pinch\" stays a pinch),\n   when the window loses focus or the Roblox menu opens, and on input on / off.\nStop gesture: pressing (touch or mouse) while the globe is still moving (inertia above\nSTOP_PX_PER_S or a focus animation) halts it and that press never taps (it may still turn into a\ndrag, or be held for the menu: holding after a fling used to do nothing, which made the hold\nmenu seem inconsistent, 2026-09-29). Every press kills inertia.\nhold_state() reports a touch hold in progress (UIRoot draws the hold ring from it).\nMouse: left-drag orbit, right-click context, wheel / trackpad pinch / two-finger pan zoom toward\nthe pointer. WASD / arrows pan and + / - zoom while input_enabled and no TextBox has focus.\nAll positions are VIEWPORT px (InputObject.Position + GuiService:GetGuiInset())."
+ },
+ "src/client/Map/MapSurface.luau": {
+  "lines": 1517,
+  "header": "The 2D map surface (terrain, territory and borders): one pixel per\ntile, nearest-neighbour upscaled (ResampleMode Pixelated) so tiles stay crisp squares at any zoom.\n\nTerrain and territory are composited on the CPU into one RGBA image of the map, split into\nimage tiles of at most 1024 x 1024 (the client EditableImage limit), each shown by one ImageLabel\nthat MapView moves every frame. Only one displayed EditableImage updates per frame (Roblox), so\ndirty rows are uploaded round-robin: one image tile per frame, all of its dirty 32-row bands.\n  terrain    terrain_pixel of the map's terrain bytes\n             (map.tile_bytes: bit7 land, bit6 shoreline, bits0-4 magnitude), colours from\n             OCEAN .. MOUNTAIN (e.g. highland #DCCB9E);\n  territory  owned tiles blend the owner's colour at 150/255 (saturation 0.85) over the terrain,\n             border tiles are opaque in the border colour (HSL lightness - 0.125), fallout ground is\n             opaque green noise.\nThe rules:\n  * border tile = a 4-neighbour has another owner (off the map counts as another owner);\n  * hovered owner: fill contrast x1.25 about mid-grey, border mixed 25% to white, border thickened\n    by one tile (Chebyshev 1). The fill only for an owner of HOVER_FILL_MAX tiles or fewer: it\n    means repainting every tile (see HOVER_FILL_MAX);\n  * a border next to an ally is mixed 35% toward green;\n  * defended tiles (near a same-owner defense post): border checkerboard x0.7, fill x0.85.\n(Lune tests load this file with the shared modules from the repo.)"
+ },
+ "src/client/Map/MapView.luau": {
+  "lines": 985,
+  "header": "The 2D world view (a flat tile map), replacing the 3D globe WorldView with the same\npublic API (DESIGN.md §10), so UIRoot / Main / Session drive it unchanged:\n  signals tile_hovered(tile), tile_clicked(tile), tile_context(tile, screen_pos),\n  territory_status_changed(status); bind_state, set_attract_mode, focus_tile, focus_owner,\n  set_hover_owner, set_selected_owner, set_selected_unit, unit_at_screen, set_aim,\n  aim_sams, set_range_*, set_safe_area, set_hud_rects / controls, local_label_rect,\n  set_labels_visible, tile_at_screen, screen_pos_of_tile, camera_distance, project, update.\n\nRendering: three ScreenGuis under the HUD (DisplayOrder MAP_DISPLAY_ORDER and the two above it):\n  RofrontMap        Surface (MapSurface: terrain + territory images, pixel-crisp, wrapped\n                    east-west) and the Overlay with what seldom changes: spawn / aim markers,\n                    rails, ranges, structure plates;\n  RofrontMapUnits   what moves every frame: ships, trains, wakes, munitions, effects, and the\n                    structures' progress bars;\n  RofrontMapLabels  names and front numbers (they change with the troop counts).\nWhy three (2026-10-08; players on Windows had stutter bad enough to quit, ten minutes into a\nmatch): Roblox lays out and draws a ScreenGui again as a whole\nwhen anything in it changed, and nothing at all when nothing did. As one ScreenGui the map was\nabout 13,000 objects twenty minutes into a World match, all of them gone over every frame\nbecause some ship had moved a pixel: 9 ms a frame on the Mac that measured it (with the match\npaused: 0.2 ms). The moving layers are a small tree of their own now (docs/performance.md).\nInput: MapInput (mouse / touch / keys) driving the MapCamera through the camera-rig API."
+ },
+ "src/client/Map/NameLayer.luau": {
+  "lines": 762,
+  "header": "Owner names + troop counts on the 2D map:\n  * placement (_place): the bounding box of the owner's main\n    cluster, a grid at a coarse scaling factor (1..32 by the box size) where a cell is usable if\n    it is the owner's tile, a shoreline tile, ocean with magnitude < 10 or fallout; the largest\n    inscribed rectangle of that grid; the name sits at its centre, raised by fontSize / 3, with\n    fontSize = min(rect.width / name length * 2, rect.height / 3). Recomputed every 30 ticks\n    (REPLACE_TICKS) and at once for new owners; spawn-phase names use an 8-tile box on the spawn;\n  * sizing: baseSize = max(1, floor(size)), nameSize = max(4, floor(baseSize *\n    0.4)), nameScale = min(baseSize * 0.25, 3); the name line is nameSize * nameScale full-size\n    tiles tall, the troop line 0.6 of it; names shorter on screen than the cull threshold hide\n    (hovered ones never do). Positions / sizes glide to new targets (LERP_SPEED 10);\n  * style: fill black for humans, 0.3 grey nations, 0.4 grey tribes\n    (SHADE_*); outline in the owner's colour, width 1.4.\nSizes are in full-size tiles; our tiles are map.k_lin full-size tiles wide.\nRoblox: one pooled Frame per owner (name + troops TextLabels with UIStroke); TextSize caps at\n100 px, beyond that a UIScale enlarges the whole plate."
+ },
+ "src/client/Map/RangeLayer.luau": {
+  "lines": 717,
+  "header": "Range rings on the 2D map: SAM interception coverage and defense-post protection radius, the\nprospective ring while placing one, and the selected warship's patrol / targeting rings. The\nchoice of rings is the globe RangeLayer's (View/RangeLayer.luau _rebuild), drawn as flat GUI\ncircles (UIStroke keeps widths pixel-constant) with a faint fill:\n  mode \"auto\" (default): own SAMs / posts faint, fading out as the view pulls back; while aiming\n  a nuke the hostile SAMs within NEAR_AIM x their range of the aim tile (red-tinted) and those\n  covering it (hot: thicker, pulsing; aim_sams() counts them); boat aim / \"attack_aim\": the\n  target owner's posts; hovered / focused sites; the build preview ring (+ own rings of that\n  kind at full strength). \"nuke_aim\", \"all\", \"none\" as in the globe layer.\n(2026-10-26, phones' slow frames: a ring remembers what it was last given and is written only what\nchanged, where every ring on screen was written eight properties a frame; the rings are chosen\nagain only when what they show changes: not for a missile fired, and while a SAM's range grows\nafter an upgrade only that ring's radius follows it, a game tick at a time.)"
+ },
+ "src/client/Map/RoadLayer.luau": {
+  "lines": 672,
+  "header": "Railroads on the 2D map: every railroad follows its tile path\n(GameState.roads: rid -> {a, b, tiles}) and fades in over FADE_RANGE up to zoom MIN_ZOOM.\nZoomed out it is a line a full-size tile wide along the path's centre (THICKNESS 1: the path's straight\nruns, pooled GUI bars); zoomed in, a detailed track (from DETAIL_ZOOM): each tile a\n3 x 3 grid, two rails along its sides and a tie between them, a turn's tile its own piece (the two\nsides it joins, rail_kinds). The track is a tiled image (assets/rails, RailArt)\nalong each straight stretch and one per turn.\nColoured by the land under them: grey on unclaimed land, a light rail on the\nlocal player's land (dark over light territory) and the owner's border colour elsewhere; runs are\ncut every RUN_MAX tiles so the colour follows the borders they cross. Redrawn when the camera or\nthe network changes, and now and then for the colours.\n\n(2026-10-12: in the trailer's rail shot the train tracks looked poor; they\nwere bars 0.4 of a tile wide, 2 px at a continent's zoom, and never the track.)\n(2026-10-27, \"Script - Roads\" was phones' second slow-frame cause: a pan moved every rail on the\nscreen, one Position each, and a rail coming on or going off the screen handed every rail after it\nin the pool another run: six writes each. Now the rails sit in a frame placed at the map's origin\n(`_pan`), each where it is at this zoom, so a pan writes the frame alone; until the view has moved\nPAN_SLACK px no rail is even looked at (the rails that far off the screen are kept). A run or piece\nkeeps its GUI object while it is drawn.)"
+ },
+ "src/client/Map/StructureLayer.luau": {
+  "lines": 633,
+  "header": "Structure icons on the 2D map:\n  * a plate per structure in its kind's shape (Assets/MapSprites: City squircle, Port disc, Factory\n    cog, Defense Post shield, SAM Launcher dome, Missile Silo bullet, Artillery diamond, Airfield\n    runway, Railgun hexagon), fill = the owner's territory colour at HSV value x0.65, rim = the\n    border colour (the territory colour for the local player) at value x0.1, a white glyph inside;\n    under construction: grey fill 198 / rim 127;\n  * size: ICON_SIZE * iconScale px, iconScale = DOT_SCALE (0.3, no glyph)\n    when zoom <= DOTS_ZOOM, zoom / GROW_ZOOM above GROW_ZOOM, else\n    min(1, zoom / SCALE_FACTOR_OUT); per-kind shape scale; zoom = the camera zoom\n    (device px per full-size tile; a tile is k_lin full-size tiles, a GUI px DEVICE_RATIO\n    device px);\n  * level >= 2: the level number above the plate (0.4 plate sizes up);\n  * a progress bar, 14 x 3 full-size tiles centred 6 tiles below the structure\n    (1-tile black border; fill red < 25 % < orange < 50 % < yellow < 75 % < green): construction\n    progress, and a SAM's / silo's missile readiness while missiles reload (Ev.STRUCT_SHOTS).\nRoblox: pooled plates, positions rewritten only when the camera or the structure set changed. A\nplate is one ImageLabel with the glyph inside it: the shape's rim and fill in one image\n(Sprites.shapes_one, tinted with the fill colour: its rim pixels are the grey that makes the rim's\ntenth of the value). It was a Frame holding a rim image, a fill image, the glyph and a level\nlabel, five objects for each of a late game's 500 structures, all laid out again on every camera\nmove (2026-10-08, docs/performance.md). The level label is made when a structure has a level to\nshow. While shapes_one has not loaded, every plate keeps a second image for the fill.\n(2026-10-26, phones' slow frames: a plate and its bar remember what they were last given and are\nwritten only what changed, read nothing back from Roblox; a structure's own event redraws that\nstructure alone, where every SAM shot on the map used to redraw every plate.)"
+ },
+ "src/client/Map/TrailBudget.luau": {
+  "lines": 34,
+  "header": "How much of the munitions in flight UnitLayer draws: every trail dot and every target ring is a\nGUI object, so their number has a ceiling whatever the Sim has in the air.\n\nA munition's trail is a dot every UnitLayer.TRAIL_STEP along the arc it has flown, MAX at most. All\nthe munitions in flight share BUDGET dots a redraw: with more of them than the budget feeds whole\ntrails, each keeps only its newest dots (the tail behind it), down to none.\n  * A MIRV is 350 warheads (Rules.MIRV_WARHEADS), and the AI fires them at a leader who nears the\n    win. Each warhead had its whole trail and a pulsing target ring. One MIRV on a World map,\n    measured 2026-10-09 on the Mac that measures docs/performance.md: 208 warheads, 16,784 objects\n    in the unit layer where 1,000 had been, 27 ms of its script a frame where 2 had been, frames of\n    183 ms. A player's report the same day: \"I went down to like 3fps nearing the end of a rofront\n    game\".\n  * so the trails share a budget, and MIRV warheads lose their target rings while many fly.\n\nPure Luau (no Roblox types): tests/trail_budget.luau."
+ },
+ "src/client/Map/UnitLayer.luau": {
+  "lines": 742,
+  "header": "Units on the 2D map:\n  * sprites from the unit atlas (13 x 13 px, drawn 13 full-size tiles wide, so they\n    scale with the map), recoloured: light pixels in the owner's territory\n    colour, dark pixels in its border colour (two tinted mask layers, Pixelated);\n  * ships / trains follow their path tile to tile (the sim's timing: start_tick +\n    ticks_per_tile); warships interpolate prev_tile -> current over a second;\n  * a train is drawn as the engine, TRAIN_CARRIAGES carriages and a\n    tail engine, TRAIN_SPACING full-size tiles apart along the rails behind it (the sim moves one\n    unit; the cars are cosmetic);\n  * nukes fly a cubic Bezier (Rules.nuke_arc: control points a quarter / three quarters\n    along, raised by max(dist / 3, 50 full-size tiles) toward the top, clamped to the map; the\n    Sim flies the same arc), leave a trail in the owner's colour (alpha 0.588) and mark their\n    target with a pulsing blast ring;\n  * shells and SAM missiles are small sprites flying straight to their target;\n  * transport ships leave a wake: the way sailed so far,\n    one full-size tile wide in the owner's territory colour at alpha 0.588, gone with the ship.\n    The ship and its wake follow the route with its corners rounded (Map/WakeRoute: the Sim's\n    paths are straight legs meeting at sharp corners, and the wake was a few straight bars until\n    2026-10-07, when it was made to curve smoothly), drawn as short straight bars.\n\nWhat it costs (2026-10-08; players on Windows had stutter bad enough to quit, ten minutes into a\nmatch). Twenty minutes into a World match there are 700 units, and with the\nwhole map in view this layer was the frame's biggest cost: 2.9 of the map's 3.5 ms of script a frame,\nabout 3,000 GUI objects and some 9,000 Position writes a second for Roblox to lay out again\n(docs/performance.md has the trace). So:\n  * a train's cars are drawn only where they can be told apart (CARS_MIN_ZOOM, where the rails fade\n    in too): 2 full-size tiles apart, seven 13-tile sprites are one blob on a map zoomed out, yet\n    they were six of every seven sprites that moved;\n  * a sprite is one image (Sprites.units_one: both of the sprite's colours in one tint) once that atlas\n    has loaded, and until then two, the second inside the first; it was two inside a frame;\n  * while the camera stands still and many sprites are on screen, the whole layer is redrawn 20 to\n    30 times a second, not every frame (THROTTLE_*): at that zoom a ship moves a fraction of a\n    pixel a frame, and a frame in which nothing here changes costs Roblox nothing (MapView's\n    header);\n  * the pools keep a few spares and destroy the rest (POOL_SPARE): every object in this ScreenGui\n    is gone over on each frame something moved, shown or not, and the pools had grown to 7,700."
+ },
+ "src/client/Map/ViewRules.luau": {
+  "lines": 145,
+  "header": "Port of scripts/view/view_rules.gd — gameplay numbers the view draws (SAM / defense ranges, nuke\nradii, interception odds), read from Rules at runtime so range rings and aim previews follow the\nSim when it is retuned. Prefers Rules' functions and falls back to the older constants.\n\nRange metric (must match the Sim): covered <=> (dx * xs)^2 + dy^2 <= r^2 in grid tiles, dx wrapping\nat W, xs = max(cos(lat of the target tile's row), 0.08) — Defs.range_d2 == SimState.range_d2."
+ },
+ "src/client/Map/WakeRoute.luau": {
+  "lines": 211,
+  "header": "A transport ship's route as a smooth line (UnitLayer draws the ship and its wake along it).\n\nThe Sim's water paths are string-pulled (SimNav._smooth): long straight legs that meet at sharp\ncorners in open water, and near a coast, where no straight line is free, a staircase of two-tile\nsteps. Drawn as they are, a wake was a few straight bars and some jitter (2026-10-07: boat\ntrails looked like straight lines; they should curve smoothly). Here:\n  1. the path is cut into straight legs that stay within TOL tiles of its tiles (a staircase is\n     one leg; measured on 200 World routes, 8 of 10 legs were under 8 tiles before);\n  2. every corner is rounded: the route leaves a leg up to CORNER full-size tiles before the corner\n     (never more than half the leg) and joins the next one as far after it, along a quadratic\n     Bezier whose control point is the corner, cut into short straight pieces (one per ARC_STEP\n     of turn).\n  * The curve passes inside the corner. Where that would put it on land (a corner at a cape; a\n    tile's width of shore is let pass, as a leg may) it is tried at half and at a quarter the\n    size, and the corner stays sharp if none fits.\n  * Each point carries how many path tiles along the route it is (`ss`), so the ship is placed by\n    the Sim's own timing (tiles sailed) and reaches both ends of every curve when it would have\n    reached them on the legs.\n\nPure Luau (no Roblox types): tests/wake_route.luau."
+ },
+ "src/shared/Assets/ArsenalArt.luau": {
+  "lines": 32,
+  "header": "GENERATED by tools/assets/make_arsenal_art.py — do not edit by hand.\nThe Arsenal's art (Data/Arsenal): white interface masks and the shop cards' renders (its\nstructures' map plates and glyphs are in Assets/MapSprites with every other structure's)."
+ },
+ "src/shared/Assets/ArsenalFx.luau": {
+  "lines": 18,
+  "header": "GENERATED by tools/assets/make_arsenal_fx.py — do not edit by hand.\nEffects for the Arsenal's shop previews (UI/ArsenalDemo): flipbooks { id, cell, frames, cols } and\nsingle images { id, w, h }."
+ },
+ "src/shared/Assets/ArsenalMaps.luau": {
+  "lines": 45,
+  "header": "GENERATED by tools/assets/make_arsenal_maps.py. Do not edit.\nThe Arsenal previews' ground: pieces of our World map (public-domain data), drawn like a match.\ncell: a scene's size in the atlas (tiles = px); scenes[key]: its cells (one per frame, top left)\nand its border's split of the scene (nil: the player's land only)."
+ },
+ "src/shared/Assets/Audio.luau": {
+  "lines": 43,
+  "header": "GENERATED by tools/assets/upload_audio.py — do not edit by hand.\nAudio ids + exact lengths (seconds). Sources: ~/games/airfront/assets/audio/{music,sfx}/*.wav,\nuploaded losslessly (FLAC) so levels match the original and the music loops stay seamless\n(play music with Sound.Looped = true). Missing keys = not uploaded yet: callers must skip.\nsfx entries are {id, length}, or {sprite, start, stop, length} for audio-sprite regions\n(Sound.PlaybackRegionsEnabled = true; PlaybackRegion = NumberRange.new(start, stop))."
+ },
+ "src/shared/Assets/AudioExtra.luau": {
+  "lines": 32,
+  "header": "GENERATED by tools/assets/upload_sfx_extra.py — do not edit by hand.\nExtra sound effects (BedWars' countdown); AudioDirector merges them over Assets/Audio's sfx."
+ },
+ "src/shared/Assets/AudioUI.luau": {
+  "lines": 22,
+  "header": "GENERATED by tools/assets/upload_sfx_ui.py — do not edit by hand.\nThe interface sound kit, from the studio's own packs (BedWars, Airship BedWars; 2026-10-04: pack\nsounds for most of the interface rather than ones made from scratch). expand_pop is the\nborder pop. AudioDirector merges these over Assets/Audio and Assets/AudioExtra."
+ },
+ "src/shared/Assets/Branding.luau": {
+  "lines": 9,
+  "header": "GENERATED by tools/assets/make_branding.py — do not edit by hand.\nIn-game branding images (full colour, do not tint). logo_mark = the title-screen emblem\n(TitleScreen `_emblem`, RotateCard icon) = AIRFRONT's app icon, 512×512 with transparent\nrounded corners. The publishing icon (assets/branding/experience_icon_512.png) is not\nused in game and is set in the experience settings instead."
+ },
+ "src/shared/Assets/CrateArt.luau": {
+  "lines": 12,
+  "header": "GENERATED by tools/assets/make_crate_art.py — do not edit by hand.\nThe cosmetic crate's 2D art (the chest itself is 3D: Assets/CrateModel): white masks, tint them."
+ },
+ "src/shared/Assets/CrateModel.luau": {
+  "lines": 39,
+  "header": "The cosmetic crate's 3D chest (CrateOpening.luau): BedWars' voxel block chest, the studio's own game\n(in use since 2026-09-29, in place of the earlier chest), taken from Tribes'\ndrop reveal data (tribes/src/.../UI/DropModels.luau \"Drop\", normalised there by tools/build/ui/drops.luau).\nBuilt at runtime as Parts + SpecialMesh (FileMesh) inside a ViewportFrame.\n  pivot at the bottom centre, front = -Z, lid closed; `hinge` = the lid's hinge point (the lid opens\n  with a positive rotation about X there); sizes in studs. The lid is the top half of the block: it\n  flips far back (Tribes: 140 degrees) so it stays low.\nThe meshes and texture are 2022 user uploads (bryan3838): legacy user uploads load in any experience\n(Tribes ships the same ids live)."
+ },
+ "src/shared/Assets/Flags.luau": {
+  "lines": 272,
+  "header": "GENERATED by tools/assets/make_flags.py — do not edit by hand.\nCountry flags (Wikimedia Commons, public domain) packed in atlases; each flag's pixel rect\nin its atlas (ImageRectOffset = x, y; ImageRectSize = w, h)."
+ },
+ "src/shared/Assets/MapFx.luau": {
+  "lines": 16,
+  "header": "GENERATED by tools/assets/make_map_fx.py. Do not edit.\nRofront's own map effects (pixel art, a pixel a map tile): rows of one atlas, frames left to right.\nbanner: the flag's cloth in white and greys, drawn under `flag` tinted the conqueror's colour.\nfire, smoke, big_smoke, smoke_fire: the debris a nuke leaves, looping (the last frame runs into the first)."
+ },
+ "src/shared/Assets/MapSprites.luau": {
+  "lines": 46,
+  "header": "GENERATED by tools/assets/make_map_sprites.py — do not edit by hand.\nThe 2D map's sprites, RoWorld's own art: structure plates and glyphs, unit sprites and the\nstatus icons over the players' names."
+ },
+ "src/shared/Assets/MapThumbs.luau": {
+  "lines": 11,
+  "header": "GENERATED by tools/assets/make_map_thumbs.py. Do not edit.\nMap thumbnails rendered from each map's own terrain data (its data module, in the in-game\nterrain palette), fit within 512 px. Keys = the registry's map ids."
+ },
+ "src/shared/Assets/RailArt.luau": {
+  "lines": 10,
+  "header": "GENERATED by tools/assets/make_rail_art.py — do not edit by hand.\nRailroad tiles for the map's close-up track (Map/RoadLayer): the detailed rail, white."
+ },
+ "src/shared/Assets/ShopFlags.luau": {
+  "lines": 43,
+  "header": "GENERATED by tools/assets/make_shop_flags.py — do not edit by hand (assets/shop_flags/flags.json,\nproducts.json). The flag shop's flags (Data/Shop): `atlases` for name tags, the leaderboard and the\nLocker (like Assets/Flags), `big` for the shop's cards; each flag's rects, and its developer\nproduct in production (`product`) and Rofront Staging (`staging`), 0 = not made yet."
+ },
+ "src/shared/Assets/SkinPreviews.luau": {
+  "lines": 30,
+  "header": "GENERATED by tools/assets/make_skin_previews.py — do not edit by hand.\nThe territory skins' previews in one atlas (Locker cards, the crate reveal): each skin's pixel rect\n(ImageRectOffset = x, y; ImageRectSize = w, h). Draw with ResampleMode Pixelated."
+ },
+ "src/shared/Assets/Soundtrack.luau": {
+  "lines": 51,
+  "header": "GENERATED by tools/assets/upload_soundtrack.py — do not edit by hand (edit its TRACKS).\nMusic by Rodrigo Flores (Orchestral Ambients Bundle; human-made, no generative AI), CC BY 4.0.\ntracks: key -> {id, length (s), title, pack}; moods: playlists by mood, the first title track\nis the opener. Played whole (intro to ending) and crossfaded by AudioDirector."
+ },
+ "src/shared/Assets/UIKit.luau": {
+  "lines": 25,
+  "header": "GENERATED by tools/uikit/make_textures.py - do not edit by hand.\nui-kit textures. shadows[i] = {id, feather, radius, size, slice}: soft-shadow 9-slices (white,\nalpha = linear StyleBoxFlat shadow falloff outside, fading out inside; corner slice = `slice` px)."
+ },
+ "src/shared/Assets/UiIcons.luau": {
+  "lines": 54,
+  "header": "GENERATED by tools/assets/make_ui_icons.py — do not edit by hand.\nUI icon images (Rasterised from ~/games/airfront/assets/{icons/ui,ui,icons/hud}/*.svg and\nicons/app_icon.svg). Keys = UITheme.icon() names; HUD top-bar variants are prefixed \"hud_\".\nMasks are 128×128 white-on-transparent (tint with ImageColor3; keep the 64-unit SVG\nframing, so size the ImageLabel to the Godot px). app_icon is full colour (512×512), do not tint."
+ },
+ "src/shared/Assets/UiShapes.luau": {
+  "lines": 84,
+  "header": "GENERATED by tools/ui/make_shapes.py — do not edit by hand. (owner: ui-screens)\nStatic UI shapes (white masks unless noted). Radial segments: annular sectors centred on\n\"up\", cropped; `cx, cy` = ring centre inside the crop, `ro` = outer radius in image px."
+ },
+ "src/shared/Core/NumberFormat.luau": {
+  "lines": 40,
+  "header": "Number display (render_number / render_troops):\nvalues are floored, never rounded (\"2.45K\", \"123K\", \"1.25M\"), negatives show as 0, and troops are\nshown as the internal count / 10 (a 25,000-troop start reads \"2.50K\")."
+ },
+ "src/shared/Core/SimColors.luau": {
+  "lines": 293,
+  "header": "Port of scripts/core/sim_colors.gd: owner colour assignment in OKLab (perceptual) space: every\nowner should read as distinct from the owners around it (target ΔE ≥ MIN_DE). Used at spawn\ntime; colours never change while a human holds land.\n\nColours are RGBA8 ints (0xRRGGBBAA). OKLab values are tables {x = L, y = a, z = b} (GDScript\nVector3); `refs` are 1-based arrays of them.\n\nfloat32: Godot's Vector3 / Vector2 / Color are float32 (real_t = float), so OKLab triples,\ndistances (distance_to / length) and the shifted candidates are rounded to float32 exactly where\nthe original rounds them (the scalar math in between is GDScript double) — the port picks and\nre-tints to the very same RGBA values (verified in lockstep with the original, tools/parity)."
+ },
+ "src/shared/Core/Defs.luau": {
+  "lines": 701,
+  "header": "Port of scripts/core/defs.gd: shared enums, grid helpers and small lookup tables used by the\nsimulation, the client mirror and the views — plus the GDScript builtin helpers the port needs\n(posmod, trunc, idiv/imod, smoothstep, clampi, round, colour conversions).\n\nConventions (see build/notes/READY-core-api):\n* Tables indexed by an enum value (STRUCT_NAMES, NUKE_NAMES, …) are keyed by that value (0-based):\n  Defs.STRUCT_NAMES[Defs.S_CITY] == \"city\". Their sizes: Defs.STRUCT_KIND_COUNT, Defs.NUKE_KIND_COUNT.\n* Functions that returned a Vector2 in GDScript return two numbers (tile_latlon → lat, lon).\n* Colours are RGBA8 ints (0xRRGGBBAA, Godot Color.to_rgba32 layout) everywhere in Core."
+ },
+ "src/shared/Data/Arsenal.luau": {
+  "lines": 225,
+  "header": "The Arsenal: units and boosters a player unlocks for good (2026-10-04: units like Artillery and\nspecial nukes, unlocked either by grinding Stars in game or by buying them with Robux — the same model\nas Pixel Conquest's extra-buildings passes, with its prices).\n\n  stars    the price in Stars, the currency earned by playing (Data/Stars); nil: Robux only\n  product  the developer product that unlocks it for Robux (Data/Products; its `robux` is the\n           price shown until Roblox answers with the real one)\n  bonus    Stars paid once with the unlock, however it was bought\n  bit      the Defs.UNLOCK bit the Sim checks (0: the Sim doesn't care — 2x Stars)\n\nAn unlock is saved on the player's record (server/Purchases: `unlocks`), by ProcessReceipt for a\nRobux purchase or by Purchases.buy_unlock for Stars. The rules and numbers of each unit are the\nSim's (Core/Rules \"The Arsenal\", Core/SimArsenal); the copy here only describes them."
+ },
+ "src/shared/Data/BotNames.luau": {
+  "lines": 209,
+  "header": "Names for bot players (the AI commanders that fill empty public-match slots). By design they look\nlike ordinary player names (2026-09-26, so that bots pass for real\nplayers): gamer-style handles built from word lists, e.g. \"IronFalcon\", \"nova_ryder\",\n\"Blaze27\", \"QuietStorm_9\". Deterministic for a given random source (the Sim's RNG), unique within\none call's `taken` set."
+ },
+ "src/shared/Data/Cosmetics.luau": {
+  "lines": 613,
+  "header": "Cosmetics you unlock from crates (2026-09-29: cosmetic loot boxes of territory skins and flags to\nunlock; 49 Robux a crate, the first 15; never a duplicate; paid only; one crate for both).\n\n  skins   a territory pattern: a 1-bit mask tiled over your land (primary vs\n          secondary tiles; mask pixels are 2^scale tiles wide). '#' = the secondary colour: your\n          own colour lightened (tone > 0) or darkened (tone < 0), or a fixed `accent` colour\n          (legendary skins). Original designs.\n  flags   country flags (Assets/Flags, public domain from Wikimedia Commons), shown by your\n          name on the map and the leaderboard. Every flag is Common.\n  exclusive skins (exclusive_skins) are made for particular players: several colours, never in a\n          crate (Cosmetics.all() is the crate catalog; Cosmetics.exclusives() these).\n  shop flags (Data/Shop: \"shop_<key>\") are bought one by one in the flag shop: Rare, Epic or\n          Legendary, never in a crate nor on a bot player, not in the Locker's \"N of M\"\n          (Cosmetics.shop_items()).\n\nA crate rolls a rarity by RARITIES odds, then an item of that rarity the player doesn't own yet\n(uniformly); rarities with nothing left drop out and the odds of the rest scale up (odds() gives\nthe player's own odds, shown before every purchase — Roblox's paid random items rules)."
+ },
+ "src/shared/Data/MapList.luau": {
+  "lines": 35,
+  "header": "GENERATED by tools/maps/make_maps.py. Do not edit.\nRegistry of the playable maps (small and replicated: the map picker lists these without\nloading terrain). Terrain lives in src/server/MapData/<module>.luau (server only; clients fetch\nit through MapFetch) except World, replicated in src/shared/Data/Maps/World.luau so the title\nscreen and solo games start at once."
+ },
+ "src/shared/Data/Nations.luau": {
+  "lines": 91,
+  "header": "GENERATED by tools/data/make_grids.py from data/nations.json. Do not edit.\nArray (1-based) in nations.json order; nation owner id = index (1..88)."
+ },
+ "src/shared/Data/Products.luau": {
+  "lines": 81,
+  "header": "Robux developer products (Creator Dashboard → Monetization → Developer Products). `id` is the\nproduct's id; 0 = not created yet (its offer stays hidden). Each purchase is a saved credit of kind\n`grants` (default: the key), `count` of them (default 1) (server/Purchases.luau): bought credits are\nnever lost if the moment passes. A `grants` of \"unlock:<key>\" is not a credit: it unlocks that\nArsenal item for good (Data/Arsenal).\n\nProduct ids belong to one experience. `staging` is the same product in Rofront Staging (2026-10-04:\na separate experience where a build is tested before it goes to prod); in that experience it\nreplaces `id`. Create or reprice them with\ntools/assets/make_arsenal_products.py."
+ },
+ "src/shared/Data/Shop.luau": {
+  "lines": 247,
+  "header": "The flag shop (2026-10-22: a daily rotating shop of flags for sale, with a\nHalloween set first; docs/flag-shop.md). Flags you choose and buy for Robux, each its own developer\nproduct (Assets/ShopFlags: the art, the product ids). They are cosmetics like the crates' flags\n(Data/Cosmetics: item \"shop_<key>\", kind \"flag\"), but never in a crate and never on a bot player.\n\n  the daily shop   DAILY flags from the pool (the flags of no set), new every day at 00:00 UTC. Every\n                   server and client works the day's out from the date alone (Shop.daily): the pool\n                   is shuffled once per cycle of floor(#pool / DAILY) days, each day takes the next\n                   DAILY of it, so a flag doesn't come back within a cycle; a cycle's first day never\n                   repeats the day before.\n  sets             a limited set (SETS: Halloween) is on sale whole between its `from` and `to`; with\n                   a `bundle` price, all of it is one product too (2026-10-24, from the analytics\n                   suggestions: the set's 6 flags as one bundle at a discount).\n\nA receipt grants its flag whenever it comes (the prompt may close after the shop turned over)."
+ },
+ "src/shared/Data/Staging.luau": {
+  "lines": 15,
+  "header": "The Rofront Staging experience (2026-10-04: a separate game to test changes in before they go to\nprod): its universe id, for what differs there (Data/Products' ids, the game menu's\n\"Replay as new player\")."
+ },
+ "src/shared/Data/Stars.luau": {
+  "lines": 318,
+  "header": "Stars: the currency a match pays, spent in the Arsenal (Data/Arsenal; 2026-10-04: an item is either\nearned by playing or bought with Robux). The formula is Pixel Conquest's Money payout\n(an average match pays an average seat about 1,000; about 3,300 an hour of play), line by line:\n\n  played     100                              not for a player who left early\n  survived   15 a minute alive\n  territory  30 x peak land in fair shares    (a share = the map's land / the nations and players)\n  conquests  54 a nation or player conquered  (tribes don't count: there are hundreds)\n  placed     14 a minute x place score        place score = (1 - (place - 1) / (field - 1))^2;\n                                              not for a player who left early\n  victory    18 a minute                      the winner\n\nEvery line is rounded to 5 (at least 5 when it pays at all). A player who never spawned gets\nnothing. A solo match pays a share of this by difficulty (MODE_MULT: it runs on the player's own\ndevice against the AI); 2x Stars (Data/Arsenal) doubles the total.\n\n  Stars.payout(result, mode, double) -> { lines = { { key, amount } }, total }\n  Stars.sanitize(report, real_minutes) -> result   a client's solo report, made safe\n  Stars.solo_cap(real_minutes)                     the most a solo match of that length may pay\n  Stars.Tracker.new(sim)                           follows a running Sim for its humans' results"
+ },
+ "src/shared/Data/Starter.luau": {
+  "lines": 42,
+  "header": "The starter pack (2026-10-15): Mega Nuke + Scattershot + 2x Stars for 39 Robux, a limited-time\noffer (DURATION_S), once per account,\nfor a player who has never bought anything with Robux. Like Tribes' first Golden Drop offer\n(~/roblox/tribes docs/economy.md), the deadline is real: the clock starts the first time the offer is\non the player's screen and runs DURATION_S; then it is gone for good, never restarted.\ndocs/arsenal.md \"The starter pack\"; the server's side is server/Purchases (starter_*)."
+ },
+ "src/shared/Data/Subscription.luau": {
+  "lines": 61,
+  "header": "RoWorld General (2026-10-27): a monthly Roblox subscription, paid in Robux (Creator Dashboard ->\nMonetization -> Subscriptions; Roblox renews and bills it, and players cancel it in Roblox's own\nsettings). A paying player spent 89 Robux on average against about 600 at the top 500\nexperiences (the week to 2026-10-26), and nothing they could buy came back every month. Every player\nis greeted as Commander: a subscriber is a General. While subscribed (server/General):\n  * a crate every UTC day they play (Purchases.general_perks); where paid random items are\n    restricted (no crates there: PolicyService), DAILY_STARS Stars instead;\n  * +STARS_BONUS on every match's Stars, on top of 2x Stars (server/Rewards: the \"general\" line);\n  * the month's General skin (SKINS; Data/Cosmetics.general_skins), theirs to keep.\n\n`ID` is the subscription's id (\"EXP-...\"; \"\" = not created yet: nothing offers it), `STAGING` the\nsame subscription in Rofront Staging. Prod's was created inactive (2026-10-27): activate it on the\ndashboard when the build that offers it goes to prod."
+ },
+ "src/shared/Data/Tribes.luau": {
+  "lines": 485,
+  "header": "GENERATED by tools/data/make_grids.py from data/tribes.json. Do not edit."
+ },
+ "src/shared/Data/Tutorial.luau": {
+  "lines": 197,
+  "header": "A new player's first match (2026-10-04: an updated tutorial for new players, designed for phones\nfirst, since 90% of the players are on a phone, with its steps drawn from the analytics funnels).\nThe onboarding funnel of the 28 days before it (202,158 new players):\n\n  Joined 100% -> Title 99% -> Match Started 85% -> Spawned 81% -> First Attack 66%\n  -> Survived 3 Min 32% -> Survived 10 Min 24% -> Second Match 21%\n\n  * 14% never start a match: the first match starts by itself, on this device, at once;\n  * 5% never pick a start: a spot is pointed out, and taken for them after AUTO_SPAWN_S;\n  * 19% spawn and never attack: the first step is the first tap, with the place to tap marked;\n  * half of those who attack are gone within 3 minutes, while the AI may not even attack them\n    yet (Rules.HUMAN_GRACE_TICKS): they leave with nothing to do. So the first minutes are a list\n    of small goals with a reward at the end, on a match with fewer tribes in the way (TRIBES)\n    and the gentlest AI (DIFFICULTY).\n\nThe match is an ordinary solo match otherwise: it goes on after the last step. client/UI/Tutorial\nruns the steps; server/Analytics logs them as the \"Tutorial\" funnel (FUNNEL); the Stars are paid\nonce per player (server/Purchases.tutorial_bonus)."
+ }
+}

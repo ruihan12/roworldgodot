@@ -1,0 +1,66 @@
+--- a/main.gd	2026-11-09 22:09:03.777495804 -0500
++++ b/main.gd	2026-11-09 22:09:03.805494859 -0500
+@@ -406,9 +406,12 @@
+ var sim_ws: SimWarships
+ var fallout_count := 0
+ var real_nations := []
++var snow_src := PackedByteArray()  # current map codes; 4 = snow (Antarctica): plains rules, white colour
++const SNOW_COL := Color8(0xF4, 0xF7, 0xFA)
+ 
+ func _real_map(k: int) -> Dictionary:
+ 	if map_tab == 2: return UpstreamMaps.real_map_at(k)
++	if map_tab == 0 and k == 0: return UpstreamMaps.as_real_map("world")  # World with Antarctica + 3 aq spawns
+ 	if RW_MAP_FOR.has(k): return RealMaps.MAPS[RW_MAP_FOR[k]]
+ 	return {}
+ 
+@@ -504,6 +507,7 @@
+ 	land_total = 0; _land_w = -1.0
+ 	var raw_bytes := _get_handcrafted_map_bytes(map_i) if map_tab != 1 else PackedByteArray()
+ 	var rmap := _real_map(map_i) if map_tab != 1 else {}
++	snow_src = raw_bytes
+ 	sim_rules.tile_norm = TILE_NORM
+ 	sim_rules.set_k(float(rmap.k_lin) if not rmap.is_empty() else DEFAULT_K_LIN)
+ 	real_nations = rmap.nations if not rmap.is_empty() else []
+@@ -529,7 +533,9 @@
+ 				owner_map[i] = NEUTRAL
+ 				land_total += 1
+ 				var jitter: float = (jimg[i] / 127.5 - 1.0) * 0.04
+-				if code >= 3:
++				if code == 4:  # snow: exactly plains for movement/conquest/spawns/building
++					mtn[i] = 0; elev[i] = 0.10 + jitter
++				elif code >= 3:
+ 					mtn[i] = 2; elev[i] = 0.50 + jitter
+ 				elif code == 2:
+ 					mtn[i] = 1; elev[i] = 0.28 + jitter
+@@ -671,6 +677,7 @@
+ 				if w_adj > 0:
+ 					c = c.lerp(Color(0.92, 0.88, 0.71), 0.55 if qual_i == 2 else minf(0.78, 0.45 + 0.14 * w_adj))
+ 		if qual_i >= 2: c = _rw_terrain(i)
++		elif owner_map[i] != WATER and snow_src.size() == W * H and snow_src[i] == 4: c = SNOW_COL
+ 		base_col[i] = c
+ 	# Software Coastline & Border Anti-Aliasing pass scaled by msaa_i (0 = Off/Sharp, 1 = 2x, 2 = 4x, 3 = 8x)
+ 	if msaa_i > 0 and qual_i < 2:
+@@ -724,6 +731,7 @@
+ 		elif i + W < N and (om[i + W] == WATER) != w: shore = true
+ 		if w:
+ 			bc[i] = shore_w if shore else ocean[mini(maxi(cdist[i] - 1, 0), 10)]
++		elif snow_src.size() == N and snow_src[i] == 4: bc[i] = SNOW_COL
+ 		elif shore: bc[i] = sand
+ 		else:
+ 			var e: float = el[i]
+@@ -747,6 +755,7 @@
+ 		var dc: int = coast_dist[i] if coast_dist.size() == W * H else 10
+ 		var m := mini(maxi(dc - 1, 0), 10)
+ 		return Color8(0x47 - m, 0x85 - m, 0xB5 - m)
++	if snow_src.size() == W * H and snow_src[i] == 4: return SNOW_COL
+ 	if shore: return Color8(0xCC, 0xCB, 0x9E)
+ 	var e: float = elev_map[i] if elev_map.size() == W * H else 0.2
+ 	if mtn[i] == 2:
+@@ -6177,6 +6186,7 @@
+ 	var mp := get_viewport().get_mouse_position()
+ 	var send: float = nations[PLAYER].troops * SHARES[share_i]
+ 	var terrain: String = ["Plains (loss 80, cost 16.5)", "Highland (loss 100, cost 20: 1.25x loss, 1.2x slower)", "Mountains (loss 120, cost 25: 1.5x loss, 1.5x slower)"][clampi(mtn[t], 0, 2)]
++	if snow_src.size() == W * H and snow_src[t] == 4: terrain = "Snow (plains rules: loss 80, cost 16.5)"
+ 	var d := {}
+ 	if state == "play" and build_sel in NUKES:
+ 		var r: int = int(NUKE_R[build_sel]) if build_sel != 12 else int(46 * BLAST_S)

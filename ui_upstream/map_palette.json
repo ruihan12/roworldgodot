@@ -1,0 +1,27 @@
+{
+ "ref": "src/client/Map/MapSurface.luau:50-56,111,193-198; tools/assets/make_map_thumbs.py:40-75",
+ "terrain": {
+  "ocean": "#4785b5",
+  "sand_shore": "#cccb9e",
+  "plains": "#bedc8a",
+  "highland": "#dccb9e",
+  "mountain": "#e6e6e6",
+  "background_impassable": "#3c3c3c"
+ },
+ "ramps": {
+  "plains": "G - 2*mag (mag 0-9)",
+  "highland": "+2*(mag-10) each channel",
+  "mountain": "+mag//2 each channel",
+  "shore_water": "0.7*ocean + 76.5",
+  "water": "ocean - min(mag,10)"
+ },
+ "territory": {
+  "alpha": 150,
+  "saturation": 0.85,
+  "border_darken": 0.125,
+  "highlight_brighten": 0.25,
+  "friendly_tint": 0.35,
+  "defense_checker_darken": 0.7,
+  "defense_fill_darken": 0.85
+ }
+}

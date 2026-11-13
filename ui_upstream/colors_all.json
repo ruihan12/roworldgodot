@@ -1,0 +1,4114 @@
+[
+ {
+  "file": "src/client/Main.luau",
+  "line": 37,
+  "name": "FILL",
+  "hex": "#121215",
+  "alpha": 1.0,
+  "src": "local FILL = Color3.fromRGB(18, 18, 21)"
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 157,
+  "name": "overlay.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "overlay.BackgroundColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 173,
+  "name": "img.ImageColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "img.ImageColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 182,
+  "name": "glyph.TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "glyph.TextColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 352,
+  "name": "tip.TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "tip.TextColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Dev/AssetsAudio.luau",
+  "line": 40,
+  "name": "bg.BackgroundColor3",
+  "hex": "#0d1326",
+  "alpha": 1.0,
+  "src": "bg.BackgroundColor3 = Color3.fromRGB(13, 19, 38)"
+ },
+ {
+  "file": "src/client/Dev/AssetsAudio.luau",
+  "line": 52,
+  "name": "list.TextColor3",
+  "hex": "#e6ecff",
+  "alpha": 1.0,
+  "src": "list.TextColor3 = Color3.fromRGB(230, 236, 255)"
+ },
+ {
+  "file": "src/client/Dev/AssetsAudio.luau",
+  "line": 201,
+  "name": null,
+  "hex": "#5ee39a",
+  "alpha": 1.0,
+  "src": "ok and \"#5ee39a\" or \"#ff5463\","
+ },
+ {
+  "file": "src/client/Dev/AssetsAudio.luau",
+  "line": 201,
+  "name": null,
+  "hex": "#ff5463",
+  "alpha": 1.0,
+  "src": "ok and \"#5ee39a\" or \"#ff5463\","
+ },
+ {
+  "file": "src/client/Dev/AssetsIcons.luau",
+  "line": 19,
+  "name": "AMBER",
+  "hex": "#ffb547",
+  "alpha": 1.0,
+  "src": "local AMBER = Color3.new(1.0, 0.71, 0.278)"
+ },
+ {
+  "file": "src/client/Dev/AssetsIcons.luau",
+  "line": 20,
+  "name": "CYAN",
+  "hex": "#4fd1ff",
+  "alpha": 1.0,
+  "src": "local CYAN = Color3.new(0.31, 0.82, 1.0)"
+ },
+ {
+  "file": "src/client/Dev/AssetsIcons.luau",
+  "line": 29,
+  "name": "bg.BackgroundColor3",
+  "hex": "#0d1326",
+  "alpha": 1.0,
+  "src": "bg.BackgroundColor3 = Color3.fromRGB(13, 19, 38)"
+ },
+ {
+  "file": "src/client/Dev/AssetsIcons.luau",
+  "line": 40,
+  "name": "l.ImageColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "l.ImageColor3 = tint or Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Dev/AssetsIcons.luau",
+  "line": 51,
+  "name": "t.TextColor3",
+  "hex": "#adbadb",
+  "alpha": 1.0,
+  "src": "t.TextColor3 = color or Color3.new(0.68, 0.73, 0.86)"
+ },
+ {
+  "file": "src/client/Dev/AssetsIcons.luau",
+  "line": 71,
+  "name": "cell.BackgroundColor3",
+  "hex": "#1a213d",
+  "alpha": 1.0,
+  "src": "cell.BackgroundColor3 = Color3.fromRGB(26, 33, 61)"
+ },
+ {
+  "file": "src/client/Dev/UIKitBasics.luau",
+  "line": 22,
+  "name": "bg.BackgroundColor3",
+  "hex": "#0e1234",
+  "alpha": 1.0,
+  "src": "bg.BackgroundColor3 = Color3.fromRGB(14, 18, 52)"
+ },
+ {
+  "file": "src/client/Dev/UIKitBasics.luau",
+  "line": 27,
+  "name": null,
+  "hex": "#1faf82",
+  "alpha": 1.0,
+  "src": "for i, c in ipairs({ Color3.fromRGB(31, 175, 130), Color3.fromRGB(230, 90, 200), Color3.fromRGB(240, 180, 40) }) do"
+ },
+ {
+  "file": "src/client/Dev/UIKitBasics.luau",
+  "line": 27,
+  "name": null,
+  "hex": "#e65ac8",
+  "alpha": 1.0,
+  "src": "for i, c in ipairs({ Color3.fromRGB(31, 175, 130), Color3.fromRGB(230, 90, 200), Color3.fromRGB(240, 180, 40) }) do"
+ },
+ {
+  "file": "src/client/Dev/UIKitBasics.luau",
+  "line": 27,
+  "name": null,
+  "hex": "#f0b428",
+  "alpha": 1.0,
+  "src": "for i, c in ipairs({ Color3.fromRGB(31, 175, 130), Color3.fromRGB(230, 90, 200), Color3.fromRGB(240, 180, 40) }) do"
+ },
+ {
+  "file": "src/client/Dev/UIKitHud.luau",
+  "line": 57,
+  "name": "stage.BackgroundColor3",
+  "hex": "#040510",
+  "alpha": 1.0,
+  "src": "stage.BackgroundColor3 = Color3.fromRGB(4, 5, 16)"
+ },
+ {
+  "file": "src/client/Dev/UIKitHud.luau",
+  "line": 93,
+  "name": "mk.BackgroundColor3",
+  "hex": "#ff00ff",
+  "alpha": 1.0,
+  "src": "mk.BackgroundColor3 = Color3.fromRGB(255, 0, 255)"
+ },
+ {
+  "file": "src/client/Dev/UIKitText.luau",
+  "line": 24,
+  "name": "bg.BackgroundColor3",
+  "hex": "#0a0d22",
+  "alpha": 1.0,
+  "src": "bg.BackgroundColor3 = Color3.fromRGB(10, 13, 34)"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 18,
+  "name": "bg.BackgroundColor3",
+  "hex": "#283c6e",
+  "alpha": 1.0,
+  "src": "bg.BackgroundColor3 = Color3.fromRGB(40, 60, 110)"
+ },
+ {
+  "file": "src/client/Dev/UIScreensWorld.luau",
+  "line": 42,
+  "name": "bg.BackgroundColor3",
+  "hex": "#0c0f3a",
+  "alpha": 1.0,
+  "src": "bg.BackgroundColor3 = Color3.fromRGB(12, 15, 58)"
+ },
+ {
+  "file": "src/client/Dev/UIScreensWorld.luau",
+  "line": 120,
+  "name": "f.BackgroundColor3",
+  "hex": "#464e3c",
+  "alpha": 1.0,
+  "src": "f.BackgroundColor3 = Color3.fromRGB(70, 78, 60)"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 15,
+  "name": "RED_TITLE",
+  "hex": "#ff8c94",
+  "alpha": 1.0,
+  "src": "local RED_TITLE = Color3.new(1.0, 0.55, 0.58)"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 16,
+  "name": "RED_TINT",
+  "hex": "#420812",
+  "alpha": 0.9,
+  "src": "local RED_TINT = UITheme.rgba(0.26, 0.03, 0.07, 0.9)"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 42,
+  "name": "ic",
+  "hex": "#ffd9d9",
+  "alpha": 1.0,
+  "src": "local ic = T.icon_rect(\"atom\", 18.0, Color3.new(1.0, 0.85, 0.85))"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 52,
+  "name": "self._detail",
+  "hex": "#ffe0e0",
+  "alpha": 1.0,
+  "src": "self._detail = T.label(\"\", 12, 500, Color3.new(1.0, 0.88, 0.88))"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 110,
+  "name": null,
+  "hex": "#99ffb8",
+  "alpha": 1.0,
+  "src": "self._title:set_color(Color3.new(0.6, 1.0, 0.72))"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 112,
+  "name": null,
+  "hex": "#083317",
+  "alpha": 0.9,
+  "src": "self.panel:set_tint(T.rgba(0.03, 0.2, 0.09, 0.9))"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 116,
+  "name": null,
+  "hex": "#d9ffe6",
+  "alpha": 1.0,
+  "src": "self._disc_icon:set_color(Color3.new(0.85, 1.0, 0.9))"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 127,
+  "name": null,
+  "hex": "#ffd9d9",
+  "alpha": 1.0,
+  "src": "self._disc_icon:set_color(Color3.new(1.0, 0.85, 0.85))"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 83,
+  "name": "GOLD",
+  "hex": "#ffc83d",
+  "alpha": 1.0,
+  "src": "local GOLD = Color3.fromRGB(255, 200, 61)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 84,
+  "name": "GOLD_DARK",
+  "hex": "#402804",
+  "alpha": 1.0,
+  "src": "local GOLD_DARK = Color3.fromRGB(64, 40, 4)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 86,
+  "name": "GREEN_TOP",
+  "hex": "#56d882",
+  "alpha": 1.0,
+  "src": "local GREEN_TOP = Color3.fromRGB(86, 216, 130)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 87,
+  "name": "GREEN_BOTTOM",
+  "hex": "#22a65a",
+  "alpha": 1.0,
+  "src": "local GREEN_BOTTOM = Color3.fromRGB(34, 166, 90)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 88,
+  "name": "GREEN_TOP_HI",
+  "hex": "#6cea96",
+  "alpha": 1.0,
+  "src": "local GREEN_TOP_HI = Color3.fromRGB(108, 234, 150)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 89,
+  "name": "GREEN_BOTTOM_HI",
+  "hex": "#2eba6a",
+  "alpha": 1.0,
+  "src": "local GREEN_BOTTOM_HI = Color3.fromRGB(46, 186, 106)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 90,
+  "name": "GREEN_LIP",
+  "hex": "#126c38",
+  "alpha": 1.0,
+  "src": "local GREEN_LIP = Color3.fromRGB(18, 108, 56)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 91,
+  "name": "GREEN_INK",
+  "hex": "#0c522a",
+  "alpha": 1.0,
+  "src": "local GREEN_INK = Color3.fromRGB(12, 82, 42)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 92,
+  "name": "OWNED_GREEN",
+  "hex": "#6ee69b",
+  "alpha": 1.0,
+  "src": "local OWNED_GREEN = Color3.fromRGB(110, 230, 155)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 93,
+  "name": "WHITE",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local WHITE = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 94,
+  "name": "MUTED",
+  "hex": "#aab6d3",
+  "alpha": 1.0,
+  "src": "local MUTED = Color3.fromRGB(170, 182, 211)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 95,
+  "name": "ROW",
+  "hex": "#18213a",
+  "alpha": 1.0,
+  "src": "local ROW = Color3.fromRGB(24, 33, 58)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 96,
+  "name": "ROW_ON",
+  "hex": "#26355a",
+  "alpha": 1.0,
+  "src": "local ROW_ON = Color3.fromRGB(38, 53, 90)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 97,
+  "name": "CHIP",
+  "hex": "#26355a",
+  "alpha": 1.0,
+  "src": "local CHIP = Color3.fromRGB(38, 53, 90)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 98,
+  "name": "BAR_OFF",
+  "hex": "#2c3a5e",
+  "alpha": 1.0,
+  "src": "local BAR_OFF = Color3.fromRGB(44, 58, 94)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 99,
+  "name": "BAR_LIP",
+  "hex": "#1c2640",
+  "alpha": 1.0,
+  "src": "local BAR_LIP = Color3.fromRGB(28, 38, 64)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 101,
+  "name": "NIGHT",
+  "hex": "#080c1a",
+  "alpha": 1.0,
+  "src": "local NIGHT = Color3.fromRGB(8, 12, 26)"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 196,
+  "name": "self._dim",
+  "hex": "#03040d",
+  "alpha": 0.8,
+  "src": "self._dim = W.ColorRect.new(UITheme.rgba(0.01, 0.015, 0.05, 0.8))"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 206,
+  "name": null,
+  "hex": "#0b1121",
+  "alpha": 0.97,
+  "src": "self._panel:set_tint(UITheme.rgba(0.045, 0.065, 0.13, 0.97))"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 225,
+  "name": null,
+  "hex": "#ffc73d",
+  "alpha": 0.12,
+  "src": "bal:set_tint(UITheme.rgba(1.0, 0.78, 0.24, 0.12))"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 660,
+  "name": "TextColor3",
+  "hex": "#d6def0",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.fromRGB(214, 222, 240),"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 19,
+  "name": "GOLD",
+  "hex": "#ffc83d",
+  "alpha": 1.0,
+  "src": "local GOLD = Color3.fromRGB(255, 200, 61)"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 20,
+  "name": "GOLD_LIGHT",
+  "hex": "#ffe8a0",
+  "alpha": 1.0,
+  "src": "local GOLD_LIGHT = Color3.fromRGB(255, 232, 160)"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 87,
+  "name": null,
+  "hex": "#3c2200",
+  "alpha": 1.0,
+  "src": "img(\"Shade\", UITheme.icon(\"arsenal\"), 3, { ImageColor3 = Color3.fromRGB(60, 34, 0), ImageTransparency = 0.25 })"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 91,
+  "name": null,
+  "hex": "#f0961e",
+  "alpha": 1.0,
+  "src": "{ Color = ColorSequence.new(GOLD_LIGHT, Color3.fromRGB(240, 150, 30)), Rotation = 90 },"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 94,
+  "name": "self._shield.ImageColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._shield.ImageColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 98,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "{ Name = \"Pill\", BackgroundColor3 = Color3.new(1, 1, 1), AnchorPoint = Vector2.new(0.5, 1), ZIndex = 6 },"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 104,
+  "name": null,
+  "hex": "#ffd66e",
+  "alpha": 1.0,
+  "src": "{ Color = ColorSequence.new(Color3.fromRGB(255, 214, 110), Color3.fromRGB(242, 160, 40)), Rotation = 90 },"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 104,
+  "name": null,
+  "hex": "#f2a028",
+  "alpha": 1.0,
+  "src": "{ Color = ColorSequence.new(Color3.fromRGB(255, 214, 110), Color3.fromRGB(242, 160, 40)), Rotation = 90 },"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 110,
+  "name": "Color",
+  "hex": "#462806",
+  "alpha": 1.0,
+  "src": "Color = Color3.fromRGB(70, 40, 6),"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 123,
+  "name": "TextColor3",
+  "hex": "#2e1a04",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.fromRGB(46, 26, 4),"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 136,
+  "name": "BackgroundColor3",
+  "hex": "#141c34",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(20, 28, 52),"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 63,
+  "name": "WHITE",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local WHITE = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 64,
+  "name": "INK",
+  "hex": "#0e1426",
+  "alpha": 1.0,
+  "src": "local INK = Color3.fromRGB(14, 20, 38)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 66,
+  "name": "MINE",
+  "hex": "#c4a0e2",
+  "alpha": 1.0,
+  "src": "local MINE = Color3.fromRGB(196, 160, 226)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 67,
+  "name": "THEIRS",
+  "hex": "#80cc84",
+  "alpha": 1.0,
+  "src": "local THEIRS = Color3.fromRGB(128, 204, 132)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 68,
+  "name": "THEIRS_ALT",
+  "hex": "#e8968c",
+  "alpha": 1.0,
+  "src": "local THEIRS_ALT = Color3.fromRGB(232, 150, 140)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 69,
+  "name": "SCORCH",
+  "hex": "#2e221e",
+  "alpha": 1.0,
+  "src": "local SCORCH = Color3.fromRGB(46, 34, 30)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 71,
+  "name": "NIGHT_GROUND",
+  "hex": "#1e263a",
+  "alpha": 1.0,
+  "src": "local NIGHT_GROUND = Color3.fromRGB(30, 38, 58)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 72,
+  "name": "FIRE_GLOW",
+  "hex": "#ffa846",
+  "alpha": 1.0,
+  "src": "local FIRE_GLOW = Color3.fromRGB(255, 168, 70)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 73,
+  "name": "RED",
+  "hex": "#ff4646",
+  "alpha": 1.0,
+  "src": "local RED = Color3.fromRGB(255, 70, 70)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 74,
+  "name": "PURPLE",
+  "hex": "#b078ff",
+  "alpha": 1.0,
+  "src": "local PURPLE = Color3.fromRGB(176, 120, 255)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 75,
+  "name": "GOLD",
+  "hex": "#ffcd46",
+  "alpha": 1.0,
+  "src": "local GOLD = Color3.fromRGB(255, 205, 70)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 76,
+  "name": "DUST",
+  "hex": "#e2cca8",
+  "alpha": 1.0,
+  "src": "local DUST = Color3.fromRGB(226, 204, 168)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 95,
+  "name": null,
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "return c:Lerp(Color3.new(0, 0, 0), k)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 558,
+  "name": null,
+  "hex": "#ffecc8",
+  "alpha": 1.0,
+  "src": "self:_text(\"Troops\", fmt_k(ArsenalDemo.ENEMY_TROOPS), fs * 0.9, Color3.fromRGB(255, 236, 200), 22, FONT_B)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 564,
+  "name": "p.pop",
+  "hex": "#ff6060",
+  "alpha": 1.0,
+  "src": "p.pop = self:_text(\"Pop\", \"\", fs * 0.95, Color3.fromRGB(255, 96, 96), 23)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 715,
+  "name": "p.fallout",
+  "hex": "#96ec5a",
+  "alpha": 1.0,
+  "src": "p.fallout = self:_fx(\"Fallout\", \"glow\", 7, Color3.fromRGB(150, 236, 90))"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 826,
+  "name": "p.pop_flash",
+  "hex": "#ffecb4",
+  "alpha": 1.0,
+  "src": "p.pop_flash = self:_fx(\"Split\", \"glow\", 14, Color3.fromRGB(255, 236, 180))"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 905,
+  "name": null,
+  "hex": "#ffecc8",
+  "alpha": 1.0,
+  "src": "self:_text(\"Mine\", fmt_k(ArsenalDemo.MY_TROOPS), fs * 0.95, Color3.fromRGB(255, 236, 200), 22, FONT_B)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 908,
+  "name": "p.gain",
+  "hex": "#78ff96",
+  "alpha": 1.0,
+  "src": "p.gain = self:_text(\"Gain\", \"+2.0K\", fs * 0.9, Color3.fromRGB(120, 255, 150), 23)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1018,
+  "name": "p.muzzle",
+  "hex": "#ffdc8c",
+  "alpha": 1.0,
+  "src": "p.muzzle = self:_fx(\"Muzzle\", \"glow\", 11, Color3.fromRGB(255, 220, 140))"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1093,
+  "name": "p.shadow.ImageColor3",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "p.shadow.ImageColor3 = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1184,
+  "name": null,
+  "hex": "#e6d2ff",
+  "alpha": 1.0,
+  "src": "p.sparks[i] = self:_fx(\"Spark\" .. i, \"spark\", 12, Color3.fromRGB(230, 210, 255))"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1187,
+  "name": "p.beam",
+  "hex": "#f0e4ff",
+  "alpha": 1.0,
+  "src": "p.beam = self:_fx(\"Beam\", \"beam\", 14, Color3.fromRGB(240, 228, 255))"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1195,
+  "name": null,
+  "hex": "#f0dcff",
+  "alpha": 1.0,
+  "src": "p.burst[i] = self:_fx(\"Burst\" .. i, \"spark\", 18, Color3.fromRGB(240, 220, 255))"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1283,
+  "name": "BackgroundColor3",
+  "hex": "#180e02",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(24, 14, 2),"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1300,
+  "name": "Color",
+  "hex": "#68420c",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(104, 66, 12), Color3.fromRGB(36, 22, 4)),"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1300,
+  "name": "Color",
+  "hex": "#241604",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(104, 66, 12), Color3.fromRGB(36, 22, 4)),"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1307,
+  "name": "p.pay",
+  "hex": "#ffdc6e",
+  "alpha": 1.0,
+  "src": "p.pay = self:_text(\"Pay\", \"+1,440\", fs, Color3.fromRGB(255, 220, 110), 11)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1310,
+  "name": "p.stamp",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "p.stamp = self:_text(\"Stamp\", \"2X\", fs * 1.25, Color3.fromRGB(255, 255, 255), 14)"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1315,
+  "name": null,
+  "hex": "#ffe696",
+  "alpha": 1.0,
+  "src": "p.twinkles[i] = self:_fx(\"Twinkle\" .. i, \"spark\", 7, Color3.fromRGB(255, 230, 150))"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1318,
+  "name": null,
+  "hex": "#ffe178",
+  "alpha": 1.0,
+  "src": "p.sparks[i] = self:_img(\"Spark\" .. i, star, 12, Color3.fromRGB(255, 225, 120))"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1410,
+  "name": "BackgroundColor3",
+  "hex": "#ff78c8",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = if i == 2 then Color3.fromRGB(255, 120, 200) else Color3.fromRGB(200, 200, 210),"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1410,
+  "name": "BackgroundColor3",
+  "hex": "#c8c8d2",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = if i == 2 then Color3.fromRGB(255, 120, 200) else Color3.fromRGB(200, 200, 210),"
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1417,
+  "name": null,
+  "hex": "#ffaae1",
+  "alpha": 1.0,
+  "src": "self:_text(\"Label\" .. i, row.label, fs, if i == 2 then Color3.fromRGB(255, 170, 225) else WHITE, 11, FONT_B)"
+ },
+ {
+  "file": "src/client/UI/AttacksPanel.luau",
+  "line": 51,
+  "name": "self._bg_out",
+  "hex": "#ffffff",
+  "alpha": 0.04,
+  "src": "self._bg_out = T.flat(T.rgba(1, 1, 1, 0.04), 8, T.rgba(1, 1, 1, 0.06), 1, 8.0, 3.0)"
+ },
+ {
+  "file": "src/client/UI/AttacksPanel.luau",
+  "line": 51,
+  "name": "self._bg_out",
+  "hex": "#ffffff",
+  "alpha": 0.06,
+  "src": "self._bg_out = T.flat(T.rgba(1, 1, 1, 0.04), 8, T.rgba(1, 1, 1, 0.06), 1, 8.0, 3.0)"
+ },
+ {
+  "file": "src/client/UI/AttacksPanel.luau",
+  "line": 124,
+  "name": null,
+  "hex": "#ffd1d6",
+  "alpha": 1.0,
+  "src": "T.set_font_color(self.name_l, if incoming then Color3.new(1.0, 0.82, 0.84) else T.TEXT)"
+ },
+ {
+  "file": "src/client/UI/Banner.luau",
+  "line": 11,
+  "name": "BAND",
+  "hex": "#03040d",
+  "alpha": 1.0,
+  "src": "local BAND = Color3.new(0.01, 0.015, 0.05)"
+ },
+ {
+  "file": "src/client/UI/Banner.luau",
+  "line": 71,
+  "name": null,
+  "hex": "#000000",
+  "alpha": 0.5,
+  "src": "t:set_shadow(UITheme.rgba(0, 0, 0, 0.5), 3, 6)"
+ },
+ {
+  "file": "src/client/UI/BuildButton.luau",
+  "line": 345,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.035,
+  "src": "local bg: any = UITheme.rgba(1, 1, 1, 0.035)"
+ },
+ {
+  "file": "src/client/UI/BuildButton.luau",
+  "line": 346,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.07,
+  "src": "local border: any = UITheme.rgba(1, 1, 1, 0.07)"
+ },
+ {
+  "file": "src/client/UI/BuildButton.luau",
+  "line": 356,
+  "name": "bg",
+  "hex": "#ffffff",
+  "alpha": 0.1,
+  "src": "bg = if not nuke then UITheme.rgba(1, 1, 1, 0.1) else UITheme.c(UITheme.RED, 0.16)"
+ },
+ {
+  "file": "src/client/UI/BuildButton.luau",
+  "line": 360,
+  "name": "bg",
+  "hex": "#ffffff",
+  "alpha": 0.05,
+  "src": "bg = UITheme.rgba(1, 1, 1, 0.05)"
+ },
+ {
+  "file": "src/client/UI/BuildButton.luau",
+  "line": 374,
+  "name": "icol",
+  "hex": "#ffdbd6",
+  "alpha": 1.0,
+  "src": "icol = Color3.new(1.0, 0.86, 0.84)"
+ },
+ {
+  "file": "src/client/UI/BusyChip.luau",
+  "line": 49,
+  "name": "self._ring.ImageColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._ring.ImageColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/ChestView.luau",
+  "line": 19,
+  "name": "ChestView.AMBIENT",
+  "hex": "#969296",
+  "alpha": 1.0,
+  "src": "ChestView.AMBIENT = Color3.fromRGB(150, 146, 150)"
+ },
+ {
+  "file": "src/client/UI/ChestView.luau",
+  "line": 34,
+  "name": "vpf.LightColor",
+  "hex": "#fff4e4",
+  "alpha": 1.0,
+  "src": "vpf.LightColor = Color3.fromRGB(255, 244, 228)"
+ },
+ {
+  "file": "src/client/UI/ChestView.luau",
+  "line": 52,
+  "name": "part.Color",
+  "hex": "#a3a2a5",
+  "alpha": 1.0,
+  "src": "part.Color = Color3.fromRGB(163, 162, 165)"
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 648,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.05,
+  "src": "tb:add_theme_stylebox_override(st, T.flat(T.rgba(1, 1, 1, 0.05), T.R_MD, T.rgba(1, 1, 1, 0.08), 1, 0.0, 5.0))"
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 648,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.08,
+  "src": "tb:add_theme_stylebox_override(st, T.flat(T.rgba(1, 1, 1, 0.05), T.R_MD, T.rgba(1, 1, 1, 0.08), 1, 0.0, 5.0))"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 35,
+  "name": "GOLD",
+  "hex": "#ffbe48",
+  "alpha": 1.0,
+  "src": "local GOLD = Color3.fromRGB(255, 190, 72)"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 36,
+  "name": "GOLD_LIGHT",
+  "hex": "#ffe296",
+  "alpha": 1.0,
+  "src": "local GOLD_LIGHT = Color3.fromRGB(255, 226, 150)"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 116,
+  "name": "BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 122,
+  "name": "Color",
+  "hex": "#ffd66e",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(255, 214, 110), Color3.fromRGB(242, 160, 40)),"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 122,
+  "name": "Color",
+  "hex": "#f2a028",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(255, 214, 110), Color3.fromRGB(242, 160, 40)),"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 128,
+  "name": "Color",
+  "hex": "#462806",
+  "alpha": 1.0,
+  "src": "Color = Color3.fromRGB(70, 40, 6),"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 141,
+  "name": "TextColor3",
+  "hex": "#2e1a04",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.fromRGB(46, 26, 4),"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 154,
+  "name": "BackgroundColor3",
+  "hex": "#e83838",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(232, 56, 56),"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 162,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "{ Color = Color3.fromRGB(255, 255, 255), Thickness = 2, ApplyStrokeMode = Enum.ApplyStrokeMode.Border },"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 185,
+  "name": "TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 323,
+  "name": "self._badge.BackgroundColor3",
+  "hex": "#26aa5a",
+  "alpha": 1.0,
+  "src": "self._badge.BackgroundColor3 = if icon then Color3.fromRGB(38, 170, 90) else Color3.fromRGB(232, 56, 56)"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 323,
+  "name": "self._badge.BackgroundColor3",
+  "hex": "#e83838",
+  "alpha": 1.0,
+  "src": "self._badge.BackgroundColor3 = if icon then Color3.fromRGB(38, 170, 90) else Color3.fromRGB(232, 56, 56)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 56,
+  "name": "GOLD",
+  "hex": "#ffbe48",
+  "alpha": 1.0,
+  "src": "local GOLD = Color3.fromRGB(255, 190, 72)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 57,
+  "name": "GOLD_LIGHT",
+  "hex": "#ffe296",
+  "alpha": 1.0,
+  "src": "local GOLD_LIGHT = Color3.fromRGB(255, 226, 150)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 163,
+  "name": "BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 171,
+  "name": null,
+  "hex": "#040612",
+  "alpha": 1.0,
+  "src": "ColorSequenceKeypoint.new(0, Color3.fromRGB(4, 6, 18)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 172,
+  "name": null,
+  "hex": "#162054",
+  "alpha": 1.0,
+  "src": "ColorSequenceKeypoint.new(0.5, Color3.fromRGB(22, 32, 84)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 173,
+  "name": null,
+  "hex": "#040612",
+  "alpha": 1.0,
+  "src": "ColorSequenceKeypoint.new(1, Color3.fromRGB(4, 6, 18)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 190,
+  "name": "self._shadow",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "self._shadow = img(\"Shadow\", art.glow, 5, nil, { ImageColor3 = Color3.new(0, 0, 0) })"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 219,
+  "name": "BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 224,
+  "name": "self._back_stroke",
+  "hex": "#f2be4b",
+  "alpha": 1.0,
+  "src": "self._back_stroke = new(\"UIStroke\", { Color = Color3.fromRGB(242, 190, 75), Thickness = 4 }, back)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 226,
+  "name": "Color",
+  "hex": "#3e50b0",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(62, 80, 176), Color3.fromRGB(20, 26, 70)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 226,
+  "name": "Color",
+  "hex": "#141a46",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(62, 80, 176), Color3.fromRGB(20, 26, 70)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 232,
+  "name": "ImageColor3",
+  "hex": "#ffd66e",
+  "alpha": 1.0,
+  "src": "ImageColor3 = Color3.fromRGB(255, 214, 110),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 242,
+  "name": "BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 249,
+  "name": "self._front_stroke",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._front_stroke = new(\"UIStroke\", { Color = Color3.new(1, 1, 1), Thickness = 4 }, front)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 265,
+  "name": "BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 285,
+  "name": "BackgroundColor3",
+  "hex": "#eb4040",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(235, 64, 64),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 288,
+  "name": "TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 298,
+  "name": null,
+  "hex": "#781414",
+  "alpha": 1.0,
+  "src": "new(\"UIStroke\", { Color = Color3.fromRGB(120, 20, 20), Thickness = 2, ApplyStrokeMode = Enum.ApplyStrokeMode.Border }, self._new)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 312,
+  "name": "TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 317,
+  "name": null,
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "new(\"UIStroke\", { Color = Color3.new(0, 0, 0), Thickness = 2, Transparency = 1 }, l)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 324,
+  "name": "Color",
+  "hex": "#fff0c8",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(255, 240, 200), Color3.fromRGB(255, 184, 60)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 324,
+  "name": "Color",
+  "hex": "#ffb83c",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(255, 240, 200), Color3.fromRGB(255, 184, 60)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 335,
+  "name": "BackgroundColor3",
+  "hex": "#0c1024",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(12, 16, 36),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 348,
+  "name": "TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 595,
+  "name": "self._back_stroke.Color",
+  "hex": "#f2be4b",
+  "alpha": 1.0,
+  "src": "self._back_stroke.Color = Color3.fromRGB(242, 190, 75)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 700,
+  "name": "colors",
+  "hex": "#beb096",
+  "alpha": 1.0,
+  "src": "colors = { Color3.fromRGB(190, 176, 150) },"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 826,
+  "name": "light",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local light = col:Lerp(Color3.new(1, 1, 1), 0.35)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 868,
+  "name": "self._rays_a.ImageColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._rays_a.ImageColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 870,
+  "name": null,
+  "hex": "#ff5a5a",
+  "alpha": 1.0,
+  "src": "ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 90, 90)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 871,
+  "name": null,
+  "hex": "#ffc83c",
+  "alpha": 1.0,
+  "src": "ColorSequenceKeypoint.new(0.2, Color3.fromRGB(255, 200, 60)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 872,
+  "name": null,
+  "hex": "#78e65a",
+  "alpha": 1.0,
+  "src": "ColorSequenceKeypoint.new(0.4, Color3.fromRGB(120, 230, 90)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 873,
+  "name": null,
+  "hex": "#50aaff",
+  "alpha": 1.0,
+  "src": "ColorSequenceKeypoint.new(0.6, Color3.fromRGB(80, 170, 255)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 874,
+  "name": null,
+  "hex": "#be6eff",
+  "alpha": 1.0,
+  "src": "ColorSequenceKeypoint.new(0.8, Color3.fromRGB(190, 110, 255)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 875,
+  "name": null,
+  "hex": "#ff5a5a",
+  "alpha": 1.0,
+  "src": "ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 90, 90)),"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 969,
+  "name": "self._back_stroke.Color",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._back_stroke.Color = col:Lerp(Color3.new(1, 1, 1), 0.2)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 1008,
+  "name": "self._front_grad.Color",
+  "hex": "#141830",
+  "alpha": 1.0,
+  "src": "self._front_grad.Color = ColorSequence.new(col:Lerp(Color3.fromRGB(20, 24, 48), 0.35), col:Lerp(Color3.fromRGB(10, 12, 30), 0.8))"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 1008,
+  "name": "self._front_grad.Color",
+  "hex": "#0a0c1e",
+  "alpha": 1.0,
+  "src": "self._front_grad.Color = ColorSequence.new(col:Lerp(Color3.fromRGB(20, 24, 48), 0.35), col:Lerp(Color3.fromRGB(10, 12, 30), 0.8))"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 1030,
+  "name": "colors",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "colors = { col, col:Lerp(Color3.new(1, 1, 1), 0.4) },"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 1045,
+  "name": "self._rarity.TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._rarity.TextColor3 = col:Lerp(Color3.new(1, 1, 1), 0.15)"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 1251,
+  "name": "target",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local target = if self._rar then c3(self._rar.color):Lerp(Color3.new(1, 1, 1), 0.3) else GOLD_LIGHT"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 1387,
+  "name": "col",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local col = if math.random() < (o.white or 0) then Color3.new(1, 1, 1) else cols[math.random(1, #cols)]"
+ },
+ {
+  "file": "src/client/UI/FillBar.luau",
+  "line": 18,
+  "name": "self.track_color",
+  "hex": "#ffffff",
+  "alpha": 0.08,
+  "src": "self.track_color = UITheme.rgba(1, 1, 1, 0.08)"
+ },
+ {
+  "file": "src/client/UI/FillBar.luau",
+  "line": 151,
+  "name": "self._fill.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._fill.BackgroundColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/FillBar.luau",
+  "line": 181,
+  "name": "dark.BackgroundColor3",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "dark.BackgroundColor3 = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 48,
+  "name": "WHITE",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local WHITE = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 49,
+  "name": "GOLD",
+  "hex": "#ffc83d",
+  "alpha": 1.0,
+  "src": "local GOLD = Color3.fromRGB(255, 200, 61)"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 50,
+  "name": "PUMPKIN",
+  "hex": "#ff8c28",
+  "alpha": 1.0,
+  "src": "local PUMPKIN = Color3.fromRGB(255, 140, 40)"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 51,
+  "name": "MUTED",
+  "hex": "#a0a8be",
+  "alpha": 1.0,
+  "src": "local MUTED = Color3.fromRGB(160, 168, 190)"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 127,
+  "name": "self._dim",
+  "hex": "#03040d",
+  "alpha": 0.78,
+  "src": "self._dim = W.ColorRect.new(UITheme.rgba(0.01, 0.015, 0.05, 0.78))"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 137,
+  "name": null,
+  "hex": "#0b1121",
+  "alpha": 0.96,
+  "src": "self._panel:set_tint(UITheme.rgba(0.045, 0.065, 0.13, 0.96))"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 465,
+  "name": "Color",
+  "hex": "#78340a",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(120, 52, 10), Color3.fromRGB(40, 18, 60)),"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 465,
+  "name": "Color",
+  "hex": "#28123c",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(120, 52, 10), Color3.fromRGB(40, 18, 60)),"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 486,
+  "name": "TextColor3",
+  "hex": "#78e696",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.fromRGB(120, 230, 150),"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 497,
+  "name": "BackgroundColor3",
+  "hex": "#2ea05c",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(46, 160, 92),"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 540,
+  "name": "btn.BackgroundColor3",
+  "hex": "#3aba6e",
+  "alpha": 1.0,
+  "src": "btn.BackgroundColor3 = Color3.fromRGB(58, 186, 110)"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 543,
+  "name": "btn.BackgroundColor3",
+  "hex": "#2ea05c",
+  "alpha": 1.0,
+  "src": "btn.BackgroundColor3 = Color3.fromRGB(46, 160, 92)"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 582,
+  "name": "Color",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(rc:Lerp(Color3.new(0, 0, 0), 0.55), Color3.fromRGB(14, 18, 34)),"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 582,
+  "name": "Color",
+  "hex": "#0e1222",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(rc:Lerp(Color3.new(0, 0, 0), 0.55), Color3.fromRGB(14, 18, 34)),"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 627,
+  "name": "TextColor3",
+  "hex": "#281800",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.fromRGB(40, 24, 0),"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 643,
+  "name": "BackgroundColor3",
+  "hex": "#2e3650",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = if owned then Color3.fromRGB(46, 54, 80) else Color3.fromRGB(46, 160, 92),"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 643,
+  "name": "BackgroundColor3",
+  "hex": "#2ea05c",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = if owned then Color3.fromRGB(46, 54, 80) else Color3.fromRGB(46, 160, 92),"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 701,
+  "name": "btn.BackgroundColor3",
+  "hex": "#3c4666",
+  "alpha": 1.0,
+  "src": "btn.BackgroundColor3 = if owned then Color3.fromRGB(60, 70, 102) else Color3.fromRGB(58, 186, 110)"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 701,
+  "name": "btn.BackgroundColor3",
+  "hex": "#3aba6e",
+  "alpha": 1.0,
+  "src": "btn.BackgroundColor3 = if owned then Color3.fromRGB(60, 70, 102) else Color3.fromRGB(58, 186, 110)"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 704,
+  "name": "btn.BackgroundColor3",
+  "hex": "#2e3650",
+  "alpha": 1.0,
+  "src": "btn.BackgroundColor3 = if owned then Color3.fromRGB(46, 54, 80) else Color3.fromRGB(46, 160, 92)"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 704,
+  "name": "btn.BackgroundColor3",
+  "hex": "#2ea05c",
+  "alpha": 1.0,
+  "src": "btn.BackgroundColor3 = if owned then Color3.fromRGB(46, 54, 80) else Color3.fromRGB(46, 160, 92)"
+ },
+ {
+  "file": "src/client/UI/FloatText.luau",
+  "line": 31,
+  "name": null,
+  "hex": "#080b1a",
+  "alpha": 0.92,
+  "src": "UITheme.flat(UITheme.rgba(0.03, 0.045, 0.1, 0.92), 999, UITheme.c(col, 0.55), 1, 12.0, 5.0)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 85,
+  "name": "title.shadow",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "title.shadow = { color = Color3.new(0, 0, 0), alpha = 0.5, offset_y = 6, outline = 12 }"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 131,
+  "name": null,
+  "hex": "#1c170e",
+  "alpha": 0.96,
+  "src": "UITheme.flat(UITheme.rgba(0.11, 0.09, 0.055, 0.96), 18, UITheme.c(UITheme.GOLD, 0.85), 2, 22.0, 18.0)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 175,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.06,
+  "src": "chip:add_theme_stylebox_override(\"panel\", UITheme.flat(UITheme.rgba(1, 1, 1, 0.06), 10, UITheme.rgba(1, 1, 1, 0.1), 1, 10.0, 7.0))"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 175,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.1,
+  "src": "chip:add_theme_stylebox_override(\"panel\", UITheme.flat(UITheme.rgba(1, 1, 1, 0.06), 10, UITheme.rgba(1, 1, 1, 0.1), 1, 10.0, 7.0))"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 201,
+  "name": "tag.BackgroundColor3",
+  "hex": "#3c2204",
+  "alpha": 1.0,
+  "src": "tag.BackgroundColor3 = Color3.fromRGB(60, 34, 4)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 215,
+  "name": "rbx.ImageColor3",
+  "hex": "#ffe296",
+  "alpha": 1.0,
+  "src": "rbx.ImageColor3 = Color3.fromRGB(255, 226, 150)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 223,
+  "name": "price.TextColor3",
+  "hex": "#ffe296",
+  "alpha": 1.0,
+  "src": "price.TextColor3 = Color3.fromRGB(255, 226, 150)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 235,
+  "name": "shine.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "shine.BackgroundColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 515,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.06,
+  "src": "else UITheme.flat(UITheme.rgba(1, 1, 1, 0.06), 999, UITheme.LINE_2, 1, 16.0, 6.0)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 712,
+  "name": null,
+  "hex": "#1c170e",
+  "alpha": 0.96,
+  "src": "UITheme.rgba(0.11, 0.09, 0.055, 0.96),"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 737,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.06,
+  "src": "UITheme.flat(UITheme.rgba(1, 1, 1, 0.06), 10, UITheme.rgba(1, 1, 1, 0.1), 1, if compact then 8.0 else 10.0, if compact then 4.0 else 7.0)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 737,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.1,
+  "src": "UITheme.flat(UITheme.rgba(1, 1, 1, 0.06), 10, UITheme.rgba(1, 1, 1, 0.1), 1, if compact then 8.0 else 10.0, if compact then 4.0 else 7.0)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 843,
+  "name": "gold_top",
+  "hex": "#fff7db",
+  "alpha": 1.0,
+  "src": "local gold_top = Color3.new(1.0, 0.97, 0.86)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 844,
+  "name": "red_top",
+  "hex": "#ffd9d9",
+  "alpha": 1.0,
+  "src": "local red_top = Color3.new(1.0, 0.85, 0.85)"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 845,
+  "name": "cyan_top",
+  "hex": "#ebf7ff",
+  "alpha": 1.0,
+  "src": "local cyan_top = Color3.new(0.92, 0.97, 1.0)"
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 28,
+  "name": "GOLD",
+  "hex": "#ffcd56",
+  "alpha": 1.0,
+  "src": "local GOLD = Color3.fromRGB(255, 205, 86)"
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 29,
+  "name": "GOLD_LIGHT",
+  "hex": "#ffeeb2",
+  "alpha": 1.0,
+  "src": "local GOLD_LIGHT = Color3.fromRGB(255, 238, 178)"
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 30,
+  "name": "GOLD_DARK",
+  "hex": "#b07816",
+  "alpha": 1.0,
+  "src": "local GOLD_DARK = Color3.fromRGB(176, 120, 22)"
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 31,
+  "name": "INK",
+  "hex": "#2e1c02",
+  "alpha": 1.0,
+  "src": "local INK = Color3.fromRGB(46, 28, 2)"
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 32,
+  "name": "WHITE",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local WHITE = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 124,
+  "name": "Color",
+  "hex": "#22305c",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(34, 48, 92), Color3.fromRGB(8, 12, 30)),"
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 124,
+  "name": "Color",
+  "hex": "#080c1e",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(34, 48, 92), Color3.fromRGB(8, 12, 30)),"
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 156,
+  "name": "ImageColor3",
+  "hex": "#ffc45a",
+  "alpha": 1.0,
+  "src": "ImageColor3 = Color3.fromRGB(255, 196, 90),"
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 216,
+  "name": "TextColor3",
+  "hex": "#dce4fa",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.fromRGB(220, 228, 250),"
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 43,
+  "name": "self._dim",
+  "hex": "#03040d",
+  "alpha": 0.78,
+  "src": "self._dim = W.ColorRect.new(UITheme.rgba(0.01, 0.015, 0.05, 0.78))"
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 67,
+  "name": null,
+  "hex": "#0b1121",
+  "alpha": 0.97,
+  "src": "self._panel:set_tint(UITheme.rgba(0.045, 0.065, 0.13, 0.97))"
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 169,
+  "name": "ImageColor3",
+  "hex": "#ffc45a",
+  "alpha": 1.0,
+  "src": "ImageColor3 = Color3.fromRGB(255, 196, 90),"
+ },
+ {
+  "file": "src/client/UI/GlassPanel.luau",
+  "line": 78,
+  "name": "sheen.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "sheen.BackgroundColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/GlassPanel.luau",
+  "line": 93,
+  "name": "line.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "line.BackgroundColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 131,
+  "name": "g.ScrollBarImageColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "g.ScrollBarImageColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 346,
+  "name": "self._dim",
+  "hex": "#03040d",
+  "alpha": 0.72,
+  "src": "self._dim = W.ColorRect.new(UITheme.rgba(0.01, 0.015, 0.05, 0.72))"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 357,
+  "name": null,
+  "hex": "#0b1121",
+  "alpha": 0.94,
+  "src": "self._panel:set_tint(UITheme.rgba(0.045, 0.065, 0.13, 0.94))"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 456,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.035,
+  "src": "UITheme.flat(UITheme.rgba(1, 1, 1, 0.035), 12, UITheme.rgba(1, 1, 1, 0.07), 1, mh, mv)"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 456,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.07,
+  "src": "UITheme.flat(UITheme.rgba(1, 1, 1, 0.035), 12, UITheme.rgba(1, 1, 1, 0.07), 1, mh, mv)"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 619,
+  "name": "sb",
+  "hex": "#ffffff",
+  "alpha": 0.09,
+  "src": "local sb = UITheme.flat(UITheme.rgba(1, 1, 1, 0.09), 6, UITheme.rgba(1, 1, 1, 0.2), 1, 8.0, 2.0)"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 619,
+  "name": "sb",
+  "hex": "#ffffff",
+  "alpha": 0.2,
+  "src": "local sb = UITheme.flat(UITheme.rgba(1, 1, 1, 0.09), 6, UITheme.rgba(1, 1, 1, 0.2), 1, 8.0, 2.0)"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 626,
+  "name": "BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/HoldRing.luau",
+  "line": 29,
+  "name": "Color",
+  "hex": "#ffd678",
+  "alpha": 1.0,
+  "src": "Color = Color3.fromRGB(255, 214, 120),"
+ },
+ {
+  "file": "src/client/UI/HoldRing.luau",
+  "line": 39,
+  "name": "BackgroundColor3",
+  "hex": "#ffd678",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(255, 214, 120),"
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 88,
+  "name": "himg.BackgroundColor3",
+  "hex": "#283452",
+  "alpha": 1.0,
+  "src": "himg.BackgroundColor3 = Color3.fromRGB(40, 52, 82)"
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 203,
+  "name": "nc",
+  "hex": "#ffb2b8",
+  "alpha": 1.0,
+  "src": "nc = Color3.new(1.0, 0.7, 0.72)"
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 227,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.07,
+  "src": "self._sv:set(T.flat(T.rgba(1, 1, 1, 0.07), 7))"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 52,
+  "name": "Locker.PREVIEW_COLOR",
+  "hex": "#4084e6",
+  "alpha": 1.0,
+  "src": "Locker.PREVIEW_COLOR = Color3.fromRGB(64, 132, 230)"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 176,
+  "name": "self._dim",
+  "hex": "#03040d",
+  "alpha": 0.78,
+  "src": "self._dim = W.ColorRect.new(UITheme.rgba(0.01, 0.015, 0.05, 0.78))"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 190,
+  "name": null,
+  "hex": "#0b1121",
+  "alpha": 0.96,
+  "src": "self._panel:set_tint(UITheme.rgba(0.045, 0.065, 0.13, 0.96))"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 254,
+  "name": "sf.ScrollBarImageColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "sf.ScrollBarImageColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 703,
+  "name": "b.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "b.BackgroundColor3 = Color3.fromRGB(255, 255, 255)"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 712,
+  "name": "stroke.Color",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "stroke.Color = if equipped then UITheme.color3(UITheme.to_rgba(UITheme.AMBER)) else Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 729,
+  "name": "name.TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "name.TextColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 743,
+  "name": null,
+  "hex": "#969eb4",
+  "alpha": 1.0,
+  "src": "else Color3.fromRGB(150, 158, 180)"
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 44,
+  "name": "self._dim",
+  "hex": "#03040d",
+  "alpha": 0.6,
+  "src": "self._dim = W.ColorRect.new(UITheme.rgba(0.01, 0.015, 0.05, 0.6))"
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 54,
+  "name": null,
+  "hex": "#0b1121",
+  "alpha": 0.95,
+  "src": "self._panel:set_tint(UITheme.rgba(0.045, 0.065, 0.13, 0.95))"
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 108,
+  "name": "sf.ScrollBarImageColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "sf.ScrollBarImageColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 157,
+  "name": "b.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "b.BackgroundColor3 = Color3.fromRGB(255, 255, 255)"
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 166,
+  "name": "stroke.Color",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "stroke.Color = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 184,
+  "name": "name.TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "name.TextColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 197,
+  "name": "sub.TextColor3",
+  "hex": "#aab4cd",
+  "alpha": 1.0,
+  "src": "sub.TextColor3 = Color3.fromRGB(170, 180, 205)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 35,
+  "name": "normal",
+  "hex": "#ffffff",
+  "alpha": 0.04,
+  "src": "local normal = UITheme.flat(UITheme.rgba(1, 1, 1, 0.04), 10, UITheme.rgba(1, 1, 1, 0.08), 1)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 35,
+  "name": "normal",
+  "hex": "#ffffff",
+  "alpha": 0.08,
+  "src": "local normal = UITheme.flat(UITheme.rgba(1, 1, 1, 0.04), 10, UITheme.rgba(1, 1, 1, 0.08), 1)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 36,
+  "name": "hover",
+  "hex": "#ffffff",
+  "alpha": 0.07,
+  "src": "local hover = UITheme.flat(UITheme.rgba(1, 1, 1, 0.07), 10, UITheme.rgba(1, 1, 1, 0.08), 1)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 36,
+  "name": "hover",
+  "hex": "#ffffff",
+  "alpha": 0.08,
+  "src": "local hover = UITheme.flat(UITheme.rgba(1, 1, 1, 0.07), 10, UITheme.rgba(1, 1, 1, 0.08), 1)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 67,
+  "name": "knob.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "knob.BackgroundColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 109,
+  "name": "col",
+  "hex": "#ffffff",
+  "alpha": 0.14,
+  "src": "local col = UITheme.lerp(UITheme.rgba(1, 1, 1, 0.14), UITheme.to_rgba(UITheme.AMBER), k)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 156,
+  "name": "bg.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "bg.BackgroundColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 163,
+  "name": "stroke.Color",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "stroke.Color = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 202,
+  "name": "self._knob.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._knob.BackgroundColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 204,
+  "name": "ks.Color",
+  "hex": "#784808",
+  "alpha": 1.0,
+  "src": "ks.Color = Color3.fromRGB(120, 72, 8)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 323,
+  "name": "tcol",
+  "hex": "#ffffff",
+  "alpha": 0.14,
+  "src": "local tcol = UITheme.rgba(1, 1, 1, 0.14)"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 368,
+  "name": "self._dim",
+  "hex": "#03040d",
+  "alpha": 0.6,
+  "src": "self._dim = W.ColorRect.new(UITheme.rgba(0.01, 0.015, 0.05, 0.6))"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 379,
+  "name": null,
+  "hex": "#0b1121",
+  "alpha": 0.94,
+  "src": "self._panel:set_tint(UITheme.rgba(0.045, 0.065, 0.13, 0.94))"
+ },
+ {
+  "file": "src/client/UI/PlaceConfirm.luau",
+  "line": 77,
+  "name": null,
+  "hex": "#141a29",
+  "alpha": 0.92,
+  "src": "if primary then UITheme.AMBER else UITheme.rgba(0.08, 0.1, 0.16, 0.92),"
+ },
+ {
+  "file": "src/client/UI/PlaceConfirm.luau",
+  "line": 89,
+  "name": "hot.bg",
+  "hex": "#242b40",
+  "alpha": 0.95,
+  "src": "hot.bg = UITheme.to_rgba(if primary then UITheme.AMBER_HI else UITheme.rgba(0.14, 0.17, 0.25, 0.95))"
+ },
+ {
+  "file": "src/client/UI/PlaceConfirm.luau",
+  "line": 118,
+  "name": "sb.bg",
+  "hex": "#ffffff",
+  "alpha": 0.1,
+  "src": "sb.bg = if okv then UITheme.to_rgba(col) else UITheme.rgba(1, 1, 1, 0.1)"
+ },
+ {
+  "file": "src/client/UI/RadialMenu.luau",
+  "line": 127,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "UICtx.make(\"UIStroke\", { Thickness = 1, Color = Color3.new(1, 1, 1), Transparency = 0.84 }, self._center_btn)"
+ },
+ {
+  "file": "src/client/UI/RadialMenu.luau",
+  "line": 151,
+  "name": "st",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local st = UICtx.make(\"UIStroke\", { Thickness = 1, Color = Color3.new(1, 1, 1), Transparency = 0.88 }, f)"
+ },
+ {
+  "file": "src/client/UI/RadialMenu.luau",
+  "line": 597,
+  "name": "icol",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "icol = if danger then Color3.new(1, 1, 1) else Th.INK"
+ },
+ {
+  "file": "src/client/UI/RadialMenu.luau",
+  "line": 637,
+  "name": "sg.line.ImageColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "sg.line.ImageColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/RadialMenu.luau",
+  "line": 729,
+  "name": "outer",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "outer = UICtx.ring(self._seg_holder, Vector2.zero, 10, 1, Color3.new(1, 1, 1), 0),"
+ },
+ {
+  "file": "src/client/UI/RadialMenu.luau",
+  "line": 730,
+  "name": "inner",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "inner = UICtx.ring(self._seg_holder, Vector2.zero, 10, 1, Color3.new(1, 1, 1), 0),"
+ },
+ {
+  "file": "src/client/UI/RatioSlider.luau",
+  "line": 55,
+  "name": "ts.Color",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "ts.Color = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/RatioSlider.luau",
+  "line": 214,
+  "name": "self._track.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._track.BackgroundColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/RotateCard.luau",
+  "line": 20,
+  "name": "bg",
+  "hex": "#03040d",
+  "alpha": 0.96,
+  "src": "local bg = W.ColorRect.new(UITheme.rgba(0.01, 0.015, 0.05, 0.96))"
+ },
+ {
+  "file": "src/client/UI/RotateCard.luau",
+  "line": 30,
+  "name": "self._icon",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._icon = UITheme.icon_rect(\"app_icon\", 72.0, Color3.new(1, 1, 1))"
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 32,
+  "name": "WHITE",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local WHITE = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 33,
+  "name": "PUMPKIN",
+  "hex": "#ffa03c",
+  "alpha": 1.0,
+  "src": "local PUMPKIN = Color3.fromRGB(255, 160, 60)"
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 34,
+  "name": "LILAC",
+  "hex": "#d6c4ff",
+  "alpha": 1.0,
+  "src": "local LILAC = Color3.fromRGB(214, 196, 255)"
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 103,
+  "name": "Color",
+  "hex": "#7a3ed6",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(122, 62, 214), Color3.fromRGB(42, 18, 92)),"
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 103,
+  "name": "Color",
+  "hex": "#2a125c",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(122, 62, 214), Color3.fromRGB(42, 18, 92)),"
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 137,
+  "name": "TextColor3",
+  "hex": "#ece6ff",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.fromRGB(236, 230, 255),"
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 145,
+  "name": "BackgroundColor3",
+  "hex": "#2ebe68",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(46, 190, 104),"
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 45,
+  "name": "GOLD_LIGHT",
+  "hex": "#ffe27a",
+  "alpha": 1.0,
+  "src": "local GOLD_LIGHT = Color3.fromRGB(255, 226, 122)"
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 46,
+  "name": "GOLD_DEEP",
+  "hex": "#ee941c",
+  "alpha": 1.0,
+  "src": "local GOLD_DEEP = Color3.fromRGB(238, 148, 28)"
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 47,
+  "name": "INK",
+  "hex": "#341c02",
+  "alpha": 1.0,
+  "src": "local INK = Color3.fromRGB(52, 28, 2)"
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 48,
+  "name": "RED",
+  "hex": "#e83434",
+  "alpha": 1.0,
+  "src": "local RED = Color3.fromRGB(232, 52, 52)"
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 103,
+  "name": "BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 152,
+  "name": "BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 175,
+  "name": "TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 183,
+  "name": null,
+  "hex": "#5a0a0a",
+  "alpha": 1.0,
+  "src": "{ Color = Color3.fromRGB(90, 10, 10), Thickness = 1.5, ApplyStrokeMode = Enum.ApplyStrokeMode.Border },"
+ },
+ {
+  "file": "src/client/UI/SpawnOverlay.luau",
+  "line": 46,
+  "name": "ring.track",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "ring.track = UICtx.ring(ring.canvas, Vector2.zero, 10, 4, Color3.new(1, 1, 1), 0.9)"
+ },
+ {
+  "file": "src/client/UI/SpawnOverlay.luau",
+  "line": 292,
+  "name": "img.BackgroundColor3",
+  "hex": "#283452",
+  "alpha": 1.0,
+  "src": "img.BackgroundColor3 = Color3.fromRGB(40, 52, 82)"
+ },
+ {
+  "file": "src/client/UI/SpawnOverlay.luau",
+  "line": 302,
+  "name": "rim.Color",
+  "hex": "#101628",
+  "alpha": 1.0,
+  "src": "rim.Color = UITheme.color3(if h.spawned then UITheme.GREEN else Color3.fromRGB(16, 22, 40))"
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 34,
+  "name": "GOLD",
+  "hex": "#ffc83d",
+  "alpha": 1.0,
+  "src": "local GOLD = Color3.fromRGB(255, 200, 61)"
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 35,
+  "name": "WHITE",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local WHITE = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 36,
+  "name": "PINK",
+  "hex": "#ffbaba",
+  "alpha": 1.0,
+  "src": "local PINK = Color3.fromRGB(255, 186, 186)"
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 37,
+  "name": "RED",
+  "hex": "#e82e38",
+  "alpha": 1.0,
+  "src": "local RED = Color3.fromRGB(232, 46, 56)"
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 108,
+  "name": "Color",
+  "hex": "#ec403c",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(236, 64, 60), Color3.fromRGB(124, 12, 34)),"
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 108,
+  "name": "Color",
+  "hex": "#7c0c22",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(236, 64, 60), Color3.fromRGB(124, 12, 34)),"
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 117,
+  "name": "ImageColor3",
+  "hex": "#ffbe78",
+  "alpha": 1.0,
+  "src": "ImageColor3 = Color3.fromRGB(255, 190, 120),"
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 196,
+  "name": "TextColor3",
+  "hex": "#ffe8dc",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.fromRGB(255, 232, 220),"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 46,
+  "name": "GOLD",
+  "hex": "#ffc83d",
+  "alpha": 1.0,
+  "src": "local GOLD = Color3.fromRGB(255, 200, 61)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 47,
+  "name": "GOLD_LIGHT",
+  "hex": "#ffe8a0",
+  "alpha": 1.0,
+  "src": "local GOLD_LIGHT = Color3.fromRGB(255, 232, 160)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 48,
+  "name": "RED",
+  "hex": "#e82e38",
+  "alpha": 1.0,
+  "src": "local RED = Color3.fromRGB(232, 46, 56)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 49,
+  "name": "RED_DARK",
+  "hex": "#961022",
+  "alpha": 1.0,
+  "src": "local RED_DARK = Color3.fromRGB(150, 16, 34)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 50,
+  "name": "INK",
+  "hex": "#341c02",
+  "alpha": 1.0,
+  "src": "local INK = Color3.fromRGB(52, 28, 2)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 51,
+  "name": "WHITE",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local WHITE = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 52,
+  "name": "MUTED",
+  "hex": "#a8b6d6",
+  "alpha": 1.0,
+  "src": "local MUTED = Color3.fromRGB(168, 182, 214)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 53,
+  "name": "NIGHT",
+  "hex": "#080c1a",
+  "alpha": 1.0,
+  "src": "local NIGHT = Color3.fromRGB(8, 12, 26)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 152,
+  "name": "BackgroundColor3",
+  "hex": "#02040c",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(2, 4, 12),"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 167,
+  "name": "BackgroundColor3",
+  "hex": "#10162c",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(16, 22, 44),"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 175,
+  "name": "Color",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(255, 255, 255), Color3.fromRGB(150, 120, 140)),"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 175,
+  "name": "Color",
+  "hex": "#96788c",
+  "alpha": 1.0,
+  "src": "Color = ColorSequence.new(Color3.fromRGB(255, 255, 255), Color3.fromRGB(150, 120, 140)),"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 186,
+  "name": "ImageColor3",
+  "hex": "#ff783c",
+  "alpha": 1.0,
+  "src": "ImageColor3 = Color3.fromRGB(255, 120, 60),"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 221,
+  "name": null,
+  "hex": "#280c04",
+  "alpha": 1.0,
+  "src": "new(\"UIStroke\", { Color = Color3.fromRGB(40, 12, 4), Thickness = 2, Transparency = 0.35 }, title)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 248,
+  "name": null,
+  "hex": "#ff5c50",
+  "alpha": 1.0,
+  "src": "new(\"UIGradient\", { Color = ColorSequence.new(Color3.fromRGB(255, 92, 80), RED_DARK), Rotation = 90 }, sticker)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 347,
+  "name": null,
+  "hex": "#3c1e00",
+  "alpha": 1.0,
+  "src": "new(\"UIStroke\", { Color = Color3.fromRGB(60, 30, 0), Thickness = 2, Transparency = 0.3 }, self._price)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 353,
+  "name": "TextColor3",
+  "hex": "#ff786e",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.fromRGB(255, 120, 110),"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 390,
+  "name": null,
+  "hex": "#ffdc6e",
+  "alpha": 1.0,
+  "src": "new(\"UIGradient\", { Color = ColorSequence.new(Color3.fromRGB(255, 220, 110), Color3.fromRGB(242, 150, 30)), Rotation = 90 }, buy)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 390,
+  "name": null,
+  "hex": "#f2961e",
+  "alpha": 1.0,
+  "src": "new(\"UIGradient\", { Color = ColorSequence.new(Color3.fromRGB(255, 220, 110), Color3.fromRGB(242, 150, 30)), Rotation = 90 }, buy)"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 523,
+  "name": "TextColor3",
+  "hex": "#d6def0",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.fromRGB(214, 222, 240),"
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 533,
+  "name": "BackgroundColor3",
+  "hex": "#26aa5a",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(38, 170, 90),"
+ },
+ {
+  "file": "src/client/UI/TargetCard.luau",
+  "line": 100,
+  "name": "self._warn",
+  "hex": "#ffd1cc",
+  "alpha": 1.0,
+  "src": "self._warn = UITheme.label(\"\", 13, 600, Color3.new(1.0, 0.82, 0.8))"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 54,
+  "name": "self.top_color",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self.top_color = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 55,
+  "name": "self.bottom_color",
+  "hex": "#ffcc85",
+  "alpha": 1.0,
+  "src": "self.bottom_color = Color3.new(1.0, 0.8, 0.52)"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 60,
+  "name": "self.shadow",
+  "hex": "#000514",
+  "alpha": 1.0,
+  "src": "self.shadow = { color = Color3.new(0.0, 0.02, 0.08), alpha = 0.55, offset_y = 6, outline = 14 }"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 101,
+  "name": "TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 295,
+  "name": "INK",
+  "hex": "#03040d",
+  "alpha": 1.0,
+  "src": "local INK = Color3.new(0.01, 0.015, 0.05)"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 304,
+  "name": "g.ImageColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "g.ImageColor3 = color or Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 472,
+  "name": "self._top_shade",
+  "hex": "#010309",
+  "alpha": 1.0,
+  "src": "self._top_shade = vgrad_node(Color3.new(0.005, 0.01, 0.035), { { 0, 0.92 }, { 0.55, 0.6 }, { 1, 0.0 } })"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 475,
+  "name": "self._fade",
+  "hex": "#010208",
+  "alpha": 0.72,
+  "src": "self._fade = W.ColorRect.new(UITheme.rgba(0.005, 0.008, 0.03, 0.72))"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 487,
+  "name": "self._emblem",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._emblem = UITheme.icon_rect(\"app_icon\", 64.0, Color3.new(1, 1, 1))"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 491,
+  "name": "self._glow",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "self._glow = image_node(S.title_glow, Color3.new(1, 1, 1), 1.0)"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 497,
+  "name": "word.shadow",
+  "hex": "#000514",
+  "alpha": 1.0,
+  "src": "word.shadow = { color = Color3.new(0.0, 0.02, 0.08), alpha = 0.55, offset_y = 6, outline = 14 }"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 498,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "word:set_colors(Color3.new(1, 1, 1), Color3.new(1.0, 0.8, 0.52))"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 498,
+  "name": null,
+  "hex": "#ffcc85",
+  "alpha": 1.0,
+  "src": "word:set_colors(Color3.new(1, 1, 1), Color3.new(1.0, 0.8, 0.52))"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 507,
+  "name": "self._tag",
+  "hex": "#dbe3f7",
+  "alpha": 1.0,
+  "src": "self._tag = UITheme.label(\"CONQUER THE REAL WORLD\", 15, 600, Color3.new(0.86, 0.89, 0.97), 6)"
+ },
+ {
+  "file": "src/client/UI/Tutorial.luau",
+  "line": 69,
+  "name": "BackgroundColor3",
+  "hex": "#0e1426",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.fromRGB(14, 20, 38),"
+ },
+ {
+  "file": "src/client/UI/Tutorial.luau",
+  "line": 74,
+  "name": "TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "TextColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/Tutorial.luau",
+  "line": 105,
+  "name": "BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "BackgroundColor3 = Color3.new(1, 1, 1),"
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 249,
+  "name": null,
+  "hex": "#999999",
+  "alpha": 1.0,
+  "src": "return Color3.new(0.6, 0.6, 0.6)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 94,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "return Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 147,
+  "name": "UITheme.GLASS",
+  "hex": "#0d1326",
+  "alpha": 0.84,
+  "src": "UITheme.GLASS = UITheme.rgba(0.051, 0.075, 0.149, 0.84) -- #0d1326 @ 84 %"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 148,
+  "name": "UITheme.GLASS_SOLID",
+  "hex": "#0b1020",
+  "alpha": 0.96,
+  "src": "UITheme.GLASS_SOLID = UITheme.rgba(0.043, 0.062, 0.125, 0.96)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 149,
+  "name": "UITheme.GLASS_RAISED",
+  "hex": "#1a213d",
+  "alpha": 0.94,
+  "src": "UITheme.GLASS_RAISED = UITheme.rgba(0.1, 0.13, 0.24, 0.94)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 150,
+  "name": "UITheme.LINE",
+  "hex": "#ffffff",
+  "alpha": 0.1,
+  "src": "UITheme.LINE = UITheme.rgba(1.0, 1.0, 1.0, 0.1)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 151,
+  "name": "UITheme.LINE_2",
+  "hex": "#ffffff",
+  "alpha": 0.18,
+  "src": "UITheme.LINE_2 = UITheme.rgba(1.0, 1.0, 1.0, 0.18)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 152,
+  "name": "UITheme.FILL",
+  "hex": "#ffffff",
+  "alpha": 0.06,
+  "src": "UITheme.FILL = UITheme.rgba(1.0, 1.0, 1.0, 0.06)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 153,
+  "name": "UITheme.FILL_2",
+  "hex": "#ffffff",
+  "alpha": 0.11,
+  "src": "UITheme.FILL_2 = UITheme.rgba(1.0, 1.0, 1.0, 0.11)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 154,
+  "name": "UITheme.TEXT",
+  "hex": "#f0f4ff",
+  "alpha": 1.0,
+  "src": "UITheme.TEXT = Color3.new(0.94, 0.955, 1.0)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 155,
+  "name": "UITheme.TEXT_2",
+  "hex": "#adbadb",
+  "alpha": 1.0,
+  "src": "UITheme.TEXT_2 = Color3.new(0.68, 0.73, 0.86)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 156,
+  "name": "UITheme.TEXT_3",
+  "hex": "#7a87ab",
+  "alpha": 1.0,
+  "src": "UITheme.TEXT_3 = Color3.new(0.48, 0.53, 0.67)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 157,
+  "name": "UITheme.AMBER",
+  "hex": "#ffb547",
+  "alpha": 1.0,
+  "src": "UITheme.AMBER = Color3.new(1.0, 0.71, 0.278) -- #ffb547 primary actions"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 158,
+  "name": "UITheme.AMBER_HI",
+  "hex": "#ffcc78",
+  "alpha": 1.0,
+  "src": "UITheme.AMBER_HI = Color3.new(1.0, 0.8, 0.47)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 159,
+  "name": "UITheme.AMBER_LO",
+  "hex": "#cc7d21",
+  "alpha": 1.0,
+  "src": "UITheme.AMBER_LO = Color3.new(0.8, 0.49, 0.13)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 160,
+  "name": "UITheme.CYAN",
+  "hex": "#4fd1ff",
+  "alpha": 1.0,
+  "src": "UITheme.CYAN = Color3.new(0.31, 0.82, 1.0) -- info"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 161,
+  "name": "UITheme.GREEN",
+  "hex": "#5ee399",
+  "alpha": 1.0,
+  "src": "UITheme.GREEN = Color3.new(0.37, 0.89, 0.6)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 162,
+  "name": "UITheme.RED",
+  "hex": "#ff5463",
+  "alpha": 1.0,
+  "src": "UITheme.RED = Color3.new(1.0, 0.33, 0.39)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 164,
+  "name": "UITheme.SURRENDER_RED",
+  "hex": "#de303c",
+  "alpha": 1.0,
+  "src": "UITheme.SURRENDER_RED = Color3.fromRGB(222, 48, 60)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 165,
+  "name": "UITheme.SURRENDER_RED_HI",
+  "hex": "#f04852",
+  "alpha": 1.0,
+  "src": "UITheme.SURRENDER_RED_HI = Color3.fromRGB(240, 72, 82)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 166,
+  "name": "UITheme.SURRENDER_RED_LO",
+  "hex": "#8c1420",
+  "alpha": 1.0,
+  "src": "UITheme.SURRENDER_RED_LO = Color3.fromRGB(140, 20, 32)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 167,
+  "name": "UITheme.ORANGE",
+  "hex": "#ff945c",
+  "alpha": 1.0,
+  "src": "UITheme.ORANGE = Color3.new(1.0, 0.58, 0.36)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 168,
+  "name": "UITheme.VIOLET",
+  "hex": "#b89eff",
+  "alpha": 1.0,
+  "src": "UITheme.VIOLET = Color3.new(0.72, 0.62, 1.0)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 169,
+  "name": "UITheme.GOLD",
+  "hex": "#ffd666",
+  "alpha": 1.0,
+  "src": "UITheme.GOLD = Color3.new(1.0, 0.84, 0.4)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 170,
+  "name": "UITheme.INK",
+  "hex": "#1a1105",
+  "alpha": 1.0,
+  "src": "UITheme.INK = Color3.new(0.1, 0.066, 0.02) -- text on amber"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 171,
+  "name": "UITheme.WHITE",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "UITheme.WHITE = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 172,
+  "name": "UITheme.BLACK",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "UITheme.BLACK = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 173,
+  "name": "UITheme.CLEAR",
+  "hex": "#000000",
+  "alpha": 0.0,
+  "src": "UITheme.CLEAR = UITheme.rgba(0, 0, 0, 0)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1612,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.03,
+  "src": "UITheme.rgba(1, 1, 1, 0.03),"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1623,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.03,
+  "src": "UITheme.rgba(1, 1, 1, 0.03),"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1644,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.0,
+  "src": "UITheme.rgba(1, 1, 1, 0.0),"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1646,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.03,
+  "src": "UITheme.rgba(1, 1, 1, 0.03),"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1662,
+  "name": null,
+  "hex": "#ffc7cc",
+  "alpha": 1.0,
+  "src": "Color3.new(1.0, 0.78, 0.8),"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1668,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.04,
+  "src": "UITheme.rgba(1, 1, 1, 0.04),"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1693,
+  "name": "pd",
+  "hex": "#ffffff",
+  "alpha": 0.08,
+  "src": "local pd = UITheme.flat(UITheme.rgba(1, 1, 1, 0.08), UITheme.R_MD, UITheme.LINE, 1, 22.0, 10.0)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1729,
+  "name": "white",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local white = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1869,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 0.35,
+  "src": "p:add_theme_stylebox_override(\"panel\", UITheme.flat(c, radius or 3, UITheme.rgba(1, 1, 1, 0.35), 1))"
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 1609,
+  "name": "img.ImageColor3",
+  "hex": "#00030a",
+  "alpha": 1.0,
+  "src": "img.ImageColor3 = Color3.new(0.0, 0.01, 0.04)"
+ },
+ {
+  "file": "src/client/Map/FrontLayer.luau",
+  "line": 353,
+  "name": "s.Color",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "s.Color = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 381,
+  "name": "col",
+  "hex": "#bf99ff",
+  "alpha": 1.0,
+  "src": "local col = if kind == Defs.N_SLUG then Color3.new(0.75, 0.6, 1) else Color3.new(1, 0.72, 0.35)"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 381,
+  "name": "col",
+  "hex": "#ffb859",
+  "alpha": 1.0,
+  "src": "local col = if kind == Defs.N_SLUG then Color3.new(0.75, 0.6, 1) else Color3.new(1, 0.72, 0.35)"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 403,
+  "name": null,
+  "hex": "#ffebbf",
+  "alpha": 1.0,
+  "src": "Color3.new(1, 0.92, 0.75),"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 439,
+  "name": null,
+  "hex": "#ff9940",
+  "alpha": 1.0,
+  "src": "add(self, tile, 0, FxLayer.POP_RADIUS / k * 0.25, FxLayer.POP_S, col or Color3.new(1, 0.6, 0.25), false)"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 462,
+  "name": null,
+  "hex": "#ffb24c",
+  "alpha": 1.0,
+  "src": "add(self, s.tile, 0, 14 / k, 0.5, Color3.new(1, 0.7, 0.3), false)"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 483,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "return Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 486,
+  "name": null,
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "return if luma < FxLayer.BANNER_MIN_LUMA then c:Lerp(Color3.new(1, 1, 1), FxLayer.BANNER_LIFT) else c"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 565,
+  "name": "label.TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "label.TextColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 569,
+  "name": "stroke.Color",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "stroke.Color = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 656,
+  "name": "gold.TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "gold.TextColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 660,
+  "name": "stroke.Color",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "stroke.Color = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 101,
+  "name": "f.BackgroundColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "f.BackgroundColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 110,
+  "name": "s.Color",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "s.Color = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 731,
+  "name": null,
+  "hex": "#ffd980",
+  "alpha": 1.0,
+  "src": "call(fx, \"pop\", math.floor(v) * W + math.floor(u), Color3.new(1, 0.85, 0.5))"
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 828,
+  "name": "WHITE",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local WHITE = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 829,
+  "name": "AIM_COVERED",
+  "hex": "#ff291f",
+  "alpha": 1.0,
+  "src": "local AIM_COVERED = Color3.new(1.0, 0.16, 0.12)"
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 830,
+  "name": "AIM_NUKE",
+  "hex": "#ffd675",
+  "alpha": 1.0,
+  "src": "local AIM_NUKE = Color3.new(1.0, 0.84, 0.46)"
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 831,
+  "name": "AIM_BOAT",
+  "hex": "#8cd9ff",
+  "alpha": 1.0,
+  "src": "local AIM_BOAT = Color3.new(0.55, 0.85, 1.0)"
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 832,
+  "name": "AIM_INVALID",
+  "hex": "#999999",
+  "alpha": 1.0,
+  "src": "local AIM_INVALID = Color3.new(0.6, 0.6, 0.6)"
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 442,
+  "name": "badge.TextColor3",
+  "hex": "#5ed6ff",
+  "alpha": 1.0,
+  "src": "badge.TextColor3 = Color3.fromRGB(94, 214, 255)"
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 443,
+  "name": "bs.Color",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "bs.Color = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 463,
+  "name": "face.BackgroundColor3",
+  "hex": "#283452",
+  "alpha": 1.0,
+  "src": "face.BackgroundColor3 = Color3.fromRGB(40, 52, 82)"
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 472,
+  "name": "fs.Color",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "fs.Color = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 45,
+  "name": "HOSTILE_TINT",
+  "hex": "#ff3329",
+  "alpha": 1.0,
+  "src": "local HOSTILE_TINT = Color3.new(1.0, 0.2, 0.16)"
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 46,
+  "name": "WHITE",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "local WHITE = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 47,
+  "name": "HOT_COLOR",
+  "hex": "#ff7359",
+  "alpha": 1.0,
+  "src": "local HOT_COLOR = HOSTILE_TINT:Lerp(Color3.new(1.0, 0.45, 0.35), 0.25)"
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 56,
+  "name": "RoadLayer.UNOWNED",
+  "hex": "#bfbfbf",
+  "alpha": 1.0,
+  "src": "RoadLayer.UNOWNED = Color3.new(0.75, 0.75, 0.75)"
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 61,
+  "name": "RoadLayer.DARK",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "RoadLayer.DARK = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 58,
+  "name": "StructureLayer.CONSTRUCT_FILL",
+  "hex": "#c6c6c6",
+  "alpha": 1.0,
+  "src": "StructureLayer.CONSTRUCT_FILL = Color3.fromRGB(198, 198, 198)"
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 59,
+  "name": "StructureLayer.CONSTRUCT_BORDER",
+  "hex": "#7f7f7f",
+  "alpha": 1.0,
+  "src": "StructureLayer.CONSTRUCT_BORDER = Color3.fromRGB(127, 127, 127)"
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 68,
+  "name": null,
+  "hex": "#e81919",
+  "alpha": 1.0,
+  "src": "Color3.new(0.91, 0.098, 0.098),"
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 69,
+  "name": null,
+  "hex": "#f07a19",
+  "alpha": 1.0,
+  "src": "Color3.new(0.941, 0.478, 0.098),"
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 70,
+  "name": null,
+  "hex": "#cae70f",
+  "alpha": 1.0,
+  "src": "Color3.new(0.792, 0.906, 0.059),"
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 71,
+  "name": null,
+  "hex": "#2cef12",
+  "alpha": 1.0,
+  "src": "Color3.new(0.173, 0.937, 0.071),"
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 293,
+  "name": "l.TextColor3",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "l.TextColor3 = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 296,
+  "name": "stroke.Color",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "stroke.Color = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 432,
+  "name": "b.BackgroundColor3",
+  "hex": "#000000",
+  "alpha": 1.0,
+  "src": "b.BackgroundColor3 = Color3.new(0, 0, 0)"
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 224,
+  "name": "s.Color",
+  "hex": "#ffffff",
+  "alpha": 1.0,
+  "src": "s.Color = Color3.new(1, 1, 1)"
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 636,
+  "name": "rc",
+  "hex": "#ff291f",
+  "alpha": 1.0,
+  "src": "local rc = if mine then Color3.new(1, 0.16, 0.12) else c"
+ },
+ {
+  "file": "src/shared/Assets/ArsenalMaps.luau",
+  "line": 10,
+  "name": "mega",
+  "hex": "#dc443c",
+  "alpha": 1.0,
+  "src": "mega = { frames = { Vector2.new(2, 2) }, split = 0.4, enemy = Color3.fromRGB(220, 68, 60), advance = 0 },"
+ },
+ {
+  "file": "src/shared/Assets/ArsenalMaps.luau",
+  "line": 11,
+  "name": "scatter",
+  "hex": "#ee842c",
+  "alpha": 1.0,
+  "src": "scatter = { frames = { Vector2.new(198, 2) }, split = 0.38, enemy = Color3.fromRGB(238, 132, 44), advance = 0 },"
+ },
+ {
+  "file": "src/shared/Assets/ArsenalMaps.luau",
+  "line": 25,
+  "name": "enemy",
+  "hex": "#dc443c",
+  "alpha": 1.0,
+  "src": "enemy = Color3.fromRGB(220, 68, 60),"
+ },
+ {
+  "file": "src/shared/Assets/ArsenalMaps.luau",
+  "line": 31,
+  "name": "enemy",
+  "hex": "#ee842c",
+  "alpha": 1.0,
+  "src": "enemy = Color3.fromRGB(238, 132, 44),"
+ },
+ {
+  "file": "src/shared/Assets/ArsenalMaps.luau",
+  "line": 34,
+  "name": "airfield",
+  "hex": "#dc443c",
+  "alpha": 1.0,
+  "src": "airfield = { frames = { Vector2.new(394, 186) }, split = 0.4, enemy = Color3.fromRGB(220, 68, 60), advance = 0 },"
+ },
+ {
+  "file": "src/shared/Assets/ArsenalMaps.luau",
+  "line": 35,
+  "name": "railgun",
+  "hex": "#28aaaa",
+  "alpha": 1.0,
+  "src": "railgun = { frames = { Vector2.new(590, 186) }, split = 0.3, enemy = Color3.fromRGB(40, 170, 170), advance = 0 },"
+ },
+ {
+  "file": "src/shared/Assets/ArsenalMaps.luau",
+  "line": 39,
+  "name": "enemy",
+  "hex": "#dc443c",
+  "alpha": 1.0,
+  "src": "enemy = Color3.fromRGB(220, 68, 60),"
+ },
+ {
+  "file": "src/shared/Assets/ArsenalMaps.luau",
+  "line": 44,
+  "name": "player",
+  "hex": "#965ce2",
+  "alpha": 1.0,
+  "src": "player = Color3.fromRGB(150, 92, 226),"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 4,
+  "name": null,
+  "hex": "#719bfa",
+  "alpha": 1.0,
+  "src": "{ name = \"United States\", code = \"US\", lat = 38.9, lon = -77.01, x = 292, y = 145, color = \"#719bfa\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 5,
+  "name": null,
+  "hex": "#51c9ad",
+  "alpha": 1.0,
+  "src": "{ name = \"Canada\", code = \"CA\", lat = 45.42, lon = -75.7, x = 296, y = 126, color = \"#51c9ad\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 6,
+  "name": null,
+  "hex": "#f46a86",
+  "alpha": 1.0,
+  "src": "{ name = \"Mexico\", code = \"MX\", lat = 19.44, lon = -99.13, x = 230, y = 200, color = \"#f46a86\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 7,
+  "name": null,
+  "hex": "#20a18f",
+  "alpha": 1.0,
+  "src": "{ name = \"Cuba\", code = \"CU\", lat = 23.13, lon = -82.37, x = 277, y = 190, color = \"#20a18f\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 8,
+  "name": null,
+  "hex": "#b682ed",
+  "alpha": 1.0,
+  "src": "{ name = \"Guatemala\", code = \"GT\", lat = 14.62, lon = -90.53, x = 254, y = 214, color = \"#b682ed\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 9,
+  "name": null,
+  "hex": "#68b9fa",
+  "alpha": 1.0,
+  "src": "{ name = \"Nicaragua\", code = \"NI\", lat = 12.15, lon = -86.27, x = 266, y = 221, color = \"#68b9fa\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 10,
+  "name": null,
+  "hex": "#f2bb31",
+  "alpha": 1.0,
+  "src": "{ name = \"Panama\", code = \"PA\", lat = 8.97, lon = -79.53, x = 285, y = 230, color = \"#f2bb31\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 11,
+  "name": null,
+  "hex": "#bc4b87",
+  "alpha": 1.0,
+  "src": "{ name = \"Dominican Rep.\", code = \"DO\", lat = 18.47, lon = -69.9, x = 313, y = 203, color = \"#bc4b87\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 12,
+  "name": null,
+  "hex": "#fb8e7d",
+  "alpha": 1.0,
+  "src": "{ name = \"Colombia\", code = \"CO\", lat = 4.6, lon = -74.09, x = 301, y = 242, color = \"#fb8e7d\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 13,
+  "name": null,
+  "hex": "#2193e0",
+  "alpha": 1.0,
+  "src": "{ name = \"Venezuela\", code = \"VE\", lat = 10.5, lon = -66.92, x = 321, y = 226, color = \"#2193e0\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 14,
+  "name": null,
+  "hex": "#cb454f",
+  "alpha": 1.0,
+  "src": "{ name = \"Ecuador\", code = \"EC\", lat = -0.21, lon = -78.5, x = 288, y = 256, color = \"#cb454f\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 15,
+  "name": null,
+  "hex": "#847ce2",
+  "alpha": 1.0,
+  "src": "{ name = \"Peru\", code = \"PE\", lat = -12.05, lon = -77.05, x = 293, y = 290, color = \"#847ce2\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 16,
+  "name": null,
+  "hex": "#25b5ae",
+  "alpha": 1.0,
+  "src": "{ name = \"Brazil\", code = \"BR\", lat = -15.78, lon = -47.92, x = 375, y = 300, color = \"#25b5ae\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 17,
+  "name": null,
+  "hex": "#ef6a9a",
+  "alpha": 1.0,
+  "src": "{ name = \"Bolivia\", code = \"BO\", lat = -16.5, lon = -68.15, x = 318, y = 302, color = \"#ef6a9a\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 18,
+  "name": null,
+  "hex": "#659e41",
+  "alpha": 1.0,
+  "src": "{ name = \"Paraguay\", code = \"PY\", lat = -25.29, lon = -57.64, x = 348, y = 327, color = \"#659e41\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 19,
+  "name": null,
+  "hex": "#40cd9b",
+  "alpha": 1.0,
+  "src": "{ name = \"Chile\", code = \"CL\", lat = -33.05, lon = -71.62, x = 308, y = 349, color = \"#40cd9b\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 20,
+  "name": null,
+  "hex": "#dcc536",
+  "alpha": 1.0,
+  "src": "{ name = \"Argentina\", code = \"AR\", lat = -34.6, lon = -58.4, x = 345, y = 354, color = \"#dcc536\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 21,
+  "name": null,
+  "hex": "#c54476",
+  "alpha": 1.0,
+  "src": "{ name = \"Uruguay\", code = \"UY\", lat = -34.86, lon = -56.17, x = 352, y = 354, color = \"#c54476\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 22,
+  "name": null,
+  "hex": "#2fa465",
+  "alpha": 1.0,
+  "src": "{ name = \"United Kingdom\", code = \"GB\", lat = 51.5, lon = -0.12, x = 511, y = 109, color = \"#2fa465\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 23,
+  "name": null,
+  "hex": "#c94363",
+  "alpha": 1.0,
+  "src": "{ name = \"Ireland\", code = \"IE\", lat = 53.34, lon = -6.25, x = 494, y = 104, color = \"#c94363\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 24,
+  "name": null,
+  "hex": "#40c5d9",
+  "alpha": 1.0,
+  "src": "{ name = \"France\", code = \"FR\", lat = 48.87, lon = 2.33, x = 518, y = 116, color = \"#40c5d9\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 25,
+  "name": null,
+  "hex": "#e670ac",
+  "alpha": 1.0,
+  "src": "{ name = \"Spain\", code = \"ES\", lat = 40.4, lon = -3.69, x = 501, y = 141, color = \"#e670ac\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 26,
+  "name": null,
+  "hex": "#3596c8",
+  "alpha": 1.0,
+  "src": "{ name = \"Portugal\", code = \"PT\", lat = 38.72, lon = -9.15, x = 485, y = 145, color = \"#3596c8\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 27,
+  "name": null,
+  "hex": "#e0d64c",
+  "alpha": 1.0,
+  "src": "{ name = \"Germany\", code = \"DE\", lat = 52.52, lon = 13.4, x = 550, y = 106, color = \"#e0d64c\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 28,
+  "name": null,
+  "hex": "#e28420",
+  "alpha": 1.0,
+  "src": "{ name = \"Italy\", code = \"IT\", lat = 41.9, lon = 12.48, x = 547, y = 136, color = \"#e28420\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 29,
+  "name": null,
+  "hex": "#fbaf94",
+  "alpha": 1.0,
+  "src": "{ name = \"Netherlands\", code = \"NL\", lat = 52.08, lon = 4.27, x = 524, y = 107, color = \"#fbaf94\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 30,
+  "name": null,
+  "hex": "#e38be8",
+  "alpha": 1.0,
+  "src": "{ name = \"Denmark\", code = \"DK\", lat = 55.68, lon = 12.56, x = 547, y = 97, color = \"#e38be8\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 31,
+  "name": null,
+  "hex": "#4ba3f7",
+  "alpha": 1.0,
+  "src": "{ name = \"Norway\", code = \"NO\", lat = 59.92, lon = 10.75, x = 542, y = 85, color = \"#4ba3f7\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 32,
+  "name": null,
+  "hex": "#f66d67",
+  "alpha": 1.0,
+  "src": "{ name = \"Sweden\", code = \"SE\", lat = 59.35, lon = 18.1, x = 563, y = 87, color = \"#f66d67\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 33,
+  "name": null,
+  "hex": "#8362cd",
+  "alpha": 1.0,
+  "src": "{ name = \"Finland\", code = \"FI\", lat = 60.18, lon = 24.93, x = 582, y = 84, color = \"#8362cd\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 34,
+  "name": null,
+  "hex": "#b668c8",
+  "alpha": 1.0,
+  "src": "{ name = \"Iceland\", code = \"IS\", lat = 64.15, lon = -21.95, x = 450, y = 73, color = \"#b668c8\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 35,
+  "name": null,
+  "hex": "#59e0ad",
+  "alpha": 1.0,
+  "src": "{ name = \"Poland\", code = \"PL\", lat = 52.25, lon = 21.0, x = 571, y = 107, color = \"#59e0ad\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 36,
+  "name": null,
+  "hex": "#b14f9f",
+  "alpha": 1.0,
+  "src": "{ name = \"Austria\", code = \"AT\", lat = 48.2, lon = 16.36, x = 558, y = 118, color = \"#b14f9f\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 37,
+  "name": null,
+  "hex": "#337bd0",
+  "alpha": 1.0,
+  "src": "{ name = \"Hungary\", code = \"HU\", lat = 47.5, lon = 19.08, x = 566, y = 120, color = \"#337bd0\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 38,
+  "name": null,
+  "hex": "#a2a8fb",
+  "alpha": 1.0,
+  "src": "{ name = \"Serbia\", code = \"RS\", lat = 44.82, lon = 20.47, x = 570, y = 128, color = \"#a2a8fb\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 39,
+  "name": null,
+  "hex": "#cb4a2a",
+  "alpha": 1.0,
+  "src": "{ name = \"Romania\", code = \"RO\", lat = 44.44, lon = 26.1, x = 586, y = 129, color = \"#cb4a2a\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 40,
+  "name": null,
+  "hex": "#fb8a9d",
+  "alpha": 1.0,
+  "src": "{ name = \"Greece\", code = \"GR\", lat = 37.99, lon = 23.73, x = 579, y = 147, color = \"#fb8a9d\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 41,
+  "name": null,
+  "hex": "#77b154",
+  "alpha": 1.0,
+  "src": "{ name = \"Ukraine\", code = \"UA\", lat = 50.44, lon = 30.51, x = 598, y = 112, color = \"#77b154\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 42,
+  "name": null,
+  "hex": "#219ea5",
+  "alpha": 1.0,
+  "src": "{ name = \"Belarus\", code = \"BY\", lat = 53.9, lon = 27.56, x = 590, y = 102, color = \"#219ea5\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 43,
+  "name": null,
+  "hex": "#e2a527",
+  "alpha": 1.0,
+  "src": "{ name = \"Russia\", code = \"RU\", lat = 55.75, lon = 37.61, x = 618, y = 97, color = \"#e2a527\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 44,
+  "name": null,
+  "hex": "#fcc586",
+  "alpha": 1.0,
+  "src": "{ name = \"Turkey\", code = \"TR\", lat = 39.93, lon = 32.86, x = 605, y = 142, color = \"#fcc586\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 45,
+  "name": null,
+  "hex": "#40c8c1",
+  "alpha": 1.0,
+  "src": "{ name = \"Kazakhstan\", code = \"KZ\", lat = 51.18, lon = 71.43, x = 715, y = 110, color = \"#40c8c1\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 46,
+  "name": null,
+  "hex": "#c562b2",
+  "alpha": 1.0,
+  "src": "{ name = \"Uzbekistan\", code = \"UZ\", lat = 41.31, lon = 69.29, x = 709, y = 138, color = \"#c562b2\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 47,
+  "name": null,
+  "hex": "#c1cf5c",
+  "alpha": 1.0,
+  "src": "{ name = \"Afghanistan\", code = \"AF\", lat = 34.52, lon = 69.18, x = 708, y = 157, color = \"#c1cf5c\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 48,
+  "name": null,
+  "hex": "#6985e7",
+  "alpha": 1.0,
+  "src": "{ name = \"Iran\", code = \"IR\", lat = 35.67, lon = 51.42, x = 658, y = 154, color = \"#6985e7\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 49,
+  "name": null,
+  "hex": "#dd577e",
+  "alpha": 1.0,
+  "src": "{ name = \"Iraq\", code = \"IQ\", lat = 33.34, lon = 44.39, x = 638, y = 161, color = \"#dd577e\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 50,
+  "name": null,
+  "hex": "#c37de2",
+  "alpha": 1.0,
+  "src": "{ name = \"Syria\", code = \"SY\", lat = 33.5, lon = 36.3, x = 615, y = 160, color = \"#c37de2\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 51,
+  "name": null,
+  "hex": "#5ccb89",
+  "alpha": 1.0,
+  "src": "{ name = \"Saudi Arabia\", code = \"SA\", lat = 24.64, lon = 46.77, x = 645, y = 185, color = \"#5ccb89\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 52,
+  "name": null,
+  "hex": "#915dc5",
+  "alpha": 1.0,
+  "src": "{ name = \"Yemen\", code = \"YE\", lat = 15.36, lon = 44.2, x = 637, y = 212, color = \"#915dc5\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 53,
+  "name": null,
+  "hex": "#fb942c",
+  "alpha": 1.0,
+  "src": "{ name = \"Oman\", code = \"OM\", lat = 23.61, lon = 58.59, x = 678, y = 189, color = \"#fb942c\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 54,
+  "name": null,
+  "hex": "#bf9cfb",
+  "alpha": 1.0,
+  "src": "{ name = \"Pakistan\", code = \"PK\", lat = 33.7, lon = 73.16, x = 720, y = 160, color = \"#bf9cfb\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 55,
+  "name": null,
+  "hex": "#1880c6",
+  "alpha": 1.0,
+  "src": "{ name = \"India\", code = \"IN\", lat = 28.6, lon = 77.2, x = 731, y = 174, color = \"#1880c6\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 56,
+  "name": null,
+  "hex": "#ef773b",
+  "alpha": 1.0,
+  "src": "{ name = \"Bangladesh\", code = \"BD\", lat = 23.73, lon = 90.41, x = 769, y = 188, color = \"#ef773b\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 57,
+  "name": null,
+  "hex": "#ee87d9",
+  "alpha": 1.0,
+  "src": "{ name = \"Myanmar\", code = \"MM\", lat = 19.77, lon = 96.12, x = 785, y = 199, color = \"#ee87d9\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 58,
+  "name": null,
+  "hex": "#85b2fb",
+  "alpha": 1.0,
+  "src": "{ name = \"Thailand\", code = \"TH\", lat = 13.75, lon = 100.51, x = 797, y = 216, color = \"#85b2fb\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 59,
+  "name": null,
+  "hex": "#6b6cd0",
+  "alpha": 1.0,
+  "src": "{ name = \"Vietnam\", code = \"VN\", lat = 21.04, lon = 105.85, x = 813, y = 196, color = \"#6b6cd0\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 60,
+  "name": null,
+  "hex": "#7fc76f",
+  "alpha": 1.0,
+  "src": "{ name = \"Malaysia\", code = \"MY\", lat = 2.91, lon = 101.7, x = 801, y = 247, color = \"#7fc76f\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 61,
+  "name": null,
+  "hex": "#aa6cd4",
+  "alpha": 1.0,
+  "src": "{ name = \"Indonesia\", code = \"ID\", lat = -6.17, lon = 106.83, x = 815, y = 273, color = \"#aa6cd4\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 62,
+  "name": null,
+  "hex": "#ee9d26",
+  "alpha": 1.0,
+  "src": "{ name = \"Philippines\", code = \"PH\", lat = 14.61, lon = 120.98, x = 856, y = 214, color = \"#ee9d26\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 63,
+  "name": null,
+  "hex": "#28b989",
+  "alpha": 1.0,
+  "src": "{ name = \"China\", code = \"CN\", lat = 39.93, lon = 116.39, x = 843, y = 142, color = \"#28b989\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 64,
+  "name": null,
+  "hex": "#fcc86b",
+  "alpha": 1.0,
+  "src": "{ name = \"Mongolia\", code = \"MN\", lat = 47.92, lon = 106.91, x = 816, y = 119, color = \"#fcc86b\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 65,
+  "name": null,
+  "hex": "#7cdd93",
+  "alpha": 1.0,
+  "src": "{ name = \"Japan\", code = \"JP\", lat = 35.69, lon = 139.75, x = 909, y = 154, color = \"#7cdd93\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 66,
+  "name": null,
+  "hex": "#9e8af9",
+  "alpha": 1.0,
+  "src": "{ name = \"South Korea\", code = \"KR\", lat = 37.57, lon = 127.0, x = 873, y = 149, color = \"#9e8af9\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 67,
+  "name": null,
+  "hex": "#42abd8",
+  "alpha": 1.0,
+  "src": "{ name = \"Egypt\", code = \"EG\", lat = 30.05, lon = 31.25, x = 600, y = 170, color = \"#42abd8\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 68,
+  "name": null,
+  "hex": "#3ab59a",
+  "alpha": 1.0,
+  "src": "{ name = \"Libya\", code = \"LY\", lat = 32.89, lon = 13.18, x = 549, y = 162, color = \"#3ab59a\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 69,
+  "name": null,
+  "hex": "#9575e2",
+  "alpha": 1.0,
+  "src": "{ name = \"Tunisia\", code = \"TN\", lat = 36.8, lon = 10.18, x = 540, y = 151, color = \"#9575e2\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 70,
+  "name": null,
+  "hex": "#9cd879",
+  "alpha": 1.0,
+  "src": "{ name = \"Algeria\", code = \"DZ\", lat = 36.77, lon = 3.05, x = 520, y = 151, color = \"#9cd879\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 71,
+  "name": null,
+  "hex": "#fcb542",
+  "alpha": 1.0,
+  "src": "{ name = \"Morocco\", code = \"MA\", lat = 34.03, lon = -6.84, x = 492, y = 159, color = \"#fcb542\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 72,
+  "name": null,
+  "hex": "#e05d3d",
+  "alpha": 1.0,
+  "src": "{ name = \"Senegal\", code = \"SN\", lat = 14.72, lon = -17.48, x = 463, y = 214, color = \"#e05d3d\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 73,
+  "name": null,
+  "hex": "#cf93fb",
+  "alpha": 1.0,
+  "src": "{ name = \"Mali\", code = \"ML\", lat = 12.65, lon = -8.0, x = 489, y = 220, color = \"#cf93fb\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 74,
+  "name": null,
+  "hex": "#538ae6",
+  "alpha": 1.0,
+  "src": "{ name = \"Nigeria\", code = \"NG\", lat = 9.09, lon = 7.53, x = 533, y = 230, color = \"#538ae6\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 75,
+  "name": null,
+  "hex": "#a355b4",
+  "alpha": 1.0,
+  "src": "{ name = \"Ghana\", code = \"GH\", lat = 5.55, lon = -0.22, x = 511, y = 239, color = \"#a355b4\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 76,
+  "name": null,
+  "hex": "#ceaf24",
+  "alpha": 1.0,
+  "src": "{ name = \"Chad\", code = \"TD\", lat = 12.12, lon = 15.05, x = 554, y = 221, color = \"#ceaf24\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 77,
+  "name": null,
+  "hex": "#f57050",
+  "alpha": 1.0,
+  "src": "{ name = \"Sudan\", code = \"SD\", lat = 15.59, lon = 32.53, x = 604, y = 211, color = \"#f57050\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 78,
+  "name": null,
+  "hex": "#22a479",
+  "alpha": 1.0,
+  "src": "{ name = \"Ethiopia\", code = \"ET\", lat = 9.04, lon = 38.7, x = 622, y = 230, color = \"#22a479\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 79,
+  "name": null,
+  "hex": "#fb83bf",
+  "alpha": 1.0,
+  "src": "{ name = \"Somalia\", code = \"SO\", lat = 2.07, lon = 45.36, x = 641, y = 249, color = \"#fb83bf\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 80,
+  "name": null,
+  "hex": "#f8cc43",
+  "alpha": 1.0,
+  "src": "{ name = \"Kenya\", code = \"KE\", lat = -1.28, lon = 36.81, x = 616, y = 259, color = \"#f8cc43\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 81,
+  "name": null,
+  "hex": "#8495fa",
+  "alpha": 1.0,
+  "src": "{ name = \"Tanzania\", code = \"TZ\", lat = -6.18, lon = 35.75, x = 613, y = 273, color = \"#8495fa\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 82,
+  "name": null,
+  "hex": "#d974c5",
+  "alpha": 1.0,
+  "src": "{ name = \"DR Congo\", code = \"CD\", lat = -4.33, lon = 15.31, x = 555, y = 268, color = \"#d974c5\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 83,
+  "name": null,
+  "hex": "#54b66e",
+  "alpha": 1.0,
+  "src": "{ name = \"Angola\", code = \"AO\", lat = -8.84, lon = 13.23, x = 549, y = 281, color = \"#54b66e\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 84,
+  "name": null,
+  "hex": "#58beec",
+  "alpha": 1.0,
+  "src": "{ name = \"Namibia\", code = \"NA\", lat = -22.57, lon = 17.08, x = 560, y = 320, color = \"#58beec\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 85,
+  "name": null,
+  "hex": "#5872d2",
+  "alpha": 1.0,
+  "src": "{ name = \"Mozambique\", code = \"MZ\", lat = -25.95, lon = 32.59, x = 604, y = 329, color = \"#5872d2\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 86,
+  "name": null,
+  "hex": "#e05860",
+  "alpha": 1.0,
+  "src": "{ name = \"South Africa\", code = \"ZA\", lat = -25.7, lon = 28.23, x = 592, y = 329, color = \"#e05860\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 87,
+  "name": null,
+  "hex": "#25b1c5",
+  "alpha": 1.0,
+  "src": "{ name = \"Madagascar\", code = \"MG\", lat = -18.91, lon = 47.51, x = 647, y = 309, color = \"#25b1c5\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 88,
+  "name": null,
+  "hex": "#d15d9a",
+  "alpha": 1.0,
+  "src": "{ name = \"Australia\", code = \"AU\", lat = -35.28, lon = 149.13, x = 936, y = 356, color = \"#d15d9a\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 89,
+  "name": null,
+  "hex": "#219bba",
+  "alpha": 1.0,
+  "src": "{ name = \"New Zealand\", code = \"NZ\", lat = -41.3, lon = 174.78, x = 1009, y = 373, color = \"#219bba\" },"
+ },
+ {
+  "file": "src/shared/Data/Nations.luau",
+  "line": 90,
+  "name": null,
+  "hex": "#fcb274",
+  "alpha": 1.0,
+  "src": "{ name = \"Papua New Guinea\", code = \"PG\", lat = -9.46, lon = 147.19, x = 930, y = 282, color = \"#fcb274\" },"
+ }
+]

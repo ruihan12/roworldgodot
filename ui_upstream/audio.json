@@ -1,0 +1,1874 @@
+{
+ "note": "No audio files are in the repo: every sound/music track is a Roblox asset id. Names, lengths and mixing rules below are factual; files must come from elsewhere.",
+ "sfx_names": {
+  "list": [
+   "ui_click",
+   "ui_hover",
+   "ui_open",
+   "ui_error",
+   "countdown_tick",
+   "countdown_tick_5",
+   "countdown_tick_4",
+   "countdown_tick_3",
+   "countdown_tick_2",
+   "countdown_tick_1",
+   "countdown_gamestart",
+   "queue_start",
+   "spectate_switch",
+   "order_ack",
+   "crate_drop",
+   "crate_land",
+   "crate_rattle",
+   "crate_preview_common",
+   "crate_preview_rare",
+   "crate_preview_epic",
+   "crate_preview_legendary",
+   "crate_open",
+   "crate_shimmer",
+   "card_whoosh",
+   "card_flip",
+   "reveal_common",
+   "reveal_rare",
+   "reveal_epic",
+   "reveal_legendary",
+   "expand",
+   "spawn_confirm",
+   "attack_launch",
+   "boat_launch",
+   "build",
+   "warship",
+   "nuke_launch",
+   "nuke_alarm",
+   "nuke_explosion",
+   "sam_launch",
+   "sam_intercept",
+   "shell_fire",
+   "shell_hit",
+   "shell_splash",
+   "ship_sink",
+   "under_attack",
+   "ally_request",
+   "alliance",
+   "betrayal",
+   "conquer",
+   "victory",
+   "defeat",
+   "game_start",
+   "ui_confirm",
+   "ui_back",
+   "ui_tab",
+   "ui_locked",
+   "expand_pop",
+   "eliminate",
+   "star_tick",
+   "star_get",
+   "buy_spend",
+   "unlock"
+  ],
+  "ref": "src/client/Audio/AudioDirector.luau:41"
+ },
+ "manifest_audio": {
+  "menu": {
+   "id": "rbxassetid://119819342827167",
+   "length_s": 106.666667,
+   "ref": "src/shared/Assets/Audio.luau:9"
+  },
+  "war": {
+   "id": "rbxassetid://135124812568552",
+   "length_s": 160.0,
+   "ref": "src/shared/Assets/Audio.luau:10"
+  },
+  "alliance": {
+   "id": "rbxassetid://80671689390668",
+   "length_s": 3.0,
+   "ref": "src/shared/Assets/Audio.luau:13"
+  },
+  "ally_request": {
+   "id": "rbxassetid://76363667987213",
+   "length_s": 0.9,
+   "ref": "src/shared/Assets/Audio.luau:14"
+  },
+  "attack_launch": {
+   "id": "rbxassetid://131037562030943",
+   "length_s": 2.2,
+   "ref": "src/shared/Assets/Audio.luau:15"
+  },
+  "betrayal": {
+   "id": "rbxassetid://87171234508336",
+   "length_s": 3.4,
+   "ref": "src/shared/Assets/Audio.luau:16"
+  },
+  "boat_launch": {
+   "id": "rbxassetid://119923663006796",
+   "length_s": 2.6,
+   "ref": "src/shared/Assets/Audio.luau:17"
+  },
+  "build": {
+   "id": "rbxassetid://119956264214848",
+   "length_s": 1.92839,
+   "ref": "src/shared/Assets/Audio.luau:18"
+  },
+  "conquer": {
+   "id": "rbxassetid://122420079080602",
+   "length_s": 3.0,
+   "ref": "src/shared/Assets/Audio.luau:19"
+  },
+  "countdown_tick": {
+   "id": "rbxassetid://114459767206640",
+   "length_s": 0.15,
+   "ref": "src/shared/Assets/Audio.luau:20"
+  },
+  "defeat": {
+   "id": "rbxassetid://131279149950854",
+   "length_s": 7.8,
+   "ref": "src/shared/Assets/Audio.luau:21"
+  },
+  "expand": {
+   "id": "rbxassetid://138849772172266",
+   "length_s": 0.6,
+   "ref": "src/shared/Assets/Audio.luau:22"
+  },
+  "game_start": {
+   "id": "rbxassetid://129747968381169",
+   "length_s": 3.6,
+   "ref": "src/shared/Assets/Audio.luau:23"
+  },
+  "nuke_alarm": {
+   "id": "rbxassetid://133482654460663",
+   "length_s": 2.799977,
+   "ref": "src/shared/Assets/Audio.luau:24"
+  },
+  "nuke_explosion": {
+   "id": "rbxassetid://107524949221122",
+   "length_s": 6.0,
+   "ref": "src/shared/Assets/Audio.luau:25"
+  },
+  "nuke_launch": {
+   "id": "rbxassetid://107643516581150",
+   "length_s": 4.2,
+   "ref": "src/shared/Assets/Audio.luau:26"
+  },
+  "order_ack": {
+   "id": "rbxassetid://101812584504363",
+   "length_s": 0.25,
+   "ref": "src/shared/Assets/Audio.luau:27"
+  },
+  "sam_intercept": {
+   "id": "rbxassetid://133999046074598",
+   "length_s": 1.6,
+   "ref": "src/shared/Assets/Audio.luau:28"
+  },
+  "sam_launch": {
+   "id": "rbxassetid://80384143758890",
+   "length_s": 0.85,
+   "ref": "src/shared/Assets/Audio.luau:29"
+  },
+  "shell_fire": {
+   "id": "rbxassetid://113814972330030",
+   "length_s": 0.3,
+   "ref": "src/shared/Assets/Audio.luau:30"
+  },
+  "shell_hit": {
+   "id": "rbxassetid://102762424909390",
+   "length_s": 0.45,
+   "ref": "src/shared/Assets/Audio.luau:31"
+  },
+  "shell_splash": {
+   "id": "rbxassetid://105503826549566",
+   "length_s": 0.4,
+   "ref": "src/shared/Assets/Audio.luau:32"
+  },
+  "ship_sink": {
+   "id": "rbxassetid://103679838735567",
+   "length_s": 2.2,
+   "ref": "src/shared/Assets/Audio.luau:33"
+  },
+  "spawn_confirm": {
+   "id": "rbxassetid://112455904288254",
+   "length_s": 2.4,
+   "ref": "src/shared/Assets/Audio.luau:34"
+  },
+  "ui_click": {
+   "id": "rbxassetid://121275079732861",
+   "length_s": 0.09,
+   "ref": "src/shared/Assets/Audio.luau:35"
+  },
+  "ui_error": {
+   "id": "rbxassetid://137511615641890",
+   "length_s": 0.239977,
+   "ref": "src/shared/Assets/Audio.luau:36"
+  },
+  "ui_hover": {
+   "id": "rbxassetid://112598302834622",
+   "length_s": 0.06,
+   "ref": "src/shared/Assets/Audio.luau:37"
+  },
+  "ui_open": {
+   "id": "rbxassetid://126880759102666",
+   "length_s": 0.9,
+   "ref": "src/shared/Assets/Audio.luau:38"
+  },
+  "under_attack": {
+   "id": "rbxassetid://123402733728835",
+   "length_s": 1.3,
+   "ref": "src/shared/Assets/Audio.luau:39"
+  },
+  "victory": {
+   "id": "rbxassetid://121797809876876",
+   "length_s": 11.5,
+   "ref": "src/shared/Assets/Audio.luau:40"
+  },
+  "warship": {
+   "id": "rbxassetid://92182220628518",
+   "length_s": 3.6,
+   "ref": "src/shared/Assets/Audio.luau:41"
+  }
+ },
+ "manifest_audio_extra": {
+  "card_flip": {
+   "id": "rbxassetid://81273460357550",
+   "length_s": 0.300375,
+   "ref": "src/shared/Assets/AudioExtra.luau:5"
+  },
+  "card_whoosh": {
+   "id": "rbxassetid://70407360475754",
+   "length_s": 0.457625,
+   "ref": "src/shared/Assets/AudioExtra.luau:6"
+  },
+  "countdown_gamestart": {
+   "id": "rbxassetid://118048118291946",
+   "length_s": 3.25,
+   "ref": "src/shared/Assets/AudioExtra.luau:7"
+  },
+  "countdown_tick": {
+   "id": "rbxassetid://99970982670087",
+   "length_s": 0.111771,
+   "ref": "src/shared/Assets/AudioExtra.luau:8"
+  },
+  "countdown_tick_1": {
+   "id": "rbxassetid://109434471633628",
+   "length_s": 1.4,
+   "ref": "src/shared/Assets/AudioExtra.luau:9"
+  },
+  "countdown_tick_2": {
+   "id": "rbxassetid://114826083997613",
+   "length_s": 1.4,
+   "ref": "src/shared/Assets/AudioExtra.luau:10"
+  },
+  "countdown_tick_3": {
+   "id": "rbxassetid://74993719691879",
+   "length_s": 1.4,
+   "ref": "src/shared/Assets/AudioExtra.luau:11"
+  },
+  "countdown_tick_4": {
+   "id": "rbxassetid://133000740914006",
+   "length_s": 1.4,
+   "ref": "src/shared/Assets/AudioExtra.luau:12"
+  },
+  "countdown_tick_5": {
+   "id": "rbxassetid://80168537102964",
+   "length_s": 1.366667,
+   "ref": "src/shared/Assets/AudioExtra.luau:13"
+  },
+  "crate_drop": {
+   "id": "rbxassetid://96354123881208",
+   "length_s": 1.42575,
+   "ref": "src/shared/Assets/AudioExtra.luau:14"
+  },
+  "crate_land": {
+   "id": "rbxassetid://98407471885431",
+   "length_s": 0.583333,
+   "ref": "src/shared/Assets/AudioExtra.luau:15"
+  },
+  "crate_open": {
+   "id": "rbxassetid://135313643394021",
+   "length_s": 1.483333,
+   "ref": "src/shared/Assets/AudioExtra.luau:16"
+  },
+  "crate_preview_common": {
+   "id": "rbxassetid://129689342966256",
+   "length_s": 2.15,
+   "ref": "src/shared/Assets/AudioExtra.luau:17"
+  },
+  "crate_preview_epic": {
+   "id": "rbxassetid://100431569551164",
+   "length_s": 2.15,
+   "ref": "src/shared/Assets/AudioExtra.luau:18"
+  },
+  "crate_preview_legendary": {
+   "id": "rbxassetid://105552830951867",
+   "length_s": 2.15,
+   "ref": "src/shared/Assets/AudioExtra.luau:19"
+  },
+  "crate_preview_rare": {
+   "id": "rbxassetid://75814857038404",
+   "length_s": 2.15,
+   "ref": "src/shared/Assets/AudioExtra.luau:20"
+  },
+  "crate_rattle": {
+   "id": "rbxassetid://80028193110259",
+   "length_s": 0.7,
+   "ref": "src/shared/Assets/AudioExtra.luau:21"
+  },
+  "crate_shimmer": {
+   "id": "rbxassetid://73738572377218",
+   "length_s": 4.333333,
+   "ref": "src/shared/Assets/AudioExtra.luau:22"
+  },
+  "game_start": {
+   "id": "rbxassetid://126270255394718",
+   "length_s": 6.733333,
+   "ref": "src/shared/Assets/AudioExtra.luau:23"
+  },
+  "queue_start": {
+   "id": "rbxassetid://78362569380032",
+   "length_s": 1.6,
+   "ref": "src/shared/Assets/AudioExtra.luau:24"
+  },
+  "reveal_common": {
+   "id": "rbxassetid://87392633895627",
+   "length_s": 2.666667,
+   "ref": "src/shared/Assets/AudioExtra.luau:25"
+  },
+  "reveal_epic": {
+   "id": "rbxassetid://85656892324929",
+   "length_s": 2.666667,
+   "ref": "src/shared/Assets/AudioExtra.luau:26"
+  },
+  "reveal_legendary": {
+   "id": "rbxassetid://96236095223389",
+   "length_s": 2.9,
+   "ref": "src/shared/Assets/AudioExtra.luau:27"
+  },
+  "reveal_rare": {
+   "id": "rbxassetid://106670660694606",
+   "length_s": 2.666667,
+   "ref": "src/shared/Assets/AudioExtra.luau:28"
+  },
+  "spawn_confirm": {
+   "id": "rbxassetid://80759209132207",
+   "length_s": 0.134172,
+   "ref": "src/shared/Assets/AudioExtra.luau:29"
+  },
+  "spectate_switch": {
+   "id": "rbxassetid://135454629352621",
+   "length_s": 0.235688,
+   "ref": "src/shared/Assets/AudioExtra.luau:30"
+  }
+ },
+ "manifest_audio_ui": {
+  "buy_spend": {
+   "id": "rbxassetid://135928986609872",
+   "length_s": 1.48424,
+   "ref": "src/shared/Assets/AudioUI.luau:7"
+  },
+  "eliminate": {
+   "id": "rbxassetid://120043172209226",
+   "length_s": 0.610272,
+   "ref": "src/shared/Assets/AudioUI.luau:8"
+  },
+  "expand_pop": {
+   "id": "rbxassetid://73033892219846",
+   "length_s": 0.12,
+   "ref": "src/shared/Assets/AudioUI.luau:9"
+  },
+  "star_get": {
+   "id": "rbxassetid://79341616285127",
+   "length_s": 1.562313,
+   "ref": "src/shared/Assets/AudioUI.luau:10"
+  },
+  "star_tick": {
+   "id": "rbxassetid://101433123814195",
+   "length_s": 0.120295,
+   "ref": "src/shared/Assets/AudioUI.luau:11"
+  },
+  "ui_back": {
+   "id": "rbxassetid://97472511838322",
+   "length_s": 0.185488,
+   "ref": "src/shared/Assets/AudioUI.luau:12"
+  },
+  "ui_click": {
+   "id": "rbxassetid://74811234814054",
+   "length_s": 0.080998,
+   "ref": "src/shared/Assets/AudioUI.luau:13"
+  },
+  "ui_confirm": {
+   "id": "rbxassetid://116194852281859",
+   "length_s": 0.797483,
+   "ref": "src/shared/Assets/AudioUI.luau:14"
+  },
+  "ui_error": {
+   "id": "rbxassetid://111088846575870",
+   "length_s": 0.163673,
+   "ref": "src/shared/Assets/AudioUI.luau:15"
+  },
+  "ui_hover": {
+   "id": "rbxassetid://86373267632742",
+   "length_s": 0.1,
+   "ref": "src/shared/Assets/AudioUI.luau:16"
+  },
+  "ui_locked": {
+   "id": "rbxassetid://132883757044770",
+   "length_s": 0.104966,
+   "ref": "src/shared/Assets/AudioUI.luau:17"
+  },
+  "ui_open": {
+   "id": "rbxassetid://127526089248512",
+   "length_s": 0.216349,
+   "ref": "src/shared/Assets/AudioUI.luau:18"
+  },
+  "ui_tab": {
+   "id": "rbxassetid://114774423918929",
+   "length_s": 0.1,
+   "ref": "src/shared/Assets/AudioUI.luau:19"
+  },
+  "unlock": {
+   "id": "rbxassetid://128664481828844",
+   "length_s": 3.626417,
+   "ref": "src/shared/Assets/AudioUI.luau:20"
+  }
+ },
+ "logical_ids": {
+  "hover": {
+   "value": "ui_hover",
+   "ref": "src/client/UI/UICtx.luau:59"
+  },
+  "click": {
+   "value": "ui_click",
+   "ref": "src/client/UI/UICtx.luau:60"
+  },
+  "open": {
+   "value": "ui_open",
+   "ref": "src/client/UI/UICtx.luau:61"
+  },
+  "close": {
+   "value": "ui_back",
+   "ref": "src/client/UI/UICtx.luau:62"
+  },
+  "deny": {
+   "value": "ui_error",
+   "ref": "src/client/UI/UICtx.luau:63"
+  },
+  "toast": {
+   "value": "ui_tab",
+   "ref": "src/client/UI/UICtx.luau:64"
+  },
+  "confirm": {
+   "value": "ui_confirm",
+   "ref": "src/client/UI/UICtx.luau:67"
+  },
+  "tab": {
+   "value": "ui_tab",
+   "ref": "src/client/UI/UICtx.luau:68"
+  },
+  "locked": {
+   "value": "ui_locked",
+   "ref": "src/client/UI/UICtx.luau:69"
+  },
+  "star_tick": {
+   "value": "star_tick",
+   "ref": "src/client/UI/UICtx.luau:70"
+  },
+  "star_get": {
+   "value": "star_get",
+   "ref": "src/client/UI/UICtx.luau:71"
+  },
+  "buy": {
+   "value": "buy_spend",
+   "ref": "src/client/UI/UICtx.luau:72"
+  },
+  "unlock": {
+   "value": "unlock",
+   "ref": "src/client/UI/UICtx.luau:73"
+  },
+  "expand": {
+   "value": "expand",
+   "ref": "src/client/UI/UICtx.luau:74"
+  },
+  "attack": {
+   "value": "attack_launch",
+   "ref": "src/client/UI/UICtx.luau:75"
+  },
+  "boat": {
+   "value": "boat_launch",
+   "ref": "src/client/UI/UICtx.luau:76"
+  },
+  "build": {
+   "value": "build",
+   "ref": "src/client/UI/UICtx.luau:77"
+  },
+  "warship": {
+   "value": "warship",
+   "ref": "src/client/UI/UICtx.luau:78"
+  },
+  "nuke_launch": {
+   "value": "nuke_launch",
+   "ref": "src/client/UI/UICtx.luau:79"
+  },
+  "explosion": {
+   "value": "nuke_explosion",
+   "ref": "src/client/UI/UICtx.luau:80"
+  },
+  "intercept": {
+   "value": "sam_intercept",
+   "ref": "src/client/UI/UICtx.luau:81"
+  },
+  "alliance": {
+   "value": "alliance",
+   "ref": "src/client/UI/UICtx.luau:82"
+  },
+  "betrayal": {
+   "value": "betrayal",
+   "ref": "src/client/UI/UICtx.luau:83"
+  },
+  "alarm": {
+   "value": "nuke_alarm",
+   "ref": "src/client/UI/UICtx.luau:84"
+  },
+  "eliminate": {
+   "value": "eliminate",
+   "ref": "src/client/UI/UICtx.luau:87"
+  },
+  "victory": {
+   "value": "victory",
+   "ref": "src/client/UI/UICtx.luau:88"
+  },
+  "defeat": {
+   "value": "defeat",
+   "ref": "src/client/UI/UICtx.luau:89"
+  },
+  "tick": {
+   "value": "countdown_tick",
+   "ref": "src/client/UI/UICtx.luau:90"
+  },
+  "start": {
+   "value": "game_start",
+   "ref": "src/client/UI/UICtx.luau:91"
+  },
+  "spawn": {
+   "value": "spawn_confirm",
+   "ref": "src/client/UI/UICtx.luau:92"
+  },
+  "under_attack": {
+   "value": "under_attack",
+   "ref": "src/client/UI/UICtx.luau:93"
+  },
+  "ally_request": {
+   "value": "ally_request",
+   "ref": "src/client/UI/UICtx.luau:94"
+  },
+  "ship_lost": {
+   "value": "ship_sunk",
+   "ref": "src/client/UI/UICtx.luau:95"
+  },
+  "ship_kill": {
+   "value": "ship_kill",
+   "ref": "src/client/UI/UICtx.luau:96"
+  },
+  "trade_captured": {
+   "value": "trade_capture",
+   "ref": "src/client/UI/UICtx.luau:97"
+  },
+  "trade_lost": {
+   "value": "trade_lost",
+   "ref": "src/client/UI/UICtx.luau:98"
+  },
+  "warship_retreat": {
+   "value": "warship_retreat",
+   "ref": "src/client/UI/UICtx.luau:99"
+  },
+  "veterancy": {
+   "value": "veterancy",
+   "ref": "src/client/UI/UICtx.luau:100"
+  },
+  "sam_launch": {
+   "value": "sam_launch",
+   "ref": "src/client/UI/UICtx.luau:101"
+  }
+ },
+ "logical_fallback": {
+  "close": {
+   "value": "ui_click",
+   "ref": "src/client/UI/UICtx.luau:105"
+  },
+  "toast": {
+   "value": "ui_open",
+   "ref": "src/client/UI/UICtx.luau:106"
+  },
+  "confirm": {
+   "value": "ui_click",
+   "ref": "src/client/UI/UICtx.luau:107"
+  },
+  "tab": {
+   "value": "ui_click",
+   "ref": "src/client/UI/UICtx.luau:108"
+  },
+  "locked": {
+   "value": "ui_error",
+   "ref": "src/client/UI/UICtx.luau:109"
+  },
+  "star_tick": {
+   "value": "ui_hover",
+   "ref": "src/client/UI/UICtx.luau:110"
+  },
+  "star_get": {
+   "value": "ui_open",
+   "ref": "src/client/UI/UICtx.luau:111"
+  },
+  "buy": {
+   "value": "ui_click",
+   "ref": "src/client/UI/UICtx.luau:112"
+  },
+  "unlock": {
+   "value": "alliance",
+   "ref": "src/client/UI/UICtx.luau:113"
+  },
+  "under_attack": {
+   "value": "ui_error",
+   "ref": "src/client/UI/UICtx.luau:114"
+  },
+  "ally_request": {
+   "value": "ui_open",
+   "ref": "src/client/UI/UICtx.luau:115"
+  },
+  "ship_lost": {
+   "value": "sam_intercept",
+   "ref": "src/client/UI/UICtx.luau:116"
+  },
+  "ship_kill": {
+   "value": "sam_intercept",
+   "ref": "src/client/UI/UICtx.luau:117"
+  },
+  "trade_captured": {
+   "value": "build",
+   "ref": "src/client/UI/UICtx.luau:118"
+  },
+  "trade_lost": {
+   "value": "ui_error",
+   "ref": "src/client/UI/UICtx.luau:119"
+  },
+  "warship_retreat": {
+   "value": "ui_open",
+   "ref": "src/client/UI/UICtx.luau:120"
+  },
+  "veterancy": {
+   "value": "alliance",
+   "ref": "src/client/UI/UICtx.luau:121"
+  },
+  "sam_launch": {
+   "value": "attack_launch",
+   "ref": "src/client/UI/UICtx.luau:122"
+  }
+ },
+ "logical_gap_ms": {
+  "hover": {
+   "value": 60.0,
+   "ref": "src/client/UI/UICtx.luau:126"
+  },
+  "click": {
+   "value": 40.0,
+   "ref": "src/client/UI/UICtx.luau:127"
+  },
+  "tab": {
+   "value": 40.0,
+   "ref": "src/client/UI/UICtx.luau:128"
+  },
+  "confirm": {
+   "value": 80.0,
+   "ref": "src/client/UI/UICtx.luau:129"
+  },
+  "locked": {
+   "value": 200.0,
+   "ref": "src/client/UI/UICtx.luau:130"
+  },
+  "star_tick": {
+   "value": 28.0,
+   "ref": "src/client/UI/UICtx.luau:131"
+  },
+  "unlock": {
+   "value": 900.0,
+   "ref": "src/client/UI/UICtx.luau:132"
+  },
+  "toast": {
+   "value": 400.0,
+   "ref": "src/client/UI/UICtx.luau:133"
+  },
+  "attack": {
+   "value": 180.0,
+   "ref": "src/client/UI/UICtx.luau:134"
+  },
+  "expand": {
+   "value": 180.0,
+   "ref": "src/client/UI/UICtx.luau:135"
+  },
+  "boat": {
+   "value": 200.0,
+   "ref": "src/client/UI/UICtx.luau:136"
+  },
+  "build": {
+   "value": 150.0,
+   "ref": "src/client/UI/UICtx.luau:137"
+  },
+  "explosion": {
+   "value": 220.0,
+   "ref": "src/client/UI/UICtx.luau:138"
+  },
+  "alarm": {
+   "value": 1500.0,
+   "ref": "src/client/UI/UICtx.luau:139"
+  },
+  "tick": {
+   "value": 300.0,
+   "ref": "src/client/UI/UICtx.luau:140"
+  },
+  "deny": {
+   "value": 200.0,
+   "ref": "src/client/UI/UICtx.luau:141"
+  },
+  "under_attack": {
+   "value": 4000.0,
+   "ref": "src/client/UI/UICtx.luau:142"
+  },
+  "ally_request": {
+   "value": 1500.0,
+   "ref": "src/client/UI/UICtx.luau:143"
+  },
+  "ship_lost": {
+   "value": 1500.0,
+   "ref": "src/client/UI/UICtx.luau:144"
+  },
+  "ship_kill": {
+   "value": 1500.0,
+   "ref": "src/client/UI/UICtx.luau:145"
+  },
+  "trade_captured": {
+   "value": 2500.0,
+   "ref": "src/client/UI/UICtx.luau:146"
+  },
+  "trade_lost": {
+   "value": 3000.0,
+   "ref": "src/client/UI/UICtx.luau:147"
+  },
+  "warship_retreat": {
+   "value": 3000.0,
+   "ref": "src/client/UI/UICtx.luau:148"
+  },
+  "veterancy": {
+   "value": 2000.0,
+   "ref": "src/client/UI/UICtx.luau:149"
+  },
+  "sam_launch": {
+   "value": 100.0,
+   "ref": "src/client/UI/UICtx.luau:150"
+  },
+  "intercept": {
+   "value": 120.0,
+   "ref": "src/client/UI/UICtx.luau:151"
+  },
+  "shell_fire": {
+   "value": 50.0,
+   "ref": "src/client/UI/UICtx.luau:152"
+  },
+  "shell_hit": {
+   "value": 50.0,
+   "ref": "src/client/UI/UICtx.luau:153"
+  },
+  "shell_splash": {
+   "value": 50.0,
+   "ref": "src/client/UI/UICtx.luau:154"
+  },
+  "ship_sink": {
+   "value": 300.0,
+   "ref": "src/client/UI/UICtx.luau:155"
+  }
+ },
+ "cooldowns_ms_fallback": {
+  "attack_launch": {
+   "value": [
+    1200.0,
+    "order_ack"
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:115"
+  },
+  "boat_launch": {
+   "value": [
+    1500.0,
+    "order_ack"
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:116"
+  },
+  "warship": {
+   "value": [
+    2000.0,
+    "order_ack"
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:117"
+  },
+  "spawn_confirm": {
+   "value": [
+    700.0,
+    "ui_click"
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:118"
+  },
+  "conquer": {
+   "value": [
+    2500.0,
+    ""
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:119"
+  },
+  "betrayal": {
+   "value": [
+    3000.0,
+    ""
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:120"
+  },
+  "alliance": {
+   "value": [
+    2500.0,
+    ""
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:121"
+  },
+  "ally_request": {
+   "value": [
+    1500.0,
+    ""
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:122"
+  },
+  "under_attack": {
+   "value": [
+    4000.0,
+    ""
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:123"
+  },
+  "nuke_alarm": {
+   "value": [
+    2500.0,
+    ""
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:124"
+  },
+  "game_start": {
+   "value": [
+    3000.0,
+    ""
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:125"
+  },
+  "victory": {
+   "value": [
+    10000.0,
+    ""
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:126"
+  },
+  "defeat": {
+   "value": [
+    10000.0,
+    ""
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:127"
+  }
+ },
+ "throttle_ms": {
+  "expand": {
+   "value": 150.0,
+   "ref": "src/client/Audio/AudioDirector.luau:131"
+  },
+  "ui_hover": {
+   "value": 45.0,
+   "ref": "src/client/Audio/AudioDirector.luau:132"
+  },
+  "ui_click": {
+   "value": 30.0,
+   "ref": "src/client/Audio/AudioDirector.luau:133"
+  },
+  "ui_open": {
+   "value": 60.0,
+   "ref": "src/client/Audio/AudioDirector.luau:134"
+  },
+  "ui_error": {
+   "value": 120.0,
+   "ref": "src/client/Audio/AudioDirector.luau:135"
+  },
+  "countdown_tick": {
+   "value": 250.0,
+   "ref": "src/client/Audio/AudioDirector.luau:136"
+  },
+  "order_ack": {
+   "value": 80.0,
+   "ref": "src/client/Audio/AudioDirector.luau:137"
+  },
+  "build": {
+   "value": 90.0,
+   "ref": "src/client/Audio/AudioDirector.luau:138"
+  },
+  "sam_intercept": {
+   "value": 90.0,
+   "ref": "src/client/Audio/AudioDirector.luau:139"
+  },
+  "nuke_launch": {
+   "value": 150.0,
+   "ref": "src/client/Audio/AudioDirector.luau:140"
+  },
+  "nuke_explosion": {
+   "value": 180.0,
+   "ref": "src/client/Audio/AudioDirector.luau:141"
+  },
+  "sam_launch": {
+   "value": 100.0,
+   "ref": "src/client/Audio/AudioDirector.luau:142"
+  },
+  "shell_fire": {
+   "value": 120.0,
+   "ref": "src/client/Audio/AudioDirector.luau:143"
+  },
+  "shell_hit": {
+   "value": 90.0,
+   "ref": "src/client/Audio/AudioDirector.luau:144"
+  },
+  "shell_splash": {
+   "value": 90.0,
+   "ref": "src/client/Audio/AudioDirector.luau:145"
+  },
+  "ship_sink": {
+   "value": 400.0,
+   "ref": "src/client/Audio/AudioDirector.luau:146"
+  },
+  "spectate_switch": {
+   "value": 150.0,
+   "ref": "src/client/Audio/AudioDirector.luau:147"
+  },
+  "crate_rattle": {
+   "value": 90.0,
+   "ref": "src/client/Audio/AudioDirector.luau:148"
+  },
+  "ui_confirm": {
+   "value": 60.0,
+   "ref": "src/client/Audio/AudioDirector.luau:149"
+  },
+  "ui_back": {
+   "value": 60.0,
+   "ref": "src/client/Audio/AudioDirector.luau:150"
+  },
+  "ui_tab": {
+   "value": 40.0,
+   "ref": "src/client/Audio/AudioDirector.luau:151"
+  },
+  "ui_locked": {
+   "value": 150.0,
+   "ref": "src/client/Audio/AudioDirector.luau:152"
+  },
+  "expand_pop": {
+   "value": 38.0,
+   "ref": "src/client/Audio/AudioDirector.luau:153"
+  },
+  "eliminate": {
+   "value": 250.0,
+   "ref": "src/client/Audio/AudioDirector.luau:154"
+  },
+  "star_tick": {
+   "value": 28.0,
+   "ref": "src/client/Audio/AudioDirector.luau:155"
+  },
+  "star_get": {
+   "value": 120.0,
+   "ref": "src/client/Audio/AudioDirector.luau:156"
+  },
+  "buy_spend": {
+   "value": 150.0,
+   "ref": "src/client/Audio/AudioDirector.luau:157"
+  },
+  "unlock": {
+   "value": 800.0,
+   "ref": "src/client/Audio/AudioDirector.luau:158"
+  }
+ },
+ "max_same": {
+  "expand": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:163"
+  },
+  "ui_hover": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:164"
+  },
+  "ui_click": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:165"
+  },
+  "order_ack": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:166"
+  },
+  "nuke_alarm": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:167"
+  },
+  "attack_launch": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:168"
+  },
+  "boat_launch": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:169"
+  },
+  "warship": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:170"
+  },
+  "sam_launch": {
+   "value": 3.0,
+   "ref": "src/client/Audio/AudioDirector.luau:171"
+  },
+  "shell_fire": {
+   "value": 3.0,
+   "ref": "src/client/Audio/AudioDirector.luau:172"
+  },
+  "shell_hit": {
+   "value": 3.0,
+   "ref": "src/client/Audio/AudioDirector.luau:173"
+  },
+  "shell_splash": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:174"
+  },
+  "ship_sink": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:175"
+  },
+  "under_attack": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:176"
+  },
+  "ally_request": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:177"
+  },
+  "victory": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:178"
+  },
+  "defeat": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:179"
+  },
+  "game_start": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:180"
+  },
+  "countdown_tick": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:181"
+  },
+  "countdown_gamestart": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:182"
+  },
+  "queue_start": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:183"
+  },
+  "spectate_switch": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:184"
+  },
+  "crate_drop": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:185"
+  },
+  "crate_land": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:186"
+  },
+  "crate_rattle": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:187"
+  },
+  "crate_preview_common": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:188"
+  },
+  "crate_preview_rare": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:189"
+  },
+  "crate_preview_epic": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:190"
+  },
+  "crate_preview_legendary": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:191"
+  },
+  "crate_open": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:192"
+  },
+  "crate_shimmer": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:193"
+  },
+  "card_whoosh": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:194"
+  },
+  "card_flip": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:195"
+  },
+  "reveal_common": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:196"
+  },
+  "reveal_rare": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:197"
+  },
+  "reveal_epic": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:198"
+  },
+  "reveal_legendary": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:199"
+  },
+  "ui_confirm": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:200"
+  },
+  "ui_back": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:201"
+  },
+  "ui_tab": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:202"
+  },
+  "ui_locked": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:203"
+  },
+  "expand_pop": {
+   "value": 6.0,
+   "ref": "src/client/Audio/AudioDirector.luau:205"
+  },
+  "eliminate": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:206"
+  },
+  "star_tick": {
+   "value": 4.0,
+   "ref": "src/client/Audio/AudioDirector.luau:207"
+  },
+  "star_get": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:208"
+  },
+  "buy_spend": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:209"
+  },
+  "unlock": {
+   "value": 1.0,
+   "ref": "src/client/Audio/AudioDirector.luau:210"
+  }
+ },
+ "priority": {
+  "ui_hover": {
+   "value": 0.0,
+   "ref": "src/client/Audio/AudioDirector.luau:215"
+  },
+  "ui_click": {
+   "value": 0.0,
+   "ref": "src/client/Audio/AudioDirector.luau:216"
+  },
+  "order_ack": {
+   "value": 0.0,
+   "ref": "src/client/Audio/AudioDirector.luau:217"
+  },
+  "expand": {
+   "value": 0.0,
+   "ref": "src/client/Audio/AudioDirector.luau:218"
+  },
+  "expand_pop": {
+   "value": 0.0,
+   "ref": "src/client/Audio/AudioDirector.luau:219"
+  },
+  "eliminate": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:220"
+  },
+  "ui_tab": {
+   "value": 0.0,
+   "ref": "src/client/Audio/AudioDirector.luau:221"
+  },
+  "star_tick": {
+   "value": 0.0,
+   "ref": "src/client/Audio/AudioDirector.luau:222"
+  },
+  "unlock": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:223"
+  },
+  "shell_fire": {
+   "value": 0.0,
+   "ref": "src/client/Audio/AudioDirector.luau:224"
+  },
+  "shell_hit": {
+   "value": 0.0,
+   "ref": "src/client/Audio/AudioDirector.luau:225"
+  },
+  "shell_splash": {
+   "value": 0.0,
+   "ref": "src/client/Audio/AudioDirector.luau:226"
+  },
+  "victory": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:227"
+  },
+  "defeat": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:228"
+  },
+  "game_start": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:229"
+  },
+  "nuke_alarm": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:230"
+  },
+  "nuke_explosion": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:231"
+  },
+  "under_attack": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:232"
+  },
+  "betrayal": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:233"
+  },
+  "conquer": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:234"
+  },
+  "alliance": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:235"
+  },
+  "crate_open": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:236"
+  },
+  "reveal_common": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:237"
+  },
+  "reveal_rare": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:238"
+  },
+  "reveal_epic": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:239"
+  },
+  "reveal_legendary": {
+   "value": 2.0,
+   "ref": "src/client/Audio/AudioDirector.luau:240"
+  }
+ },
+ "auto_duck_db_hold_s": {
+  "nuke_explosion": {
+   "value": [
+    8.0,
+    2.5
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:244"
+  },
+  "nuke_alarm": {
+   "value": [
+    4.0,
+    1.8
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:245"
+  },
+  "game_start": {
+   "value": [
+    5.0,
+    4.0
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:246"
+  },
+  "countdown_gamestart": {
+   "value": [
+    5.0,
+    2.5
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:247"
+  },
+  "under_attack": {
+   "value": [
+    3.0,
+    1.0
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:248"
+  },
+  "victory": {
+   "value": [
+    14.0,
+    9.0
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:249"
+  },
+  "defeat": {
+   "value": [
+    14.0,
+    6.0
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:250"
+  },
+  "betrayal": {
+   "value": [
+    3.0,
+    1.5
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:251"
+  },
+  "conquer": {
+   "value": [
+    3.0,
+    1.2
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:252"
+  },
+  "crate_preview_epic": {
+   "value": [
+    3.0,
+    1.8
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:253"
+  },
+  "crate_preview_legendary": {
+   "value": [
+    4.0,
+    2.0
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:254"
+  },
+  "crate_open": {
+   "value": [
+    4.0,
+    1.5
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:255"
+  },
+  "reveal_epic": {
+   "value": [
+    4.0,
+    2.5
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:256"
+  },
+  "reveal_legendary": {
+   "value": [
+    6.0,
+    4.0
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:257"
+  },
+  "unlock": {
+   "value": [
+    5.0,
+    3.0
+   ],
+   "ref": "src/client/Audio/AudioDirector.luau:258"
+  }
+ },
+ "replace": {
+  "attack_launch": "order_ack",
+  "ref": "src/client/Audio/AudioDirector.luau:821"
+ },
+ "trim_db": {
+  "conquer": -6.0,
+  "ref": "src/client/Audio/AudioDirector.luau:823"
+ },
+ "levels": {
+  "music_volume_db": -6.0,
+  "sfx_volume_db": 0.0,
+  "voice_count": 18,
+  "default_throttle_ms": 50,
+  "default_max_same": 3,
+  "crossfade_s": 2.0,
+  "track_overlap_s": 2.0,
+  "mood_fade_s": 3.0,
+  "war_fade_s": 2.0,
+  "toggle_fade_s": 0.6,
+  "duck_attack_db_per_s": 60.0,
+  "duck_release_db_per_s": 6.0,
+  "ref": "src/client/Audio/AudioDirector.luau:300-390"
+ },
+ "border_pop": {
+  "POP_SLOW": 40.0,
+  "POP_FAST": 600.0,
+  "POP_RATE_MIN": 2.0,
+  "POP_RATE_MAX": 20.0,
+  "POP_CURVE": 2.0,
+  "POP_SMOOTH_S": 0.45,
+  "POP_PER_BATCH": 2,
+  "POP_PITCH_MIN": 0.8,
+  "POP_PITCH_MAX": 1.1,
+  "POP_WARM_S": 15.0,
+  "POP_COOL_S": 6.0,
+  "POP_RUN_GAP_S": 0.7,
+  "POP_JITTER": 0.012,
+  "POP_PROGRESS_LIFT": 0.05,
+  "POP_DB_MIN": -9.0,
+  "POP_DB_MAX": -3.0,
+  "POP_BIG": 60.0,
+  "HUSH_POPS": {
+   "eliminate": 0.65
+  },
+  "ref": "src/client/Audio/AudioDirector.luau:260-306"
+ },
+ "soundtrack": {
+  "credit": "Music by Rodrigo Flores (Orchestral Ambients), CC BY 4.0",
+  "tracks": {
+   "a_moment_of_reflection": {
+    "id": "rbxassetid://103848943777862",
+    "length_s": 130.657483,
+    "title": "A Moment of Reflection",
+    "pack": "Orchestral Ambients I: Tranquil",
+    "ref": "src/shared/Assets/Soundtrack.luau:9"
+   },
+   "abandoned_fortress": {
+    "id": "rbxassetid://138934610379138",
+    "length_s": 137.773016,
+    "title": "Abandoned Fortress",
+    "pack": "Orchestral Ambients V: Epic Heroic",
+    "ref": "src/shared/Assets/Soundtrack.luau:10"
+   },
+   "adventure_ahead": {
+    "id": "rbxassetid://73781218296935",
+    "length_s": 123.726213,
+    "title": "Adventure Ahead",
+    "pack": "Orchestral Ambients II: Ominous",
+    "ref": "src/shared/Assets/Soundtrack.luau:11"
+   },
+   "ancient_conflict": {
+    "id": "rbxassetid://121171952566290",
+    "length_s": 151.043084,
+    "title": "Ancient Conflict",
+    "pack": "Orchestral Ambients IV: Dark Fantasy",
+    "ref": "src/shared/Assets/Soundtrack.luau:12"
+   },
+   "clashing_destiny": {
+    "id": "rbxassetid://78337859424300",
+    "length_s": 128.134059,
+    "title": "Clashing Destiny",
+    "pack": "War & Diplomacy: Strategy Ambients",
+    "ref": "src/shared/Assets/Soundtrack.luau:13"
+   },
+   "corrupt_policies": {
+    "id": "rbxassetid://129185222383065",
+    "length_s": 123.515669,
+    "title": "Corrupt Policies",
+    "pack": "Orchestral Ambients II: Ominous",
+    "ref": "src/shared/Assets/Soundtrack.luau:14"
+   },
+   "cultural_heritage": {
+    "id": "rbxassetid://95885495017454",
+    "length_s": 128.712404,
+    "title": "Cultural Heritage",
+    "pack": "Orchestral Ambients V: Epic Heroic",
+    "ref": "src/shared/Assets/Soundtrack.luau:15"
+   },
+   "culture_shock": {
+    "id": "rbxassetid://105501605636409",
+    "length_s": 130.604104,
+    "title": "Culture Shock",
+    "pack": "Orchestral Ambients I: Tranquil",
+    "ref": "src/shared/Assets/Soundtrack.luau:16"
+   },
+   "dance_of_fate": {
+    "id": "rbxassetid://89609553615149",
+    "length_s": 143.402971,
+    "title": "Dance of Fate",
+    "pack": "War & Diplomacy: Strategy Ambients",
+    "ref": "src/shared/Assets/Soundtrack.luau:17"
+   },
+   "defending_our_land": {
+    "id": "rbxassetid://97137204171064",
+    "length_s": 130.893107,
+    "title": "Defending Our Land",
+    "pack": "Orchestral Ambients V: Epic Heroic",
+    "ref": "src/shared/Assets/Soundtrack.luau:18"
+   },
+   "diplomatic_exchange": {
+    "id": "rbxassetid://118865305729632",
+    "length_s": 122.907347,
+    "title": "Diplomatic Exchange",
+    "pack": "Orchestral Ambients I: Tranquil",
+    "ref": "src/shared/Assets/Soundtrack.luau:19"
+   },
+   "foreign_traditions": {
+    "id": "rbxassetid://109944587012778",
+    "length_s": 114.622971,
+    "title": "Foreign Traditions",
+    "pack": "Orchestral Ambients II: Ominous",
+    "ref": "src/shared/Assets/Soundtrack.luau:20"
+   },
+   "forgotten_glories": {
+    "id": "rbxassetid://111728643887700",
+    "length_s": 144.097279,
+    "title": "Forgotten Glories",
+    "pack": "Orchestral Ambients I: Tranquil",
+    "ref": "src/shared/Assets/Soundtrack.luau:21"
+   },
+   "formidable_opponent": {
+    "id": "rbxassetid://124776205513186",
+    "length_s": 134.698798,
+    "title": "Formidable Opponent",
+    "pack": "Orchestral Ambients V: Epic Heroic",
+    "ref": "src/shared/Assets/Soundtrack.luau:22"
+   },
+   "friend_or_foe": {
+    "id": "rbxassetid://99084679283816",
+    "length_s": 125.298866,
+    "title": "Friend or Foe",
+    "pack": "War & Diplomacy: Strategy Ambients",
+    "ref": "src/shared/Assets/Soundtrack.luau:23"
+   },
+   "glorious_fortress": {
+    "id": "rbxassetid://77764187666253",
+    "length_s": 120.680159,
+    "title": "Glorious Fortress",
+    "pack": "Orchestral Ambients V: Epic Heroic",
+    "ref": "src/shared/Assets/Soundtrack.luau:24"
+   },
+   "glory_of_the_nation": {
+    "id": "rbxassetid://79268728091508",
+    "length_s": 135.216259,
+    "title": "Glory of the Nation",
+    "pack": "Orchestral Ambients V: Epic Heroic",
+    "ref": "src/shared/Assets/Soundtrack.luau:25"
+   },
+   "grandiose_court": {
+    "id": "rbxassetid://80300358179931",
+    "length_s": 104.804331,
+    "title": "Grandiose Court",
+    "pack": "Orchestral Ambients V: Epic Heroic",
+    "ref": "src/shared/Assets/Soundtrack.luau:26"
+   },
+   "heroes_of_the_past": {
+    "id": "rbxassetid://106910901244340",
+    "length_s": 124.120045,
+    "title": "Heroes of the Past",
+    "pack": "War & Diplomacy: Strategy Ambients",
+    "ref": "src/shared/Assets/Soundtrack.luau:27"
+   },
+   "hope_is_our_ally": {
+    "id": "rbxassetid://78603094999291",
+    "length_s": 148.387166,
+    "title": "Hope Is Our Ally",
+    "pack": "Orchestral Ambients V: Epic Heroic",
+    "ref": "src/shared/Assets/Soundtrack.luau:28"
+   },
+   "looking_for_answers": {
+    "id": "rbxassetid://92100401231387",
+    "length_s": 102.138367,
+    "title": "Looking for Answers",
+    "pack": "Orchestral Ambients I: Tranquil",
+    "ref": "src/shared/Assets/Soundtrack.luau:29"
+   },
+   "march_of_war": {
+    "id": "rbxassetid://109777274614339",
+    "length_s": 131.662086,
+    "title": "March of War",
+    "pack": "Orchestral Ambients V: Epic Heroic",
+    "ref": "src/shared/Assets/Soundtrack.luau:30"
+   },
+   "matters_of_the_court": {
+    "id": "rbxassetid://131725857760070",
+    "length_s": 122.474444,
+    "title": "Matters of the Court",
+    "pack": "Orchestral Ambients II: Ominous",
+    "ref": "src/shared/Assets/Soundtrack.luau:31"
+   },
+   "national_emblem": {
+    "id": "rbxassetid://93812669649322",
+    "length_s": 122.844535,
+    "title": "National Emblem",
+    "pack": "War & Diplomacy: Strategy Ambients",
+    "ref": "src/shared/Assets/Soundtrack.luau:32"
+   },
+   "path_to_greatness": {
+    "id": "rbxassetid://94804630664214",
+    "length_s": 138.60678,
+    "title": "Path to Greatness",
+    "pack": "Orchestral Ambients IV: Dark Fantasy",
+    "ref": "src/shared/Assets/Soundtrack.luau:33"
+   },
+   "political_move": {
+    "id": "rbxassetid://113140343525219",
+    "length_s": 131.929002,
+    "title": "Political Move",
+    "pack": "Orchestral Ambients II: Ominous",
+    "ref": "src/shared/Assets/Soundtrack.luau:34"
+   },
+   "revolutionary_thoughts": {
+    "id": "rbxassetid://84481896840809",
+    "length_s": 114.458141,
+    "title": "Revolutionary Thoughts",
+    "pack": "War & Diplomacy: Strategy Ambients",
+    "ref": "src/shared/Assets/Soundtrack.luau:35"
+   },
+   "state_of_peril": {
+    "id": "rbxassetid://136881656537600",
+    "length_s": 152.400907,
+    "title": "State of Peril",
+    "pack": "Orchestral Ambients II: Ominous",
+    "ref": "src/shared/Assets/Soundtrack.luau:36"
+   },
+   "stay_alert": {
+    "id": "rbxassetid://110624591560560",
+    "length_s": 97.846961,
+    "title": "Stay Alert!",
+    "pack": "War & Diplomacy: Strategy Ambients",
+    "ref": "src/shared/Assets/Soundtrack.luau:37"
+   },
+   "unavoidable_consequence": {
+    "id": "rbxassetid://81822743811468",
+    "length_s": 83.609116,
+    "title": "Unavoidable Consequence",
+    "pack": "Orchestral Ambients V: Epic Heroic",
+    "ref": "src/shared/Assets/Soundtrack.luau:38"
+   },
+   "uncertain_times": {
+    "id": "rbxassetid://81129170141031",
+    "length_s": 127.198526,
+    "title": "Uncertain Times",
+    "pack": "War & Diplomacy: Strategy Ambients",
+    "ref": "src/shared/Assets/Soundtrack.luau:39"
+   },
+   "uncovering_the_past": {
+    "id": "rbxassetid://83346563778066",
+    "length_s": 136.226689,
+    "title": "Uncovering the Past",
+    "pack": "War & Diplomacy: Strategy Ambients",
+    "ref": "src/shared/Assets/Soundtrack.luau:40"
+   },
+   "war_declaration": {
+    "id": "rbxassetid://82523073642281",
+    "length_s": 141.098435,
+    "title": "War Declaration",
+    "pack": "War & Diplomacy: Strategy Ambients",
+    "ref": "src/shared/Assets/Soundtrack.luau:41"
+   }
+  },
+  "moods": {
+   "title": {
+    "tracks": [
+     "glory_of_the_nation",
+     "hope_is_our_ally",
+     "national_emblem",
+     "grandiose_court",
+     "cultural_heritage"
+    ],
+    "ref": "src/shared/Assets/Soundtrack.luau:44"
+   },
+   "wait": {
+    "tracks": [
+     "uncertain_times",
+     "political_move",
+     "friend_or_foe"
+    ],
+    "ref": "src/shared/Assets/Soundtrack.luau:45"
+   },
+   "calm": {
+    "tracks": [
+     "uncovering_the_past",
+     "diplomatic_exchange",
+     "uncertain_times",
+     "revolutionary_thoughts",
+     "political_move",
+     "dance_of_fate",
+     "culture_shock",
+     "adventure_ahead",
+     "friend_or_foe",
+     "forgotten_glories",
+     "foreign_traditions",
+     "heroes_of_the_past",
+     "matters_of_the_court",
+     "looking_for_answers",
+     "corrupt_policies"
+    ],
+    "ref": "src/shared/Assets/Soundtrack.luau:46"
+   },
+   "war": {
+    "tracks": [
+     "war_declaration",
+     "march_of_war",
+     "clashing_destiny",
+     "formidable_opponent",
+     "ancient_conflict",
+     "defending_our_land",
+     "stay_alert",
+     "path_to_greatness",
+     "unavoidable_consequence",
+     "state_of_peril",
+     "abandoned_fortress"
+    ],
+    "ref": "src/shared/Assets/Soundtrack.luau:47"
+   },
+   "victory": {
+    "tracks": [
+     "glorious_fortress"
+    ],
+    "ref": "src/shared/Assets/Soundtrack.luau:48"
+   },
+   "defeat": {
+    "tracks": [
+     "a_moment_of_reflection"
+    ],
+    "ref": "src/shared/Assets/Soundtrack.luau:49"
+   }
+  },
+  "mood_rules": "src/client/Audio/MusicMood.luau (war holds WAR_HOLD_S 40 s after the last fight; tribes don't count)",
+  "legacy_themes": {
+   "menu": 106.666667,
+   "war": 160,
+   "ref": "src/shared/Assets/Audio.luau:8-11"
+  }
+ },
+ "event_routing": [
+  {
+   "event": "own structure added (built or captured)",
+   "sfx": "build",
+   "who": "only when UIRules.on_structure says old or new owner is me",
+   "ref": "src/client/UI/UIAdvisor.luau:303-313; src/client/UI/UIRules.luau:339"
+  },
+  {
+   "event": "own transport launched",
+   "sfx": "boat -> boat_launch",
+   "who": "only my units (UIRules.on_unit owner == me)",
+   "ref": "src/client/UI/UIAdvisor.luau:315-327; src/client/UI/UIRules.luau:364"
+  },
+  {
+   "event": "own warship launched",
+   "sfx": "warship",
+   "who": "only mine",
+   "ref": "src/client/UI/UIAdvisor.luau:323-326"
+  },
+  {
+   "event": "shell fired",
+   "sfx": "shell_fire",
+   "level_db": "mine -8, others -12 (only when on screen)",
+   "ref": "src/client/UI/UIAdvisor.luau:334-341"
+  },
+  {
+   "event": "air strike / slug fired",
+   "sfx": "sam_launch (pitch .85) / shell_fire (pitch .6)",
+   "level_db": "mine -2, others -8; others only on screen",
+   "ref": "src/client/UI/UIAdvisor.luau:342-344"
+  },
+  {
+   "event": "nuke launched by me (not warheads)",
+   "sfx": "nuke_launch",
+   "ref": "src/client/UI/UIAdvisor.luau:346-349"
+  },
+  {
+   "event": "nuke aimed at my land",
+   "sfx": "alarm -> nuke_alarm",
+   "ref": "src/client/UI/UIAdvisor.luau:350-353"
+  },
+  {
+   "event": "nuke detonated",
+   "sfx": "explosion -> nuke_explosion",
+   "level_db": "mine/at my land 0, others -3; only if on screen or mine",
+   "ref": "src/client/UI/UIAdvisor.luau:363-399"
+  },
+  {
+   "event": "nuke shot down by SAM",
+   "sfx": "(silent: message says it)",
+   "ref": "src/client/UI/UIAdvisor.luau:385-391"
+  },
+  {
+   "event": "shell hit / strike hit",
+   "sfx": "shell_hit (mine -6, others -11, on screen) / intercept -> sam_intercept",
+   "ref": "src/client/UI/UIAdvisor.luau:376-388"
+  },
+  {
+   "event": "attack launched or received",
+   "sfx": "NONE ('more annoying than useful', 2026-09-27); being attacked shows a toast only",
+   "ref": "src/client/UI/UIAdvisor.luau:599-630"
+  },
+  {
+   "event": "alliance request to me",
+   "sfx": "ally_request",
+   "ref": "src/client/UI/UIAdvisor.luau:632-638"
+  },
+  {
+   "event": "alliance formed (me)",
+   "sfx": "alliance",
+   "ref": "src/client/UI/UIAdvisor.luau:646-666"
+  },
+  {
+   "event": "I betrayed / was betrayed",
+   "sfx": "betrayal",
+   "ref": "src/client/UI/UIAdvisor.luau:667-681"
+  },
+  {
+   "event": "naval news (sinkings, trade captures)",
+   "sfx": "NONE (silent since 2026-09-27)",
+   "ref": "src/client/UI/UIAdvisor.luau:710-726"
+  },
+  {
+   "event": "any other Sim message with category ALERT",
+   "sfx": "toast -> ui_tab at -4 dB",
+   "ref": "src/client/UI/UIAdvisor.luau:722-725"
+  },
+  {
+   "event": "I eliminated a nation",
+   "sfx": "eliminate (BedWars kill sound; replaced 'conquer')",
+   "ref": "src/client/UI/UIAdvisor.luau:777-789; src/client/UI/UICtx.luau:90-93"
+  },
+  {
+   "event": "I was eliminated / lost",
+   "sfx": "defeat",
+   "ref": "src/client/UI/UIAdvisor.luau:806-815, 817-848"
+  },
+  {
+   "event": "game over",
+   "sfx": "victory or defeat",
+   "ref": "src/client/UI/UIAdvisor.luau:817-866"
+  },
+  {
+   "event": "my border grows",
+   "sfx": "expand_pop run via AudioDirector.pop (rate/pitch rules in border_pop)",
+   "ref": "src/client/UI/UIAdvisor.luau:273-301; src/client/Audio/AudioDirector.luau:901-975"
+  },
+  {
+   "event": "spawn placed",
+   "sfx": "spawn -> spawn_confirm",
+   "ref": "src/client/UI/UIInteract.luau:355"
+  },
+  {
+   "event": "notice toast (UIRoot.notice)",
+   "sfx": "deny (severity 2) else toast, -4 dB",
+   "ref": "src/client/UI/UIRoot.luau:1918"
+  },
+  {
+   "event": "'conquer' sting",
+   "sfx": "not triggered by any client call site in this commit (still in manifest)",
+   "ref": "grep ctx:sfx"
+  }
+ ]
+}

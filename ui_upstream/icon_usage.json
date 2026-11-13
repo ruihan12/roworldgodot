@@ -1,0 +1,717 @@
+[
+ {
+  "file": "src/client/Dev/UIKitBasics.luau",
+  "line": 46,
+  "icon": "troops"
+ },
+ {
+  "file": "src/client/Dev/UIKitBasics.luau",
+  "line": 85,
+  "icon": "target"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 28,
+  "icon": "attack"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 29,
+  "icon": "boat"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 30,
+  "icon": "retreat"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 34,
+  "icon": "atom"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 38,
+  "icon": "atom"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 42,
+  "icon": "hydrogen"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 51,
+  "icon": "mirv"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 59,
+  "icon": "alliance"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 60,
+  "icon": "eye"
+ },
+ {
+  "file": "src/client/Dev/UIScreensRadial.luau",
+  "line": 61,
+  "icon": "info"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 42,
+  "icon": "atom"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 115,
+  "icon": "sam"
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 126,
+  "icon": "atom"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 213,
+  "icon": "arsenal"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 228,
+  "icon": "star"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 238,
+  "icon": "close"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 484,
+  "icon": "star"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 934,
+  "icon": "check"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 966,
+  "icon": "star"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 970,
+  "icon": "star"
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 1004,
+  "icon": "star"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 87,
+  "icon": "arsenal"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 88,
+  "icon": "arsenal"
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 155,
+  "icon": "star"
+ },
+ {
+  "file": "src/client/UI/AttacksPanel.luau",
+  "line": 55,
+  "icon": "attack"
+ },
+ {
+  "file": "src/client/UI/AttacksPanel.luau",
+  "line": 181,
+  "icon": "attack"
+ },
+ {
+  "file": "src/client/UI/AttacksPanel.luau",
+  "line": 193,
+  "icon": "chevron"
+ },
+ {
+  "file": "src/client/UI/BuildButton.luau",
+  "line": 282,
+  "icon": "lock"
+ },
+ {
+  "file": "src/client/UI/BuildButton.luau",
+  "line": 289,
+  "icon": "target"
+ },
+ {
+  "file": "src/client/UI/BuildButton.luau",
+  "line": 293,
+  "icon": "info"
+ },
+ {
+  "file": "src/client/UI/BuildButton.luau",
+  "line": 414,
+  "icon": "lock"
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 22,
+  "icon": "troops"
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 24,
+  "icon": "attack"
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 29,
+  "icon": "troops"
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 34,
+  "icon": "city"
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 39,
+  "icon": "alliance"
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 44,
+  "icon": "boat"
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 49,
+  "icon": "target"
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 54,
+  "icon": "city"
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 59,
+  "icon": "defense"
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 127,
+  "icon": "info"
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 112,
+  "icon": "crown"
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 124,
+  "icon": "troops"
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 153,
+  "icon": "gold"
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 168,
+  "icon": "attack"
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 221,
+  "icon": "troops"
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 239,
+  "icon": "gold"
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 300,
+  "icon": "city"
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 315,
+  "icon": "target"
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 306,
+  "icon": "calm"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 1108,
+  "icon": "crate"
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 1111,
+  "icon": "robux"
+ },
+ {
+  "file": "src/client/UI/EventFeed.luau",
+  "line": 491,
+  "icon": "alliance"
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 151,
+  "icon": "close"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 103,
+  "icon": "crown"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 214,
+  "icon": "robux"
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 379,
+  "icon": "star"
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 163,
+  "icon": "star"
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 80,
+  "icon": "close"
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 104,
+  "icon": "crate"
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 105,
+  "icon": "star"
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 174,
+  "icon": "star"
+ },
+ {
+  "file": "src/client/UI/GlobeNotice.luau",
+  "line": 92,
+  "icon": "globe"
+ },
+ {
+  "file": "src/client/UI/GlobeNotice.luau",
+  "line": 114,
+  "icon": "close"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 211,
+  "icon": "target"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 217,
+  "icon": "attack"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 223,
+  "icon": "boat"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 229,
+  "icon": "alliance"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 235,
+  "icon": "city"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 243,
+  "icon": "atom"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 249,
+  "icon": "crown"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 381,
+  "icon": "help"
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 556,
+  "icon": "layers"
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 107,
+  "icon": "alliance"
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 111,
+  "icon": "users"
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 193,
+  "icon": "betray"
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 196,
+  "icon": "alliance"
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 271,
+  "icon": "leaderboard"
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 293,
+  "icon": "close"
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 353,
+  "icon": "leaderboard"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 205,
+  "icon": "close"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 475,
+  "icon": "crate"
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 478,
+  "icon": "robux"
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 65,
+  "icon": "close"
+ },
+ {
+  "file": "src/client/UI/PartyPanel.luau",
+  "line": 54,
+  "icon": "users"
+ },
+ {
+  "file": "src/client/UI/PartyPanel.luau",
+  "line": 108,
+  "icon": "users"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 542,
+  "icon": "retreat"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 557,
+  "icon": "retreat"
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 567,
+  "icon": "exit"
+ },
+ {
+  "file": "src/client/UI/RotateCard.luau",
+  "line": 30,
+  "icon": "app_icon"
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 133,
+  "icon": "arsenal"
+ },
+ {
+  "file": "src/client/UI/TargetCard.luau",
+  "line": 283,
+  "icon": "betray"
+ },
+ {
+  "file": "src/client/UI/TargetCard.luau",
+  "line": 343,
+  "icon": "attack"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 487,
+  "icon": "app_icon"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 678,
+  "icon": "users"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 772,
+  "icon": "users"
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 1161,
+  "icon": "play"
+ },
+ {
+  "file": "src/client/UI/TopStatus.luau",
+  "line": 70,
+  "icon": "defense"
+ },
+ {
+  "file": "src/client/UI/TopStatus.luau",
+  "line": 87,
+  "icon": "globe"
+ },
+ {
+  "file": "src/client/UI/TopStatus.luau",
+  "line": 104,
+  "icon": "crown"
+ },
+ {
+  "file": "src/client/UI/TopStatus.luau",
+  "line": 127,
+  "icon": "defense"
+ },
+ {
+  "file": "src/client/UI/TopStatus.luau",
+  "line": 146,
+  "icon": "leaderboard"
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1319,
+  "icon": "target"
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1342,
+  "icon": "attack"
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1348,
+  "icon": "boat"
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1352,
+  "icon": "boat"
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1358,
+  "icon": "info"
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1405,
+  "icon": "info"
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1409,
+  "icon": "target"
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1413,
+  "icon": "target"
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1420,
+  "icon": "target"
+ },
+ {
+  "file": "src/client/UI/UIRoot.luau",
+  "line": 1273,
+  "icon": "check"
+ },
+ {
+  "file": "src/client/UI/UIRoot.luau",
+  "line": 1276,
+  "icon": "robux"
+ },
+ {
+  "file": "src/client/UI/UIRoot.luau",
+  "line": 1315,
+  "icon": "eye"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1031,
+  "icon": "info"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1056,
+  "icon": "target"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1100,
+  "icon": "attack"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1110,
+  "icon": "boat"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1116,
+  "icon": "boat"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1203,
+  "icon": "attack"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1210,
+  "icon": "boat"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1230,
+  "icon": "retreat"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1265,
+  "icon": "city"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1322,
+  "icon": "donate"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1335,
+  "icon": "alliance"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1345,
+  "icon": "betray"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1351,
+  "icon": "alliance"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1357,
+  "icon": "alliance"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1368,
+  "icon": "alliance"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1376,
+  "icon": "eye"
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 1378,
+  "icon": "info"
+ },
+ {
+  "file": "src/client/UI/UnitCard.luau",
+  "line": 62,
+  "icon": "warship"
+ },
+ {
+  "file": "src/client/UI/UnitCard.luau",
+  "line": 106,
+  "icon": "chevron"
+ },
+ {
+  "file": "src/shared/Data/Arsenal.luau",
+  "line": 53,
+  "icon": "mega"
+ },
+ {
+  "file": "src/shared/Data/Arsenal.luau",
+  "line": 69,
+  "icon": "scatter"
+ },
+ {
+  "file": "src/shared/Data/Arsenal.luau",
+  "line": 85,
+  "icon": "reinforce"
+ },
+ {
+  "file": "src/shared/Data/Arsenal.luau",
+  "line": 101,
+  "icon": "artillery"
+ },
+ {
+  "file": "src/shared/Data/Arsenal.luau",
+  "line": 118,
+  "icon": "airfield"
+ },
+ {
+  "file": "src/shared/Data/Arsenal.luau",
+  "line": 136,
+  "icon": "railgun"
+ },
+ {
+  "file": "src/shared/Data/Arsenal.luau",
+  "line": 152,
+  "icon": "star"
+ },
+ {
+  "file": "src/shared/Data/Arsenal.luau",
+  "line": 167,
+  "icon": "reload"
+ }
+]

@@ -1,0 +1,2410 @@
+{
+ "generated": "2026-11-09T23:21:32.489958",
+ "source": "RuihanPc Roblox cache (rbx-storage.db + rbx-storage/), read-only copy",
+ "method_notes": "rbx-storage.db keys are content hashes, no URL/asset id stored, so ids were matched by exact TimeLength (audio.json, 6dp) inside the 11-09 16:27:30 preload cluster (68 files, hits~349 = AudioDirector preload); same-length siblings split by db rowid order vs AudioDirector preload order (PRELOAD_FIRST batch, then SFX_NAMES order) plus loudness trend.",
+ "counts": {
+  "high": 84,
+  "medium": 15
+ },
+ "matched": 99,
+ "unmatched_count": 5,
+ "installed_events": [
+  "alliance",
+  "ally_request",
+  "attack_launch",
+  "betrayal",
+  "boat_launch",
+  "build",
+  "buy_spend",
+  "card_flip",
+  "card_whoosh",
+  "conquer",
+  "countdown_gamestart",
+  "countdown_tick",
+  "countdown_tick_1",
+  "countdown_tick_2",
+  "countdown_tick_3",
+  "countdown_tick_4",
+  "countdown_tick_5",
+  "crate_drop",
+  "crate_land",
+  "crate_open",
+  "crate_preview_common",
+  "crate_preview_epic",
+  "crate_preview_legendary",
+  "crate_preview_rare",
+  "crate_rattle",
+  "crate_shimmer",
+  "defeat",
+  "eliminate",
+  "expand",
+  "expand_pop",
+  "game_start",
+  "nuke_alarm",
+  "nuke_explosion",
+  "nuke_launch",
+  "order_ack",
+  "queue_start",
+  "reveal_common",
+  "reveal_epic",
+  "reveal_legendary",
+  "reveal_rare",
+  "sam_intercept",
+  "sam_launch",
+  "shell_fire",
+  "shell_hit",
+  "shell_splash",
+  "ship_sink",
+  "spawn_confirm",
+  "spectate_switch",
+  "star_get",
+  "star_tick",
+  "ui_back",
+  "ui_click",
+  "ui_confirm",
+  "ui_error",
+  "ui_hover",
+  "ui_locked",
+  "ui_open",
+  "ui_tab",
+  "under_attack",
+  "unlock",
+  "victory",
+  "warship"
+ ],
+ "matched_ids": {
+  "87171234508336": {
+   "file": "61c4539fe8ffd8d0b91279d5c18dd54b",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/betrayal.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "betrayal",
+     3.4
+    ]
+   ],
+   "cache_duration_s": 3.4,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891907,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\61\\61c4539fe8ffd8d0b91279d5c18dd54b"
+  },
+  "119923663006796": {
+   "file": "1ae9536dfb0ee01007cce25f70114bdb",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/boat_launch.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "boat_launch",
+     2.6
+    ]
+   ],
+   "cache_duration_s": 2.6,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891894,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\1a\\1ae9536dfb0ee01007cce25f70114bdb"
+  },
+  "119956264214848": {
+   "file": "a1c8607aaec85a1157f70e373793efd8",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/build.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "build",
+     1.92839
+    ]
+   ],
+   "cache_duration_s": 1.92839,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891895,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\a1\\a1c8607aaec85a1157f70e373793efd8"
+  },
+  "131279149950854": {
+   "file": "b6c50a47bda0d04677615b2c8c33778c",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/defeat.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "defeat",
+     7.8
+    ]
+   ],
+   "cache_duration_s": 7.8,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891918,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\b6\\b6c50a47bda0d04677615b2c8c33778c"
+  },
+  "138849772172266": {
+   "file": "b801bb48eef14becc547fa5bcbf4b5e6",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/expand.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "expand",
+     0.6
+    ]
+   ],
+   "cache_duration_s": 0.6,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891891,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\b8\\b801bb48eef14becc547fa5bcbf4b5e6"
+  },
+  "133482654460663": {
+   "file": "10e44eea217c80f3f7677a92c421a857",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/nuke_alarm.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "nuke_alarm",
+     2.799977
+    ]
+   ],
+   "cache_duration_s": 2.799977,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.157000",
+   "hits": 341,
+   "db_rowid": 1891935,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\10\\10e44eea217c80f3f7677a92c421a857"
+  },
+  "107524949221122": {
+   "file": "67923e502446bf13d6622843015357e9",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/nuke_explosion.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "nuke_explosion",
+     6.0
+    ]
+   ],
+   "cache_duration_s": 6.0,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.157000",
+   "hits": 350,
+   "db_rowid": 1891938,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\67\\67923e502446bf13d6622843015357e9"
+  },
+  "107643516581150": {
+   "file": "3f8a76f0c6d9844563913a60bbc23370",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/nuke_launch.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "nuke_launch",
+     4.2
+    ]
+   ],
+   "cache_duration_s": 4.2,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.157000",
+   "hits": 343,
+   "db_rowid": 1891937,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\3f\\3f8a76f0c6d9844563913a60bbc23370"
+  },
+  "101812584504363": {
+   "file": "56253d29c470c75b5138036c1ef2ff77",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/order_ack.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "order_ack",
+     0.25
+    ]
+   ],
+   "cache_duration_s": 0.25,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.156000",
+   "hits": 349,
+   "db_rowid": 1891933,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "80384143758890": {
+   "file": "c0ef207067a695eae58556e6854352ce",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/sam_launch.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "sam_launch",
+     0.85
+    ]
+   ],
+   "cache_duration_s": 0.85,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891897,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\c0\\c0ef207067a695eae58556e6854352ce"
+  },
+  "113814972330030": {
+   "file": "2797a5ccbdaf2fb43079da2c3ce74d81",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/shell_fire.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "shell_fire",
+     0.3
+    ]
+   ],
+   "cache_duration_s": 0.3,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891899,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "102762424909390": {
+   "file": "efb640b864f99aa7ef79ae64687e0d47",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/shell_hit.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "shell_hit",
+     0.45
+    ]
+   ],
+   "cache_duration_s": 0.45,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891900,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\ef\\efb640b864f99aa7ef79ae64687e0d47"
+  },
+  "105503826549566": {
+   "file": "8a21c46ef3124fdc47c9f660689e6a07",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/shell_splash.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "shell_splash",
+     0.4
+    ]
+   ],
+   "cache_duration_s": 0.4,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891902,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\8a\\8a21c46ef3124fdc47c9f660689e6a07"
+  },
+  "121275079732861": {
+   "file": "c765a8f1e18f03dfef0195639a947ea5",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/variants/ui_click__audio.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "ui_click",
+     0.09
+    ]
+   ],
+   "cache_duration_s": 0.09,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891926,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "137511615641890": {
+   "file": "31f869cae28f73b70a133673b48288a8",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/variants/ui_error__audio.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "ui_error",
+     0.239977
+    ]
+   ],
+   "cache_duration_s": 0.239977,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891922,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "112598302834622": {
+   "file": "0edc8e4ae804ab59969f243be41c4fec",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/variants/ui_hover__audio.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "ui_hover",
+     0.06
+    ]
+   ],
+   "cache_duration_s": 0.06,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.158000",
+   "hits": 349,
+   "db_rowid": 1891920,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "123402733728835": {
+   "file": "aa8c0baf18db5e2f324fd726258794d7",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/under_attack.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "under_attack",
+     1.3
+    ]
+   ],
+   "cache_duration_s": 1.3,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.157000",
+   "hits": 340,
+   "db_rowid": 1891929,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\aa\\aa8c0baf18db5e2f324fd726258794d7"
+  },
+  "121797809876876": {
+   "file": "cde2cc7805e762eb4eb08aa9a53206c9",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/victory.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "victory",
+     11.5
+    ]
+   ],
+   "cache_duration_s": 11.5,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891925,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\cd\\cde2cc7805e762eb4eb08aa9a53206c9"
+  },
+  "92182220628518": {
+   "file": "31c76d8ed2d5f6ae8a68737a7d8d1c9f",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/warship.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "warship",
+     3.6
+    ]
+   ],
+   "cache_duration_s": 3.6,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891896,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\31\\31c76d8ed2d5f6ae8a68737a7d8d1c9f"
+  },
+  "81273460357550": {
+   "file": "5d8416cf518611ae7bcba0d72b08f78f",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/card_flip.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "card_flip",
+     0.300375
+    ]
+   ],
+   "cache_duration_s": 0.300375,
+   "codec": "vorbis/48000",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891884,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "70407360475754": {
+   "file": "0c2ac117251f596da2d8557fe13c1c83",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/card_whoosh.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "card_whoosh",
+     0.457625
+    ]
+   ],
+   "cache_duration_s": 0.457625,
+   "codec": "vorbis/48000",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891885,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "118048118291946": {
+   "file": "0950d2511580648875dc02c871b1099d",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/countdown_gamestart.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "countdown_gamestart",
+     3.25
+    ]
+   ],
+   "cache_duration_s": 3.25,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.156000",
+   "hits": 332,
+   "db_rowid": 1891939,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\09\\0950d2511580648875dc02c871b1099d"
+  },
+  "99970982670087": {
+   "file": "a06166d301f69754ba897e906b4381fc",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/countdown_tick.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "countdown_tick",
+     0.111771
+    ]
+   ],
+   "cache_duration_s": 0.111771,
+   "codec": "vorbis/48000",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891853,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "80168537102964": {
+   "file": "08abbf846dd0aefea640a9591245e847",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/countdown_tick_5.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "countdown_tick_5",
+     1.366667
+    ]
+   ],
+   "cache_duration_s": 1.366667,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891854,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\08\\08abbf846dd0aefea640a9591245e847"
+  },
+  "96354123881208": {
+   "file": "b3703e04394fb799759c87775d647b5f",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/crate_drop.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "crate_drop",
+     1.42575
+    ]
+   ],
+   "cache_duration_s": 1.42575,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891862,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\b3\\b3703e04394fb799759c87775d647b5f"
+  },
+  "98407471885431": {
+   "file": "5b1bd0fd593662401d2ead2576d304d0",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/crate_land.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "crate_land",
+     0.583333
+    ]
+   ],
+   "cache_duration_s": 0.583333,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891863,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\5b\\5b1bd0fd593662401d2ead2576d304d0"
+  },
+  "135313643394021": {
+   "file": "777c91d0d453f6ef2623b9b635dc9cba",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/crate_open.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "crate_open",
+     1.483333
+    ]
+   ],
+   "cache_duration_s": 1.483333,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891876,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\77\\777c91d0d453f6ef2623b9b635dc9cba"
+  },
+  "80028193110259": {
+   "file": "b505c5dc21a3462a5260f07df24210e4",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/crate_rattle.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "crate_rattle",
+     0.7
+    ]
+   ],
+   "cache_duration_s": 0.7,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891864,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\b5\\b505c5dc21a3462a5260f07df24210e4"
+  },
+  "73738572377218": {
+   "file": "b594300df47727de6d1cc9573548c3c4",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/crate_shimmer.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "crate_shimmer",
+     4.333333
+    ]
+   ],
+   "cache_duration_s": 4.333333,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.158000",
+   "hits": 349,
+   "db_rowid": 1891877,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\b5\\b594300df47727de6d1cc9573548c3c4"
+  },
+  "126270255394718": {
+   "file": "e701f6656b9f8a2574c2a05031425a37",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/game_start.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "game_start",
+     6.733333
+    ]
+   ],
+   "cache_duration_s": 6.733333,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.157000",
+   "hits": 344,
+   "db_rowid": 1891941,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\e7\\e701f6656b9f8a2574c2a05031425a37"
+  },
+  "96236095223389": {
+   "file": "a48826501af98f23dabba78c7bee2409",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/reveal_legendary.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "reveal_legendary",
+     2.9
+    ]
+   ],
+   "cache_duration_s": 2.9,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891890,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\a4\\a48826501af98f23dabba78c7bee2409"
+  },
+  "80759209132207": {
+   "file": "5d7445aad4d8b39cc72bd8e445dda76d",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/spawn_confirm.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "spawn_confirm",
+     0.134172
+    ]
+   ],
+   "cache_duration_s": 0.134172,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.157000",
+   "hits": 365,
+   "db_rowid": 1891932,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "135454629352621": {
+   "file": "39a7633f0bb9b6518f064da2bf7af0d0",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/spectate_switch.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "spectate_switch",
+     0.235688
+    ]
+   ],
+   "cache_duration_s": 0.235687,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891860,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\39\\39a7633f0bb9b6518f064da2bf7af0d0"
+  },
+  "135928986609872": {
+   "file": "38283f43aec54bc3abf10ecaf0611f0e",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/buy_spend.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "buy_spend",
+     1.48424
+    ]
+   ],
+   "cache_duration_s": 1.48424,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891919,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\38\\38283f43aec54bc3abf10ecaf0611f0e"
+  },
+  "120043172209226": {
+   "file": "dc4bd1916661f90a141e2c0d7c2a091e",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/eliminate.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "eliminate",
+     0.610272
+    ]
+   ],
+   "cache_duration_s": 0.610272,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.158000",
+   "hits": 347,
+   "db_rowid": 1891927,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\dc\\dc4bd1916661f90a141e2c0d7c2a091e"
+  },
+  "79341616285127": {
+   "file": "23eb2fdc9c195f817264420029ac41b7",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/star_get.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "star_get",
+     1.562313
+    ]
+   ],
+   "cache_duration_s": 1.562313,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891917,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\23\\23eb2fdc9c195f817264420029ac41b7"
+  },
+  "97472511838322": {
+   "file": "240aa22e5f79946efbbf6c38b1090dba",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/ui_back.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "ui_back",
+     0.185488
+    ]
+   ],
+   "cache_duration_s": 0.185488,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891911,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "74811234814054": {
+   "file": "ebe94f09a2d9b63709e95c91e4e3f827",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/ui_click.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "ui_click",
+     0.080998
+    ]
+   ],
+   "cache_duration_s": 0.080998,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891847,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "116194852281859": {
+   "file": "adf6ab9990022fd4ec02e428a983a7e7",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/ui_confirm.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "ui_confirm",
+     0.797483
+    ]
+   ],
+   "cache_duration_s": 0.797483,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891910,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\ad\\adf6ab9990022fd4ec02e428a983a7e7"
+  },
+  "111088846575870": {
+   "file": "ce713bb00b5a9beceaf5d7f4016da4e6",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/ui_error.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "ui_error",
+     0.163673
+    ]
+   ],
+   "cache_duration_s": 0.163673,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891850,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "132883757044770": {
+   "file": "dbe63d00d5543c4e98842f756e428f02",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/ui_locked.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "ui_locked",
+     0.104966
+    ]
+   ],
+   "cache_duration_s": 0.104966,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891913,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "127526089248512": {
+   "file": "5d0e594add2c55a1a29c0a11378f5c38",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/ui_open.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "ui_open",
+     0.216349
+    ]
+   ],
+   "cache_duration_s": 0.216349,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.158000",
+   "hits": 349,
+   "db_rowid": 1891848,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "128664481828844": {
+   "file": "4a5b610e8e6afa024e923cfcd2d45932",
+   "method": "exact_duration+preload_cluster",
+   "confidence": "high",
+   "note": "",
+   "installed": [
+    "sounds/upstream/unlock.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "unlock",
+     3.626417
+    ]
+   ],
+   "cache_duration_s": 3.626417,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891924,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\4a\\4a5b610e8e6afa024e923cfcd2d45932"
+  },
+  "103848943777862": {
+   "file": "072360c276e44d02818945d0aa00af93",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/a_moment_of_reflection.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "a_moment_of_reflection",
+     130.657483
+    ]
+   ],
+   "cache_duration_s": 130.657483,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:15.148000",
+   "hits": 27,
+   "db_rowid": 1894421,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\07\\072360c276e44d02818945d0aa00af93"
+  },
+  "138934610379138": {
+   "file": "ec0681ddfb48fc290e9dd7be496e067a",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/abandoned_fortress.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "abandoned_fortress",
+     137.773016
+    ]
+   ],
+   "cache_duration_s": 137.773016,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:19:43.133000",
+   "hits": 75,
+   "db_rowid": 1892209,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\ec\\ec0681ddfb48fc290e9dd7be496e067a"
+  },
+  "73781218296935": {
+   "file": "9ed71e8cb955165fd53ed4978b0e051f",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/adventure_ahead.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "adventure_ahead",
+     123.726213
+    ]
+   ],
+   "cache_duration_s": 123.726213,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-08T15:05:17.964000",
+   "hits": 37,
+   "db_rowid": 1892262,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\9e\\9ed71e8cb955165fd53ed4978b0e051f"
+  },
+  "121171952566290": {
+   "file": "37030064d79a999ec1e069af5deb0ac7",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/ancient_conflict.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "ancient_conflict",
+     151.043084
+    ]
+   ],
+   "cache_duration_s": 151.043084,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:26:45.139000",
+   "hits": 78,
+   "db_rowid": 1892507,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\37\\37030064d79a999ec1e069af5deb0ac7"
+  },
+  "78337859424300": {
+   "file": "3059ab8e5a7599d1717820b50dd38803",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/clashing_destiny.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "clashing_destiny",
+     128.134059
+    ]
+   ],
+   "cache_duration_s": 128.134059,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-08T15:28:54.822000",
+   "hits": 63,
+   "db_rowid": 1892197,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\30\\3059ab8e5a7599d1717820b50dd38803"
+  },
+  "129185222383065": {
+   "file": "6b59d20bca01cbaed0b6b8d64d104267",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/corrupt_policies.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "corrupt_policies",
+     123.515669
+    ]
+   ],
+   "cache_duration_s": 123.515669,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:15:12.017000",
+   "hits": 27,
+   "db_rowid": 1892058,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\6b\\6b59d20bca01cbaed0b6b8d64d104267"
+  },
+  "95885495017454": {
+   "file": "a5fb54a2a6a6e58398d42ea2c7032adc",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/cultural_heritage.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "cultural_heritage",
+     128.712404
+    ]
+   ],
+   "cache_duration_s": 128.712404,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:22:59.109000",
+   "hits": 85,
+   "db_rowid": 1892381,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\a5\\a5fb54a2a6a6e58398d42ea2c7032adc"
+  },
+  "105501605636409": {
+   "file": "350004c395f3b5b5e520e29f6f3c66d9",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/culture_shock.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "culture_shock",
+     130.604104
+    ]
+   ],
+   "cache_duration_s": 130.604104,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:23:29.134000",
+   "hits": 29,
+   "db_rowid": 1892059,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\35\\350004c395f3b5b5e520e29f6f3c66d9"
+  },
+  "89609553615149": {
+   "file": "5b60e72e0ae9eeace40d66c8dc5d8776",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/dance_of_fate.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "dance_of_fate",
+     143.402971
+    ]
+   ],
+   "cache_duration_s": 143.402971,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:26:15.127000",
+   "hits": 40,
+   "db_rowid": 1892214,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\5b\\5b60e72e0ae9eeace40d66c8dc5d8776"
+  },
+  "97137204171064": {
+   "file": "fbe8da46ef03edf6d9bdfe863feb4c43",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/defending_our_land.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "defending_our_land",
+     130.893107
+    ]
+   ],
+   "cache_duration_s": 130.893107,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:16:57.070000",
+   "hits": 71,
+   "db_rowid": 1892256,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\fb\\fbe8da46ef03edf6d9bdfe863feb4c43"
+  },
+  "118865305729632": {
+   "file": "8d2bf86e8dc20df6c45dae9680cb6f07",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/diplomatic_exchange.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "diplomatic_exchange",
+     122.907347
+    ]
+   ],
+   "cache_duration_s": 122.907347,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:26:15.127000",
+   "hits": 31,
+   "db_rowid": 1892539,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\8d\\8d2bf86e8dc20df6c45dae9680cb6f07"
+  },
+  "109944587012778": {
+   "file": "e73cf70e845b9b3ea3467cb8aeeeaceb",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/foreign_traditions.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "foreign_traditions",
+     114.622971
+    ]
+   ],
+   "cache_duration_s": 114.622971,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:22:59.106000",
+   "hits": 35,
+   "db_rowid": 1892213,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\e7\\e73cf70e845b9b3ea3467cb8aeeeaceb"
+  },
+  "111728643887700": {
+   "file": "66cd8610171cd1e72a2b44ffa23af648",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/forgotten_glories.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "forgotten_glories",
+     144.097279
+    ]
+   ],
+   "cache_duration_s": 144.097279,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-07T22:55:59.627000",
+   "hits": 32,
+   "db_rowid": 1892207,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\66\\66cd8610171cd1e72a2b44ffa23af648"
+  },
+  "124776205513186": {
+   "file": "09f25cdd3c1f61f15aa67c7175be8e3a",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/formidable_opponent.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "formidable_opponent",
+     134.698798
+    ]
+   ],
+   "cache_duration_s": 134.698798,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:22:29.096000",
+   "hits": 83,
+   "db_rowid": 1892171,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\09\\09f25cdd3c1f61f15aa67c7175be8e3a"
+  },
+  "99084679283816": {
+   "file": "56c3e4c46ced6a7f9821f631dd798e0c",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/friend_or_foe.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "friend_or_foe",
+     125.298866
+    ]
+   ],
+   "cache_duration_s": 125.298866,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:14:57.007000",
+   "hits": 80,
+   "db_rowid": 1892276,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\56\\56c3e4c46ced6a7f9821f631dd798e0c"
+  },
+  "77764187666253": {
+   "file": "01a7d3a6c869cd970f61714ec4f93e4a",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/glorious_fortress.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "glorious_fortress",
+     120.680159
+    ]
+   ],
+   "cache_duration_s": 120.680159,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-08T15:31:24.871000",
+   "hits": 19,
+   "db_rowid": 1892281,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\01\\01a7d3a6c869cd970f61714ec4f93e4a"
+  },
+  "79268728091508": {
+   "file": "866583de82ca11d7fbd9f6e3cd30d040",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/glory_of_the_nation.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "glory_of_the_nation",
+     135.216259
+    ]
+   ],
+   "cache_duration_s": 135.216259,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 365,
+   "db_rowid": 1892009,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\86\\866583de82ca11d7fbd9f6e3cd30d040"
+  },
+  "80300358179931": {
+   "file": "06b191afe3f4c59b8ccdd7711cb7b82e",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/grandiose_court.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "grandiose_court",
+     104.804331
+    ]
+   ],
+   "cache_duration_s": 104.804331,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.158000",
+   "hits": 83,
+   "db_rowid": 1892005,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\06\\06b191afe3f4c59b8ccdd7711cb7b82e"
+  },
+  "106910901244340": {
+   "file": "34ff3a3cab24078669380728a8a2ec4d",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/heroes_of_the_past.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "heroes_of_the_past",
+     124.120045
+    ]
+   ],
+   "cache_duration_s": 124.120045,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-08T11:09:54.777000",
+   "hits": 27,
+   "db_rowid": 1892247,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\34\\34ff3a3cab24078669380728a8a2ec4d"
+  },
+  "78603094999291": {
+   "file": "73931a97008180241311c953f778c980",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/hope_is_our_ally.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "hope_is_our_ally",
+     148.387166
+    ]
+   ],
+   "cache_duration_s": 148.387166,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:23:14.123000",
+   "hits": 68,
+   "db_rowid": 1892283,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\73\\73931a97008180241311c953f778c980"
+  },
+  "92100401231387": {
+   "file": "d05cca567a28243e32455a0694a596b2",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/looking_for_answers.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "looking_for_answers",
+     102.138367
+    ]
+   ],
+   "cache_duration_s": 102.138367,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-08T15:08:03.931000",
+   "hits": 32,
+   "db_rowid": 1892650,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\d0\\d05cca567a28243e32455a0694a596b2"
+  },
+  "109777274614339": {
+   "file": "b15131e927d533d8a9a28815bad9fd9c",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/march_of_war.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "march_of_war",
+     131.662086
+    ]
+   ],
+   "cache_duration_s": 131.662086,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-08T15:28:54.822000",
+   "hits": 79,
+   "db_rowid": 1892193,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\b1\\b15131e927d533d8a9a28815bad9fd9c"
+  },
+  "131725857760070": {
+   "file": "31932220a161a5891d6a77dde823bd8f",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/matters_of_the_court.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "matters_of_the_court",
+     122.474444
+    ]
+   ],
+   "cache_duration_s": 122.474444,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:15.148000",
+   "hits": 29,
+   "db_rowid": 1892295,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\31\\31932220a161a5891d6a77dde823bd8f"
+  },
+  "93812669649322": {
+   "file": "b896e8228de434caeddf4d4d32909f00",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/national_emblem.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "national_emblem",
+     122.844535
+    ]
+   ],
+   "cache_duration_s": 122.844535,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:14:57.004000",
+   "hits": 80,
+   "db_rowid": 1892296,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\b8\\b896e8228de434caeddf4d4d32909f00"
+  },
+  "94804630664214": {
+   "file": "9dd0fcb2ef3ce084b2db870357399f14",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/path_to_greatness.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "path_to_greatness",
+     138.60678
+    ]
+   ],
+   "cache_duration_s": 138.60678,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:21:59.086000",
+   "hits": 76,
+   "db_rowid": 1892177,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\9d\\9dd0fcb2ef3ce084b2db870357399f14"
+  },
+  "113140343525219": {
+   "file": "333977261390591ff6ae070ccb1e82b2",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/political_move.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "political_move",
+     131.929002
+    ]
+   ],
+   "cache_duration_s": 131.929002,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:23:14.126000",
+   "hits": 74,
+   "db_rowid": 1892206,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\33\\333977261390591ff6ae070ccb1e82b2"
+  },
+  "84481896840809": {
+   "file": "202a57e5e2b20c58fe8bdf1024ed702f",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/revolutionary_thoughts.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "revolutionary_thoughts",
+     114.458141
+    ]
+   ],
+   "cache_duration_s": 114.458141,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:07:39.761000",
+   "hits": 24,
+   "db_rowid": 1892261,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\20\\202a57e5e2b20c58fe8bdf1024ed702f"
+  },
+  "136881656537600": {
+   "file": "cf3f21a3ef61d853124dcffae14e4c72",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/state_of_peril.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "state_of_peril",
+     152.400907
+    ]
+   ],
+   "cache_duration_s": 152.400907,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:26:45.139000",
+   "hits": 80,
+   "db_rowid": 1892170,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\cf\\cf3f21a3ef61d853124dcffae14e4c72"
+  },
+  "110624591560560": {
+   "file": "a58be262083e8aff6ab01d34b4b6fee6",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/stay_alert.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "stay_alert",
+     97.846961
+    ]
+   ],
+   "cache_duration_s": 97.846961,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:22:29.096000",
+   "hits": 81,
+   "db_rowid": 1892249,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\a5\\a58be262083e8aff6ab01d34b4b6fee6"
+  },
+  "81822743811468": {
+   "file": "6bf7f816c05f0f35ba0b33e3c19b7626",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/unavoidable_consequence.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "unavoidable_consequence",
+     83.609116
+    ]
+   ],
+   "cache_duration_s": 83.609116,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:23:59.148000",
+   "hits": 65,
+   "db_rowid": 1892176,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\6b\\6bf7f816c05f0f35ba0b33e3c19b7626"
+  },
+  "81129170141031": {
+   "file": "c0ad39eb4e1da6c0f314ca9005d2abfe",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/uncertain_times.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "uncertain_times",
+     127.198526
+    ]
+   ],
+   "cache_duration_s": 127.198526,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:23:14.126000",
+   "hits": 82,
+   "db_rowid": 1892528,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\c0\\c0ad39eb4e1da6c0f314ca9005d2abfe"
+  },
+  "83346563778066": {
+   "file": "359a0b9109a5d611bdf4302b10ae8d26",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/uncovering_the_past.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "uncovering_the_past",
+     136.226689
+    ]
+   ],
+   "cache_duration_s": 136.226689,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:23:29.134000",
+   "hits": 19,
+   "db_rowid": 1892500,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\35\\359a0b9109a5d611bdf4302b10ae8d26"
+  },
+  "82523073642281": {
+   "file": "c5b6a2cc2bdbc877d2cb1f03c9585e8f",
+   "method": "exact_duration(6dp)+RoWorld_session_atime",
+   "confidence": "high",
+   "note": "track played in 11-07..11-09 sessions",
+   "installed": [
+    "sounds/upstream/music/war_declaration.ogg"
+   ],
+   "entries": [
+    [
+     "soundtrack",
+     "war_declaration",
+     141.098435
+    ]
+   ],
+   "cache_duration_s": 141.098435,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:23:59.148000",
+   "hits": 80,
+   "db_rowid": 1892198,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\c5\\c5b6a2cc2bdbc877d2cb1f03c9585e8f"
+  },
+  "80671689390668": {
+   "file": "226cb6c5bd3c35e181a4957f55aeaba8",
+   "method": "exact_duration+preload_cluster+preload_order",
+   "confidence": "high",
+   "note": "3.0s pair: babd5de0 is in the PRELOAD_FIRST batch (conquer is PRELOAD_FIRST, alliance is not)",
+   "installed": [
+    "sounds/upstream/alliance.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "alliance",
+     3.0
+    ]
+   ],
+   "cache_duration_s": 3.0,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891912,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\22\\226cb6c5bd3c35e181a4957f55aeaba8"
+  },
+  "122420079080602": {
+   "file": "babd5de0c9e19b6f35fccb0beb2181ce",
+   "method": "exact_duration+preload_cluster+preload_order",
+   "confidence": "high",
+   "note": "3.0s pair: PRELOAD_FIRST batch member",
+   "installed": [
+    "sounds/upstream/conquer.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "conquer",
+     3.0
+    ]
+   ],
+   "cache_duration_s": 3.0,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.157000",
+   "hits": 354,
+   "db_rowid": 1891936,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\ba\\babd5de0c9e19b6f35fccb0beb2181ce"
+  },
+  "131037562030943": {
+   "file": "87a16a85d54cef4f619c473044e950aa",
+   "method": "exact_duration+preload_cluster+preload_order",
+   "confidence": "high",
+   "note": "2.2s pair: PRELOAD_FIRST batch member (attack_launch)",
+   "installed": [
+    "sounds/upstream/attack_launch.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "attack_launch",
+     2.2
+    ]
+   ],
+   "cache_duration_s": 2.2,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.157000",
+   "hits": 346,
+   "db_rowid": 1891931,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\87\\87a16a85d54cef4f619c473044e950aa"
+  },
+  "103679838735567": {
+   "file": "c63fc846e3279f8b23d22074172f1669",
+   "method": "exact_duration+preload_cluster+preload_order",
+   "confidence": "high",
+   "note": "2.2s pair: rest batch, next to ally_request/betrayal",
+   "installed": [
+    "sounds/upstream/ship_sink.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "ship_sink",
+     2.2
+    ]
+   ],
+   "cache_duration_s": 2.2,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891906,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\c6\\c63fc846e3279f8b23d22074172f1669"
+  },
+  "76363667987213": {
+   "file": "90de3d6d75018ca615f2320038d71130",
+   "method": "exact_duration+preload_cluster+preload_order",
+   "confidence": "medium",
+   "note": "0.9s pair: sits between ship_sink and betrayal in rowid order",
+   "installed": [
+    "sounds/upstream/ally_request.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "ally_request",
+     0.9
+    ]
+   ],
+   "cache_duration_s": 0.9,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891904,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "126880759102666": {
+   "file": "35923ddd07cc644a0f6239e6628cb2ef",
+   "method": "exact_duration+preload_cluster+preload_order",
+   "confidence": "medium",
+   "note": "0.9s pair: sits with the other overridden older ui_* ids (0.06/0.09/0.24)",
+   "installed": [
+    "sounds/upstream/variants/ui_open__audio.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "ui_open",
+     0.9
+    ]
+   ],
+   "cache_duration_s": 0.9,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.158000",
+   "hits": 349,
+   "db_rowid": 1891921,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\35\\35923ddd07cc644a0f6239e6628cb2ef"
+  },
+  "133999046074598": {
+   "file": "296a5ab1c3dd346a18373760125265c0",
+   "method": "exact_duration+preload_cluster+preload_order",
+   "confidence": "high",
+   "note": "1.6s pair: 44.1k, sits among sam/shell ids",
+   "installed": [
+    "sounds/upstream/sam_intercept.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio",
+     "sam_intercept",
+     1.6
+    ]
+   ],
+   "cache_duration_s": 1.6,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891901,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\29\\296a5ab1c3dd346a18373760125265c0"
+  },
+  "78362569380032": {
+   "file": "133ba94a35793ba0f7205dfcede33237",
+   "method": "exact_duration+preload_cluster+preload_order",
+   "confidence": "high",
+   "note": "1.6s pair: 48k (AudioExtra), right after countdown ticks, before spectate_switch",
+   "installed": [
+    "sounds/upstream/queue_start.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "queue_start",
+     1.6
+    ]
+   ],
+   "cache_duration_s": 1.6,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891858,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\13\\133ba94a35793ba0f7205dfcede33237"
+  },
+  "133000740914006": {
+   "file": "76c2a019d4d8da0f0c58ab2535f30795",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "four 1.4s ticks: rowid order 5,4,3,2,1 and monotonic rms/centroid trend from tick_5",
+   "installed": [
+    "sounds/upstream/countdown_tick_4.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "countdown_tick_4",
+     1.4
+    ]
+   ],
+   "cache_duration_s": 1.4,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891855,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\76\\76c2a019d4d8da0f0c58ab2535f30795"
+  },
+  "74993719691879": {
+   "file": "b72a4fb1576a61478e6d1c4e6f55fb4b",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "see countdown_tick_4",
+   "installed": [
+    "sounds/upstream/countdown_tick_3.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "countdown_tick_3",
+     1.4
+    ]
+   ],
+   "cache_duration_s": 1.4,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.158000",
+   "hits": 349,
+   "db_rowid": 1891856,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\b7\\b72a4fb1576a61478e6d1c4e6f55fb4b"
+  },
+  "114826083997613": {
+   "file": "bafa68d4c2f359eb0324182c8fecac67",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "see countdown_tick_4",
+   "installed": [
+    "sounds/upstream/countdown_tick_2.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "countdown_tick_2",
+     1.4
+    ]
+   ],
+   "cache_duration_s": 1.4,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891857,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\ba\\bafa68d4c2f359eb0324182c8fecac67"
+  },
+  "109434471633628": {
+   "file": "fa4b6589d326dc55812b120a4d44ffd2",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "see countdown_tick_4; this one arrived late in rowid order, assigned by trend/elimination",
+   "installed": [
+    "sounds/upstream/countdown_tick_1.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "countdown_tick_1",
+     1.4
+    ]
+   ],
+   "cache_duration_s": 1.4,
+   "codec": "vorbis/48000",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891872,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\fa\\fa4b6589d326dc55812b120a4d44ffd2"
+  },
+  "129689342966256": {
+   "file": "09ac0307bba9850a4fe7f2fc211e9e85",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "four 2.15s previews: rowid order matches common,rare,epic,legendary; rms rises in that order",
+   "installed": [
+    "sounds/upstream/crate_preview_common.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "crate_preview_common",
+     2.15
+    ]
+   ],
+   "cache_duration_s": 2.15,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891871,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\09\\09ac0307bba9850a4fe7f2fc211e9e85"
+  },
+  "75814857038404": {
+   "file": "583e45532fd0eaaed684350d1e0dd04b",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "see crate_preview_common",
+   "installed": [
+    "sounds/upstream/crate_preview_rare.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "crate_preview_rare",
+     2.15
+    ]
+   ],
+   "cache_duration_s": 2.15,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891873,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\58\\583e45532fd0eaaed684350d1e0dd04b"
+  },
+  "100431569551164": {
+   "file": "42471dd6df720298c5b8f23f2650b838",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "see crate_preview_common",
+   "installed": [
+    "sounds/upstream/crate_preview_epic.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "crate_preview_epic",
+     2.15
+    ]
+   ],
+   "cache_duration_s": 2.15,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891874,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\42\\42471dd6df720298c5b8f23f2650b838"
+  },
+  "105552830951867": {
+   "file": "22834180b397e34eeb1be09e67f8f942",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "see crate_preview_common",
+   "installed": [
+    "sounds/upstream/crate_preview_legendary.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "crate_preview_legendary",
+     2.15
+    ]
+   ],
+   "cache_duration_s": 2.15,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891875,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\22\\22834180b397e34eeb1be09e67f8f942"
+  },
+  "87392633895627": {
+   "file": "e5c967db0aa07bc29765c9106ad2f132",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "three 2.667s reveals: rowid order common,rare,epic; rms rises toward reveal_legendary",
+   "installed": [
+    "sounds/upstream/reveal_common.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "reveal_common",
+     2.666667
+    ]
+   ],
+   "cache_duration_s": 2.666667,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891886,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\e5\\e5c967db0aa07bc29765c9106ad2f132"
+  },
+  "106670660694606": {
+   "file": "8dfe54557fb1c0b70dd7916ca2d53d1b",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "see reveal_common",
+   "installed": [
+    "sounds/upstream/reveal_rare.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "reveal_rare",
+     2.666667
+    ]
+   ],
+   "cache_duration_s": 2.666667,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891887,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\8d\\8dfe54557fb1c0b70dd7916ca2d53d1b"
+  },
+  "85656892324929": {
+   "file": "5b379057c1a8abc4679a2a5a4fe31bf3",
+   "method": "exact_duration+preload_cluster+preload_order+acoustic_trend",
+   "confidence": "medium",
+   "note": "see reveal_common",
+   "installed": [
+    "sounds/upstream/reveal_epic.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_extra",
+     "reveal_epic",
+     2.666667
+    ]
+   ],
+   "cache_duration_s": 2.666667,
+   "codec": "vorbis/44100",
+   "cache_src": "file",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891889,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage\\5b\\5b379057c1a8abc4679a2a5a4fe31bf3"
+  },
+  "73033892219846": {
+   "file": "83b634f4f467b7f7355e90a45921ec82",
+   "method": "exact_duration(5dp)+preload_cluster",
+   "confidence": "high",
+   "note": "0.12000 vs star_tick 0.120295",
+   "installed": [
+    "sounds/upstream/expand_pop.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "expand_pop",
+     0.12
+    ]
+   ],
+   "cache_duration_s": 0.12,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.158000",
+   "hits": 404,
+   "db_rowid": 1891928,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "101433123814195": {
+   "file": "9ca2dc759a2daef8f85bc19c1d10335a",
+   "method": "exact_duration(5dp)+preload_cluster",
+   "confidence": "high",
+   "note": "0.120295",
+   "installed": [
+    "sounds/upstream/star_tick.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "star_tick",
+     0.120295
+    ]
+   ],
+   "cache_duration_s": 0.120295,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.158000",
+   "hits": 349,
+   "db_rowid": 1891923,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "86373267632742": {
+   "file": "6eb1fd5e72928f94fdd7d5b2fd4c49bf",
+   "method": "exact_duration+preload_cluster+preload_order",
+   "confidence": "medium",
+   "note": "0.1s pair: early rowid next to ui_click/ui_open/ui_error",
+   "installed": [
+    "sounds/upstream/ui_hover.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "ui_hover",
+     0.1
+    ]
+   ],
+   "cache_duration_s": 0.1,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.159000",
+   "hits": 349,
+   "db_rowid": 1891849,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  },
+  "114774423918929": {
+   "file": "2dbd4300a40381d1fdddfd19c97fe24d",
+   "method": "exact_duration+preload_cluster+preload_order",
+   "confidence": "medium",
+   "note": "0.1s pair: late rowid next to ui_back/ui_locked",
+   "installed": [
+    "sounds/upstream/ui_tab.wav"
+   ],
+   "entries": [
+    [
+     "manifest_audio_ui",
+     "ui_tab",
+     0.1
+    ]
+   ],
+   "cache_duration_s": 0.1,
+   "codec": "vorbis/44100",
+   "cache_src": "inline",
+   "cache_atime_local": "2026-11-09T16:27:30.160000",
+   "hits": 349,
+   "db_rowid": 1891914,
+   "pc_path": "%LOCALAPPDATA%\\Roblox\\rbx-storage (inline in rbx-storage.db)"
+  }
+ },
+ "unmatched": {
+  "119819342827167": {
+   "entries": [
+    [
+     "manifest_audio",
+     "menu",
+     106.666667
+    ]
+   ],
+   "note": "menu/war themes are not preloaded when the soundtrack playlist exists; no cached file within 1%"
+  },
+  "135124812568552": {
+   "entries": [
+    [
+     "manifest_audio",
+     "war",
+     160.0
+    ]
+   ],
+   "note": "menu/war themes are not preloaded when the soundtrack playlist exists; no cached file within 1%"
+  },
+  "114459767206640": {
+   "entries": [
+    [
+     "manifest_audio",
+     "countdown_tick",
+     0.15
+    ]
+   ],
+   "low_confidence_candidate": {
+    "file": "8c3911db7a850e55f8c64c9844ffc0bb",
+    "dur": 0.14963718820861677,
+    "note": "0.24% off, cached 11-07 outside the RoWorld preload cluster; not installed. Overridden by AudioExtra countdown_tick upstream, so never preloaded."
+   }
+  },
+  "129747968381169": {
+   "entries": [
+    [
+     "manifest_audio",
+     "game_start",
+     3.6
+    ]
+   ],
+   "note": "overridden by AudioExtra game_start, never preloaded; the one 3.6s cluster file is warship"
+  },
+  "112455904288254": {
+   "entries": [
+    [
+     "manifest_audio",
+     "spawn_confirm",
+     2.4
+    ]
+   ],
+   "note": "overridden by AudioExtra spawn_confirm, never preloaded"
+  }
+ }
+}

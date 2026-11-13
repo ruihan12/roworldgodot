@@ -1,0 +1,632 @@
+{
+ "MapSprites": {
+  "ref": "src/shared/Assets/MapSprites.luau",
+  "icons": {
+   "repo_png": "assets/map_sprites/glyphs.png",
+   "cell": 64,
+   "cols": 9,
+   "order": [
+    "city",
+    "port",
+    "factory",
+    "defense",
+    "sam",
+    "silo",
+    "artillery",
+    "airfield",
+    "railgun"
+   ]
+  },
+  "shapes": {
+   "repo_png": "assets/map_sprites/plates.png",
+   "cell": 112,
+   "cols": 9,
+   "rows": "0 whole shape -> rim colour, 1 inset -> fill colour"
+  },
+  "shapes_one": {
+   "repo_png": "assets/map_sprites/plates_one.png",
+   "cell": 112,
+   "cols": 9
+  },
+  "shape_scale": [
+   1,
+   1,
+   1.12,
+   1.1,
+   1.15,
+   1.3,
+   1.2,
+   1.35,
+   1.25
+  ],
+  "icon_fill": [
+   0.78,
+   0.74,
+   0.74,
+   0.74,
+   0.8,
+   0.76,
+   0.82,
+   0.8,
+   0.86
+  ],
+  "units": {
+   "repo_png": "assets/map_sprites/units.png",
+   "cell": 13,
+   "cols": 12,
+   "order": [
+    "transport",
+    "trade",
+    "warship",
+    "atom",
+    "hydrogen",
+    "mirv",
+    "sam",
+    "shell",
+    "warhead",
+    "train",
+    "carriage",
+    "carriage_loaded"
+   ],
+   "rows": "0 territory colour, 1 border colour"
+  },
+  "units_one": {
+   "repo_png": "assets/map_sprites/units_one.png"
+  },
+  "status": {
+   "repo_png": "assets/map_sprites/status.png",
+   "cell": 256,
+   "cols": 3,
+   "pad": 16,
+   "order": [
+    "crown",
+    "traitor",
+    "disconnected",
+    "alliance",
+    "allianceRequest",
+    "target",
+    "embargo",
+    "nukeRed",
+    "nukeWhite",
+    "allianceFaded",
+    "doomsdayClock",
+    "verified"
+   ]
+  },
+  "godot": {
+   "plates": "res://assets/plates.png",
+   "glyphs": "res://assets/glyphs.png",
+   "units": "res://assets/units.png",
+   "status": "res://assets/status.png"
+  }
+ },
+ "UiShapes": {
+  "ref": "src/shared/Assets/UiShapes.luau",
+  "note": "radial-menu annular-sector masks, 5 pages; px=2, gap_deg=2.2; variants desk ri44/ro116, desk_hov ro122, touch ri50/ro128, touch_hov ro134; repo PNGs in assets/ui_shapes/",
+  "segments": {
+   "desk_2_fill": {
+    "page": 0.0,
+    "x": 0.0,
+    "y": 0.0,
+    "w": 472.0,
+    "h": 239.0,
+    "cx": 236.0,
+    "cy": 236.0
+   },
+   "desk_2_line": {
+    "page": 0.0,
+    "x": 474.0,
+    "y": 0.0,
+    "w": 472.0,
+    "h": 239.0,
+    "cx": 236.0,
+    "cy": 236.0
+   },
+   "desk_3_fill": {
+    "page": 0.0,
+    "x": 0.0,
+    "y": 241.0,
+    "w": 406.0,
+    "h": 195.0,
+    "cx": 203.0,
+    "cy": 236.0
+   },
+   "desk_3_line": {
+    "page": 0.0,
+    "x": 408.0,
+    "y": 241.0,
+    "w": 406.0,
+    "h": 195.0,
+    "cx": 203.0,
+    "cy": 236.0
+   },
+   "desk_4_fill": {
+    "page": 0.0,
+    "x": 0.0,
+    "y": 438.0,
+    "w": 330.0,
+    "h": 177.0,
+    "cx": 165.0,
+    "cy": 236.0
+   },
+   "desk_4_line": {
+    "page": 0.0,
+    "x": 332.0,
+    "y": 438.0,
+    "w": 330.0,
+    "h": 177.0,
+    "cx": 165.0,
+    "cy": 236.0
+   },
+   "desk_5_fill": {
+    "page": 0.0,
+    "x": 664.0,
+    "y": 438.0,
+    "w": 274.0,
+    "h": 168.0,
+    "cx": 137.0,
+    "cy": 236.0
+   },
+   "desk_5_line": {
+    "page": 0.0,
+    "x": 0.0,
+    "y": 617.0,
+    "w": 274.0,
+    "h": 168.0,
+    "cx": 137.0,
+    "cy": 236.0
+   },
+   "desk_6_fill": {
+    "page": 0.0,
+    "x": 276.0,
+    "y": 617.0,
+    "w": 234.0,
+    "h": 163.0,
+    "cx": 117.0,
+    "cy": 236.0
+   },
+   "desk_6_line": {
+    "page": 0.0,
+    "x": 512.0,
+    "y": 617.0,
+    "w": 234.0,
+    "h": 163.0,
+    "cx": 117.0,
+    "cy": 236.0
+   },
+   "desk_7_fill": {
+    "page": 0.0,
+    "x": 816.0,
+    "y": 241.0,
+    "w": 202.0,
+    "h": 160.0,
+    "cx": 101.0,
+    "cy": 236.0
+   },
+   "desk_7_line": {
+    "page": 0.0,
+    "x": 748.0,
+    "y": 617.0,
+    "w": 202.0,
+    "h": 160.0,
+    "cx": 101.0,
+    "cy": 236.0
+   },
+   "desk_8_fill": {
+    "page": 0.0,
+    "x": 0.0,
+    "y": 787.0,
+    "w": 178.0,
+    "h": 159.0,
+    "cx": 89.0,
+    "cy": 236.0
+   },
+   "desk_8_line": {
+    "page": 0.0,
+    "x": 180.0,
+    "y": 787.0,
+    "w": 178.0,
+    "h": 159.0,
+    "cx": 89.0,
+    "cy": 236.0
+   },
+   "desk_hov_2_fill": {
+    "page": 1.0,
+    "x": 0.0,
+    "y": 0.0,
+    "w": 496.0,
+    "h": 251.0,
+    "cx": 248.0,
+    "cy": 248.0
+   },
+   "desk_hov_2_line": {
+    "page": 1.0,
+    "x": 498.0,
+    "y": 0.0,
+    "w": 496.0,
+    "h": 251.0,
+    "cx": 248.0,
+    "cy": 248.0
+   },
+   "desk_hov_3_fill": {
+    "page": 1.0,
+    "x": 0.0,
+    "y": 253.0,
+    "w": 426.0,
+    "h": 207.0,
+    "cx": 213.0,
+    "cy": 248.0
+   },
+   "desk_hov_3_line": {
+    "page": 1.0,
+    "x": 428.0,
+    "y": 253.0,
+    "w": 426.0,
+    "h": 207.0,
+    "cx": 213.0,
+    "cy": 248.0
+   },
+   "desk_hov_4_fill": {
+    "page": 1.0,
+    "x": 0.0,
+    "y": 462.0,
+    "w": 348.0,
+    "h": 189.0,
+    "cx": 174.0,
+    "cy": 248.0
+   },
+   "desk_hov_4_line": {
+    "page": 1.0,
+    "x": 350.0,
+    "y": 462.0,
+    "w": 348.0,
+    "h": 189.0,
+    "cx": 174.0,
+    "cy": 248.0
+   },
+   "desk_hov_5_fill": {
+    "page": 1.0,
+    "x": 700.0,
+    "y": 462.0,
+    "w": 288.0,
+    "h": 180.0,
+    "cx": 144.0,
+    "cy": 248.0
+   },
+   "desk_hov_5_line": {
+    "page": 1.0,
+    "x": 0.0,
+    "y": 653.0,
+    "w": 288.0,
+    "h": 180.0,
+    "cx": 144.0,
+    "cy": 248.0
+   },
+   "desk_hov_6_fill": {
+    "page": 1.0,
+    "x": 290.0,
+    "y": 653.0,
+    "w": 244.0,
+    "h": 175.0,
+    "cx": 122.0,
+    "cy": 248.0
+   },
+   "desk_hov_6_line": {
+    "page": 1.0,
+    "x": 536.0,
+    "y": 653.0,
+    "w": 244.0,
+    "h": 175.0,
+    "cx": 122.0,
+    "cy": 248.0
+   },
+   "desk_hov_7_fill": {
+    "page": 1.0,
+    "x": 782.0,
+    "y": 653.0,
+    "w": 212.0,
+    "h": 172.0,
+    "cx": 106.0,
+    "cy": 248.0
+   },
+   "desk_hov_7_line": {
+    "page": 1.0,
+    "x": 0.0,
+    "y": 835.0,
+    "w": 212.0,
+    "h": 172.0,
+    "cx": 106.0,
+    "cy": 248.0
+   },
+   "desk_hov_8_fill": {
+    "page": 1.0,
+    "x": 214.0,
+    "y": 835.0,
+    "w": 188.0,
+    "h": 171.0,
+    "cx": 94.0,
+    "cy": 248.0
+   },
+   "desk_hov_8_line": {
+    "page": 1.0,
+    "x": 404.0,
+    "y": 835.0,
+    "w": 188.0,
+    "h": 171.0,
+    "cx": 94.0,
+    "cy": 248.0
+   },
+   "touch_2_fill": {
+    "page": 2.0,
+    "x": 0.0,
+    "y": 0.0,
+    "w": 520.0,
+    "h": 263.0,
+    "cx": 260.0,
+    "cy": 260.0
+   },
+   "touch_2_line": {
+    "page": 2.0,
+    "x": 0.0,
+    "y": 265.0,
+    "w": 520.0,
+    "h": 263.0,
+    "cx": 260.0,
+    "cy": 260.0
+   },
+   "touch_3_fill": {
+    "page": 2.0,
+    "x": 522.0,
+    "y": 0.0,
+    "w": 448.0,
+    "h": 213.0,
+    "cx": 224.0,
+    "cy": 260.0
+   },
+   "touch_3_line": {
+    "page": 2.0,
+    "x": 522.0,
+    "y": 265.0,
+    "w": 448.0,
+    "h": 213.0,
+    "cx": 224.0,
+    "cy": 260.0
+   },
+   "touch_4_fill": {
+    "page": 2.0,
+    "x": 0.0,
+    "y": 530.0,
+    "w": 364.0,
+    "h": 192.0,
+    "cx": 182.0,
+    "cy": 260.0
+   },
+   "touch_4_line": {
+    "page": 2.0,
+    "x": 366.0,
+    "y": 530.0,
+    "w": 364.0,
+    "h": 192.0,
+    "cx": 182.0,
+    "cy": 260.0
+   },
+   "touch_5_fill": {
+    "page": 2.0,
+    "x": 0.0,
+    "y": 724.0,
+    "w": 302.0,
+    "h": 182.0,
+    "cx": 151.0,
+    "cy": 260.0
+   },
+   "touch_5_line": {
+    "page": 2.0,
+    "x": 304.0,
+    "y": 724.0,
+    "w": 302.0,
+    "h": 182.0,
+    "cx": 151.0,
+    "cy": 260.0
+   },
+   "touch_6_fill": {
+    "page": 2.0,
+    "x": 732.0,
+    "y": 530.0,
+    "w": 256.0,
+    "h": 177.0,
+    "cx": 128.0,
+    "cy": 260.0
+   },
+   "touch_6_line": {
+    "page": 2.0,
+    "x": 608.0,
+    "y": 724.0,
+    "w": 256.0,
+    "h": 177.0,
+    "cx": 128.0,
+    "cy": 260.0
+   },
+   "touch_7_fill": {
+    "page": 3.0,
+    "x": 0.0,
+    "y": 0.0,
+    "w": 222.0,
+    "h": 174.0,
+    "cx": 111.0,
+    "cy": 260.0
+   },
+   "touch_7_line": {
+    "page": 3.0,
+    "x": 224.0,
+    "y": 0.0,
+    "w": 222.0,
+    "h": 174.0,
+    "cx": 111.0,
+    "cy": 260.0
+   },
+   "touch_8_fill": {
+    "page": 1.0,
+    "x": 594.0,
+    "y": 835.0,
+    "w": 196.0,
+    "h": 171.0,
+    "cx": 98.0,
+    "cy": 260.0
+   },
+   "touch_8_line": {
+    "page": 1.0,
+    "x": 792.0,
+    "y": 835.0,
+    "w": 196.0,
+    "h": 171.0,
+    "cx": 98.0,
+    "cy": 260.0
+   },
+   "touch_hov_2_fill": {
+    "page": 3.0,
+    "x": 0.0,
+    "y": 176.0,
+    "w": 544.0,
+    "h": 275.0,
+    "cx": 272.0,
+    "cy": 272.0
+   },
+   "touch_hov_2_line": {
+    "page": 3.0,
+    "x": 0.0,
+    "y": 453.0,
+    "w": 544.0,
+    "h": 275.0,
+    "cx": 272.0,
+    "cy": 272.0
+   },
+   "touch_hov_3_fill": {
+    "page": 3.0,
+    "x": 546.0,
+    "y": 176.0,
+    "w": 468.0,
+    "h": 225.0,
+    "cx": 234.0,
+    "cy": 272.0
+   },
+   "touch_hov_3_line": {
+    "page": 3.0,
+    "x": 546.0,
+    "y": 453.0,
+    "w": 468.0,
+    "h": 225.0,
+    "cx": 234.0,
+    "cy": 272.0
+   },
+   "touch_hov_4_fill": {
+    "page": 3.0,
+    "x": 0.0,
+    "y": 730.0,
+    "w": 380.0,
+    "h": 204.0,
+    "cx": 190.0,
+    "cy": 272.0
+   },
+   "touch_hov_4_line": {
+    "page": 3.0,
+    "x": 382.0,
+    "y": 730.0,
+    "w": 380.0,
+    "h": 204.0,
+    "cx": 190.0,
+    "cy": 272.0
+   },
+   "touch_hov_5_fill": {
+    "page": 4.0,
+    "x": 0.0,
+    "y": 0.0,
+    "w": 316.0,
+    "h": 194.0,
+    "cx": 158.0,
+    "cy": 272.0
+   },
+   "touch_hov_5_line": {
+    "page": 4.0,
+    "x": 318.0,
+    "y": 0.0,
+    "w": 316.0,
+    "h": 194.0,
+    "cx": 158.0,
+    "cy": 272.0
+   },
+   "touch_hov_6_fill": {
+    "page": 4.0,
+    "x": 636.0,
+    "y": 0.0,
+    "w": 268.0,
+    "h": 189.0,
+    "cx": 134.0,
+    "cy": 272.0
+   },
+   "touch_hov_6_line": {
+    "page": 4.0,
+    "x": 0.0,
+    "y": 196.0,
+    "w": 268.0,
+    "h": 189.0,
+    "cx": 134.0,
+    "cy": 272.0
+   },
+   "touch_hov_7_fill": {
+    "page": 3.0,
+    "x": 764.0,
+    "y": 730.0,
+    "w": 232.0,
+    "h": 186.0,
+    "cx": 116.0,
+    "cy": 272.0
+   },
+   "touch_hov_7_line": {
+    "page": 4.0,
+    "x": 270.0,
+    "y": 196.0,
+    "w": 232.0,
+    "h": 186.0,
+    "cx": 116.0,
+    "cy": 272.0
+   },
+   "touch_hov_8_fill": {
+    "page": 4.0,
+    "x": 504.0,
+    "y": 196.0,
+    "w": 204.0,
+    "h": 183.0,
+    "cx": 102.0,
+    "cy": 272.0
+   },
+   "touch_hov_8_line": {
+    "page": 4.0,
+    "x": 710.0,
+    "y": 196.0,
+    "w": 204.0,
+    "h": 183.0,
+    "cx": 102.0,
+    "cy": 272.0
+   }
+  }
+ },
+ "UIKit": {
+  "ref": "src/shared/Assets/UIKit.luau",
+  "note": "15 soft-shadow 9-slices (feather 40, radius 8..120) and BusyChip spinner arc/ring; Roblox ids only"
+ },
+ "MapFx": {
+  "ref": "src/shared/Assets/MapFx.luau",
+  "repo_png": "assets/map_fx/map_fx.png",
+  "godot": "res://assets/map_fx/map_fx.png"
+ },
+ "Rails": {
+  "ref": "src/shared/Assets/RailArt.luau",
+  "repo_png": "assets/rails/{h,v,tl,tr,bl,br}.png",
+  "godot": "res://assets/rails/"
+ },
+ "Flags": {
+  "ref": "src/shared/Assets/Flags.luau",
+  "repo": "assets/flags/*.svg (+ names.json), SVG only",
+  "note": "not in the Godot project; flag code per nation in maps/upstream/*.json"
+ }
+}

@@ -1,0 +1,3805 @@
+{
+ "note": "user-facing-looking string literals per client module (heuristic filter; file:line)",
+ "files": {
+  "Main": [
+   {
+    "line": 56,
+    "text": "[RoWorld] could not load "
+   },
+   {
+    "line": 78,
+    "text": "[RoWorld] "
+   },
+   {
+    "line": 78,
+    "text": " failed: "
+   },
+   {
+    "line": 375,
+    "text": "Music (M)"
+   },
+   {
+    "line": 384,
+    "text": "Help & Credits (H)"
+   },
+   {
+    "line": 387,
+    "text": "Leaderboard (Tab)"
+   },
+   {
+    "line": 390,
+    "text": "Center on your nation (Home)"
+   },
+   {
+    "line": 395,
+    "text": "Game menu"
+   },
+   {
+    "line": 501,
+    "text": "[RoWorld] WorldView.new failed: "
+   },
+   {
+    "line": 527,
+    "text": "[RoWorld] UIRoot:setup failed: "
+   },
+   {
+    "line": 530,
+    "text": "[RoWorld] UIRoot.new failed: "
+   },
+   {
+    "line": 559,
+    "text": "AF_DIAG"
+   },
+   {
+    "line": 574,
+    "text": "AF_LaunchData"
+   },
+   {
+    "line": 578,
+    "text": "AF_LaunchData"
+   },
+   {
+    "line": 637,
+    "text": "[RoWorld] autosolo: spawn requested at tile"
+   }
+  ],
+  "Session": [
+   {
+    "line": 457,
+    "text": "[Session] could not download map "
+   },
+   {
+    "line": 685,
+    "text": "Multiplayer is unavailable right now. Try again in a moment."
+   },
+   {
+    "line": 697,
+    "text": "Multiplayer is unavailable right now. Try again in a moment."
+   },
+   {
+    "line": 708,
+    "text": "Multiplayer is unavailable right now. Try again in a moment."
+   },
+   {
+    "line": 760,
+    "text": "Multiplayer is unavailable right now. Try again in a moment."
+   },
+   {
+    "line": 1070,
+    "text": "[Session] could not build the match: "
+   },
+   {
+    "line": 1071,
+    "text": "Something went wrong starting the match. Please try again."
+   },
+   {
+    "line": 1080,
+    "text": "[Session] Core Sim modules are not available; no local world"
+   },
+   {
+    "line": 1155,
+    "text": "AF_DEV_SPEED"
+   },
+   {
+    "line": 1317,
+    "text": "Lost connection to the game server. You're back at the title screen."
+   },
+   {
+    "line": 1344,
+    "text": "[Session] a "
+   },
+   {
+    "line": 1344,
+    "text": " handler failed: "
+   },
+   {
+    "line": 1358,
+    "text": "[Session] applying a delta failed: "
+   },
+   {
+    "line": 1670,
+    "text": "[Session] bad snapshot: "
+   },
+   {
+    "line": 1672,
+    "text": "Couldn't load the match. You're back at the title screen."
+   },
+   {
+    "line": 1723,
+    "text": "[Session] bad delta: "
+   }
+  ],
+  "init.client": [
+   {
+    "line": 4,
+    "text": "AF_DEV"
+   },
+   {
+    "line": 8,
+    "text": "[RoWorld] client dev harness:"
+   },
+   {
+    "line": 12,
+    "text": "[RoWorld] AF_DEV harness not found on client:"
+   },
+   {
+    "line": 18,
+    "text": "[RoWorld] client boot (Main not yet written)"
+   }
+  ],
+  "AlertBanner": [
+   {
+    "line": 9,
+    "text": "./UITheme"
+   },
+   {
+    "line": 50,
+    "text": "INCOMING NUKE"
+   },
+   {
+    "line": 109,
+    "text": "INTERCEPTED!"
+   },
+   {
+    "line": 111,
+    "text": "Shot down by a SAM"
+   },
+   {
+    "line": 111,
+    "text": " · more incoming"
+   },
+   {
+    "line": 216,
+    "text": "INCOMING NUKES ×%d"
+   },
+   {
+    "line": 217,
+    "text": "First impact in %ds · from %s"
+   },
+   {
+    "line": 219,
+    "text": "INCOMING NUKE"
+   },
+   {
+    "line": 220,
+    "text": "%s from %s · impact in %ds"
+   }
+  ],
+  "Arsenal": [
+   {
+    "line": 24,
+    "text": "./UITheme"
+   },
+   {
+    "line": 27,
+    "text": "./UICtx"
+   },
+   {
+    "line": 64,
+    "text": "Unlock once, keep it forever. Earn Stars by playing matches."
+   },
+   {
+    "line": 369,
+    "text": "Row_"
+   },
+   {
+    "line": 811,
+    "text": "BUY NOW"
+   },
+   {
+    "line": 941,
+    "text": "It's always on, in every match."
+   },
+   {
+    "line": 941,
+    "text": "It's in your build bar in every match."
+   },
+   {
+    "line": 956,
+    "text": "Robux only."
+   },
+   {
+    "line": 965,
+    "text": "PRESS AGAIN TO SPEND"
+   },
+   {
+    "line": 969,
+    "text": "OR UNLOCK WITH"
+   },
+   {
+    "line": 995,
+    "text": "Or earn it by playing:"
+   },
+   {
+    "line": 1007,
+    "text": "%s of %s"
+   },
+   {
+    "line": 1092,
+    "text": "Color3"
+   },
+   {
+    "line": 1118,
+    "text": "%s more Stars to go. Play matches to earn them."
+   },
+   {
+    "line": 1133,
+    "text": "Couldn't reach the server. Try again in a moment."
+   },
+   {
+    "line": 1150,
+    "text": " isn't on sale for Robux yet."
+   },
+   {
+    "line": 1163,
+    "text": "Purchases aren't available right now."
+   },
+   {
+    "line": 1199,
+    "text": "not enough"
+   },
+   {
+    "line": 1200,
+    "text": "Not enough Stars."
+   },
+   {
+    "line": 1201,
+    "text": "You already have it."
+   },
+   {
+    "line": 1202,
+    "text": "Couldn't unlock it. Nothing was spent. Try again in a moment."
+   },
+   {
+    "line": 1220,
+    "text": " UNLOCKED!"
+   },
+   {
+    "line": 1263,
+    "text": "That's taking a while. If you paid, it's saved and will show up shortly."
+   }
+  ],
+  "ArsenalButton": [
+   {
+    "line": 6,
+    "text": "./UITheme"
+   }
+  ],
+  "ArsenalDemo": [
+   {
+    "line": 156,
+    "text": "[Arsenal] the previews' map image did not load: %s"
+   },
+   {
+    "line": 714,
+    "text": "Launch1"
+   },
+   {
+    "line": 714,
+    "text": "Launch2"
+   },
+   {
+    "line": 1309,
+    "text": "MATCH PAYOUT"
+   }
+  ],
+  "AttacksPanel": [
+   {
+    "line": 12,
+    "text": "./UITheme"
+   },
+   {
+    "line": 123,
+    "text": " (retreating…)"
+   },
+   {
+    "line": 425,
+    "text": "%d out"
+   },
+   {
+    "line": 428,
+    "text": "%d in"
+   },
+   {
+    "line": 432,
+    "text": "%d · %d in"
+   },
+   {
+    "line": 446,
+    "text": "+%d more"
+   }
+  ],
+  "Banner": [
+   {
+    "line": 6,
+    "text": "./UITheme"
+   }
+  ],
+  "BuildButton": [
+   {
+    "line": 11,
+    "text": "./UITheme"
+   },
+   {
+    "line": 13,
+    "text": "./UICtx"
+   },
+   {
+    "line": 32,
+    "text": "Build_"
+   },
+   {
+    "line": 252,
+    "text": " gold"
+   },
+   {
+    "line": 258,
+    "text": " troops"
+   },
+   {
+    "line": 262,
+    "text": "Blast radius"
+   },
+   {
+    "line": 269,
+    "text": " Stars"
+   },
+   {
+    "line": 280,
+    "text": "Locked: "
+   },
+   {
+    "line": 280,
+    "text": " to unlock it in the Arsenal"
+   },
+   {
+    "line": 285,
+    "text": "Click to call them in"
+   },
+   {
+    "line": 286,
+    "text": "Click, then pick a target"
+   },
+   {
+    "line": 287,
+    "text": "Click, then choose a spot on your land"
+   }
+  ],
+  "BusyChip": [
+   {
+    "line": 5,
+    "text": "./UITheme"
+   }
+  ],
+  "Coach": [
+   {
+    "line": 7,
+    "text": "./UITheme"
+   },
+   {
+    "line": 10,
+    "text": "./UICtx"
+   },
+   {
+    "line": 15,
+    "text": "Keep %d%% of your army at home, or neighbours walk right in. In your first %d matches, attacks hold that much back."
+   },
+   {
+    "line": 25,
+    "text": "Click neutral land next to you to expand. Space does the same under the cursor."
+   },
+   {
+    "line": 26,
+    "text": "Tap neutral land next to you to expand."
+   },
+   {
+    "line": 30,
+    "text": "The Attack bar sets how many of your troops each click sends. Q / E change it."
+   },
+   {
+    "line": 31,
+    "text": "Tap a % on the Attack bar to choose how many troops each tap sends."
+   },
+   {
+    "line": 35,
+    "text": "You can afford a City (1). Cities raise your troop cap: place one on your land."
+   },
+   {
+    "line": 36,
+    "text": "You can afford a City. Open BUILD and place one on your land to raise your troop cap."
+   },
+   {
+    "line": 40,
+    "text": "You now border %s. Click their land to attack, or right-click it to propose an alliance."
+   },
+   {
+    "line": 41,
+    "text": "You now border %s. Tap their land to size them up, tap again to attack. Long-press for more."
+   },
+   {
+    "line": 45,
+    "text": "You reached the sea. Click a distant coast to send a boat invasion."
+   },
+   {
+    "line": 46,
+    "text": "You reached the sea. Tap a distant coast to send a boat invasion."
+   },
+   {
+    "line": 50,
+    "text": "Target selected. Click it again, or press the big button, to send the order."
+   },
+   {
+    "line": 51,
+    "text": "Target selected: check their troops, then tap it again or press the big button to attack."
+   },
+   {
+    "line": 55,
+    "text": "Hover a slot to see what it does."
+   },
+   {
+    "line": 56,
+    "text": "Hold any slot to see what it does and why it may be locked."
+   },
+   {
+    "line": 60,
+    "text": "You are under attack! Track every front in the Attacks panel. Defense Posts (4) make borders much harder to take."
+   },
+   {
+    "line": 61,
+    "text": "You are under attack! Track every front in the Attacks panel. Defense Posts make borders much harder to take."
+   },
+   {
+    "line": 141,
+    "text": "Got it"
+   },
+   {
+    "line": 394,
+    "text": "Vector2"
+   }
+  ],
+  "CommandBar": [
+   {
+    "line": 21,
+    "text": "./UICtx"
+   },
+   {
+    "line": 22,
+    "text": "./UITheme"
+   },
+   {
+    "line": 116,
+    "text": "0.0% of the world"
+   },
+   {
+    "line": 195,
+    "text": "Sends 0 troops"
+   },
+   {
+    "line": 397,
+    "text": "888.8M at war"
+   },
+   {
+    "line": 522,
+    "text": "Tap a target, then ✓ to launch"
+   },
+   {
+    "line": 523,
+    "text": "Tap your land, then ✓ to build the %s"
+   },
+   {
+    "line": 525,
+    "text": "Tap water near your port, then ✓"
+   },
+   {
+    "line": 761,
+    "text": "%s of the world"
+   },
+   {
+    "line": 788,
+    "text": "%s at war"
+   },
+   {
+    "line": 829,
+    "text": "At war"
+   },
+   {
+    "line": 836,
+    "text": "Each order sends"
+   },
+   {
+    "line": 848,
+    "text": "Cities raise your troop cap. More land, more gold."
+   },
+   {
+    "line": 921,
+    "text": "Sends %s troops"
+   }
+  ],
+  "CountLabel": [
+   {
+    "line": 6,
+    "text": "./UITheme"
+   }
+  ],
+  "CrateButton": [
+   {
+    "line": 10,
+    "text": "./UITheme"
+   }
+  ],
+  "CrateOpening": [
+   {
+    "line": 26,
+    "text": "./UITheme"
+   },
+   {
+    "line": 286,
+    "text": "NEW!"
+   },
+   {
+    "line": 346,
+    "text": "TAP TO OPEN"
+   },
+   {
+    "line": 384,
+    "text": "WEAR IT"
+   },
+   {
+    "line": 391,
+    "text": "OPEN ANOTHER"
+   },
+   {
+    "line": 735,
+    "text": "A SKIN OR FLAG · NEVER A DUPLICATE"
+   },
+   {
+    "line": 761,
+    "text": "TAP TO OPEN"
+   },
+   {
+    "line": 761,
+    "text": "CLICK TO OPEN"
+   },
+   {
+    "line": 812,
+    "text": "The crate didn't open. It's saved: try again in a moment."
+   },
+   {
+    "line": 1049,
+    "text": "FLAG · SHOWN BY YOUR NAME"
+   },
+   {
+    "line": 1049,
+    "text": "TERRITORY SKIN"
+   },
+   {
+    "line": 1105,
+    "text": "WEAR IT"
+   },
+   {
+    "line": 1109,
+    "text": "OPEN NEXT (%d)"
+   },
+   {
+    "line": 1109,
+    "text": "OPEN NEXT"
+   },
+   {
+    "line": 1112,
+    "text": "ANOTHER · %d"
+   }
+  ],
+  "EventFeed": [
+   {
+    "line": 14,
+    "text": "./UITheme"
+   },
+   {
+    "line": 366,
+    "text": "proposes an alliance"
+   },
+   {
+    "line": 367,
+    "text": "wants an alliance"
+   },
+   {
+    "line": 388,
+    "text": "wants to renew your alliance"
+   },
+   {
+    "line": 388,
+    "text": "alliance is about to expire"
+   },
+   {
+    "line": 389,
+    "text": "wants to renew"
+   },
+   {
+    "line": 389,
+    "text": "alliance expiring"
+   }
+  ],
+  "FillBar": [
+   {
+    "line": 5,
+    "text": "./UITheme"
+   }
+  ],
+  "FlagShop": [
+   {
+    "line": 12,
+    "text": "./UITheme"
+   },
+   {
+    "line": 15,
+    "text": "./UICtx"
+   },
+   {
+    "line": 72,
+    "text": "%dd %dh"
+   },
+   {
+    "line": 143,
+    "text": "FLAG SHOP"
+   },
+   {
+    "line": 146,
+    "text": "New flags every day"
+   },
+   {
+    "line": 251,
+    "text": "Purchases aren't available right now."
+   },
+   {
+    "line": 273,
+    "text": "Purchases aren't available right now."
+   },
+   {
+    "line": 323,
+    "text": "All %d %s flags are yours."
+   },
+   {
+    "line": 329,
+    "text": "Your flag"
+   },
+   {
+    "line": 329,
+    "text": " is yours: you're wearing it now."
+   },
+   {
+    "line": 341,
+    "text": "Your flag is on its way: it shows up in a moment."
+   },
+   {
+    "line": 473,
+    "text": "ALL %d %s FLAGS"
+   },
+   {
+    "line": 484,
+    "text": "Save %d%%"
+   },
+   {
+    "line": 484,
+    "text": "One price"
+   },
+   {
+    "line": 485,
+    "text": "  ·  ones you own pay back Stars"
+   },
+   {
+    "line": 728,
+    "text": "  ·  LIMITED"
+   },
+   {
+    "line": 728,
+    "text": "ENDS IN "
+   },
+   {
+    "line": 739,
+    "text": "TODAY'S FLAGS"
+   },
+   {
+    "line": 739,
+    "text": "NEW IN "
+   }
+  ],
+  "FloatText": [
+   {
+    "line": 10,
+    "text": "./UITheme"
+   }
+  ],
+  "GameOver": [
+   {
+    "line": 17,
+    "text": "./UITheme"
+   },
+   {
+    "line": 20,
+    "text": "./UICtx"
+   },
+   {
+    "line": 22,
+    "text": "./UIRules"
+   },
+   {
+    "line": 80,
+    "text": "MATCH COMPLETE"
+   },
+   {
+    "line": 83,
+    "text": "GAME OVER"
+   },
+   {
+    "line": 153,
+    "text": "DON'T GIVE UP"
+   },
+   {
+    "line": 155,
+    "text": "TAKE OVER"
+   },
+   {
+    "line": 192,
+    "text": "TAKE OVER"
+   },
+   {
+    "line": 301,
+    "text": "PLAY AGAIN"
+   },
+   {
+    "line": 314,
+    "text": "Return to title"
+   },
+   {
+    "line": 374,
+    "text": "Stars earned"
+   },
+   {
+    "line": 375,
+    "text": "Stars unlock new weapons in the Arsenal."
+   },
+   {
+    "line": 377,
+    "text": "You have %s Stars"
+   },
+   {
+    "line": 532,
+    "text": "Peak land"
+   },
+   {
+    "line": 535,
+    "text": "Max troops"
+   },
+   {
+    "line": 542,
+    "text": "Nations eliminated"
+   },
+   {
+    "line": 550,
+    "text": "Match duration"
+   },
+   {
+    "line": 558,
+    "text": "Keep watching"
+   },
+   {
+    "line": 559,
+    "text": "Return to title"
+   },
+   {
+    "line": 608,
+    "text": "united states"
+   },
+   {
+    "line": 609,
+    "text": "dr congo"
+   },
+   {
+    "line": 610,
+    "text": "dominican rep."
+   },
+   {
+    "line": 669,
+    "text": "TAKE OVER "
+   },
+   {
+    "line": 672,
+    "text": "YOUR TAKEOVER IS SAVED"
+   },
+   {
+    "line": 672,
+    "text": "DON'T GIVE UP"
+   },
+   {
+    "line": 675,
+    "text": "Use it now: "
+   },
+   {
+    "line": 675,
+    "text": "'s land, army and gold become yours."
+   },
+   {
+    "line": 676,
+    "text": "'s land, army, gold and buildings become yours. Keep playing from where they stand."
+   },
+   {
+    "line": 678,
+    "text": "USE IT NOW"
+   },
+   {
+    "line": 678,
+    "text": "TAKE OVER"
+   },
+   {
+    "line": 699,
+    "text": "%s LAND  ·  %s TROOPS  ·  %s GOLD"
+   },
+   {
+    "line": 764,
+    "text": "DEPLOYING…"
+   },
+   {
+    "line": 764,
+    "text": "PLAY AGAIN"
+   },
+   {
+    "line": 784,
+    "text": "Current leader  ·  "
+   },
+   {
+    "line": 846,
+    "text": "MATCH COMPLETE"
+   },
+   {
+    "line": 846,
+    "text": "GAME OVER"
+   },
+   {
+    "line": 852,
+    "text": "Team "
+   },
+   {
+    "line": 852,
+    "text": "The "
+   },
+   {
+    "line": 854,
+    "text": "TIME LIMIT REACHED"
+   },
+   {
+    "line": 861,
+    "text": "Time! Your team holds the most land with %s."
+   },
+   {
+    "line": 862,
+    "text": "Your team won with %s of the land."
+   },
+   {
+    "line": 864,
+    "text": "MATCH OVER"
+   },
+   {
+    "line": 868,
+    "text": "Time! %s holds the most land with %s."
+   },
+   {
+    "line": 869,
+    "text": "%s won with %s of the land."
+   },
+   {
+    "line": 874,
+    "text": "YOUR NATION HAS FALLEN"
+   },
+   {
+    "line": 879,
+    "text": "Conquered by %s at %s."
+   },
+   {
+    "line": 880,
+    "text": "Your last territory fell at %s."
+   },
+   {
+    "line": 886,
+    "text": "TIME LIMIT REACHED"
+   },
+   {
+    "line": 887,
+    "text": "Time! You hold the most land with %s."
+   },
+   {
+    "line": 890,
+    "text": "You conquered the world with %s."
+   },
+   {
+    "line": 891,
+    "text": " of all land"
+   },
+   {
+    "line": 898,
+    "text": "TIME LIMIT REACHED"
+   },
+   {
+    "line": 899,
+    "text": "TIME'S UP"
+   },
+   {
+    "line": 900,
+    "text": "Time! %s holds the most land with %s."
+   },
+   {
+    "line": 903,
+    "text": "%s conquered the world (%s)."
+   },
+   {
+    "line": 906,
+    "text": "%s won the war with %s of the land."
+   },
+   {
+    "line": 910,
+    "text": "TIME LIMIT REACHED"
+   },
+   {
+    "line": 911,
+    "text": "TIME'S UP"
+   },
+   {
+    "line": 912,
+    "text": "Time! %s holds the most land with %s."
+   },
+   {
+    "line": 915,
+    "text": "%s conquered the world (%s)."
+   },
+   {
+    "line": 916,
+    "text": "%s won the war with %s of the land."
+   },
+   {
+    "line": 918,
+    "text": "MATCH OVER"
+   },
+   {
+    "line": 919,
+    "text": "Every commander has fallen. %s leads with %s."
+   },
+   {
+    "line": 921,
+    "text": "MATCH OVER"
+   },
+   {
+    "line": 922,
+    "text": "Every commander left the match. %s leads with %s."
+   },
+   {
+    "line": 924,
+    "text": "MATCH OVER"
+   },
+   {
+    "line": 925,
+    "text": "%s leads with %s."
+   },
+   {
+    "line": 948,
+    "text": "Next match in %s  ·  results close in %s"
+   },
+   {
+    "line": 954,
+    "text": "Next match in "
+   },
+   {
+    "line": 956,
+    "text": "Stay here for the next match, or return to the title."
+   }
+  ],
+  "GeneralButton": [
+   {
+    "line": 10,
+    "text": "./UITheme"
+   },
+   {
+    "line": 12,
+    "text": "./UICtx"
+   },
+   {
+    "line": 65,
+    "text": "A free crate every day"
+   },
+   {
+    "line": 66,
+    "text": "+%d%% Stars every match"
+   },
+   {
+    "line": 67,
+    "text": "A new skin every month"
+   },
+   {
+    "line": 314,
+    "text": "Your perks are on"
+   }
+  ],
+  "GeneralOffer": [
+   {
+    "line": 8,
+    "text": "./UITheme"
+   },
+   {
+    "line": 11,
+    "text": "./UICtx"
+   },
+   {
+    "line": 75,
+    "text": "MONTHLY SUBSCRIPTION"
+   },
+   {
+    "line": 99,
+    "text": "ROWORLD GENERAL"
+   },
+   {
+    "line": 101,
+    "text": "Every perk below, every month."
+   },
+   {
+    "line": 273,
+    "text": "A free crate every day"
+   },
+   {
+    "line": 274,
+    "text": "Play on any day to get it. Never a duplicate."
+   },
+   {
+    "line": 276,
+    "text": "%s Stars every day"
+   },
+   {
+    "line": 277,
+    "text": "Play on any day to get them."
+   },
+   {
+    "line": 280,
+    "text": "+%d%% Stars every match"
+   },
+   {
+    "line": 282,
+    "text": "On top of 2x Stars."
+   },
+   {
+    "line": 284,
+    "text": "This month's General skin"
+   },
+   {
+    "line": 286,
+    "text": "A new one every month, yours to keep."
+   },
+   {
+    "line": 295,
+    "text": " / month"
+   },
+   {
+    "line": 296,
+    "text": "%d Robux / month"
+   },
+   {
+    "line": 300,
+    "text": "YOU'RE A GENERAL"
+   },
+   {
+    "line": 302,
+    "text": "Thank you! It renews every month. Cancel any time in Roblox's settings."
+   },
+   {
+    "line": 304,
+    "text": "WAITING FOR ROBLOX…"
+   },
+   {
+    "line": 310,
+    "text": "Renews every month. Cancel any time in Roblox's settings."
+   },
+   {
+    "line": 329,
+    "text": "Subscriptions aren't available right now."
+   }
+  ],
+  "GlassPanel": [
+   {
+    "line": 11,
+    "text": "./UITheme"
+   }
+  ],
+  "GlobeNotice": [
+   {
+    "line": 12,
+    "text": "./UITheme"
+   },
+   {
+    "line": 15,
+    "text": "./UICtx"
+   },
+   {
+    "line": 19,
+    "text": "Territory map unavailable"
+   },
+   {
+    "line": 21,
+    "text": "This device is out of graphics memory for territory colours, so nations' land isn't coloured. You can keep playing: the map comes back as soon as memory frees up."
+   },
+   {
+    "line": 22,
+    "text": "Territory rendering is unavailable on this server, so nations' land isn't coloured. You can keep playing; everything else works."
+   },
+   {
+    "line": 23,
+    "text": "The globe's map data didn't load, so nations' land isn't coloured. You can keep playing; everything else works."
+   },
+   {
+    "line": 27,
+    "text": "Out of graphics memory for territory colours. Keep playing: the map returns when memory frees up."
+   },
+   {
+    "line": 28,
+    "text": "Territory colours can't be drawn on this server. Everything else works."
+   },
+   {
+    "line": 29,
+    "text": "Map data didn't load, so territory colours can't be drawn. Everything else works."
+   },
+   {
+    "line": 32,
+    "text": "Owner: enable \\u{201C}Mesh / Image APIs\\u{201D} for this experience (Game Settings \\u{203A} Security)."
+   },
+   {
+    "line": 33,
+    "text": "Owner: other Studio windows share this device's editable memory; close some to test."
+   }
+  ],
+  "HelpOverlay": [
+   {
+    "line": 9,
+    "text": "./UITheme"
+   },
+   {
+    "line": 12,
+    "text": "./UICtx"
+   },
+   {
+    "line": 13,
+    "text": "./UIRules"
+   },
+   {
+    "line": 200,
+    "text": "WARSHIP_RETREAT_FRAC"
+   },
+   {
+    "line": 202,
+    "text": "DEFENSE_POST_SHOOTS"
+   },
+   {
+    "line": 203,
+    "text": " Defense Posts also fire on enemy boats in range."
+   },
+   {
+    "line": 213,
+    "text": "Pick your start"
+   },
+   {
+    "line": 214,
+    "text": "Click any unclaimed land to place your capital. Solo games deploy 5 seconds after you choose; until then you can move it."
+   },
+   {
+    "line": 219,
+    "text": "Expand & attack"
+   },
+   {
+    "line": 220,
+    "text": "Click neutral land beside you to expand, or a nation you border to attack it. The Attack bar sets the share of troops you send (Q / E, or Shift + wheel). Troops regrow on their own, fastest well below your cap."
+   },
+   {
+    "line": 226,
+    "text": "Click a coast you can't reach by land and a transport sails from your nearest shore, landing troops for a beachhead. Warships (built from a Port) patrol where you send them: they hit transports first, then warships, then trade ships, which they capture for gold. Below {ws_retreat}% health a warship returns to port and heals near your ports; kills earn it veterancy. Click one of yours, then the sea, to move it.{post_shoot}"
+   },
+   {
+    "line": 231,
+    "text": "Alliances & betrayal"
+   },
+   {
+    "line": 232,
+    "text": "Right-click a nation to propose an alliance. Allies can't attack each other and can donate troops. Breaking an alliance brands you a Traitor for {traitor_s} s: everyone knows, and attacks against you cost only {traitor_def}% of the troops and land faster."
+   },
+   {
+    "line": 237,
+    "text": "Build your economy"
+   },
+   {
+    "line": 240,
+    "text": "Gold flows from your land, factories and trade. Structures get pricier the more you own and need room ({spacing} tiles apart); place them on your own land with the command bar (1 – 7) or the action menu. Land near a Defense Post costs attackers {def_mag}× the troops and {def_cost}× the time."
+   },
+   {
+    "line": 245,
+    "text": "Nukes & SAMs"
+   },
+   {
+    "line": 246,
+    "text": "A Missile Silo lets you launch Atom bombs, Hydrogen bombs and MIRVs. Blasts erase troops and structures and leave fallout: land that stays poisoned until someone re-conquers it, slowly and at a high cost. SAM Launchers shoot down bombs aimed inside their range ({sam_r} tiles); MIRV warheads can't be stopped."
+   },
+   {
+    "line": 251,
+    "text": "Win at 80%"
+   },
+   {
+    "line": 252,
+    "text": "Hold {win}% of the world's land to win (fallout doesn't count). Multiplayer matches end after 40 minutes and the largest nation wins. Lose all your land and you're out."
+   },
+   {
+    "line": 261,
+    "text": "RoWorld is a modified version of OpenFront. © OpenFront and Contributors. Changes © 2026 Snick Co."
+   },
+   {
+    "line": 262,
+    "text": "RoWorld is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License, version 3, with the additional terms in its LICENSE file. It comes with ABSOLUTELY NO WARRANTY. The licence comes with RoWorld's source code."
+   },
+   {
+    "line": 263,
+    "text": "Maps made with Natural Earth and NOAA ETOPO1 data (public domain). Country flags from Wikimedia Commons (public domain). Music by Rodrigo Flores."
+   },
+   {
+    "line": 264,
+    "text": "RoWorld is not affiliated with or endorsed by OpenFront."
+   },
+   {
+    "line": 272,
+    "text": "Source code"
+   },
+   {
+    "line": 273,
+    "text": "Source available on the github website under "
+   },
+   {
+    "line": 280,
+    "text": "Expand, attack or send a boat"
+   },
+   {
+    "line": 281,
+    "text": "Right-click"
+   },
+   {
+    "line": 281,
+    "text": "Action menu"
+   },
+   {
+    "line": 282,
+    "text": "Rotate the globe"
+   },
+   {
+    "line": 283,
+    "text": "WASD / Arrows"
+   },
+   {
+    "line": 283,
+    "text": "Pan the globe"
+   },
+   {
+    "line": 284,
+    "text": "Wheel / + −"
+   },
+   {
+    "line": 285,
+    "text": "Build & nukes"
+   },
+   {
+    "line": 286,
+    "text": "Attack share −/+"
+   },
+   {
+    "line": 287,
+    "text": "Attack at cursor"
+   },
+   {
+    "line": 288,
+    "text": "Retreat your latest attack"
+   },
+   {
+    "line": 289,
+    "text": "X / Right-click"
+   },
+   {
+    "line": 290,
+    "text": "This help"
+   },
+   {
+    "line": 293,
+    "text": "Center on your nation"
+   },
+   {
+    "line": 294,
+    "text": "Click a warship"
+   },
+   {
+    "line": 294,
+    "text": "Then click the sea to move it"
+   },
+   {
+    "line": 297,
+    "text": "Expand, attack or send a boat"
+   },
+   {
+    "line": 298,
+    "text": "Long-press"
+   },
+   {
+    "line": 298,
+    "text": "Action menu"
+   },
+   {
+    "line": 299,
+    "text": "Rotate the globe"
+   },
+   {
+    "line": 301,
+    "text": "Tap a slot"
+   },
+   {
+    "line": 301,
+    "text": "Tap the globe, then ✓"
+   },
+   {
+    "line": 302,
+    "text": "Tap your land"
+   },
+   {
+    "line": 303,
+    "text": "Tap a warship"
+   },
+   {
+    "line": 303,
+    "text": "Then tap the sea to move it"
+   },
+   {
+    "line": 304,
+    "text": "Tap an ally"
+   },
+   {
+    "line": 304,
+    "text": "Donate or break the alliance"
+   },
+   {
+    "line": 387,
+    "text": "HOW TO PLAY"
+   },
+   {
+    "line": 391,
+    "text": "Conquer the real world in seven ideas."
+   },
+   {
+    "line": 391,
+    "text": "  ·  Game paused"
+   },
+   {
+    "line": 479,
+    "text": "Right%-click"
+   },
+   {
+    "line": 479,
+    "text": "Long-press"
+   },
+   {
+    "line": 480,
+    "text": " %(Q / E, or Shift %+ wheel%)"
+   },
+   {
+    "line": 480,
+    "text": " with the command bar %(1 – 7%)"
+   },
+   {
+    "line": 480,
+    "text": " with BUILD"
+   },
+   {
+    "line": 563,
+    "text": "Mouse & keyboard"
+   },
+   {
+    "line": 572,
+    "text": "CREDITS & LICENCE"
+   }
+  ],
+  "HoldRing": [
+   {
+    "line": 5,
+    "text": "./UICtx"
+   }
+  ],
+  "Leaderboard": [
+   {
+    "line": 19,
+    "text": "./UITheme"
+   },
+   {
+    "line": 563,
+    "text": "+%d more %s"
+   },
+   {
+    "line": 566,
+    "text": "%d humans"
+   },
+   {
+    "line": 566,
+    "text": "%d alive"
+   }
+  ],
+  "Locker": [
+   {
+    "line": 17,
+    "text": "./UITheme"
+   },
+   {
+    "line": 21,
+    "text": "./UICtx"
+   },
+   {
+    "line": 271,
+    "text": "Flags: Wikimedia Commons (public domain)"
+   },
+   {
+    "line": 334,
+    "text": "COSMETIC CRATE"
+   },
+   {
+    "line": 337,
+    "text": "A territory skin or a flag you don't own yet"
+   },
+   {
+    "line": 442,
+    "text": "%d of %d unlocked"
+   },
+   {
+    "line": 446,
+    "text": "all owned"
+   },
+   {
+    "line": 462,
+    "text": "%d  ·  %d CRATES"
+   },
+   {
+    "line": 466,
+    "text": "%d  ·  %d CRATES"
+   },
+   {
+    "line": 473,
+    "text": "OPENING…"
+   },
+   {
+    "line": 476,
+    "text": "OPEN CRATE (%d)"
+   },
+   {
+    "line": 476,
+    "text": "OPEN CRATE"
+   },
+   {
+    "line": 482,
+    "text": "Crates aren't available in your country. What you own stays yours."
+   },
+   {
+    "line": 484,
+    "text": "You own every skin and flag."
+   },
+   {
+    "line": 486,
+    "text": "Your first crate: %d instead of %d"
+   },
+   {
+    "line": 491,
+    "text": "%d crates save %d"
+   },
+   {
+    "line": 492,
+    "text": "%d crates save %d  ·  Never a duplicate"
+   },
+   {
+    "line": 495,
+    "text": "Never a duplicate"
+   },
+   {
+    "line": 534,
+    "text": "Purchases aren't available right now."
+   },
+   {
+    "line": 548,
+    "text": "Couldn't reach the server. Try again in a moment."
+   },
+   {
+    "line": 550,
+    "text": "Couldn't reach the server. Try again in a moment."
+   },
+   {
+    "line": 666,
+    "text": "everything owned"
+   },
+   {
+    "line": 667,
+    "text": "You own every skin and flag already."
+   },
+   {
+    "line": 668,
+    "text": "Couldn't open the crate right now. It's saved: try again."
+   },
+   {
+    "line": 679,
+    "text": "Your crate is saved: open it in a moment."
+   }
+  ],
+  "MapPicker": [
+   {
+    "line": 9,
+    "text": "./UITheme"
+   },
+   {
+    "line": 12,
+    "text": "./UICtx"
+   },
+   {
+    "line": 24,
+    "text": "Africa · Oceania"
+   },
+   {
+    "line": 29,
+    "text": "Made with Natural Earth and NOAA ETOPO1 data (public domain)"
+   },
+   {
+    "line": 60,
+    "text": "CHOOSE A MAP"
+   }
+  ],
+  "PartyPanel": [
+   {
+    "line": 11,
+    "text": "./UITheme"
+   },
+   {
+    "line": 111,
+    "text": "INVITE TO PARTY"
+   },
+   {
+    "line": 125,
+    "text": "INVITE ROBLOX FRIENDS"
+   },
+   {
+    "line": 135,
+    "text": "Friends who accept join you on this server."
+   },
+   {
+    "line": 139,
+    "text": "On this server"
+   },
+   {
+    "line": 141,
+    "text": "Nobody else is on this server yet."
+   },
+   {
+    "line": 221,
+    "text": "  (you)"
+   },
+   {
+    "line": 243,
+    "text": " invited you"
+   },
+   {
+    "line": 273,
+    "text": "Play public matches with friends: in a team game you're on the same team."
+   },
+   {
+    "line": 274,
+    "text": "You pick the match. Your party comes with you."
+   },
+   {
+    "line": 275,
+    "text": "Your party leader picks the match."
+   },
+   {
+    "line": 277,
+    "text": "PARTY  %d"
+   },
+   {
+    "line": 277,
+    "text": "PARTY  •"
+   },
+   {
+    "line": 339,
+    "text": "  · friend"
+   }
+  ],
+  "PauseMenu": [
+   {
+    "line": 11,
+    "text": "./UITheme"
+   },
+   {
+    "line": 14,
+    "text": "./UICtx"
+   },
+   {
+    "line": 392,
+    "text": "GAME MENU"
+   },
+   {
+    "line": 415,
+    "text": "How to play"
+   },
+   {
+    "line": 436,
+    "text": "Territory labels"
+   },
+   {
+    "line": 465,
+    "text": "Border pop sound"
+   },
+   {
+    "line": 469,
+    "text": "Select before attacking"
+   },
+   {
+    "line": 473,
+    "text": "Show tips again"
+   },
+   {
+    "line": 478,
+    "text": "Tips will show again"
+   },
+   {
+    "line": 484,
+    "text": "Replay as new player"
+   },
+   {
+    "line": 492,
+    "text": "Restart match"
+   },
+   {
+    "line": 499,
+    "text": "LEAVE MATCH"
+   },
+   {
+    "line": 540,
+    "text": "Restart with a fresh world? This match will be lost."
+   },
+   {
+    "line": 552,
+    "text": "Play as a new player again? Your match count and the tutorial start over"
+   },
+   {
+    "line": 553,
+    "text": ", and this match ends."
+   },
+   {
+    "line": 554,
+    "text": " What you own stays."
+   },
+   {
+    "line": 577,
+    "text": "Surrender and return to the title screen? "
+   },
+   {
+    "line": 578,
+    "text": "Your nation stays on the map without a commander."
+   },
+   {
+    "line": 578,
+    "text": "This campaign will end."
+   },
+   {
+    "line": 581,
+    "text": "Return to the title screen?"
+   },
+   {
+    "line": 621,
+    "text": "Waiting for the next multiplayer match"
+   },
+   {
+    "line": 621,
+    "text": "Main menu"
+   },
+   {
+    "line": 623,
+    "text": "Multiplayer match"
+   },
+   {
+    "line": 623,
+    "text": "Solo match · %s · paused"
+   },
+   {
+    "line": 628,
+    "text": "Show tips again"
+   },
+   {
+    "line": 635,
+    "text": "LEAVE QUEUE"
+   },
+   {
+    "line": 637,
+    "text": "LEAVE MATCH"
+   },
+   {
+    "line": 684,
+    "text": "GAME MENU"
+   },
+   {
+    "line": 685,
+    "text": "Saved for next time"
+   }
+  ],
+  "PlaceConfirm": [
+   {
+    "line": 7,
+    "text": "./UITheme"
+   },
+   {
+    "line": 10,
+    "text": "./UICtx"
+   }
+  ],
+  "Prices": [
+   {
+    "line": 13,
+    "text": "./UITheme"
+   }
+  ],
+  "RadialMenu": [
+   {
+    "line": 12,
+    "text": "./UICtx"
+   },
+   {
+    "line": 684,
+    "text": " gold"
+   },
+   {
+    "line": 689,
+    "text": "%s troops (fills their cap)"
+   },
+   {
+    "line": 691,
+    "text": "%s troops (%d%%)"
+   },
+   {
+    "line": 697,
+    "text": "%s troops (%d%%)"
+   }
+  ],
+  "RatioSlider": [
+   {
+    "line": 17,
+    "text": "./UICtx"
+   },
+   {
+    "line": 18,
+    "text": "./UITheme"
+   }
+  ],
+  "RotateCard": [
+   {
+    "line": 6,
+    "text": "./UITheme"
+   },
+   {
+    "line": 33,
+    "text": "ROTATE YOUR PHONE"
+   },
+   {
+    "line": 37,
+    "text": "RoWorld is played in landscape.\\nTurn your device sideways to continue."
+   }
+  ],
+  "ShopButton": [
+   {
+    "line": 8,
+    "text": "./UITheme"
+   },
+   {
+    "line": 120,
+    "text": "FLAG SHOP"
+   },
+   {
+    "line": 127,
+    "text": "NEW FLAGS DAILY"
+   },
+   {
+    "line": 135,
+    "text": "NEW IN 0:00:00"
+   },
+   {
+    "line": 229,
+    "text": " FLAGS"
+   },
+   {
+    "line": 229,
+    "text": "NEW FLAGS DAILY"
+   },
+   {
+    "line": 256,
+    "text": "NEW IN "
+   }
+  ],
+  "ShopSlot": [
+   {
+    "line": 16,
+    "text": "./UITheme"
+   }
+  ],
+  "SpawnOverlay": [
+   {
+    "line": 11,
+    "text": "./UITheme"
+   },
+   {
+    "line": 14,
+    "text": "./UICtx"
+   },
+   {
+    "line": 99,
+    "text": "CHOOSE YOUR STARTING LOCATION"
+   },
+   {
+    "line": 101,
+    "text": "Click any unclaimed land to place your capital."
+   },
+   {
+    "line": 214,
+    "text": "COMMANDERS ARE DEPLOYING"
+   },
+   {
+    "line": 215,
+    "text": "You are spectating this match."
+   },
+   {
+    "line": 217,
+    "text": "DROP INTO THE WAR"
+   },
+   {
+    "line": 218,
+    "text": " any unclaimed land to deploy your capital."
+   },
+   {
+    "line": 220,
+    "text": "DEPLOYING IN %d"
+   },
+   {
+    "line": 221,
+    "text": " elsewhere to relocate your capital."
+   },
+   {
+    "line": 223,
+    "text": "CAPITAL PLACED"
+   },
+   {
+    "line": 224,
+    "text": " elsewhere to relocate until the countdown ends."
+   },
+   {
+    "line": 226,
+    "text": "CHOOSE YOUR STARTING LOCATION"
+   },
+   {
+    "line": 229,
+    "text": "Click any unclaimed land to place your capital."
+   },
+   {
+    "line": 230,
+    "text": "Tap any unclaimed land to place your capital."
+   },
+   {
+    "line": 257,
+    "text": "%d / %d commanders placed"
+   },
+   {
+    "line": 260,
+    "text": "%d / %d placed"
+   }
+  ],
+  "StarterButton": [
+   {
+    "line": 8,
+    "text": "./UITheme"
+   },
+   {
+    "line": 140,
+    "text": "STARTER PACK"
+   },
+   {
+    "line": 194,
+    "text": "ENDS IN 48:00:00"
+   },
+   {
+    "line": 328,
+    "text": "ENDS IN "
+   }
+  ],
+  "StarterOffer": [
+   {
+    "line": 17,
+    "text": "./UITheme"
+   },
+   {
+    "line": 205,
+    "text": "LIMITED-TIME OFFER"
+   },
+   {
+    "line": 213,
+    "text": "STARTER PACK"
+   },
+   {
+    "line": 223,
+    "text": "Three Arsenal unlocks, yours for good."
+   },
+   {
+    "line": 350,
+    "text": "ENDS  IN"
+   },
+   {
+    "line": 369,
+    "text": "Then it's gone for good."
+   },
+   {
+    "line": 394,
+    "text": "BUY NOW"
+   },
+   {
+    "line": 431,
+    "text": "NOT NOW"
+   },
+   {
+    "line": 472,
+    "text": "Item_"
+   },
+   {
+    "line": 627,
+    "text": "Owned already: you get its price in Stars"
+   },
+   {
+    "line": 633,
+    "text": "BUY NOW"
+   },
+   {
+    "line": 633,
+    "text": "UNLOCKING…"
+   },
+   {
+    "line": 710,
+    "text": "Starter Pack unlocked! Mega Nuke, Scattershot and 2x Stars are yours."
+   },
+   {
+    "line": 755,
+    "text": "Your Starter Pack is saved and will unlock in a moment."
+   }
+  ],
+  "Takeover": [
+   {
+    "line": 11,
+    "text": "./UICtx"
+   },
+   {
+    "line": 157,
+    "text": "Purchases aren't available right now."
+   },
+   {
+    "line": 175,
+    "text": "Couldn't reach the server. Try again in a moment."
+   },
+   {
+    "line": 228,
+    "text": "That nation has fallen, so the takeover couldn't happen."
+   },
+   {
+    "line": 230,
+    "text": "That nation has fallen. Your takeover is still saved."
+   },
+   {
+    "line": 232,
+    "text": "Couldn't use your takeover right now. It's still saved."
+   },
+   {
+    "line": 247,
+    "text": "Your takeover is saved. Use it the next time a nation conquers you."
+   }
+  ],
+  "TargetCard": [
+   {
+    "line": 9,
+    "text": "./UITheme"
+   },
+   {
+    "line": 12,
+    "text": "./UICtx"
+   },
+   {
+    "line": 129,
+    "text": "Break only"
+   },
+   {
+    "line": 136,
+    "text": "Keep ally"
+   },
+   {
+    "line": 183,
+    "text": "Troops "
+   },
+   {
+    "line": 184,
+    "text": "Land "
+   },
+   {
+    "line": 189,
+    "text": "They outnumber the %s troops you would send"
+   },
+   {
+    "line": 193,
+    "text": "You would send %s troops"
+   },
+   {
+    "line": 201,
+    "text": "Unclaimed land"
+   },
+   {
+    "line": 203,
+    "text": "  ·  across the sea"
+   },
+   {
+    "line": 207,
+    "text": "A transport lands %s troops here"
+   },
+   {
+    "line": 218,
+    "text": "Your teammate"
+   },
+   {
+    "line": 218,
+    "text": "Your ally"
+   },
+   {
+    "line": 222,
+    "text": "%s · %s troops · room for %s"
+   },
+   {
+    "line": 228,
+    "text": "%s · %s troops · %s land"
+   },
+   {
+    "line": 241,
+    "text": "%s · %s troops · %s land"
+   },
+   {
+    "line": 250,
+    "text": "%s · across the sea · lands %s troops"
+   },
+   {
+    "line": 280,
+    "text": "At troop cap"
+   },
+   {
+    "line": 280,
+    "text": "Donate "
+   },
+   {
+    "line": 282,
+    "text": "Break alliance"
+   },
+   {
+    "line": 332,
+    "text": "Break the alliance with %s? For %d s you are a TRAITOR: every nation sees it and attacks on you cost only %d%% of the troops."
+   },
+   {
+    "line": 342,
+    "text": "Betray & attack · "
+   }
+  ],
+  "Telemetry": [
+   {
+    "line": 19,
+    "text": "./UITheme"
+   },
+   {
+    "line": 258,
+    "text": "Choosing spawn"
+   },
+   {
+    "line": 261,
+    "text": "Not spawned"
+   },
+   {
+    "line": 265,
+    "text": "Under attack"
+   },
+   {
+    "line": 270,
+    "text": "Losing land"
+   },
+   {
+    "line": 285,
+    "text": "Top 3"
+   },
+   {
+    "line": 285,
+    "text": "Top 10"
+   },
+   {
+    "line": 288,
+    "text": "No land"
+   }
+  ],
+  "TitleScreen": [
+   {
+    "line": 11,
+    "text": "./UITheme"
+   },
+   {
+    "line": 14,
+    "text": "./UIMaps"
+   },
+   {
+    "line": 15,
+    "text": "./UICtx"
+   },
+   {
+    "line": 40,
+    "text": "© OpenFront and Contributors  ·  Music by Rodrigo Flores  ·  "
+   },
+   {
+    "line": 41,
+    "text": "GNU AGPL v3, no warranty: See Help & Credits"
+   },
+   {
+    "line": 42,
+    "text": "© OpenFront and Contributors  ·  Music: Rodrigo Flores  ·  GNU AGPL v3"
+   },
+   {
+    "line": 290,
+    "text": "Gentle AI: slower growth and a long early peace."
+   },
+   {
+    "line": 291,
+    "text": "A fair fight: nations respect a short early peace."
+   },
+   {
+    "line": 292,
+    "text": "Aggressive AI that grows fast and hunts you early."
+   },
+   {
+    "line": 507,
+    "text": "CONQUER THE REAL WORLD"
+   },
+   {
+    "line": 524,
+    "text": "PLAY SOLO"
+   },
+   {
+    "line": 575,
+    "text": "Public matches"
+   },
+   {
+    "line": 608,
+    "text": "HOW TO PLAY"
+   },
+   {
+    "line": 630,
+    "text": "Map:  "
+   },
+   {
+    "line": 686,
+    "text": "PUBLIC MATCH"
+   },
+   {
+    "line": 697,
+    "text": "Connecting…"
+   },
+   {
+    "line": 775,
+    "text": "JOINING MULTIPLAYER"
+   },
+   {
+    "line": 779,
+    "text": "Contacting the server…"
+   },
+   {
+    "line": 785,
+    "text": "Vote to start"
+   },
+   {
+    "line": 792,
+    "text": "Leave queue"
+   },
+   {
+    "line": 1027,
+    "text": "Welcome, "
+   },
+   {
+    "line": 1027,
+    "text": "Welcome, "
+   },
+   {
+    "line": 1031,
+    "text": "  ·  Admin"
+   },
+   {
+    "line": 1049,
+    "text": "AF_PHONE_DOCK"
+   },
+   {
+    "line": 1164,
+    "text": "PLAY SOLO"
+   },
+   {
+    "line": 1224,
+    "text": "  Nations leave you alone for "
+   },
+   {
+    "line": 1288,
+    "text": "DEPLOYING…"
+   },
+   {
+    "line": 1422,
+    "text": "TEAM GAME"
+   },
+   {
+    "line": 1424,
+    "text": "PUBLIC MATCH"
+   },
+   {
+    "line": 1435,
+    "text": "TEAM GAME"
+   },
+   {
+    "line": 1435,
+    "text": "PUBLIC MATCH"
+   },
+   {
+    "line": 1441,
+    "text": "%d Teams"
+   },
+   {
+    "line": 1442,
+    "text": "Humans Vs Nations"
+   },
+   {
+    "line": 1442,
+    "text": "H vs N"
+   },
+   {
+    "line": 1449,
+    "text": "In line  ·  "
+   },
+   {
+    "line": 1449,
+    "text": "Waiting for a free seat  ·  "
+   },
+   {
+    "line": 1451,
+    "text": "Joining…"
+   },
+   {
+    "line": 1451,
+    "text": "Finding a seat…"
+   },
+   {
+    "line": 1454,
+    "text": "%d / %d players"
+   },
+   {
+    "line": 1462,
+    "text": "%s  ·  starts in %s"
+   },
+   {
+    "line": 1464,
+    "text": "Next: "
+   },
+   {
+    "line": 1468,
+    "text": "Next match soon"
+   },
+   {
+    "line": 1468,
+    "text": "Next match opening soon"
+   },
+   {
+    "line": 1472,
+    "text": "In line  ·  "
+   },
+   {
+    "line": 1472,
+    "text": "  ·  tap to cancel"
+   },
+   {
+    "line": 1482,
+    "text": "JOIN TEAMS"
+   },
+   {
+    "line": 1515,
+    "text": "Connecting…"
+   },
+   {
+    "line": 1515,
+    "text": "Connecting to server…"
+   },
+   {
+    "line": 1519,
+    "text": "Offline  ·  play solo for now"
+   },
+   {
+    "line": 1526,
+    "text": "Next in "
+   },
+   {
+    "line": 1526,
+    "text": "Next match in %s  ·  %d queued"
+   },
+   {
+    "line": 1532,
+    "text": "%d online  ·  %s"
+   },
+   {
+    "line": 1534,
+    "text": "%d commander%s  ·  in progress %s"
+   },
+   {
+    "line": 1541,
+    "text": "Match ending  ·  next one soon"
+   },
+   {
+    "line": 1545,
+    "text": "Server online  ·  start a new match"
+   },
+   {
+    "line": 1571,
+    "text": "PUBLIC MATCH"
+   },
+   {
+    "line": 1572,
+    "text": "TEAM GAME  ·  %d TEAMS"
+   },
+   {
+    "line": 1573,
+    "text": "TEAM GAME  ·  "
+   },
+   {
+    "line": 1581,
+    "text": "Voted to start  ·  starting in "
+   },
+   {
+    "line": 1581,
+    "text": "Match starts in "
+   },
+   {
+    "line": 1585,
+    "text": "Joining the match…"
+   },
+   {
+    "line": 1587,
+    "text": "Getting the match ready…"
+   },
+   {
+    "line": 1593,
+    "text": "%d / %d players"
+   },
+   {
+    "line": 1593,
+    "text": "%d players"
+   },
+   {
+    "line": 1595,
+    "text": "Leave match"
+   },
+   {
+    "line": 1610,
+    "text": "Starting…"
+   },
+   {
+    "line": 1611,
+    "text": "Vote to start in "
+   },
+   {
+    "line": 1612,
+    "text": "Vote to start needs %d players"
+   },
+   {
+    "line": 1613,
+    "text": "Voted  ·  "
+   },
+   {
+    "line": 1613,
+    "text": "  (tap to undo)"
+   },
+   {
+    "line": 1614,
+    "text": "Vote to start  ·  "
+   },
+   {
+    "line": 1620,
+    "text": "JOINING MULTIPLAYER"
+   },
+   {
+    "line": 1621,
+    "text": "Leave queue"
+   },
+   {
+    "line": 1623,
+    "text": "Match starts in "
+   },
+   {
+    "line": 1625,
+    "text": "Joining the match in progress…"
+   },
+   {
+    "line": 1627,
+    "text": "Previous match wrapping up…"
+   },
+   {
+    "line": 1629,
+    "text": "Contacting the server…"
+   },
+   {
+    "line": 1636,
+    "text": "Commanders: "
+   },
+   {
+    "line": 1636,
+    "text": "You are the first commander here."
+   }
+  ],
+  "Tooltip": [
+   {
+    "line": 9,
+    "text": "./UITheme"
+   },
+   {
+    "line": 12,
+    "text": "./UICtx"
+   }
+  ],
+  "TopStatus": [
+   {
+    "line": 11,
+    "text": "./UITheme"
+   },
+   {
+    "line": 59,
+    "text": "Match time"
+   },
+   {
+    "line": 88,
+    "text": "World control"
+   },
+   {
+    "line": 90,
+    "text": "Goal 80%"
+   },
+   {
+    "line": 100,
+    "text": "You 0.0%"
+   },
+   {
+    "line": 247,
+    "text": "SPAWN PHASE"
+   },
+   {
+    "line": 247,
+    "text": "PROTECTED 8:88"
+   },
+   {
+    "line": 256,
+    "text": "You lead · 88.88%"
+   },
+   {
+    "line": 317,
+    "text": "SPAWN PHASE"
+   },
+   {
+    "line": 329,
+    "text": "TIME LEFT"
+   },
+   {
+    "line": 337,
+    "text": "MATCH TIME"
+   },
+   {
+    "line": 342,
+    "text": "MATCH OVER"
+   },
+   {
+    "line": 368,
+    "text": "You "
+   },
+   {
+    "line": 386,
+    "text": "You lead · "
+   },
+   {
+    "line": 405,
+    "text": "You lead · "
+   },
+   {
+    "line": 406,
+    "text": "You "
+   },
+   {
+    "line": 441,
+    "text": "Your team: "
+   },
+   {
+    "line": 449,
+    "text": "Your team leads · "
+   }
+  ],
+  "TouchRouter": [
+   {
+    "line": 12,
+    "text": "./UICtx"
+   }
+  ],
+  "Tutorial": [
+   {
+    "line": 23,
+    "text": "./UITheme"
+   },
+   {
+    "line": 26,
+    "text": "./UICtx"
+   },
+   {
+    "line": 71,
+    "text": "Tap here"
+   },
+   {
+    "line": 179,
+    "text": "Tutorial complete! +%s Stars\\nSpend them in the ARSENAL"
+   },
+   {
+    "line": 324,
+    "text": "Nice!"
+   },
+   {
+    "line": 558,
+    "text": "Keep growing until you meet a neighbour"
+   },
+   {
+    "line": 558,
+    "text": "Keep growing until you meet a neighbour"
+   },
+   {
+    "line": 644,
+    "text": "Tap here"
+   },
+   {
+    "line": 644,
+    "text": "Click here"
+   }
+  ],
+  "UIAdvisor": [
+   {
+    "line": 6,
+    "text": "./UICtx"
+   },
+   {
+    "line": 121,
+    "text": "%s (%s troops) borders you with %d× your army. Fortify or find allies."
+   },
+   {
+    "line": 249,
+    "text": "did not answer"
+   },
+   {
+    "line": 252,
+    "text": "is attacking you!"
+   },
+   {
+    "line": 252,
+    "text": "is attacking you!"
+   },
+   {
+    "line": 256,
+    "text": "you are now allied with"
+   },
+   {
+    "line": 256,
+    "text": "you are now allied with"
+   },
+   {
+    "line": 257,
+    "text": "betrayed your alliance"
+   },
+   {
+    "line": 258,
+    "text": "you broke your alliance"
+   },
+   {
+    "line": 258,
+    "text": "you broke your alliance"
+   },
+   {
+    "line": 536,
+    "text": "Your SAM shot down %s's %s"
+   },
+   {
+    "line": 542,
+    "text": "%s's SAM intercepted your %s"
+   },
+   {
+    "line": 582,
+    "text": "Your SAMs shot down %d of %d warheads from %s"
+   },
+   {
+    "line": 592,
+    "text": "SAMs shot down %d of your %d warheads"
+   },
+   {
+    "line": 618,
+    "text": "%s (%s) is attacking you!"
+   },
+   {
+    "line": 666,
+    "text": "Alliance formed with "
+   },
+   {
+    "line": 672,
+    "text": "You broke your alliance with %s. For %d s you are a Traitor: attacks on you cost half the troops."
+   },
+   {
+    "line": 680,
+    "text": " betrayed you!"
+   },
+   {
+    "line": 683,
+    "text": "Your alliance with "
+   },
+   {
+    "line": 683,
+    "text": " has ended"
+   },
+   {
+    "line": 695,
+    "text": "sank your"
+   },
+   {
+    "line": 695,
+    "text": "your transport was sunk"
+   },
+   {
+    "line": 695,
+    "text": "your warship was sunk"
+   },
+   {
+    "line": 698,
+    "text": "you sank"
+   },
+   {
+    "line": 698,
+    "text": "your warship sank"
+   },
+   {
+    "line": 701,
+    "text": "captured a trade ship"
+   },
+   {
+    "line": 704,
+    "text": "trade ship"
+   },
+   {
+    "line": 749,
+    "text": "Your warship is returning to port for repairs"
+   },
+   {
+    "line": 755,
+    "text": "Your warship reached veterancy %d"
+   },
+   {
+    "line": 898,
+    "text": "THE WAR BEGINS"
+   },
+   {
+    "line": 898,
+    "text": "Expand, build and outlast 88 nations"
+   },
+   {
+    "line": 912,
+    "text": "AF_YIELD_YOU"
+   }
+  ],
+  "UICtx": [
+   {
+    "line": 242,
+    "text": "Color3"
+   },
+   {
+    "line": 834,
+    "text": "AF_Admin"
+   },
+   {
+    "line": 1061,
+    "text": "Vector2"
+   },
+   {
+    "line": 1363,
+    "text": "Team "
+   },
+   {
+    "line": 1366,
+    "text": " team"
+   },
+   {
+    "line": 1388,
+    "text": "At war"
+   },
+   {
+    "line": 1401,
+    "text": "At war"
+   },
+   {
+    "line": 1460,
+    "text": "Ice cap"
+   }
+  ],
+  "UIInteract": [
+   {
+    "line": 10,
+    "text": "./UICtx"
+   },
+   {
+    "line": 11,
+    "text": "./UIRules"
+   },
+   {
+    "line": 407,
+    "text": "Target out of reach"
+   },
+   {
+    "line": 482,
+    "text": "You betrayed %s · attacking with %s"
+   },
+   {
+    "line": 491,
+    "text": "You broke your alliance with "
+   },
+   {
+    "line": 518,
+    "text": "No troops to spare"
+   },
+   {
+    "line": 518,
+    "text": " is at its troop cap"
+   },
+   {
+    "line": 528,
+    "text": "Sent %s troops  ·  %s is now at its troop cap"
+   },
+   {
+    "line": 529,
+    "text": "Sent %s troops to %s"
+   },
+   {
+    "line": 547,
+    "text": "Alliance proposed to "
+   },
+   {
+    "line": 583,
+    "text": "Unclaimed "
+   },
+   {
+    "line": 652,
+    "text": "Target inside %d enemy SAM%s: the %s may be shot down. %s again to launch"
+   },
+   {
+    "line": 664,
+    "text": "Target locked. %s again to launch the %s"
+   },
+   {
+    "line": 673,
+    "text": " launched"
+   },
+   {
+    "line": 693,
+    "text": "%s upgraded to Lv %d  ·  %s gold"
+   },
+   {
+    "line": 699,
+    "text": "%s  ·  %s gold"
+   },
+   {
+    "line": 743,
+    "text": "Can't place here"
+   },
+   {
+    "line": 747,
+    "text": "Upgrade %s → Lv %d · %s"
+   },
+   {
+    "line": 750,
+    "text": "Warship patrols here · "
+   },
+   {
+    "line": 755,
+    "text": "%d SAM%s cover this target"
+   },
+   {
+    "line": 757,
+    "text": "Launch %s · %s"
+   },
+   {
+    "line": 787,
+    "text": " launched"
+   },
+   {
+    "line": 881,
+    "text": "Warship moving"
+   },
+   {
+    "line": 1037,
+    "text": "%s%s  ·  %s gold"
+   },
+   {
+    "line": 1055,
+    "text": "%s%s launched at %s"
+   },
+   {
+    "line": 1079,
+    "text": "Alliance proposed to "
+   },
+   {
+    "line": 1082,
+    "text": "Alliance accepted"
+   },
+   {
+    "line": 1159,
+    "text": "neutral land"
+   },
+   {
+    "line": 1160,
+    "text": "Retreating from "
+   },
+   {
+    "line": 1260,
+    "text": " · Lv %d"
+   },
+   {
+    "line": 1266,
+    "text": "Building…"
+   },
+   {
+    "line": 1273,
+    "text": "%ds left"
+   },
+   {
+    "line": 1286,
+    "text": "Alliance ends"
+   },
+   {
+    "line": 1290,
+    "text": "asked, waiting for them"
+   },
+   {
+    "line": 1290,
+    "text": "they asked"
+   },
+   {
+    "line": 1297,
+    "text": "Unclaimed  ·  "
+   },
+   {
+    "line": 1297,
+    "text": "Fallout zone"
+   },
+   {
+    "line": 1317,
+    "text": " to place your capital here"
+   },
+   {
+    "line": 1323,
+    "text": "%d nearby · crowded, tough start"
+   },
+   {
+    "line": 1325,
+    "text": "%d nearby · contested"
+   },
+   {
+    "line": 1329,
+    "text": "%d nearby · "
+   },
+   {
+    "line": 1329,
+    "text": "open land, safer start"
+   },
+   {
+    "line": 1336,
+    "text": "%s: %s with %s"
+   },
+   {
+    "line": 1346,
+    "text": "%s: boat invasion with %s"
+   },
+   {
+    "line": 1362,
+    "text": "Right-click for more actions"
+   },
+   {
+    "line": 1374,
+    "text": "Launch "
+   },
+   {
+    "line": 1374,
+    "text": "Build "
+   },
+   {
+    "line": 1382,
+    "text": "Upgrade %s → Lv %d"
+   },
+   {
+    "line": 1384,
+    "text": " gold"
+   },
+   {
+    "line": 1386,
+    "text": "Blast radius"
+   },
+   {
+    "line": 1394,
+    "text": "SAM cover"
+   },
+   {
+    "line": 1395,
+    "text": "%d SAM%s cover this target"
+   },
+   {
+    "line": 1407,
+    "text": "Tap again to upgrade"
+   },
+   {
+    "line": 1407,
+    "text": "Tap again to build here"
+   },
+   {
+    "line": 1411,
+    "text": " again to confirm the launch"
+   },
+   {
+    "line": 1416,
+    "text": " to target"
+   },
+   {
+    "line": 1417,
+    "text": " to upgrade"
+   },
+   {
+    "line": 1418,
+    "text": " to build here"
+   },
+   {
+    "line": 1426,
+    "text": "Right-click or X to cancel"
+   },
+   {
+    "line": 1426,
+    "text": "Long-press to cancel"
+   }
+  ],
+  "UILayoutProbe": [
+   {
+    "line": 12,
+    "text": "./UICtx"
+   },
+   {
+    "line": 65,
+    "text": "./UITheme"
+   },
+   {
+    "line": 171,
+    "text": "./UITheme"
+   }
+  ],
+  "UIRoot": [
+   {
+    "line": 12,
+    "text": "./UITheme"
+   },
+   {
+    "line": 15,
+    "text": "./UICtx"
+   },
+   {
+    "line": 16,
+    "text": "./UIInteract"
+   },
+   {
+    "line": 19,
+    "text": "./UIAdvisor"
+   },
+   {
+    "line": 20,
+    "text": "./UILayoutProbe"
+   },
+   {
+    "line": 38,
+    "text": "./UIMaps"
+   },
+   {
+    "line": 194,
+    "text": "Arsenal item"
+   },
+   {
+    "line": 194,
+    "text": " unlocked!"
+   },
+   {
+    "line": 293,
+    "text": "Vector2"
+   },
+   {
+    "line": 333,
+    "text": "AF_DIAG"
+   },
+   {
+    "line": 601,
+    "text": "AF_DIAG"
+   },
+   {
+    "line": 634,
+    "text": "today's free crate is in your Locker"
+   },
+   {
+    "line": 637,
+    "text": "+%s Stars today"
+   },
+   {
+    "line": 641,
+    "text": "this month's skin "
+   },
+   {
+    "line": 641,
+    "text": " is yours"
+   },
+   {
+    "line": 644,
+    "text": "General: "
+   },
+   {
+    "line": 1230,
+    "text": "AirfrontUI_"
+   },
+   {
+    "line": 1242,
+    "text": "UIRoot._process"
+   },
+   {
+    "line": 1244,
+    "text": "Widgets.step"
+   },
+   {
+    "line": 1274,
+    "text": "Taking over…"
+   },
+   {
+    "line": 1274,
+    "text": "Take over (saved)"
+   },
+   {
+    "line": 1277,
+    "text": "Taking over…"
+   },
+   {
+    "line": 1277,
+    "text": "Take over  ·  %d"
+   },
+   {
+    "line": 1321,
+    "text": "Drag to look around · click a nation for details"
+   },
+   {
+    "line": 1325,
+    "text": "Take over"
+   },
+   {
+    "line": 1335,
+    "text": "Play again"
+   },
+   {
+    "line": 1516,
+    "text": "RF_Outdated"
+   },
+   {
+    "line": 1526,
+    "text": "Updating to the latest version…"
+   },
+   {
+    "line": 1642,
+    "text": "Returning to the title…"
+   },
+   {
+    "line": 1642,
+    "text": "Deploying a new world…"
+   },
+   {
+    "line": 1672,
+    "text": "Telemetry.bind"
+   },
+   {
+    "line": 2133,
+    "text": "Watching this match · drag to look around, click a nation"
+   },
+   {
+    "line": 2137,
+    "text": "Conquered by %s · the war goes on without you"
+   },
+   {
+    "line": 2138,
+    "text": "Your nation fell · the war goes on without you"
+   },
+   {
+    "line": 2141,
+    "text": "Drag to look around · click a nation for details"
+   },
+   {
+    "line": 2204,
+    "text": "AF_FORCE_COMPACT"
+   },
+   {
+    "line": 2208,
+    "text": "AF_FORCE_DESKTOP"
+   },
+   {
+    "line": 2215,
+    "text": "AF_FORCE_TOUCH"
+   },
+   {
+    "line": 2393,
+    "text": "UIRoot rebind"
+   },
+   {
+    "line": 2395,
+    "text": "UIInteract.process_frame"
+   },
+   {
+    "line": 2396,
+    "text": "RadialMenu.update"
+   },
+   {
+    "line": 2415,
+    "text": "UIRoot poll"
+   },
+   {
+    "line": 2438,
+    "text": "UIRoot hop"
+   },
+   {
+    "line": 2441,
+    "text": "UIRoot autostart"
+   },
+   {
+    "line": 2444,
+    "text": "UIRoot tutorial"
+   },
+   {
+    "line": 2447,
+    "text": "Arsenal.frame"
+   },
+   {
+    "line": 2452,
+    "text": "UIAdvisor checks"
+   },
+   {
+    "line": 2453,
+    "text": "Telemetry.tick"
+   },
+   {
+    "line": 2455,
+    "text": "Takeover.tick"
+   },
+   {
+    "line": 2458,
+    "text": "Locker.tick"
+   },
+   {
+    "line": 2461,
+    "text": "FlagShop.tick"
+   },
+   {
+    "line": 2464,
+    "text": "Arsenal.tick"
+   },
+   {
+    "line": 2466,
+    "text": "UIRoot starter"
+   }
+  ],
+  "UIRules": [
+   {
+    "line": 7,
+    "text": "./UICtx"
+   },
+   {
+    "line": 52,
+    "text": "Defense Post"
+   },
+   {
+    "line": 53,
+    "text": "SAM Launcher"
+   },
+   {
+    "line": 54,
+    "text": "Missile Silo"
+   },
+   {
+    "line": 56,
+    "text": "Atom Bomb"
+   },
+   {
+    "line": 57,
+    "text": "Hydrogen Bomb"
+   },
+   {
+    "line": 62,
+    "text": "Mega Nuke"
+   },
+   {
+    "line": 64,
+    "text": "Air Strike"
+   },
+   {
+    "line": 65,
+    "text": "Railgun Shot"
+   },
+   {
+    "line": 89,
+    "text": "Raises your troop cap by {city}. Joins the road network."
+   },
+   {
+    "line": 90,
+    "text": "Coastal. Sends trade ships for gold and builds warships."
+   },
+   {
+    "line": 91,
+    "text": "Road hub. Trucks pay gold at every stop they pass."
+   },
+   {
+    "line": 92,
+    "text": "Land within {def_r} tiles costs attackers {def_mag}x the troops and {def_cost}x the time."
+   },
+   {
+    "line": 93,
+    "text": "Shoots down bombs aimed within {sam_r} tiles. MIRV warheads can't be stopped."
+   },
+   {
+    "line": 94,
+    "text": "Required to launch nuclear weapons."
+   },
+   {
+    "line": 95,
+    "text": "Patrols where you send it: sinks transports, then warships, and captures trade ships. Heals at your ports."
+   },
+   {
+    "line": 96,
+    "text": "Small blast that wipes troops and structures, leaving fallout."
+   },
+   {
+    "line": 97,
+    "text": "Massive blast. Anything inside is erased."
+   },
+   {
+    "line": 98,
+    "text": "Splits into up to {mirv_n} warheads that rain over one nation."
+   },
+   {
+    "line": 99,
+    "text": "Shells every enemy within {art_r} tiles on its own: their troops, and the structures it reaches."
+   },
+   {
+    "line": 100,
+    "text": "Flies Air Strikes on any spot within {air_r} tiles. Rearms in {air_s} s."
+   },
+   {
+    "line": 101,
+    "text": "Fires at any spot on the map. Reloads in {rail_s} s."
+   },
+   {
+    "line": 102,
+    "text": "Twice an Atom Bomb's radius: four times the ground, gone."
+   },
+   {
+    "line": 103,
+    "text": "An Atom Bomb with {scat_lo} to {scat_hi} warheads that come down around it."
+   },
+   {
+    "line": 104,
+    "text": "Bombs a {air_blast}-tile circle: kills troops and wrecks structures. No SAM can stop it."
+   },
+   {
+    "line": 105,
+    "text": "A slug that takes a level off every structure it hits. Nothing intercepts it."
+   },
+   {
+    "line": 106,
+    "text": "Brings a fifth of your troop cap at once. Ready again every {rein_s} s."
+   },
+   {
+    "line": 231,
+    "text": "Vector2"
+   },
+   {
+    "line": 247,
+    "text": "Up to %d warheads across the target nation"
+   },
+   {
+    "line": 250,
+    "text": "%d tiles (%d wiped out)"
+   },
+   {
+    "line": 252,
+    "text": "%d tiles"
+   },
+   {
+    "line": 262,
+    "text": " of the land outside fallout"
+   },
+   {
+    "line": 285,
+    "text": "UNLOCK "
+   },
+   {
+    "line": 291,
+    "text": "WITH 2X STARS: +%s"
+   },
+   {
+    "line": 554,
+    "text": "Unlock "
+   },
+   {
+    "line": 554,
+    "text": " in the Arsenal"
+   },
+   {
+    "line": 560,
+    "text": "Join a match first"
+   },
+   {
+    "line": 565,
+    "text": "Place your capital first"
+   },
+   {
+    "line": 570,
+    "text": "You have been eliminated"
+   },
+   {
+    "line": 575,
+    "text": "Available once the match begins"
+   },
+   {
+    "line": 584,
+    "text": "Requires "
+   },
+   {
+    "line": 584,
+    "text": "an "
+   },
+   {
+    "line": 591,
+    "text": " under construction · ready in "
+   },
+   {
+    "line": 599,
+    "text": "%s · ready in %s"
+   },
+   {
+    "line": 600,
+    "text": "Airfield rearming"
+   },
+   {
+    "line": 600,
+    "text": "Railgun reloading"
+   },
+   {
+    "line": 610,
+    "text": "Ready in "
+   },
+   {
+    "line": 614,
+    "text": "Your army is at its cap"
+   },
+   {
+    "line": 619,
+    "text": "Requires a coastline"
+   },
+   {
+    "line": 624,
+    "text": "Requires a Port"
+   },
+   {
+    "line": 631,
+    "text": "Port under construction · ready in "
+   },
+   {
+    "line": 642,
+    "text": "Need "
+   },
+   {
+    "line": 642,
+    "text": " more gold"
+   },
+   {
+    "line": 735,
+    "text": "Only %d missile%s loaded"
+   },
+   {
+    "line": 736,
+    "text": "Not enough gold"
+   },
+   {
+    "line": 764,
+    "text": "BUILD_SNAP_RADIUS"
+   },
+   {
+    "line": 769,
+    "text": "Build on your own land"
+   },
+   {
+    "line": 770,
+    "text": "No room here: structures need space"
+   },
+   {
+    "line": 771,
+    "text": "Ports must be on your coast"
+   },
+   {
+    "line": 772,
+    "text": "Warships need a finished port on this water"
+   },
+   {
+    "line": 773,
+    "text": "Not enough gold"
+   },
+   {
+    "line": 774,
+    "text": "Can't build here"
+   },
+   {
+    "line": 788,
+    "text": "Point at the globe"
+   },
+   {
+    "line": 809,
+    "text": "Tap the sea where the warship should patrol"
+   },
+   {
+    "line": 811,
+    "text": "Can't build here"
+   },
+   {
+    "line": 818,
+    "text": "Can't build here"
+   },
+   {
+    "line": 874,
+    "text": "Point at the globe"
+   },
+   {
+    "line": 882,
+    "text": "That is your own land"
+   },
+   {
+    "line": 886,
+    "text": "Open water: little to hit"
+   },
+   {
+    "line": 889,
+    "text": "Breaks your alliance with "
+   },
+   {
+    "line": 892,
+    "text": "Target a nation"
+   },
+   {
+    "line": 899,
+    "text": "That is your ally's land"
+   },
+   {
+    "line": 903,
+    "text": "Out of your Airfields' reach"
+   },
+   {
+    "line": 907,
+    "text": "Nobody's land: nothing to hit"
+   },
+   {
+    "line": 917,
+    "text": "Target water near your ports"
+   },
+   {
+    "line": 922,
+    "text": "Build on your own land"
+   },
+   {
+    "line": 926,
+    "text": "Ports must be on the coast"
+   },
+   {
+    "line": 935,
+    "text": "Too close to another structure"
+   },
+   {
+    "line": 1055,
+    "text": "Start here"
+   },
+   {
+    "line": 1058,
+    "text": "Pick unclaimed land"
+   },
+   {
+    "line": 1058,
+    "text": "Pick land, not water"
+   },
+   {
+    "line": 1073,
+    "text": "Antarctica cannot be claimed"
+   },
+   {
+    "line": 1084,
+    "text": "No troops available"
+   },
+   {
+    "line": 1099,
+    "text": "Expand into fallout"
+   },
+   {
+    "line": 1109,
+    "text": "All %d transports at sea"
+   },
+   {
+    "line": 1115,
+    "text": "Boat invasion"
+   },
+   {
+    "line": 1119,
+    "text": "Out of reach: expand toward it"
+   },
+   {
+    "line": 1119,
+    "text": "No border or sea route"
+   },
+   {
+    "line": 1142,
+    "text": "Starting position set"
+   },
+   {
+    "line": 1144,
+    "text": "Expanding with "
+   },
+   {
+    "line": 1146,
+    "text": "Attacking %s with %s"
+   },
+   {
+    "line": 1149,
+    "text": "Boat launched with "
+   },
+   {
+    "line": 1151,
+    "text": "Invading %s by sea with %s"
+   },
+   {
+    "line": 1205,
+    "text": "No land border: send a boat"
+   },
+   {
+    "line": 1213,
+    "text": "None of your coasts reach it"
+   },
+   {
+    "line": 1214,
+    "text": "No coast of theirs within reach"
+   },
+   {
+    "line": 1216,
+    "text": "All transports are at sea"
+   },
+   {
+    "line": 1218,
+    "text": "No troops available"
+   },
+   {
+    "line": 1324,
+    "text": "No troops to spare"
+   },
+   {
+    "line": 1324,
+    "text": "At their troop cap"
+   },
+   {
+    "line": 1337,
+    "text": "Renewal asked"
+   },
+   {
+    "line": 1359,
+    "text": "Request pending"
+   },
+   {
+    "line": 1370,
+    "text": "Wait %ds"
+   }
+  ],
+  "UITheme": [
+   {
+    "line": 82,
+    "text": "Color3"
+   },
+   {
+    "line": 119,
+    "text": "Color3"
+   },
+   {
+    "line": 119,
+    "text": "Color3"
+   },
+   {
+    "line": 963,
+    "text": "./UIKern"
+   },
+   {
+    "line": 1114,
+    "text": "[UITheme] Rubik metrics could not be verified; text layout may be approximate"
+   }
+  ],
+  "UnitCard": [
+   {
+    "line": 8,
+    "text": "./UITheme"
+   },
+   {
+    "line": 11,
+    "text": "./UICtx"
+   },
+   {
+    "line": 24,
+    "text": "Returning to port for repairs"
+   },
+   {
+    "line": 118,
+    "text": "Tap the sea to move it"
+   },
+   {
+    "line": 185,
+    "text": "WARSHIP_MAX_VET"
+   },
+   {
+    "line": 187,
+    "text": "Veterancy %d of %d"
+   },
+   {
+    "line": 191,
+    "text": "%d%% to the next rank"
+   },
+   {
+    "line": 195,
+    "text": "Next: sink a warship or %d boats"
+   },
+   {
+    "line": 196,
+    "text": "WARSHIP_VET_TRANSPORTS"
+   },
+   {
+    "line": 207,
+    "text": "Tap the sea to move it"
+   },
+   {
+    "line": 207,
+    "text": "Click the sea to move it"
+   }
+  ],
+  "Widgets": [
+   {
+    "line": 28,
+    "text": "./UITheme"
+   },
+   {
+    "line": 197,
+    "text": "[UI] further UI errors are not reported"
+   },
+   {
+    "line": 204,
+    "text": "[UI] %s failed: %s"
+   },
+   {
+    "line": 264,
+    "text": "deferred call"
+   },
+   {
+    "line": 1255,
+    "text": "Vector2"
+   },
+   {
+    "line": 2837,
+    "text": "Vector2"
+   },
+   {
+    "line": 2839,
+    "text": "Color3"
+   },
+   {
+    "line": 3028,
+    "text": "tween_property "
+   }
+  ],
+  "AudioDirector": [
+   {
+    "line": 374,
+    "text": "[Audio] could not load %s (%s)"
+   },
+   {
+    "line": 467,
+    "text": "Failed to load sound"
+   },
+   {
+    "line": 1035,
+    "text": "Sfx_%s_%d"
+   },
+   {
+    "line": 1273,
+    "text": "Failed to load sound.-: (.*)$"
+   },
+   {
+    "line": 1297,
+    "text": "[Audio] did not load %s %s after %s"
+   },
+   {
+    "line": 1309,
+    "text": "[Audio] a sound outside the game's failed to load: "
+   }
+  ],
+  "FxLayer": [
+   {
+    "line": 482,
+    "text": "Color3"
+   }
+  ],
+  "MapCamera": [
+   {
+    "line": 418,
+    "text": "Vector2"
+   }
+  ],
+  "MapSurface": [
+   {
+    "line": 530,
+    "text": "Map_%d_%d"
+   },
+   {
+    "line": 559,
+    "text": "[RoWorld] map: EditableImage unavailable (memory budget) — parts of the map cannot be drawn"
+   },
+   {
+    "line": 683,
+    "text": "Color3"
+   }
+  ],
+  "MapView": [
+   {
+    "line": 55,
+    "text": "[RoWorld] map view %s: %s"
+   },
+   {
+    "line": 87,
+    "text": "require "
+   }
+  ]
+ }
+}

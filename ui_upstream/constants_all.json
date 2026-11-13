@@ -1,0 +1,5826 @@
+[
+ {
+  "file": "src/client/Main.luau",
+  "line": 34,
+  "name": "BUTTON",
+  "value": "44",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 35,
+  "name": "GAP",
+  "value": "8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 36,
+  "name": "ICON",
+  "value": "36",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 37,
+  "name": "FILL",
+  "value": "Color3.fromRGB(18, 18, 21)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 38,
+  "name": "FILL_T",
+  "value": "0.08",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 39,
+  "name": "OVERLAY_T",
+  "value": "1.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 40,
+  "name": "OVERLAY_HOVER_T",
+  "value": "0.92",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 41,
+  "name": "OVERLAY_PRESS_T",
+  "value": "0.84",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Main.luau",
+  "line": 571,
+  "name": "Main.OWNER_USER_ID",
+  "value": "22641473",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 43,
+  "name": "Session.MODE_TITLE",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 44,
+  "name": "Session.MODE_SOLO",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 45,
+  "name": "Session.MODE_MULTI",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 47,
+  "name": "Session.STAGE_IDLE",
+  "value": "\"idle\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 48,
+  "name": "Session.STAGE_LOBBY",
+  "value": "\"lobby\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 49,
+  "name": "Session.STAGE_SPAWN",
+  "value": "\"spawn\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 50,
+  "name": "Session.STAGE_PLAYING",
+  "value": "\"playing\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 51,
+  "name": "Session.STAGE_OVER",
+  "value": "\"over\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 53,
+  "name": "Session.TICK_RATE",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 54,
+  "name": "Session.TICK_SEC",
+  "value": "1.0 / 10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 55,
+  "name": "Session.LOBBY_COUNTDOWN_SEC",
+  "value": "15.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 56,
+  "name": "Session.REMATCH_COUNTDOWN_SEC",
+  "value": "12.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 57,
+  "name": "Session.RESULTS_SEC",
+  "value": "18.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 58,
+  "name": "Session.MP_TRIBES",
+  "value": "90",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 59,
+  "name": "Session.MP_MAX_HUMANS",
+  "value": "32",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 60,
+  "name": "Session.MP_SPAWN_TICKS",
+  "value": "200",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 61,
+  "name": "Session.MP_TIME_LIMIT_S",
+  "value": "40 * 60",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 64,
+  "name": "Session.SOLO_TRIBES",
+  "value": "nil :: number?",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 65,
+  "name": "Session.TITLE_TRIBES",
+  "value": "150",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 67,
+  "name": "Session.TITLE_MAP_ID",
+  "value": "nil :: string?",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 69,
+  "name": "Session.TITLE_WARMUP_TICKS",
+  "value": "900",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 72,
+  "name": "Session.WAIT_WARMUP_TICKS",
+  "value": "150",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 73,
+  "name": "Session.TITLE_WARMUP_SPEED",
+  "value": "22.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 74,
+  "name": "Session.TITLE_SPEED",
+  "value": "1.35",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 76,
+  "name": "Session.TITLE_SPEED_MOBILE",
+  "value": "0.6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 77,
+  "name": "Session.MAX_STEPS_PER_TASK",
+  "value": "12",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 79,
+  "name": "Session.NOTICE_INFO",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 80,
+  "name": "Session.NOTICE_WARNING",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 81,
+  "name": "Session.NOTICE_ERROR",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 89,
+  "name": "Session.STEP_BUDGET_S",
+  "value": "0.006",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 90,
+  "name": "Session.STEP_BUDGET_MOBILE_S",
+  "value": "0.004",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 91,
+  "name": "Session.STEP_BUDGET_BEHIND_S",
+  "value": "0.010",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 92,
+  "name": "Session.STEP_BUDGET_BEHIND_MOBILE_S",
+  "value": "0.008",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 93,
+  "name": "Session.BUILD_BUDGET_S",
+  "value": "0.005",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 94,
+  "name": "Session.BUILD_BUDGET_MOBILE_S",
+  "value": "0.004",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 97,
+  "name": "Session.SETTINGS_SEND_GAP_S",
+  "value": "0.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 100,
+  "name": "Session.JOIN_RETRY_S",
+  "value": "3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 102,
+  "name": "Session.RESYNC_GAP_S",
+  "value": "10.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 104,
+  "name": "Session.ACTIVE_GAP_S",
+  "value": "30.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 107,
+  "name": "PHASE_OVER",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 198,
+  "name": "Session.IS_STUDIO",
+  "value": "(game :: any) ~= nil and game:GetService(\"RunService\"):IsStudio()",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Session.luau",
+  "line": 979,
+  "name": "Session.WARM_MODULES",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Dev/AssetsIcons.luau",
+  "line": 18,
+  "name": "RUBIK",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.SemiBold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Dev/AssetsIcons.luau",
+  "line": 19,
+  "name": "AMBER",
+  "value": "Color3.new(1.0, 0.71, 0.278)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Dev/AssetsIcons.luau",
+  "line": 20,
+  "name": "CYAN",
+  "value": "Color3.new(0.31, 0.82, 1.0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Dev/Film.luau",
+  "line": 19,
+  "name": "Film.FPS",
+  "value": "30",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Dev/SimBench.luau",
+  "line": 34,
+  "name": "SIDE",
+  "value": "\"client\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Dev/UIKitHud.luau",
+  "line": 28,
+  "name": "BACKDROPS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Dev/UIKitMock.luau",
+  "line": 17,
+  "name": "M.TICK",
+  "value": "4220",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Dev/UIKitMock.luau",
+  "line": 19,
+  "name": "LEADERS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Dev/UIScreensScenes.luau",
+  "line": 332,
+  "name": "UIS",
+  "value": "game:GetService(\"UserInputService\")",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 15,
+  "name": "RED_TITLE",
+  "value": "Color3.new(1.0, 0.55, 0.58)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/AlertBanner.luau",
+  "line": 16,
+  "name": "RED_TINT",
+  "value": "UITheme.rgba(0.26, 0.03, 0.07, 0.9)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 30,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 57,
+  "name": "Arsenal.GROUPS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 62,
+  "name": "Arsenal.KIND_TAGS",
+  "value": "{ structure = \"BUILDING\", nuke = \"NUKE\", call = \"ORDER\", boost = \"BOOST\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 64,
+  "name": "Arsenal.SUBTITLE",
+  "value": "\"Unlock once, keep it forever. Earn Stars by playing matches.\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 67,
+  "name": "Arsenal.LIST_W",
+  "value": "236",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 68,
+  "name": "Arsenal.LIST_W_PHONE",
+  "value": "190",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 69,
+  "name": "Arsenal.ROW_H",
+  "value": "46",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 70,
+  "name": "Arsenal.ROW_H_PHONE",
+  "value": "38",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 71,
+  "name": "Arsenal.DETAIL_W",
+  "value": "470",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 72,
+  "name": "Arsenal.PREVIEW_H",
+  "value": "228",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 74,
+  "name": "Arsenal.CONFIRM_S",
+  "value": "3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 76,
+  "name": "Arsenal.WAIT_S",
+  "value": "30.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 78,
+  "name": "Arsenal.NOTE_S",
+  "value": "4.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 80,
+  "name": "FONT_H",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 81,
+  "name": "FONT_B",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 82,
+  "name": "FONT_M",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Medium)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 83,
+  "name": "GOLD",
+  "value": "Color3.fromRGB(255, 200, 61)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 84,
+  "name": "GOLD_DARK",
+  "value": "Color3.fromRGB(64, 40, 4)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 86,
+  "name": "GREEN_TOP",
+  "value": "Color3.fromRGB(86, 216, 130)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 87,
+  "name": "GREEN_BOTTOM",
+  "value": "Color3.fromRGB(34, 166, 90)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 88,
+  "name": "GREEN_TOP_HI",
+  "value": "Color3.fromRGB(108, 234, 150)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 89,
+  "name": "GREEN_BOTTOM_HI",
+  "value": "Color3.fromRGB(46, 186, 106)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 90,
+  "name": "GREEN_LIP",
+  "value": "Color3.fromRGB(18, 108, 56)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 91,
+  "name": "GREEN_INK",
+  "value": "Color3.fromRGB(12, 82, 42)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 92,
+  "name": "OWNED_GREEN",
+  "value": "Color3.fromRGB(110, 230, 155)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 93,
+  "name": "WHITE",
+  "value": "Color3.new(1, 1, 1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 94,
+  "name": "MUTED",
+  "value": "Color3.fromRGB(170, 182, 211)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 95,
+  "name": "ROW",
+  "value": "Color3.fromRGB(24, 33, 58)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 96,
+  "name": "ROW_ON",
+  "value": "Color3.fromRGB(38, 53, 90)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 97,
+  "name": "CHIP",
+  "value": "Color3.fromRGB(38, 53, 90)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 98,
+  "name": "BAR_OFF",
+  "value": "Color3.fromRGB(44, 58, 94)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 99,
+  "name": "BAR_LIP",
+  "value": "Color3.fromRGB(28, 38, 64)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 101,
+  "name": "NIGHT",
+  "value": "Color3.fromRGB(8, 12, 26)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Arsenal.luau",
+  "line": 102,
+  "name": "ROBUX",
+  "value": "\"rbxasset://textures/ui/common/robux@3x.png\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 10,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 16,
+  "name": "ArsenalButton.SIZE",
+  "value": "132",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 17,
+  "name": "ArsenalButton.PHONE_K",
+  "value": "0.6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 19,
+  "name": "GOLD",
+  "value": "Color3.fromRGB(255, 200, 61)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 20,
+  "name": "GOLD_LIGHT",
+  "value": "Color3.fromRGB(255, 232, 160)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalButton.luau",
+  "line": 21,
+  "name": "FONT_B",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 31,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 54,
+  "name": "ArsenalDemo.LOOP_S",
+  "value": "4.2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 55,
+  "name": "ArsenalDemo.LOOPS",
+  "value": "{ reload2x = 5.6 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 57,
+  "name": "ArsenalDemo.ENEMY",
+  "value": "\"NORTHMARK\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 58,
+  "name": "ArsenalDemo.ENEMY_TROOPS",
+  "value": "48000",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 59,
+  "name": "ArsenalDemo.MY_TROOPS",
+  "value": "18000",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 61,
+  "name": "FONT_H",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 62,
+  "name": "FONT_B",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 63,
+  "name": "WHITE",
+  "value": "Color3.new(1, 1, 1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 64,
+  "name": "INK",
+  "value": "Color3.fromRGB(14, 20, 38)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 66,
+  "name": "MINE",
+  "value": "Color3.fromRGB(196, 160, 226)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 67,
+  "name": "THEIRS",
+  "value": "Color3.fromRGB(128, 204, 132)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 68,
+  "name": "THEIRS_ALT",
+  "value": "Color3.fromRGB(232, 150, 140)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 69,
+  "name": "SCORCH",
+  "value": "Color3.fromRGB(46, 34, 30)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 71,
+  "name": "NIGHT_GROUND",
+  "value": "Color3.fromRGB(30, 38, 58)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 72,
+  "name": "FIRE_GLOW",
+  "value": "Color3.fromRGB(255, 168, 70)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 73,
+  "name": "RED",
+  "value": "Color3.fromRGB(255, 70, 70)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 74,
+  "name": "PURPLE",
+  "value": "Color3.fromRGB(176, 120, 255)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 75,
+  "name": "GOLD",
+  "value": "Color3.fromRGB(255, 205, 70)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 76,
+  "name": "DUST",
+  "value": "Color3.fromRGB(226, 204, 168)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 81,
+  "name": "RENDER_TILT",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 808,
+  "name": "SCATTER",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 894,
+  "name": "REIN_LAND",
+  "value": "{ 0.85, 1.05, 1.25 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 895,
+  "name": "REIN_FX",
+  "value": "{ 0.13, 0.25, 0.37 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 897,
+  "name": "SOLDIER",
+  "value": "{ Vector2.new(0, 0), Vector2.new(150, 345) }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 994,
+  "name": "SHELLS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1000,
+  "name": "ART_AT",
+  "value": "Vector2.new(0.3, 0.55)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1071,
+  "name": "AIR_DROPS",
+  "value": "{ 0.72, 0.8, 0.88 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1072,
+  "name": "AIR_FALL",
+  "value": "0.32",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1073,
+  "name": "AIR_ALT",
+  "value": "0.2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1074,
+  "name": "AIR_GROUND",
+  "value": "0.64",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1174,
+  "name": "RAIL_FIRE",
+  "value": "1.25",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1274,
+  "name": "STAMP_T",
+  "value": "1.3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1323,
+  "name": "TWINKLE_AT",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ArsenalDemo.luau",
+  "line": 1386,
+  "name": "RELOAD_FLY",
+  "value": "0.55",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/AttacksPanel.luau",
+  "line": 19,
+  "name": "AttacksPanel.MAX_ROWS_DESKTOP",
+  "value": "6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/AttacksPanel.luau",
+  "line": 20,
+  "name": "AttacksPanel.MAX_ROWS_PHONE",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/AttacksPanel.luau",
+  "line": 22,
+  "name": "AttacksPanel.ALWAYS_ROWS",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/AttacksPanel.luau",
+  "line": 24,
+  "name": "AttacksPanel.PEEK_SECONDS",
+  "value": "8.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Banner.luau",
+  "line": 11,
+  "name": "BAND",
+  "value": "Color3.new(0.01, 0.015, 0.05)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Banner.luau",
+  "line": 13,
+  "name": "BAND_SEQ",
+  "value": "NumberSequence.new({",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Banner.luau",
+  "line": 134,
+  "name": "Banner.MARGIN",
+  "value": "10.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/BorderTracker.luau",
+  "line": 8,
+  "name": "F_FALLOUT",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/BorderTracker.luau",
+  "line": 93,
+  "name": "TILE_COUNT",
+  "value": "self.W * self.H",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ChestView.luau",
+  "line": 7,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ChestView.luau",
+  "line": 16,
+  "name": "ChestView.CAM_FOV",
+  "value": "28",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ChestView.luau",
+  "line": 17,
+  "name": "ChestView.CAM_CF",
+  "value": "CFrame.lookAt(Vector3.new(0, 6.2, -18), Vector3.new(0, 2.3, 0))",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ChestView.luau",
+  "line": 18,
+  "name": "ChestView.BASE_YAW",
+  "value": "math.rad(24)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ChestView.luau",
+  "line": 19,
+  "name": "ChestView.AMBIENT",
+  "value": "Color3.fromRGB(150, 146, 150)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 14,
+  "name": "FLOOR_TIP",
+  "value": "string.format(",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 21,
+  "name": "Coach.TIPS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 64,
+  "name": "Coach.PRIORITY",
+  "value": "{ \"attacked\", \"floor\", \"select\", \"expand\", \"contact\", \"tray\", \"ratio\", \"city\", \"boat\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 65,
+  "name": "Coach.LIFETIME",
+  "value": "16.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 67,
+  "name": "Coach.KEEPOUT_WEIGHT",
+  "value": "12.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Coach.luau",
+  "line": 68,
+  "name": "Coach.KEEPOUT_MARGIN",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 45,
+  "name": "CommandBar.TRAY_SLOT_MIN",
+  "value": "TrayFit.SLOT_MIN",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 47,
+  "name": "CommandBar.SHOP_W",
+  "value": "58.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CommandBar.luau",
+  "line": 49,
+  "name": "CommandBar.STOP_TOUCH_W",
+  "value": "38.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 15,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 30,
+  "name": "CrateButton.SIZE",
+  "value": "150",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 31,
+  "name": "CrateButton.PHONE_K",
+  "value": "0.66",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 32,
+  "name": "CrateButton.WIGGLE_S",
+  "value": "2.4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 33,
+  "name": "CrateButton.WAITING_WIGGLE_S",
+  "value": "1.2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 35,
+  "name": "GOLD",
+  "value": "Color3.fromRGB(255, 190, 72)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 36,
+  "name": "GOLD_LIGHT",
+  "value": "Color3.fromRGB(255, 226, 150)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateButton.luau",
+  "line": 37,
+  "name": "FONT_B",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 31,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 41,
+  "name": "CrateOpening.FALL_S",
+  "value": "0.42",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 42,
+  "name": "CrateOpening.SETTLE_S",
+  "value": "0.45",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 43,
+  "name": "CrateOpening.WIGGLE_EVERY_S",
+  "value": "1.1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 44,
+  "name": "CrateOpening.BUILD_S",
+  "value": "{ common = 0.55, rare = 0.8, epic = 1.15, legendary = 1.7 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 46,
+  "name": "CrateOpening.JOLT_S",
+  "value": "0.26",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 47,
+  "name": "CrateOpening.JOLT_GAP_S",
+  "value": "{ 0.22, 0.04 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 48,
+  "name": "CrateOpening.CARD_HOLD_S",
+  "value": "{ common = 0.2, rare = 0.35, epic = 0.6, legendary = 1.0 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 49,
+  "name": "CrateOpening.RESULT_WAIT_S",
+  "value": "12.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 50,
+  "name": "CrateOpening.BURST",
+  "value": "{ common = 18, rare = 26, epic = 36, legendary = 54 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 51,
+  "name": "CrateOpening.MAX_PARTICLES",
+  "value": "150",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 53,
+  "name": "VIEW_K",
+  "value": "1.1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 56,
+  "name": "GOLD",
+  "value": "Color3.fromRGB(255, 190, 72)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 57,
+  "name": "GOLD_LIGHT",
+  "value": "Color3.fromRGB(255, 226, 150)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 58,
+  "name": "AMBIENT",
+  "value": "ChestView.AMBIENT",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 60,
+  "name": "FONT_B",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 61,
+  "name": "FONT_M",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/CrateOpening.luau",
+  "line": 86,
+  "name": "EASE",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/EventFeed.luau",
+  "line": 21,
+  "name": "EventFeed.TOAST_SECONDS",
+  "value": "6.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/EventFeed.luau",
+  "line": 22,
+  "name": "EventFeed.INFO_SECONDS",
+  "value": "4.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/EventFeed.luau",
+  "line": 23,
+  "name": "EventFeed.ALERT_SECONDS",
+  "value": "9.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/EventFeed.luau",
+  "line": 25,
+  "name": "EventFeed.PHONE_INFO_SECONDS",
+  "value": "2.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/EventFeed.luau",
+  "line": 26,
+  "name": "EventFeed.PHONE_SECONDS",
+  "value": "3.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/EventFeed.luau",
+  "line": 27,
+  "name": "EventFeed.PHONE_ALERT_SECONDS",
+  "value": "5.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/EventFeed.luau",
+  "line": 31,
+  "name": "EventFeed.PHONE_MAX_W",
+  "value": "260.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/EventFeed.luau",
+  "line": 32,
+  "name": "EventFeed.PHONE_FONT",
+  "value": "11",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/EventFeed.luau",
+  "line": 33,
+  "name": "EventFeed.PHONE_BUTTON",
+  "value": "32.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 19,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 34,
+  "name": "FlagShop.CARD",
+  "value": "Vector2.new(150, 178)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 35,
+  "name": "FlagShop.CARD_PHONE",
+  "value": "Vector2.new(124, 152)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 36,
+  "name": "FlagShop.GAP",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 38,
+  "name": "FlagShop.COLS",
+  "value": "4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 40,
+  "name": "FlagShop.GRANT_WAIT_S",
+  "value": "30",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 42,
+  "name": "FlagShop.BANNER_H",
+  "value": "46",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 44,
+  "name": "FONT",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 45,
+  "name": "FONT_H",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 46,
+  "name": "FONT_M",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Medium)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 47,
+  "name": "ROBUX",
+  "value": "\"rbxasset://textures/ui/common/robux@3x.png\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 48,
+  "name": "WHITE",
+  "value": "Color3.new(1, 1, 1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 49,
+  "name": "GOLD",
+  "value": "Color3.fromRGB(255, 200, 61)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 50,
+  "name": "PUMPKIN",
+  "value": "Color3.fromRGB(255, 140, 40)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/FlagShop.luau",
+  "line": 51,
+  "name": "MUTED",
+  "value": "Color3.fromRGB(160, 168, 190)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GameOver.luau",
+  "line": 607,
+  "name": "GameOver.FLAG_ALIASES",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 15,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 22,
+  "name": "GeneralButton.SIZE",
+  "value": "Vector2.new(232, 82)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 23,
+  "name": "GeneralButton.PHONE_K",
+  "value": "0.72",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 25,
+  "name": "GeneralButton.SHINE_S",
+  "value": "3.8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 26,
+  "name": "GeneralButton.LINE_S",
+  "value": "2.6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 28,
+  "name": "GOLD",
+  "value": "Color3.fromRGB(255, 205, 86)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 29,
+  "name": "GOLD_LIGHT",
+  "value": "Color3.fromRGB(255, 238, 178)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 30,
+  "name": "GOLD_DARK",
+  "value": "Color3.fromRGB(176, 120, 22)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 31,
+  "name": "INK",
+  "value": "Color3.fromRGB(46, 28, 2)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 32,
+  "name": "WHITE",
+  "value": "Color3.new(1, 1, 1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 33,
+  "name": "FONT_H",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralButton.luau",
+  "line": 34,
+  "name": "FONT_B",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 15,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 22,
+  "name": "GeneralOffer.LEFT_W",
+  "value": "300",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 23,
+  "name": "GeneralOffer.SIDE_W",
+  "value": "190",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 24,
+  "name": "GeneralOffer.COMPACT_LEFT_W",
+  "value": "250",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 25,
+  "name": "GeneralOffer.COMPACT_SIDE_W",
+  "value": "160",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GeneralOffer.luau",
+  "line": 27,
+  "name": "GeneralOffer.WAIT_S",
+  "value": "30.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GlassPanel.luau",
+  "line": 17,
+  "name": "SHEEN_SEQ",
+  "value": "NumberSequence.new({",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GlassPanel.luau",
+  "line": 28,
+  "name": "LINE_SEQ",
+  "value": "NumberSequence.new({",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GlobeNotice.luau",
+  "line": 19,
+  "name": "GlobeNotice.TITLE",
+  "value": "\"Territory map unavailable\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GlobeNotice.luau",
+  "line": 20,
+  "name": "GlobeNotice.TEXT",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GlobeNotice.luau",
+  "line": 26,
+  "name": "GlobeNotice.TEXT_SHORT",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/GlobeNotice.luau",
+  "line": 31,
+  "name": "GlobeNotice.OWNER_HINT",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 209,
+  "name": "HelpOverlay.SECTIONS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 260,
+  "name": "HelpOverlay.LEGAL",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 269,
+  "name": "HelpOverlay.SOURCE_REPO",
+  "value": "\"lukechatton/roworld\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 271,
+  "name": "HelpOverlay.SOURCE_TIP",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 275,
+  "name": "HelpOverlay.SOURCE_TIP_S",
+  "value": "4.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 279,
+  "name": "HelpOverlay.KEYS_DESKTOP",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 296,
+  "name": "HelpOverlay.KEYS_TOUCH",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/HelpOverlay.luau",
+  "line": 307,
+  "name": "COLORS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/HoldRing.luau",
+  "line": 11,
+  "name": "HoldRing.SHOW_FROM",
+  "value": "0.2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/HoldRing.luau",
+  "line": 12,
+  "name": "HoldRing.SIZE",
+  "value": "58.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 29,
+  "name": "Leaderboard.ROWS",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 31,
+  "name": "Leaderboard.ADMIN_PINS",
+  "value": "8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 32,
+  "name": "Leaderboard.ADMIN_PINS_COMPACT",
+  "value": "3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 34,
+  "name": "Leaderboard.PEEK_SECONDS",
+  "value": "8.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Leaderboard.luau",
+  "line": 596,
+  "name": "Leaderboard.TEAM_ROWS",
+  "value": "7",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 24,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 46,
+  "name": "Locker.TABS",
+  "value": "{ { \"Skins\", \"skin\" }, { \"Flags\", \"flag\" } }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 47,
+  "name": "Locker.SKIN_CARD",
+  "value": "Vector2.new(116, 128)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 48,
+  "name": "Locker.FLAG_CARD",
+  "value": "Vector2.new(104, 96)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 49,
+  "name": "Locker.GRID_SIZE",
+  "value": "Vector2.new(560, 430)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 50,
+  "name": "Locker.CRATE_W",
+  "value": "250",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 52,
+  "name": "Locker.PREVIEW_COLOR",
+  "value": "Color3.fromRGB(64, 132, 230)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 53,
+  "name": "Locker.PREVIEW_TILES",
+  "value": "24",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 54,
+  "name": "Locker.CREDIT_WAIT_S",
+  "value": "30",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 56,
+  "name": "FONT",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Locker.luau",
+  "line": 57,
+  "name": "FONT_M",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Medium)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 18,
+  "name": "MapPicker.TABS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 27,
+  "name": "MapPicker.CARD",
+  "value": "Vector2.new(168, 132)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 28,
+  "name": "MapPicker.GRID_SIZE",
+  "value": "Vector2.new(740, 420)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/MapPicker.luau",
+  "line": 29,
+  "name": "MapPicker.ATTRIBUTION",
+  "value": "\"Made with Natural Earth and NOAA ETOPO1 data (public domain)\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PartyPanel.luau",
+  "line": 18,
+  "name": "PartyPanel.WIDTH",
+  "value": "250.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PartyPanel.luau",
+  "line": 21,
+  "name": "PartyPanel.ONE_COLUMN_MAX",
+  "value": "4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PartyPanel.luau",
+  "line": 22,
+  "name": "PartyPanel.WIDTH_WIDE",
+  "value": "360.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PartyPanel.luau",
+  "line": 24,
+  "name": "PartyPanel.SENT_S",
+  "value": "3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PartyPanel.luau",
+  "line": 28,
+  "name": "PartyPanel.ROW_H",
+  "value": "34.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PartyPanel.luau",
+  "line": 29,
+  "name": "PartyPanel.ROW_GAP",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PartyPanel.luau",
+  "line": 30,
+  "name": "PartyPanel.LIST_CHROME",
+  "value": "190.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PartyPanel.luau",
+  "line": 31,
+  "name": "PartyPanel.LIST_CHROME_COMPACT",
+  "value": "165.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 130,
+  "name": "VolumeRow.LEFT_W",
+  "value": "112.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 131,
+  "name": "VolumeRow.RIGHT",
+  "value": "14.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 132,
+  "name": "VolumeRow.PCT_W",
+  "value": "40.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 133,
+  "name": "VolumeRow.GAP",
+  "value": "10.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 134,
+  "name": "VolumeRow.TRACK_MIN",
+  "value": "80.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 135,
+  "name": "VolumeRow.TRACK_MAX",
+  "value": "170.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 137,
+  "name": "VolumeRow.WHEEL_STEP",
+  "value": "0.05",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PauseMenu.luau",
+  "line": 139,
+  "name": "FONT_PCT",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PlaceConfirm.luau",
+  "line": 15,
+  "name": "PlaceConfirm.BTN",
+  "value": "52.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PlaceConfirm.luau",
+  "line": 17,
+  "name": "PlaceConfirm.CLEAR",
+  "value": "34.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PlaceConfirm.luau",
+  "line": 68,
+  "name": "BTN",
+  "value": "PlaceConfirm.BTN",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/PlaceConfirm.luau",
+  "line": 160,
+  "name": "CLEAR",
+  "value": "PlaceConfirm.CLEAR",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Prices.luau",
+  "line": 16,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Prices.luau",
+  "line": 24,
+  "name": "Prices.REFRESH_S",
+  "value": "600",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/RadialMenu.luau",
+  "line": 38,
+  "name": "TAU",
+  "value": "2 * math.pi",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/RadialMenu.luau",
+  "line": 45,
+  "name": "RadialMenu.SLIDE_PICK_PX",
+  "value": "30.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/RadialMenu.luau",
+  "line": 448,
+  "name": "UIS",
+  "value": "game:GetService(\"UserInputService\")",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 13,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 27,
+  "name": "ShopButton.SIZE",
+  "value": "Vector2.new(232, 74)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 28,
+  "name": "ShopButton.PHONE_K",
+  "value": "0.72",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 30,
+  "name": "ShopButton.TURN_S",
+  "value": "2.6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 32,
+  "name": "WHITE",
+  "value": "Color3.new(1, 1, 1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 33,
+  "name": "PUMPKIN",
+  "value": "Color3.fromRGB(255, 160, 60)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 34,
+  "name": "LILAC",
+  "value": "Color3.fromRGB(214, 196, 255)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopButton.luau",
+  "line": 35,
+  "name": "FONT_H",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopLayout.luau",
+  "line": 5,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 20,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 38,
+  "name": "ShopSlot.CYCLE_S",
+  "value": "2.4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 39,
+  "name": "ShopSlot.FADE_S",
+  "value": "0.3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 40,
+  "name": "ShopSlot.SHINE_S",
+  "value": "3.2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 41,
+  "name": "ShopSlot.WIGGLE_S",
+  "value": "6.4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 43,
+  "name": "ShopSlot.CAPTION_H",
+  "value": "17.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 45,
+  "name": "GOLD_LIGHT",
+  "value": "Color3.fromRGB(255, 226, 122)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 46,
+  "name": "GOLD_DEEP",
+  "value": "Color3.fromRGB(238, 148, 28)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 47,
+  "name": "INK",
+  "value": "Color3.fromRGB(52, 28, 2)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 48,
+  "name": "RED",
+  "value": "Color3.fromRGB(232, 52, 52)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/ShopSlot.luau",
+  "line": 49,
+  "name": "FONT_H",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/SpawnOverlay.luau",
+  "line": 28,
+  "name": "SpawnOverlay.TITLE_PX",
+  "value": "14",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/SpawnOverlay.luau",
+  "line": 30,
+  "name": "SpawnOverlay.RING_PX",
+  "value": "40",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/SpawnOverlay.luau",
+  "line": 33,
+  "name": "SpawnOverlay.HEADS",
+  "value": "5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/SpawnOverlay.luau",
+  "line": 34,
+  "name": "SpawnOverlay.HEAD_PX",
+  "value": "20",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/SpawnOverlay.luau",
+  "line": 35,
+  "name": "SpawnOverlay.HEAD_OVERLAP",
+  "value": "6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 13,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 29,
+  "name": "StarterButton.SIZE",
+  "value": "Vector2.new(232, 82)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 30,
+  "name": "StarterButton.PHONE_K",
+  "value": "0.72",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 32,
+  "name": "StarterButton.SHINE_S",
+  "value": "3.4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 34,
+  "name": "GOLD",
+  "value": "Color3.fromRGB(255, 200, 61)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 35,
+  "name": "WHITE",
+  "value": "Color3.new(1, 1, 1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 36,
+  "name": "PINK",
+  "value": "Color3.fromRGB(255, 186, 186)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 37,
+  "name": "RED",
+  "value": "Color3.fromRGB(232, 46, 56)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 38,
+  "name": "ROBUX",
+  "value": "\"rbxasset://textures/ui/common/robux@3x.png\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterButton.luau",
+  "line": 39,
+  "name": "FONT_H",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 22,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 41,
+  "name": "StarterOffer.DESIGN",
+  "value": "Vector2.new(640, 340)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 42,
+  "name": "StarterOffer.MAX_K",
+  "value": "1.25",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 44,
+  "name": "StarterOffer.WAIT_S",
+  "value": "30.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 46,
+  "name": "GOLD",
+  "value": "Color3.fromRGB(255, 200, 61)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 47,
+  "name": "GOLD_LIGHT",
+  "value": "Color3.fromRGB(255, 232, 160)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 48,
+  "name": "RED",
+  "value": "Color3.fromRGB(232, 46, 56)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 49,
+  "name": "RED_DARK",
+  "value": "Color3.fromRGB(150, 16, 34)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 50,
+  "name": "INK",
+  "value": "Color3.fromRGB(52, 28, 2)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 51,
+  "name": "WHITE",
+  "value": "Color3.new(1, 1, 1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 52,
+  "name": "MUTED",
+  "value": "Color3.fromRGB(168, 182, 214)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 53,
+  "name": "NIGHT",
+  "value": "Color3.fromRGB(8, 12, 26)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 54,
+  "name": "ROBUX",
+  "value": "\"rbxasset://textures/ui/common/robux@3x.png\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 55,
+  "name": "FONT_H",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Heavy)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 56,
+  "name": "FONT_B",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/StarterOffer.luau",
+  "line": 57,
+  "name": "FONT_M",
+  "value": "Font.fromId(UITheme.FONT_ID, Enum.FontWeight.Medium)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Takeover.luau",
+  "line": 16,
+  "name": "Takeover.KIND",
+  "value": "\"takeover\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Takeover.luau",
+  "line": 18,
+  "name": "Takeover.CREDIT_WAIT_S",
+  "value": "30",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Takeover.luau",
+  "line": 20,
+  "name": "Takeover.PROMPT_WAIT_S",
+  "value": "180",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Takeover.luau",
+  "line": 22,
+  "name": "IS_ROBLOX",
+  "value": "typeof(game) == \"Instance\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TargetCard.luau",
+  "line": 26,
+  "name": "TargetCard.LIFETIME",
+  "value": "12.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 26,
+  "name": "Telemetry.STATE_EVERY_S",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 28,
+  "name": "Telemetry.LAND_WINDOW_S",
+  "value": "30",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 29,
+  "name": "Telemetry.LAND_CHANGE",
+  "value": "0.03",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 31,
+  "name": "Telemetry.IDLE_S",
+  "value": "60",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 35,
+  "name": "Telemetry.SLOW_FPS",
+  "value": "12",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 36,
+  "name": "Telemetry.SLOW_WINDOW_S",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 37,
+  "name": "Telemetry.SLOW_AFTER_S",
+  "value": "30",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 38,
+  "name": "Telemetry.SLOW_STALL_S",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 43,
+  "name": "Telemetry.SLOW_NUKES",
+  "value": "40",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 46,
+  "name": "Telemetry.MAP_PARTS",
+  "value": "{ \"camera\", \"glow\", \"roads\", \"ranges\", \"structures\", \"fx\", \"fronts\", \"markers\", \"input\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 47,
+  "name": "Telemetry.SLOW_SCRIPT_SHARE",
+  "value": "0.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 48,
+  "name": "Telemetry.SLOW_ENGINE_SHARE",
+  "value": "1 / 3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Telemetry.luau",
+  "line": 89,
+  "name": "UIS",
+  "value": "game:GetService(\"UserInputService\")",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 33,
+  "name": "TitleScreen.DESKTOP_WORD_RESERVE",
+  "value": "440.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 36,
+  "name": "TitleScreen.WORD_MAX_W",
+  "value": "0.35",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 40,
+  "name": "TitleScreen.CREDITS",
+  "value": "\"© OpenFront and Contributors  ·  Music by Rodrigo Flores  ·  \"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 42,
+  "name": "TitleScreen.CREDITS_SHORT",
+  "value": "\"© OpenFront and Contributors  ·  Music: Rodrigo Flores  ·  GNU AGPL v3\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 44,
+  "name": "SHINE_HALF",
+  "value": "70.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 287,
+  "name": "TitleScreen.JOIN_CLOSE_S",
+  "value": "5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 288,
+  "name": "TitleScreen.DIFFS",
+  "value": "{ [0] = \"Relaxed\", \"Standard\", \"Brutal\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 289,
+  "name": "TitleScreen.DIFF_BLURB",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 295,
+  "name": "INK",
+  "value": "Color3.new(0.01, 0.015, 0.05)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 1040,
+  "name": "TitleScreen.PHONE_DOCK",
+  "value": "\"grid2\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 1043,
+  "name": "TitleScreen.WORLD_MAP",
+  "value": "\"world\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TitleScreen.luau",
+  "line": 1674,
+  "name": "TitleScreen.TICK_FROM_S",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Tooltip.luau",
+  "line": 20,
+  "name": "Tooltip.PIN_SECONDS",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TouchRouter.luau",
+  "line": 33,
+  "name": "UIS",
+  "value": "game:GetService(\"UserInputService\")",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TrayFit.luau",
+  "line": 12,
+  "name": "TrayFit.SLOT_MAX",
+  "value": "60.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TrayFit.luau",
+  "line": 13,
+  "name": "TrayFit.SLOT_MIN",
+  "value": "54.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TrayFit.luau",
+  "line": 15,
+  "name": "TrayFit.SEP",
+  "value": "8.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TrayFit.luau",
+  "line": 16,
+  "name": "TrayFit.SEP_TIGHT",
+  "value": "5.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TrayFit.luau",
+  "line": 18,
+  "name": "TrayFit.CHROME",
+  "value": "33.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/TrayFit.luau",
+  "line": 21,
+  "name": "TrayFit.SHOP_W",
+  "value": "72.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Tutorial.luau",
+  "line": 34,
+  "name": "Tutorial.DONE_S",
+  "value": "0.9",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Tutorial.luau",
+  "line": 35,
+  "name": "Tutorial.END_S",
+  "value": "9.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Tutorial.luau",
+  "line": 37,
+  "name": "Tutorial.SPAWN_TRIES",
+  "value": "240",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Tutorial.luau",
+  "line": 39,
+  "name": "Tutorial.SPAWN_ROOM",
+  "value": "35.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Tutorial.luau",
+  "line": 41,
+  "name": "Tutorial.SPAWN_PX",
+  "value": "5.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIAdvisor.luau",
+  "line": 406,
+  "name": "SAM_FIELDS",
+  "value": "{ \"sam_sid\", \"nuke_uid\", \"fire_tick\", \"intercept_tick\", \"will_hit\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 12,
+  "name": "IS_ROBLOX",
+  "value": "(game :: any) ~= nil",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 39,
+  "name": "UICtx.IS_ROBLOX",
+  "value": "IS_ROBLOX",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 41,
+  "name": "UICtx.MODE_TITLE",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 42,
+  "name": "UICtx.MODE_SOLO",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 43,
+  "name": "UICtx.MODE_MULTI",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 47,
+  "name": "UICtx.DEFAULT_DIFFICULTY",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 52,
+  "name": "UICtx.RATIO_STOPS",
+  "value": "{ 0.10, 0.25, 0.35, 0.50, 0.75 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 55,
+  "name": "UICtx.DEFAULT_RATIO",
+  "value": "0.25",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 58,
+  "name": "UICtx.SFX",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 104,
+  "name": "UICtx.SFX_FALLBACK",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 125,
+  "name": "UICtx.SFX_GAP",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 197,
+  "name": "UICtx.PRIME_CORE",
+  "value": "{ \"Signal\", \"Defs\", \"Rules\", \"NumberFormat\", \"Ev\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 198,
+  "name": "UICtx.PRIME_UI",
+  "value": "{ \"UITheme\", \"Widgets\", \"UIRules\", \"FloatText\", \"Banner\", \"FillBar\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 199,
+  "name": "UICtx.PRIME_DATA",
+  "value": "{ \"Arsenal\", \"Cosmetics\", \"Staging\", \"Stars\", \"Starter\", \"Tutorial\", \"Products\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UICtx.luau",
+  "line": 276,
+  "name": "UICtx.EMPTY_RECT",
+  "value": "Rect.new(0, 0, 0, 0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 34,
+  "name": "UIInteract.DUP_MS",
+  "value": "180",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 36,
+  "name": "UIInteract.PICK_TOUCH_PX",
+  "value": "22.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 37,
+  "name": "UIInteract.PICK_MOUSE_PX",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 39,
+  "name": "UIInteract.UNIT_PICK_TOUCH",
+  "value": "26.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 40,
+  "name": "UIInteract.UNIT_PICK_MOUSE",
+  "value": "12.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 42,
+  "name": "UIInteract.REPEAT_DELAY",
+  "value": "0.45",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 43,
+  "name": "UIInteract.REPEAT_RATE",
+  "value": "1.0 / 25.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 45,
+  "name": "TAU",
+  "value": "2 * math.pi",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 603,
+  "name": "UIS",
+  "value": "game:GetService(\"UserInputService\")",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1104,
+  "name": "UIInteract.CROWD_FULL_TILES",
+  "value": "88.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1478,
+  "name": "UIS",
+  "value": "game:GetService(\"UserInputService\")",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1604,
+  "name": "HOTKEY_INDEX",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1632,
+  "name": "UIS",
+  "value": "game:GetService(\"UserInputService\")",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIInteract.luau",
+  "line": 1695,
+  "name": "UIS",
+  "value": "game:GetService(\"UserInputService\")",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIMaps.luau",
+  "line": 9,
+  "name": "UIMaps.DEFAULT_ID",
+  "value": "\"world\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIMaps.luau",
+  "line": 11,
+  "name": "UIMaps.FEATURED_RANK",
+  "value": "{ world = 1, europe = 2, northamerica = 3, southamerica = 4, asia = 5, africa = 6 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRoot.luau",
+  "line": 59,
+  "name": "UIRoot.FONT_WAIT_S",
+  "value": "2.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRoot.luau",
+  "line": 115,
+  "name": "UIS",
+  "value": "if UICtx.IS_ROBLOX then game:GetService(\"UserInputService\") else nil",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRoot.luau",
+  "line": 324,
+  "name": "UIRoot.TUTORIAL_DELAY_S",
+  "value": "0.9",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRoot.luau",
+  "line": 569,
+  "name": "UIRoot.STARTER_DELAY_S",
+  "value": "1.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRoot.luau",
+  "line": 1443,
+  "name": "UIRoot.REBIND_FRAMES",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRoot.luau",
+  "line": 1508,
+  "name": "UIRoot.HOP_ANSWER_S",
+  "value": "4.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRoot.luau",
+  "line": 1509,
+  "name": "UIRoot.HOP_TRAVEL_S",
+  "value": "25.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 36,
+  "name": "UIRules.BUILD_KINDS",
+  "value": "{ \"city\", \"port\", \"factory\", \"defense\", \"sam\", \"silo\", \"warship\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 37,
+  "name": "UIRules.NUKE_KINDS",
+  "value": "{ \"atom\", \"hydrogen\", \"mirv\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 39,
+  "name": "UIRules.ACTIONS",
+  "value": "{ \"city\", \"port\", \"factory\", \"defense\", \"sam\", \"silo\", \"warship\", \"atom\", \"hydrogen\", \"mirv\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 40,
+  "name": "UIRules.HOTKEYS",
+  "value": "{ \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"0\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 44,
+  "name": "UIRules.ARSENAL_BUILD",
+  "value": "{ \"artillery\", \"airfield\", \"railgun\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 45,
+  "name": "UIRules.ARSENAL_NUKES",
+  "value": "{ \"mega\", \"scatter\", \"airstrike\", \"slug\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 46,
+  "name": "UIRules.ARSENAL",
+  "value": "{ \"artillery\", \"airfield\", \"railgun\", \"mega\", \"scatter\", \"airstrike\", \"slug\", \"reinforce\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 48,
+  "name": "UIRules.TITLES",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 68,
+  "name": "UIRules.SHORT",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 88,
+  "name": "UIRules.BLURBS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 651,
+  "name": "UIRules.UPGRADABLE",
+  "value": "{ \"city\", \"port\", \"factory\", \"sam\", \"silo\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 658,
+  "name": "UIRules.STRUCTURE_BULK_STEPS",
+  "value": "{ 5, 10 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 659,
+  "name": "UIRules.NUKE_BULK_STEPS",
+  "value": "{ 2, 5 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 660,
+  "name": "UIRules.MAX_BULK",
+  "value": "50",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 768,
+  "name": "UIRules.PLACE_REASONS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UIRules.luau",
+  "line": 952,
+  "name": "UIRules.BOAT_SNAP_FULL",
+  "value": "120.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 16,
+  "name": "IS_ROBLOX",
+  "value": "(game :: any) ~= nil",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 20,
+  "name": "UITheme.IS_ROBLOX",
+  "value": "IS_ROBLOX",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 59,
+  "name": "RGBA_MT",
+  "value": "{ __type = \"RGBA\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 147,
+  "name": "UITheme.GLASS",
+  "value": "UITheme.rgba(0.051, 0.075, 0.149, 0.84)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 148,
+  "name": "UITheme.GLASS_SOLID",
+  "value": "UITheme.rgba(0.043, 0.062, 0.125, 0.96)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 149,
+  "name": "UITheme.GLASS_RAISED",
+  "value": "UITheme.rgba(0.1, 0.13, 0.24, 0.94)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 150,
+  "name": "UITheme.LINE",
+  "value": "UITheme.rgba(1.0, 1.0, 1.0, 0.1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 151,
+  "name": "UITheme.LINE_2",
+  "value": "UITheme.rgba(1.0, 1.0, 1.0, 0.18)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 152,
+  "name": "UITheme.FILL",
+  "value": "UITheme.rgba(1.0, 1.0, 1.0, 0.06)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 153,
+  "name": "UITheme.FILL_2",
+  "value": "UITheme.rgba(1.0, 1.0, 1.0, 0.11)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 154,
+  "name": "UITheme.TEXT",
+  "value": "Color3.new(0.94, 0.955, 1.0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 155,
+  "name": "UITheme.TEXT_2",
+  "value": "Color3.new(0.68, 0.73, 0.86)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 156,
+  "name": "UITheme.TEXT_3",
+  "value": "Color3.new(0.48, 0.53, 0.67)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 157,
+  "name": "UITheme.AMBER",
+  "value": "Color3.new(1.0, 0.71, 0.278)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 158,
+  "name": "UITheme.AMBER_HI",
+  "value": "Color3.new(1.0, 0.8, 0.47)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 159,
+  "name": "UITheme.AMBER_LO",
+  "value": "Color3.new(0.8, 0.49, 0.13)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 160,
+  "name": "UITheme.CYAN",
+  "value": "Color3.new(0.31, 0.82, 1.0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 161,
+  "name": "UITheme.GREEN",
+  "value": "Color3.new(0.37, 0.89, 0.6)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 162,
+  "name": "UITheme.RED",
+  "value": "Color3.new(1.0, 0.33, 0.39)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 164,
+  "name": "UITheme.SURRENDER_RED",
+  "value": "Color3.fromRGB(222, 48, 60)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 165,
+  "name": "UITheme.SURRENDER_RED_HI",
+  "value": "Color3.fromRGB(240, 72, 82)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 166,
+  "name": "UITheme.SURRENDER_RED_LO",
+  "value": "Color3.fromRGB(140, 20, 32)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 167,
+  "name": "UITheme.ORANGE",
+  "value": "Color3.new(1.0, 0.58, 0.36)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 168,
+  "name": "UITheme.VIOLET",
+  "value": "Color3.new(0.72, 0.62, 1.0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 169,
+  "name": "UITheme.GOLD",
+  "value": "Color3.new(1.0, 0.84, 0.4)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 170,
+  "name": "UITheme.INK",
+  "value": "Color3.new(0.1, 0.066, 0.02)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 171,
+  "name": "UITheme.WHITE",
+  "value": "Color3.new(1, 1, 1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 172,
+  "name": "UITheme.BLACK",
+  "value": "Color3.new(0, 0, 0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 173,
+  "name": "UITheme.CLEAR",
+  "value": "UITheme.rgba(0, 0, 0, 0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 183,
+  "name": "UITheme.R_SM",
+  "value": "6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 184,
+  "name": "UITheme.R_MD",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 185,
+  "name": "UITheme.R_LG",
+  "value": "14",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 191,
+  "name": "UITheme.GLASS_BOOST",
+  "value": "0.08",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 193,
+  "name": "UITheme.GLASS_SHEEN",
+  "value": "0.045",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 207,
+  "name": "UITheme.FONT_ID",
+  "value": "12187365977",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 209,
+  "name": "UITheme.LINE_EM",
+  "value": "1.185",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 211,
+  "name": "UITheme.ASCENT_EM",
+  "value": "0.935",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 215,
+  "name": "WEIGHT_ENUM",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 267,
+  "name": "UITheme.TNUM_RATIO",
+  "value": "0.975",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 270,
+  "name": "UITheme.RBX_BASELINE",
+  "value": "0.935 / 1.185",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 273,
+  "name": "APPROX",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1058,
+  "name": "PROBE_0",
+  "value": "{ [400] = 54, [500] = 55.5, [600] = 56.5, [700] = 57.5, [800] = 59.5, [900] = 61 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1132,
+  "name": "UITheme.REF_TS",
+  "value": "100",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1305,
+  "name": "UITheme.DESIGN_W",
+  "value": "1600",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1306,
+  "name": "UITheme.DESIGN_H",
+  "value": "900",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UITheme.luau",
+  "line": 1333,
+  "name": "UITheme.BUILTIN_ICONS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UnitCard.luau",
+  "line": 24,
+  "name": "UnitCard.STATE_TEXT",
+  "value": "{ [0] = \"Patrolling\", \"Returning to port for repairs\", \"Repairing\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/UnitCard.luau",
+  "line": 25,
+  "name": "UnitCard.DEST_SECONDS",
+  "value": "2.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 37,
+  "name": "W.SHRINK_BEGIN",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 38,
+  "name": "W.FILL",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 39,
+  "name": "W.EXPAND",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 40,
+  "name": "W.EXPAND_FILL",
+  "value": "3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 41,
+  "name": "W.SHRINK_CENTER",
+  "value": "4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 42,
+  "name": "W.SHRINK_END",
+  "value": "8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 44,
+  "name": "W.GROW_BEGIN",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 45,
+  "name": "W.GROW_END",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 46,
+  "name": "W.GROW_BOTH",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 48,
+  "name": "W.MOUSE_STOP",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 49,
+  "name": "W.MOUSE_PASS",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 50,
+  "name": "W.MOUSE_IGNORE",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 52,
+  "name": "W.ALIGN_BEGIN",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 53,
+  "name": "W.ALIGN_CENTER",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 54,
+  "name": "W.ALIGN_END",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 56,
+  "name": "W.ALIGN_LEFT",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 57,
+  "name": "W.ALIGN_RIGHT",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 58,
+  "name": "W.VALIGN_TOP",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 59,
+  "name": "W.VALIGN_CENTER",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 60,
+  "name": "W.VALIGN_BOTTOM",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 62,
+  "name": "W.OVERRUN_NONE",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 63,
+  "name": "W.OVERRUN_ELLIPSIS",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 66,
+  "name": "W.PRESET_TOP_LEFT",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 67,
+  "name": "W.PRESET_FULL_RECT",
+  "value": "15",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 68,
+  "name": "W.PRESET_BOTTOM_WIDE",
+  "value": "12",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 69,
+  "name": "W.PRESET_TOP_WIDE",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 70,
+  "name": "W.PRESET_CENTER",
+  "value": "8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 73,
+  "name": "W.TRANS_LINEAR",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 74,
+  "name": "W.TRANS_SINE",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 75,
+  "name": "W.TRANS_QUINT",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 76,
+  "name": "W.TRANS_QUART",
+  "value": "3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 77,
+  "name": "W.TRANS_QUAD",
+  "value": "4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 78,
+  "name": "W.TRANS_EXPO",
+  "value": "5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 79,
+  "name": "W.TRANS_ELASTIC",
+  "value": "6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 80,
+  "name": "W.TRANS_CUBIC",
+  "value": "7",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 81,
+  "name": "W.TRANS_CIRC",
+  "value": "8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 82,
+  "name": "W.TRANS_BOUNCE",
+  "value": "9",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 83,
+  "name": "W.TRANS_BACK",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 84,
+  "name": "W.TRANS_SPRING",
+  "value": "11",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 85,
+  "name": "W.EASE_IN",
+  "value": "0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 86,
+  "name": "W.EASE_OUT",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 87,
+  "name": "W.EASE_IN_OUT",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 88,
+  "name": "W.EASE_OUT_IN",
+  "value": "3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 90,
+  "name": "Z_CONTENT",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 180,
+  "name": "W.MAX_REPORTED_ERRORS",
+  "value": "64",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 365,
+  "name": "SIGNALS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 796,
+  "name": "PRESETS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 1500,
+  "name": "W.SHADOWS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 1514,
+  "name": "W.SHADOWS",
+  "value": "m.shadows",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 1844,
+  "name": "MARGIN_KEYS",
+  "value": "{ margin_left = 1, margin_top = 2, margin_right = 3, margin_bottom = 4 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 2334,
+  "name": "W.BUTTON_STATES",
+  "value": "{ \"normal\", \"hover\", \"pressed\", \"hover_pressed\", \"disabled\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 2486,
+  "name": "STATE_FONT",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/UI/Widgets.luau",
+  "line": 2493,
+  "name": "STATE_ICON",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 41,
+  "name": "AudioDirector.SFX_NAMES",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 114,
+  "name": "AudioDirector.COOLDOWNS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 130,
+  "name": "AudioDirector.THROTTLE_MS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 160,
+  "name": "AudioDirector.DEFAULT_THROTTLE_MS",
+  "value": "50",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 162,
+  "name": "AudioDirector.MAX_SAME",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 212,
+  "name": "AudioDirector.DEFAULT_MAX_SAME",
+  "value": "3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 214,
+  "name": "AudioDirector.PRIORITY",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 243,
+  "name": "AudioDirector.AUTO_DUCK",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 269,
+  "name": "AudioDirector.POP_SLOW",
+  "value": "40.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 270,
+  "name": "AudioDirector.POP_FAST",
+  "value": "600.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 271,
+  "name": "AudioDirector.POP_RATE_MIN",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 272,
+  "name": "AudioDirector.POP_RATE_MAX",
+  "value": "20.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 273,
+  "name": "AudioDirector.POP_CURVE",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 275,
+  "name": "AudioDirector.POP_SMOOTH_S",
+  "value": "0.45",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 277,
+  "name": "AudioDirector.POP_PER_BATCH",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 278,
+  "name": "AudioDirector.POP_SECOND_S",
+  "value": "0.05",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 286,
+  "name": "AudioDirector.POP_PITCH_MIN",
+  "value": "0.8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 287,
+  "name": "AudioDirector.POP_PITCH_MAX",
+  "value": "1.1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 288,
+  "name": "AudioDirector.POP_WARM_S",
+  "value": "15.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 289,
+  "name": "AudioDirector.POP_COOL_S",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 290,
+  "name": "AudioDirector.POP_RUN_GAP_S",
+  "value": "0.7",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 292,
+  "name": "AudioDirector.POP_JITTER",
+  "value": "0.012",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 294,
+  "name": "AudioDirector.POP_PROGRESS_LIFT",
+  "value": "0.05",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 296,
+  "name": "AudioDirector.POP_DB_MIN",
+  "value": "-9.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 297,
+  "name": "AudioDirector.POP_DB_MAX",
+  "value": "-3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 298,
+  "name": "AudioDirector.POP_BIG",
+  "value": "60.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 300,
+  "name": "AudioDirector.VOICE_COUNT",
+  "value": "18",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 306,
+  "name": "AudioDirector.HUSH_POPS",
+  "value": "{ eliminate = 0.65 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 310,
+  "name": "AudioDirector.PRELOAD_FIRST",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 324,
+  "name": "AudioDirector.CROSSFADE_S",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 326,
+  "name": "AudioDirector.TRACK_OVERLAP_S",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 328,
+  "name": "AudioDirector.MOOD_FADE_S",
+  "value": "3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 329,
+  "name": "AudioDirector.WAR_FADE_S",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 332,
+  "name": "AudioDirector.TRACK_LOAD_TIMEOUT_S",
+  "value": "12.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 333,
+  "name": "AudioDirector.TOGGLE_FADE_S",
+  "value": "0.6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 334,
+  "name": "AudioDirector.DUCK_ATTACK_DB_PER_S",
+  "value": "60.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 335,
+  "name": "AudioDirector.DUCK_RELEASE_DB_PER_S",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 336,
+  "name": "AudioDirector.SILENT_DB",
+  "value": "-80.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 337,
+  "name": "AudioDirector.SETTINGS_SECTION",
+  "value": "\"audio\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 338,
+  "name": "AudioDirector.SETTINGS_KEY",
+  "value": "\"music_enabled\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 341,
+  "name": "AudioDirector.SETTINGS_POPS_KEY",
+  "value": "\"pops_enabled\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 345,
+  "name": "AudioDirector.SETTINGS_VOLUME_KEY",
+  "value": "\"music_volume\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 348,
+  "name": "AudioDirector.SETTINGS_WAIT_S",
+  "value": "2.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 821,
+  "name": "AudioDirector.REPLACE",
+  "value": "{ attack_launch = \"order_ack\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 823,
+  "name": "AudioDirector.TRIM_DB",
+  "value": "{ conquer = -6.0 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/AudioDirector.luau",
+  "line": 1263,
+  "name": "AudioDirector.FAILURE_CHECK_S",
+  "value": "4.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/MusicMood.luau",
+  "line": 13,
+  "name": "MusicMood.WAR_HOLD_S",
+  "value": "40.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/MusicMood.luau",
+  "line": 14,
+  "name": "KIND_TRIBE",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/Playlist.luau",
+  "line": 15,
+  "name": "Playlist.HISTORY",
+  "value": "6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/Playlist.luau",
+  "line": 17,
+  "name": "Playlist.FALLBACK",
+  "value": "{ wait = \"calm\", calm = \"title\", war = \"calm\", victory = \"title\", defeat = \"calm\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/Playlist.luau",
+  "line": 19,
+  "name": "Playlist.AFTER",
+  "value": "{ victory = \"title\", defeat = \"calm\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Audio/Playlist.luau",
+  "line": 21,
+  "name": "Playlist.OPENERS",
+  "value": "{ title = true }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/AtlasReady.luau",
+  "line": 17,
+  "name": "AtlasReady.RETRY_S",
+  "value": "45",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/AtlasReady.luau",
+  "line": 18,
+  "name": "AtlasReady.TRIES",
+  "value": "8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 39,
+  "name": "FalloutGlow.SCALE",
+  "value": "8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 41,
+  "name": "FalloutGlow.BROIL_SPEED_COLD",
+  "value": "0.0018",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 42,
+  "name": "FalloutGlow.BROIL_SPEED_HOT",
+  "value": "0.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 43,
+  "name": "FalloutGlow.NOISE_FREQ1",
+  "value": "0.059",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 44,
+  "name": "FalloutGlow.NOISE_FREQ2",
+  "value": "0.171",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 45,
+  "name": "FalloutGlow.CONTRAST_LO_COLD",
+  "value": "0.52",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 46,
+  "name": "FalloutGlow.CONTRAST_LO_HOT",
+  "value": "0.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 47,
+  "name": "FalloutGlow.CONTRAST_HI_COLD",
+  "value": "1.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 48,
+  "name": "FalloutGlow.CONTRAST_HI_HOT",
+  "value": "0.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 49,
+  "name": "FalloutGlow.META_FREQ",
+  "value": "0.02",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 50,
+  "name": "FalloutGlow.INTENSITY_COLD",
+  "value": "0.15",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 51,
+  "name": "FalloutGlow.INTENSITY_HOT",
+  "value": "1.8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 52,
+  "name": "FalloutGlow.META_INFLUENCE_COLD",
+  "value": "1.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 53,
+  "name": "FalloutGlow.META_INFLUENCE_HOT",
+  "value": "0.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 54,
+  "name": "FalloutGlow.OPACITY_FADE_END",
+  "value": "1.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 55,
+  "name": "FalloutGlow.BLOOM",
+  "value": "{ 0.054901960784313725, 0.8196078431372549, 0.0 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 56,
+  "name": "FalloutGlow.COVERAGE",
+  "value": "1.1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 57,
+  "name": "FalloutGlow.HEAT_DECAY_PER_TICK",
+  "value": "1.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 58,
+  "name": "FalloutGlow.PARTICLE_DARK",
+  "value": "{ 0.05, 0.4, 0.05 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 59,
+  "name": "FalloutGlow.PARTICLE_BRIGHT",
+  "value": "{ 0.2, 1.0, 0.2 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 60,
+  "name": "FalloutGlow.PARTICLE_THRESHOLD_UNOWNED",
+  "value": "0.85",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 61,
+  "name": "FalloutGlow.PARTICLE_THRESHOLD_OWNED",
+  "value": "0.875",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 62,
+  "name": "FalloutGlow.PARTICLE_FLICKER_SPEED",
+  "value": "0.2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 63,
+  "name": "FalloutGlow.PARTICLE_STRENGTH",
+  "value": "1.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 64,
+  "name": "FalloutGlow.PARTICLE_FRESH_SCALE",
+  "value": "0.2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 66,
+  "name": "FalloutGlow.BLUR",
+  "value": "{ 0.375, 0.25, 0.0625 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 68,
+  "name": "FalloutGlow.UPDATE_S",
+  "value": "1 / 20",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 70,
+  "name": "FalloutGlow.UPDATE_S_MOBILE",
+  "value": "1 / 12",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 73,
+  "name": "FalloutGlow.DUTY",
+  "value": "8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 74,
+  "name": "FalloutGlow.NOISE_BUDGET_S",
+  "value": "0.0015",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 75,
+  "name": "FalloutGlow.SKIP_MAX",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 78,
+  "name": "FalloutGlow.CUSHION",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FalloutGlow.luau",
+  "line": 79,
+  "name": "FalloutGlow.WIN_MIN",
+  "value": "4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FrontLayer.luau",
+  "line": 26,
+  "name": "FrontLayer.POLL_S",
+  "value": "0.2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FrontLayer.luau",
+  "line": 27,
+  "name": "FrontLayer.ANIM_S",
+  "value": "0.25",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FrontLayer.luau",
+  "line": 28,
+  "name": "FrontLayer.SNAP_FULL",
+  "value": "200",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FrontLayer.luau",
+  "line": 29,
+  "name": "FrontLayer.MIN_CLUSTER_FULL",
+  "value": "30",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FrontLayer.luau",
+  "line": 30,
+  "name": "FrontLayer.MAX_CLUSTERS",
+  "value": "2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FrontLayer.luau",
+  "line": 31,
+  "name": "FrontLayer.OUTGOING",
+  "value": "Color3.fromRGB(0x3f, 0xa9, 0xf5)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FrontLayer.luau",
+  "line": 32,
+  "name": "FrontLayer.INCOMING",
+  "value": "Color3.fromRGB(0xf8, 0x71, 0x71)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FrontLayer.luau",
+  "line": 33,
+  "name": "FrontLayer.TEXT_PX",
+  "value": "17",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FrontLayer.luau",
+  "line": 34,
+  "name": "FrontLayer.FONT",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 46,
+  "name": "FxLayer.NUKE_SHOCK_S",
+  "value": "1.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 47,
+  "name": "FxLayer.NUKE_SHOCK_K",
+  "value": "1.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 48,
+  "name": "FxLayer.POP_S",
+  "value": "0.8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 49,
+  "name": "FxLayer.POP_RADIUS",
+  "value": "40",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 51,
+  "name": "FxLayer.CONQUEST_S",
+  "value": "2.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 52,
+  "name": "FxLayer.CONQUEST_FADE_IN",
+  "value": "0.1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 53,
+  "name": "FxLayer.CONQUEST_FADE_OUT",
+  "value": "0.6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 57,
+  "name": "FxLayer.FLAG",
+  "value": "MapFx.flag",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 58,
+  "name": "FxLayer.BANNER",
+  "value": "MapFx.banner",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 59,
+  "name": "FxLayer.FLAG_FRAME_S",
+  "value": "0.09",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 60,
+  "name": "FxLayer.FLAG_WORLD",
+  "value": "12",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 61,
+  "name": "FxLayer.FLAG_MIN_PX",
+  "value": "24",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 64,
+  "name": "FxLayer.BANNER_MIN_LUMA",
+  "value": "0.32",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 65,
+  "name": "FxLayer.BANNER_LIFT",
+  "value": "0.3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 66,
+  "name": "FxLayer.GOLD_Y_OFFSET",
+  "value": "8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 67,
+  "name": "FxLayer.GOLD_SIZE",
+  "value": "6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 68,
+  "name": "FxLayer.GOLD_MIN_PX",
+  "value": "15",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 69,
+  "name": "FxLayer.GOLD_FONT",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 73,
+  "name": "FxLayer.BONUS_S",
+  "value": "1.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 74,
+  "name": "FxLayer.BONUS_RISE",
+  "value": "3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 75,
+  "name": "FxLayer.BONUS_Y_OFFSET",
+  "value": "-3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 76,
+  "name": "FxLayer.BONUS_SIZE",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 77,
+  "name": "FxLayer.BONUS_MIN_PX",
+  "value": "13",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 79,
+  "name": "FxLayer.BONUS_MAX_PX",
+  "value": "40",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 80,
+  "name": "FxLayer.BONUS_CULL_ZOOM",
+  "value": "0.3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 81,
+  "name": "FxLayer.BONUS_MAX",
+  "value": "48",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 99,
+  "name": "FxLayer.BURSTS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 111,
+  "name": "FxLayer.NUKE_FX_RADIUS",
+  "value": "{ [0] = 70, [1] = 160, [3] = 70, [4] = 120, [5] = 70 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 113,
+  "name": "FxLayer.DEBRIS_PLAN",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 119,
+  "name": "FxLayer.DEBRIS_S",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 120,
+  "name": "FxLayer.DEBRIS_FADE_IN",
+  "value": "0.1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 121,
+  "name": "FxLayer.DEBRIS_FADE_OUT",
+  "value": "0.8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 126,
+  "name": "FxLayer.BURST_MAX",
+  "value": "96",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 127,
+  "name": "FxLayer.DEBRIS_MAX",
+  "value": "240",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 128,
+  "name": "FxLayer.WARHEAD_DEBRIS",
+  "value": "28",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/FxLayer.luau",
+  "line": 130,
+  "name": "FxLayer.WARHEAD_WINDOW_S",
+  "value": "10.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapCamera.luau",
+  "line": 17,
+  "name": "IS_ROBLOX",
+  "value": "(game :: any) ~= nil",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapCamera.luau",
+  "line": 33,
+  "name": "MapCamera.MAX_SCALE_900",
+  "value": "44.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapCamera.luau",
+  "line": 35,
+  "name": "MapCamera.FIT_MARGIN",
+  "value": "0.9",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapCamera.luau",
+  "line": 37,
+  "name": "MapCamera.ZOOM_TAU",
+  "value": "0.07",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapCamera.luau",
+  "line": 39,
+  "name": "MapCamera.INERTIA_DECAY",
+  "value": "0.004",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapCamera.luau",
+  "line": 41,
+  "name": "MapCamera.INERTIA_HOLD_MS",
+  "value": "90",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapCamera.luau",
+  "line": 288,
+  "name": "MapCamera.CENTRE_FROM",
+  "value": "0.75",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapCamera.luau",
+  "line": 323,
+  "name": "DIST_K",
+  "value": "0.0044",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 42,
+  "name": "MapInput.TAP_SLOP_MOUSE",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 43,
+  "name": "MapInput.TAP_SLOP_TOUCH",
+  "value": "16.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 44,
+  "name": "MapInput.LONG_PRESS_MS",
+  "value": "500",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 45,
+  "name": "MapInput.WHEEL_STEP",
+  "value": "1.16",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 46,
+  "name": "MapInput.KEY_PAN_SPEED",
+  "value": "0.55",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 47,
+  "name": "MapInput.KEY_ZOOM_SPEED",
+  "value": "1.6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 48,
+  "name": "MapInput.STOP_PX_PER_S",
+  "value": "30.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 49,
+  "name": "MapInput.PINCH_MOVE_PX",
+  "value": "8.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 50,
+  "name": "MapInput.GUI_PROBE_S",
+  "value": "0.1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 53,
+  "name": "MapInput.STALE_TOUCH_S",
+  "value": "3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 57,
+  "name": "MOUSE",
+  "value": "\"mouse\"",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapInput.luau",
+  "line": 58,
+  "name": "IS_END",
+  "value": "{ [Enum.UserInputState.End] = true, [Enum.UserInputState.Cancel] = true }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 23,
+  "name": "IS_ROBLOX",
+  "value": "(game :: any) ~= nil",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 50,
+  "name": "MapSurface.TERRITORY_ALPHA",
+  "value": "150",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 51,
+  "name": "MapSurface.SATURATION",
+  "value": "0.85",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 52,
+  "name": "MapSurface.BORDER_DARKEN",
+  "value": "0.125",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 53,
+  "name": "MapSurface.HIGHLIGHT_BRIGHTEN",
+  "value": "0.25",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 54,
+  "name": "MapSurface.FRIENDLY_TINT",
+  "value": "0.35",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 55,
+  "name": "MapSurface.DEFENSE_CHECKER_DARKEN",
+  "value": "0.7",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 56,
+  "name": "MapSurface.DEFENSE_FILL_DARKEN",
+  "value": "0.85",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 58,
+  "name": "MapSurface.IMAGE_MAX",
+  "value": "1024",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 59,
+  "name": "MapSurface.BAND_ROWS",
+  "value": "32",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 61,
+  "name": "MapSurface.REBUILD_TILES_PER_STEP",
+  "value": "90000",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 72,
+  "name": "MapSurface.REPAINT_TILES_PER_STEP",
+  "value": "6000",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 76,
+  "name": "MapSurface.EXPAND_MIN_CHANGES",
+  "value": "256",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 89,
+  "name": "MapSurface.HOVER_FILL_MAX",
+  "value": "30000",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 92,
+  "name": "MapSurface.SWEEP_SCAN_PER_STEP",
+  "value": "20000",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 104,
+  "name": "MapSurface.STEP_BUDGET_S",
+  "value": "0.003",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 105,
+  "name": "MapSurface.STEP_BUDGET_MOBILE_S",
+  "value": "0.002",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 106,
+  "name": "MapSurface.DRAIN_FRAMES",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 107,
+  "name": "MapSurface.REPAINT_MIN_TILES",
+  "value": "256",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 109,
+  "name": "MapSurface.REPAINT_CHUNK",
+  "value": "256",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 111,
+  "name": "MapSurface.BACKGROUND",
+  "value": "Color3.fromRGB(0x3c, 0x3c, 0x3c)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 113,
+  "name": "BAND_ROWS",
+  "value": "MapSurface.BAND_ROWS",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 114,
+  "name": "MAX_OWNERS",
+  "value": "4096",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 193,
+  "name": "OCEAN",
+  "value": "{ 0x47, 0x85, 0xB5 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 194,
+  "name": "SAND",
+  "value": "{ 0xCC, 0xCB, 0x9E }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 195,
+  "name": "PLAINS",
+  "value": "{ 0xBE, 0xDC, 0x8A }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 196,
+  "name": "HIGHLAND",
+  "value": "{ 0xDC, 0xCB, 0x9E }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 197,
+  "name": "MOUNTAIN",
+  "value": "{ 0xE6, 0xE6, 0xE6 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 198,
+  "name": "BACKGROUND",
+  "value": "{ 0x3C, 0x3C, 0x3C }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapSurface.luau",
+  "line": 1122,
+  "name": "MapSurface.COMPACT_MIN",
+  "value": "32768",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 41,
+  "name": "MapView.RENDER_PRIORITY",
+  "value": "Enum.RenderPriority.Camera.Value + 1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 45,
+  "name": "MapView.HOVER_DELAY_S",
+  "value": "0.08",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 46,
+  "name": "MapView.MAP_DISPLAY_ORDER",
+  "value": "-10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 48,
+  "name": "MapView.FOCUS_MAX_ZOOM",
+  "value": "0.3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 51,
+  "name": "MapView.SPAWN_MIN_RAD",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 52,
+  "name": "MapView.SPAWN_MAX_RAD",
+  "value": "30",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 828,
+  "name": "WHITE",
+  "value": "Color3.new(1, 1, 1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 829,
+  "name": "AIM_COVERED",
+  "value": "Color3.new(1.0, 0.16, 0.12)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 830,
+  "name": "AIM_NUKE",
+  "value": "Color3.new(1.0, 0.84, 0.46)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 831,
+  "name": "AIM_BOAT",
+  "value": "Color3.new(0.55, 0.85, 1.0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/MapView.luau",
+  "line": 832,
+  "name": "AIM_INVALID",
+  "value": "Color3.new(0.6, 0.6, 0.6)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 34,
+  "name": "NameLayer.FONT",
+  "value": "Font.fromId(12187365977, Enum.FontWeight.Bold)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 35,
+  "name": "NameLayer.NAME_SCALE_FACTOR",
+  "value": "0.4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 36,
+  "name": "NameLayer.NAME_SCALE_CAP",
+  "value": "3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 37,
+  "name": "NameLayer.TROOP_SIZE_MULT",
+  "value": "0.6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 38,
+  "name": "NameLayer.LERP_SPEED",
+  "value": "10.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 40,
+  "name": "NameLayer.CULL_VW",
+  "value": "0.004",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 41,
+  "name": "NameLayer.CULL_MIN_PX",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 42,
+  "name": "NameLayer.SHADE_NATION",
+  "value": "0.3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 43,
+  "name": "NameLayer.SHADE_BOT",
+  "value": "0.4",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 44,
+  "name": "NameLayer.OUTLINE_K",
+  "value": "0.085",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 45,
+  "name": "NameLayer.REPLACE_TICKS",
+  "value": "30",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 46,
+  "name": "NameLayer.SPAWN_DIAMETER",
+  "value": "8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 53,
+  "name": "NameLayer.BUDGET_S",
+  "value": "0.0015",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 55,
+  "name": "NameLayer.FILL_CHECK",
+  "value": "2048",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 57,
+  "name": "NameLayer.LINE_K",
+  "value": "1.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 62,
+  "name": "NameLayer.OWN_MAX_VH",
+  "value": "0.04",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 63,
+  "name": "NameLayer.OWN_MAX_MIN_PX",
+  "value": "18.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/NameLayer.luau",
+  "line": 64,
+  "name": "NameLayer.CROWN_MIN_PX",
+  "value": "16",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 22,
+  "name": "RangeLayer.NEAR_AIM",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 23,
+  "name": "RangeLayer.MAX_RINGS",
+  "value": "300",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 28,
+  "name": "RING_A",
+  "value": "{ 0.62, 0.55, 0.92, 0.62, 1.0, 0.95, 1.0, 0.6, 0.7 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 29,
+  "name": "WIDTH",
+  "value": "{ 1.5, 1.5, 2.0, 2.0, 3.0, 2.2, 2.6, 1.5, 1.6 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 30,
+  "name": "FILL_A",
+  "value": "{ 0.045, 0.04, 0.075, 0.03, 0.055, 0.085, 0.2, 0.03, 0.0 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 31,
+  "name": "PULSE",
+  "value": "{ false, false, false, false, true, false, true, false, false }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 33,
+  "name": "OWN_SAM_FADE",
+  "value": "{ 1.9, 2.5 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 34,
+  "name": "OWN_DEF_FADE",
+  "value": "{ 1.42, 1.72 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 38,
+  "name": "RINGED",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 45,
+  "name": "HOSTILE_TINT",
+  "value": "Color3.new(1.0, 0.2, 0.16)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 46,
+  "name": "WHITE",
+  "value": "Color3.new(1, 1, 1)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 47,
+  "name": "HOT_COLOR",
+  "value": "HOSTILE_TINT:Lerp(Color3.new(1.0, 0.45, 0.35), 0.25)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 49,
+  "name": "NO_LVL",
+  "value": "{ 1, 0, -100000 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RangeLayer.luau",
+  "line": 428,
+  "name": "NEAR2",
+  "value": "RangeLayer.NEAR_AIM * RangeLayer.NEAR_AIM",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 36,
+  "name": "RoadLayer.MIN_ZOOM",
+  "value": "3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 37,
+  "name": "RoadLayer.FADE_RANGE",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 38,
+  "name": "RoadLayer.DETAIL_ZOOM",
+  "value": "6.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 39,
+  "name": "RoadLayer.THICKNESS",
+  "value": "1.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 47,
+  "name": "RoadLayer.DEVICE_RATIO",
+  "value": "nil :: number?",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 52,
+  "name": "RoadLayer.RUN_MAX",
+  "value": "12",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 55,
+  "name": "RoadLayer.RECOLOR_S",
+  "value": "0.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 56,
+  "name": "RoadLayer.UNOWNED",
+  "value": "Color3.new(0.75, 0.75, 0.75)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 60,
+  "name": "RoadLayer.LIGHT",
+  "value": "Color3.fromRGB(0xE6, 0xE6, 0xE6)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 61,
+  "name": "RoadLayer.DARK",
+  "value": "Color3.new(0, 0, 0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 62,
+  "name": "RoadLayer.LIGHT_ABOVE",
+  "value": "0.8",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 63,
+  "name": "RoadLayer.BORDER_DARKEN",
+  "value": "0.125",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 66,
+  "name": "RoadLayer.POOL_SPARE",
+  "value": "64",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 69,
+  "name": "RoadLayer.PAN_SLACK",
+  "value": "64",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/RoadLayer.luau",
+  "line": 73,
+  "name": "KIND_ART",
+  "value": "{ \"h\", \"v\", \"tl\", \"tr\", \"bl\", \"br\" }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 45,
+  "name": "StructureLayer.ICON_SIZE",
+  "value": "30",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 46,
+  "name": "StructureLayer.DEVICE_RATIO",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 47,
+  "name": "StructureLayer.DOTS_ZOOM",
+  "value": "1.2",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 48,
+  "name": "StructureLayer.DOT_SCALE",
+  "value": "0.3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 49,
+  "name": "StructureLayer.SCALE_FACTOR_OUT",
+  "value": "3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 50,
+  "name": "StructureLayer.GROW_ZOOM",
+  "value": "7.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 53,
+  "name": "StructureLayer.SHAPE_SCALE",
+  "value": "table.clone(Sprites.shape_scale)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 54,
+  "name": "StructureLayer.ICON_FILL",
+  "value": "table.clone(Sprites.icon_fill)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 55,
+  "name": "StructureLayer.FILL_V",
+  "value": "0.65",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 56,
+  "name": "StructureLayer.BORDER_V",
+  "value": "0.1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 57,
+  "name": "StructureLayer.BORDER_DARKEN",
+  "value": "0.125",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 58,
+  "name": "StructureLayer.CONSTRUCT_FILL",
+  "value": "Color3.fromRGB(198, 198, 198)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 59,
+  "name": "StructureLayer.CONSTRUCT_BORDER",
+  "value": "Color3.fromRGB(127, 127, 127)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 62,
+  "name": "StructureLayer.BAR_W",
+  "value": "14",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 63,
+  "name": "StructureLayer.BAR_H",
+  "value": "3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 64,
+  "name": "StructureLayer.BAR_OFFSET_Y",
+  "value": "6",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 65,
+  "name": "StructureLayer.BAR_BORDER",
+  "value": "1",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 66,
+  "name": "StructureLayer.BAR_THRESHOLDS",
+  "value": "{ 0.25, 0.5, 0.75 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 67,
+  "name": "StructureLayer.BAR_COLORS",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 74,
+  "name": "StructureLayer.BAR_MIN_PX",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 75,
+  "name": "SHAPE_SCALE",
+  "value": "StructureLayer.SHAPE_SCALE",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/StructureLayer.luau",
+  "line": 76,
+  "name": "ICON_FILL",
+  "value": "StructureLayer.ICON_FILL",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/TrailBudget.luau",
+  "line": 20,
+  "name": "TrailBudget.MAX",
+  "value": "160",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/TrailBudget.luau",
+  "line": 22,
+  "name": "TrailBudget.BUDGET",
+  "value": "800",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/TrailBudget.luau",
+  "line": 26,
+  "name": "TrailBudget.RING_MAX",
+  "value": "24",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 60,
+  "name": "UnitLayer.UNIT_SIZE",
+  "value": "13",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 61,
+  "name": "UnitLayer.MIN_PX",
+  "value": "5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 62,
+  "name": "UnitLayer.TRAIL_ALPHA",
+  "value": "0.588",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 63,
+  "name": "UnitLayer.TRAIL_STEP",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 64,
+  "name": "UnitLayer.TRAIL_WIDTH",
+  "value": "0.9",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 66,
+  "name": "UnitLayer.TRAIL_MIN_PX",
+  "value": "1.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 69,
+  "name": "UnitLayer.TRAIN_CARRIAGES",
+  "value": "5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 70,
+  "name": "UnitLayer.TRAIN_SPACING",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 73,
+  "name": "UnitLayer.CARS_MIN_ZOOM",
+  "value": "3.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 74,
+  "name": "UnitLayer.DEVICE_RATIO",
+  "value": "2.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 78,
+  "name": "UnitLayer.THROTTLE_FROM",
+  "value": "160",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 79,
+  "name": "UnitLayer.THROTTLE_3",
+  "value": "480",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 80,
+  "name": "UnitLayer.THROTTLE_S",
+  "value": "0.030",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 81,
+  "name": "UnitLayer.THROTTLE_3_S",
+  "value": "0.045",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 83,
+  "name": "UnitLayer.POOL_SPARE",
+  "value": "48",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 89,
+  "name": "COL_CARRIAGE",
+  "value": "10",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 90,
+  "name": "UNIT_COL",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 96,
+  "name": "NUKE_COL",
+  "value": "{",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 110,
+  "name": "NUKE_PLAIN",
+  "value": "{ [Defs.N_SHELL] = true }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/UnitLayer.luau",
+  "line": 112,
+  "name": "NUKE_SCALE",
+  "value": "{ [Defs.N_MEGA] = 1.5, [Defs.N_SHELL] = 0.75, [Defs.N_SLUG] = 1.2 }",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/WakeRoute.luau",
+  "line": 26,
+  "name": "WakeRoute.TOL",
+  "value": "1.5",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/WakeRoute.luau",
+  "line": 28,
+  "name": "WakeRoute.CORNER",
+  "value": "16.0",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/WakeRoute.luau",
+  "line": 30,
+  "name": "WakeRoute.MIN_TURN",
+  "value": "math.rad(2.0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/WakeRoute.luau",
+  "line": 32,
+  "name": "WakeRoute.ARC_STEP",
+  "value": "math.rad(9.0)",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/WakeRoute.luau",
+  "line": 33,
+  "name": "WakeRoute.ARC_MIN",
+  "value": "3",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/WakeRoute.luau",
+  "line": 34,
+  "name": "WakeRoute.ARC_MAX",
+  "value": "12",
+  "comment": ""
+ },
+ {
+  "file": "src/client/Map/WakeRoute.luau",
+  "line": 36,
+  "name": "WakeRoute.MIN_CUT",
+  "value": "1.0",
+  "comment": ""
+ }
+]

@@ -1,0 +1,1037 @@
+{
+ "precedence": "UITheme.icon(): BUILTIN (robux) > crate > MapSprites.ui > UiIcons > ArsenalArt.ui (src/client/UI/UITheme.luau:1355-1415)",
+ "mask_format": "128x128 white-on-transparent, tint at draw time; app_icon full colour 512 (UiIcons.luau:1-5)",
+ "icons": {
+  "alliance": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://120076017928031",
+     "ref": "src/shared/Assets/UiIcons.luau:7",
+     "repo_png": "assets/ui_icons/alliance.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/alliance.png",
+   "used_at": [
+    "src/client/Dev/UIScreensRadial.luau:59",
+    "src/client/UI/Coach.luau:39",
+    "src/client/UI/EventFeed.luau:491",
+    "src/client/UI/HelpOverlay.luau:229",
+    "src/client/UI/Leaderboard.luau:107",
+    "src/client/UI/Leaderboard.luau:196",
+    "src/client/UI/UIRules.luau:1335",
+    "src/client/UI/UIRules.luau:1351",
+    "src/client/UI/UIRules.luau:1357",
+    "src/client/UI/UIRules.luau:1368"
+   ]
+  },
+  "app_icon": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://81884831811669",
+     "ref": "src/shared/Assets/UiIcons.luau:8",
+     "repo_png": "assets/ui_icons/app_icon.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/app_icon.png",
+   "used_at": [
+    "src/client/UI/RotateCard.luau:30",
+    "src/client/UI/TitleScreen.luau:487"
+   ]
+  },
+  "atom": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://137002846499250",
+     "ref": "src/shared/Assets/MapSprites.luau:41",
+     "repo_png": "assets/map_sprites/ui/atom.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://136929909210131",
+     "ref": "src/shared/Assets/UiIcons.luau:9",
+     "repo_png": "assets/ui_icons/atom.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/atom.png",
+   "used_at": [
+    "src/client/Dev/UIScreensRadial.luau:34",
+    "src/client/Dev/UIScreensRadial.luau:38",
+    "src/client/UI/AlertBanner.luau:42",
+    "src/client/UI/AlertBanner.luau:126",
+    "src/client/UI/HelpOverlay.luau:243"
+   ]
+  },
+  "attack": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://105254872492310",
+     "ref": "src/shared/Assets/UiIcons.luau:10",
+     "repo_png": "assets/ui_icons/attack.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/attack.png",
+   "used_at": [
+    "src/client/Dev/UIScreensRadial.luau:28",
+    "src/client/UI/AttacksPanel.luau:55",
+    "src/client/UI/AttacksPanel.luau:181",
+    "src/client/UI/Coach.luau:24",
+    "src/client/UI/CommandBar.luau:168",
+    "src/client/UI/HelpOverlay.luau:217",
+    "src/client/UI/TargetCard.luau:343",
+    "src/client/UI/UIInteract.luau:1342",
+    "src/client/UI/UIRules.luau:1100",
+    "src/client/UI/UIRules.luau:1203"
+   ]
+  },
+  "betray": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://104027126885899",
+     "ref": "src/shared/Assets/UiIcons.luau:11",
+     "repo_png": "assets/ui_icons/betray.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/betray.png",
+   "used_at": [
+    "src/client/UI/Leaderboard.luau:193",
+    "src/client/UI/TargetCard.luau:283",
+    "src/client/UI/UIRules.luau:1345"
+   ]
+  },
+  "boat": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://127144656838563",
+     "ref": "src/shared/Assets/MapSprites.luau:44",
+     "repo_png": "assets/map_sprites/ui/boat.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://106915382667373",
+     "ref": "src/shared/Assets/UiIcons.luau:12",
+     "repo_png": "assets/ui_icons/boat.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/boat.png",
+   "used_at": [
+    "src/client/Dev/UIScreensRadial.luau:29",
+    "src/client/UI/Coach.luau:44",
+    "src/client/UI/HelpOverlay.luau:223",
+    "src/client/UI/UIInteract.luau:1348",
+    "src/client/UI/UIInteract.luau:1352",
+    "src/client/UI/UIRules.luau:1110",
+    "src/client/UI/UIRules.luau:1116",
+    "src/client/UI/UIRules.luau:1210"
+   ]
+  },
+  "check": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://90859036122491",
+     "ref": "src/shared/Assets/UiIcons.luau:13",
+     "repo_png": "assets/ui_icons/check.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/check.png",
+   "used_at": [
+    "src/client/UI/Arsenal.luau:934",
+    "src/client/UI/UIRoot.luau:1273"
+   ]
+  },
+  "chevron": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://90041071581565",
+     "ref": "src/shared/Assets/UiIcons.luau:14",
+     "repo_png": "assets/ui_icons/chevron.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/chevron.png",
+   "used_at": [
+    "src/client/UI/AttacksPanel.luau:193",
+    "src/client/UI/UnitCard.luau:106"
+   ]
+  },
+  "city": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://87231117419360",
+     "ref": "src/shared/Assets/MapSprites.luau:31",
+     "repo_png": "assets/map_sprites/ui/city.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://120079527816535",
+     "ref": "src/shared/Assets/UiIcons.luau:15",
+     "repo_png": "assets/ui_icons/city.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/city.png",
+   "used_at": [
+    "src/client/UI/Coach.luau:34",
+    "src/client/UI/Coach.luau:54",
+    "src/client/UI/CommandBar.luau:300",
+    "src/client/UI/HelpOverlay.luau:235",
+    "src/client/UI/UIRules.luau:1265"
+   ]
+  },
+  "clock": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://114468089690918",
+     "ref": "src/shared/Assets/UiIcons.luau:16",
+     "repo_png": "assets/ui_icons/clock.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/clock.png",
+   "used_at": []
+  },
+  "close": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://85937527651834",
+     "ref": "src/shared/Assets/UiIcons.luau:17",
+     "repo_png": "assets/ui_icons/close.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/close.png",
+   "used_at": [
+    "src/client/UI/Arsenal.luau:238",
+    "src/client/UI/FlagShop.luau:151",
+    "src/client/UI/GeneralOffer.luau:80",
+    "src/client/UI/GlobeNotice.luau:114",
+    "src/client/UI/Leaderboard.luau:293",
+    "src/client/UI/Locker.luau:205",
+    "src/client/UI/MapPicker.luau:65"
+   ]
+  },
+  "crown": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://74637785185166",
+     "ref": "src/shared/Assets/UiIcons.luau:18",
+     "repo_png": "assets/ui_icons/crown.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/crown.png",
+   "used_at": [
+    "src/client/UI/CommandBar.luau:112",
+    "src/client/UI/GameOver.luau:103",
+    "src/client/UI/HelpOverlay.luau:249",
+    "src/client/UI/TopStatus.luau:104"
+   ]
+  },
+  "defense": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://105328690138999",
+     "ref": "src/shared/Assets/MapSprites.luau:34",
+     "repo_png": "assets/map_sprites/ui/defense.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://131652922384464",
+     "ref": "src/shared/Assets/UiIcons.luau:19",
+     "repo_png": "assets/ui_icons/defense.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/defense.png",
+   "used_at": [
+    "src/client/UI/Coach.luau:59",
+    "src/client/UI/TopStatus.luau:70",
+    "src/client/UI/TopStatus.luau:127"
+   ]
+  },
+  "donate": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://74389819274782",
+     "ref": "src/shared/Assets/UiIcons.luau:20",
+     "repo_png": "assets/ui_icons/donate.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/donate.png",
+   "used_at": [
+    "src/client/UI/UIRules.luau:1322"
+   ]
+  },
+  "exit": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://99233908431291",
+     "ref": "src/shared/Assets/UiIcons.luau:21",
+     "repo_png": "assets/ui_icons/exit.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/exit.png",
+   "used_at": [
+    "src/client/UI/PauseMenu.luau:567"
+   ]
+  },
+  "eye": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://93906928006817",
+     "ref": "src/shared/Assets/UiIcons.luau:22",
+     "repo_png": "assets/ui_icons/eye.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/eye.png",
+   "used_at": [
+    "src/client/Dev/UIScreensRadial.luau:60",
+    "src/client/UI/UIRoot.luau:1315",
+    "src/client/UI/UIRules.luau:1376"
+   ]
+  },
+  "factory": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://133968282899567",
+     "ref": "src/shared/Assets/MapSprites.luau:33",
+     "repo_png": "assets/map_sprites/ui/factory.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://125041521569328",
+     "ref": "src/shared/Assets/UiIcons.luau:23",
+     "repo_png": "assets/ui_icons/factory.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/factory.png",
+   "used_at": []
+  },
+  "github": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://91110768437503",
+     "ref": "src/shared/Assets/UiIcons.luau:24",
+     "repo_png": "assets/ui_icons/github.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/github.png",
+   "used_at": []
+  },
+  "globe": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://120582088853438",
+     "ref": "src/shared/Assets/UiIcons.luau:25",
+     "repo_png": "assets/ui_icons/globe.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/globe.png",
+   "used_at": [
+    "src/client/UI/GlobeNotice.luau:92",
+    "src/client/UI/TopStatus.luau:87"
+   ]
+  },
+  "gold": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://126417721337487",
+     "ref": "src/shared/Assets/UiIcons.luau:26",
+     "repo_png": "assets/ui_icons/gold.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/gold.png",
+   "used_at": [
+    "src/client/UI/CommandBar.luau:153",
+    "src/client/UI/CommandBar.luau:239"
+   ]
+  },
+  "help": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://112222144930714",
+     "ref": "src/shared/Assets/UiIcons.luau:27",
+     "repo_png": "assets/ui_icons/help.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/help.png",
+   "used_at": [
+    "src/client/UI/HelpOverlay.luau:381"
+   ]
+  },
+  "hud_exit": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://94371539714997",
+     "ref": "src/shared/Assets/UiIcons.luau:28",
+     "repo_png": "assets/ui_icons/hud_exit.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/hud_exit.png",
+   "used_at": []
+  },
+  "hud_globe": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://84845726925919",
+     "ref": "src/shared/Assets/UiIcons.luau:29",
+     "repo_png": "assets/ui_icons/hud_globe.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/hud_globe.png",
+   "used_at": []
+  },
+  "hud_help": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://112261680314861",
+     "ref": "src/shared/Assets/UiIcons.luau:30",
+     "repo_png": "assets/ui_icons/hud_help.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/hud_help.png",
+   "used_at": []
+  },
+  "hud_leaderboard": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://138078412624735",
+     "ref": "src/shared/Assets/UiIcons.luau:31",
+     "repo_png": "assets/ui_icons/hud_leaderboard.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/hud_leaderboard.png",
+   "used_at": []
+  },
+  "hud_music_off": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://77057878223258",
+     "ref": "src/shared/Assets/UiIcons.luau:32",
+     "repo_png": "assets/ui_icons/hud_music_off.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/hud_music_off.png",
+   "used_at": []
+  },
+  "hud_music_on": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://122728394816653",
+     "ref": "src/shared/Assets/UiIcons.luau:33",
+     "repo_png": "assets/ui_icons/hud_music_on.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/hud_music_on.png",
+   "used_at": []
+  },
+  "hud_settings": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://95799119495180",
+     "ref": "src/shared/Assets/UiIcons.luau:34",
+     "repo_png": "assets/ui_icons/hud_settings.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/hud_settings.png",
+   "used_at": []
+  },
+  "hydrogen": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://71488611908523",
+     "ref": "src/shared/Assets/MapSprites.luau:42",
+     "repo_png": "assets/map_sprites/ui/hydrogen.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://82586594607479",
+     "ref": "src/shared/Assets/UiIcons.luau:35",
+     "repo_png": "assets/ui_icons/hydrogen.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/hydrogen.png",
+   "used_at": [
+    "src/client/Dev/UIScreensRadial.luau:42"
+   ]
+  },
+  "info": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://103827208254728",
+     "ref": "src/shared/Assets/UiIcons.luau:36",
+     "repo_png": "assets/ui_icons/info.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/info.png",
+   "used_at": [
+    "src/client/Dev/UIScreensRadial.luau:61",
+    "src/client/UI/BuildButton.luau:293",
+    "src/client/UI/Coach.luau:127",
+    "src/client/UI/UIInteract.luau:1358",
+    "src/client/UI/UIInteract.luau:1405",
+    "src/client/UI/UIRules.luau:1031",
+    "src/client/UI/UIRules.luau:1378"
+   ]
+  },
+  "layers": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://114724424105939",
+     "ref": "src/shared/Assets/UiIcons.luau:37",
+     "repo_png": "assets/ui_icons/layers.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/layers.png",
+   "used_at": [
+    "src/client/UI/HelpOverlay.luau:556"
+   ]
+  },
+  "leaderboard": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://89054397284993",
+     "ref": "src/shared/Assets/UiIcons.luau:38",
+     "repo_png": "assets/ui_icons/leaderboard.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/leaderboard.png",
+   "used_at": [
+    "src/client/UI/Leaderboard.luau:271",
+    "src/client/UI/Leaderboard.luau:353",
+    "src/client/UI/TopStatus.luau:146"
+   ]
+  },
+  "mirv": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://136042443998636",
+     "ref": "src/shared/Assets/MapSprites.luau:43",
+     "repo_png": "assets/map_sprites/ui/mirv.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://74004679528078",
+     "ref": "src/shared/Assets/UiIcons.luau:39",
+     "repo_png": "assets/ui_icons/mirv.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/mirv.png",
+   "used_at": [
+    "src/client/Dev/UIScreensRadial.luau:51"
+   ]
+  },
+  "music_off": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://127465356186011",
+     "ref": "src/shared/Assets/UiIcons.luau:40",
+     "repo_png": "assets/ui_icons/music_off.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/music_off.png",
+   "used_at": []
+  },
+  "music_on": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://95274354527194",
+     "ref": "src/shared/Assets/UiIcons.luau:41",
+     "repo_png": "assets/ui_icons/music_on.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/music_on.png",
+   "used_at": []
+  },
+  "play": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://103316097644788",
+     "ref": "src/shared/Assets/UiIcons.luau:42",
+     "repo_png": "assets/ui_icons/play.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/play.png",
+   "used_at": [
+    "src/client/UI/TitleScreen.luau:1161"
+   ]
+  },
+  "pops": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://107275949194240",
+     "ref": "src/shared/Assets/UiIcons.luau:43",
+     "repo_png": "assets/ui_icons/pops.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/pops.png",
+   "used_at": []
+  },
+  "port": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://95035713905738",
+     "ref": "src/shared/Assets/MapSprites.luau:32",
+     "repo_png": "assets/map_sprites/ui/port.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://74287112845958",
+     "ref": "src/shared/Assets/UiIcons.luau:44",
+     "repo_png": "assets/ui_icons/port.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/port.png",
+   "used_at": []
+  },
+  "retreat": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://107688479708066",
+     "ref": "src/shared/Assets/UiIcons.luau:45",
+     "repo_png": "assets/ui_icons/retreat.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/retreat.png",
+   "used_at": [
+    "src/client/Dev/UIScreensRadial.luau:30",
+    "src/client/UI/PauseMenu.luau:542",
+    "src/client/UI/PauseMenu.luau:557",
+    "src/client/UI/UIRules.luau:1230"
+   ]
+  },
+  "sam": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://121184602615632",
+     "ref": "src/shared/Assets/MapSprites.luau:35",
+     "repo_png": "assets/map_sprites/ui/sam.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://89009946257417",
+     "ref": "src/shared/Assets/UiIcons.luau:46",
+     "repo_png": "assets/ui_icons/sam.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/sam.png",
+   "used_at": [
+    "src/client/UI/AlertBanner.luau:115"
+   ]
+  },
+  "settings": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://73879610181392",
+     "ref": "src/shared/Assets/UiIcons.luau:47",
+     "repo_png": "assets/ui_icons/settings.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/settings.png",
+   "used_at": []
+  },
+  "silo": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://93768208808207",
+     "ref": "src/shared/Assets/MapSprites.luau:36",
+     "repo_png": "assets/map_sprites/ui/silo.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://107373349672008",
+     "ref": "src/shared/Assets/UiIcons.luau:48",
+     "repo_png": "assets/ui_icons/silo.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/silo.png",
+   "used_at": []
+  },
+  "skull": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://132840774674717",
+     "ref": "src/shared/Assets/UiIcons.luau:49",
+     "repo_png": "assets/ui_icons/skull.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/skull.png",
+   "used_at": []
+  },
+  "target": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://125636230543399",
+     "ref": "src/shared/Assets/UiIcons.luau:50",
+     "repo_png": "assets/ui_icons/target.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/target.png",
+   "used_at": [
+    "src/client/Dev/UIKitBasics.luau:85",
+    "src/client/UI/BuildButton.luau:289",
+    "src/client/UI/Coach.luau:49",
+    "src/client/UI/CommandBar.luau:315",
+    "src/client/UI/HelpOverlay.luau:211",
+    "src/client/UI/UIInteract.luau:1319",
+    "src/client/UI/UIInteract.luau:1409",
+    "src/client/UI/UIInteract.luau:1413",
+    "src/client/UI/UIInteract.luau:1420",
+    "src/client/UI/UIRules.luau:1056"
+   ]
+  },
+  "troops": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://108198840906067",
+     "ref": "src/shared/Assets/UiIcons.luau:51",
+     "repo_png": "assets/ui_icons/troops.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/troops.png",
+   "used_at": [
+    "src/client/Dev/UIKitBasics.luau:46",
+    "src/client/UI/Coach.luau:22",
+    "src/client/UI/Coach.luau:29",
+    "src/client/UI/CommandBar.luau:124",
+    "src/client/UI/CommandBar.luau:221"
+   ]
+  },
+  "users": {
+   "sources": [
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://139506894557215",
+     "ref": "src/shared/Assets/UiIcons.luau:52",
+     "repo_png": "assets/ui_icons/users.png"
+    }
+   ],
+   "resolved": "UiIcons",
+   "godot": "res://assets/ui_icons/users.png",
+   "used_at": [
+    "src/client/UI/Leaderboard.luau:111",
+    "src/client/UI/PartyPanel.luau:54",
+    "src/client/UI/PartyPanel.luau:108",
+    "src/client/UI/TitleScreen.luau:678",
+    "src/client/UI/TitleScreen.luau:772"
+   ]
+  },
+  "warship": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://93540822426797",
+     "ref": "src/shared/Assets/MapSprites.luau:40",
+     "repo_png": "assets/map_sprites/ui/warship.png"
+    },
+    {
+     "group": "UiIcons",
+     "asset": "rbxassetid://124671182444633",
+     "ref": "src/shared/Assets/UiIcons.luau:53",
+     "repo_png": "assets/ui_icons/warship.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/warship.png",
+   "used_at": [
+    "src/client/UI/UnitCard.luau:62"
+   ]
+  },
+  "artillery": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://86334393988502",
+     "ref": "src/shared/Assets/MapSprites.luau:37",
+     "repo_png": "assets/map_sprites/ui/artillery.png"
+    },
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://129962050975056",
+     "ref": "src/shared/Assets/ArsenalArt.luau:6",
+     "repo_png": "assets/arsenal/ui/artillery.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/artillery.png",
+   "used_at": [
+    "src/shared/Data/Arsenal.luau:101"
+   ]
+  },
+  "airfield": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://135560915268137",
+     "ref": "src/shared/Assets/MapSprites.luau:38",
+     "repo_png": "assets/map_sprites/ui/airfield.png"
+    },
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://93161184929593",
+     "ref": "src/shared/Assets/ArsenalArt.luau:7",
+     "repo_png": "assets/arsenal/ui/airfield.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/airfield.png",
+   "used_at": [
+    "src/shared/Data/Arsenal.luau:118"
+   ]
+  },
+  "railgun": {
+   "sources": [
+    {
+     "group": "MapSprites.ui",
+     "asset": "rbxassetid://70667309006887",
+     "ref": "src/shared/Assets/MapSprites.luau:39",
+     "repo_png": "assets/map_sprites/ui/railgun.png"
+    },
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://80259865103214",
+     "ref": "src/shared/Assets/ArsenalArt.luau:8",
+     "repo_png": "assets/arsenal/ui/railgun.png"
+    }
+   ],
+   "resolved": "MapSprites.ui",
+   "godot": "res://assets/ui/railgun.png",
+   "used_at": [
+    "src/shared/Data/Arsenal.luau:136"
+   ]
+  },
+  "mega": {
+   "sources": [
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://129076365242890",
+     "ref": "src/shared/Assets/ArsenalArt.luau:9",
+     "repo_png": "assets/arsenal/ui/mega.png"
+    }
+   ],
+   "resolved": "ArsenalArt.ui",
+   "godot": "res://assets/arsenal/ui/mega.png",
+   "used_at": [
+    "src/shared/Data/Arsenal.luau:53"
+   ]
+  },
+  "scatter": {
+   "sources": [
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://73314694929508",
+     "ref": "src/shared/Assets/ArsenalArt.luau:10",
+     "repo_png": "assets/arsenal/ui/scatter.png"
+    }
+   ],
+   "resolved": "ArsenalArt.ui",
+   "godot": "res://assets/arsenal/ui/scatter.png",
+   "used_at": [
+    "src/shared/Data/Arsenal.luau:69"
+   ]
+  },
+  "reinforce": {
+   "sources": [
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://80150583838975",
+     "ref": "src/shared/Assets/ArsenalArt.luau:11",
+     "repo_png": "assets/arsenal/ui/reinforce.png"
+    }
+   ],
+   "resolved": "ArsenalArt.ui",
+   "godot": "res://assets/arsenal/ui/reinforce.png",
+   "used_at": [
+    "src/shared/Data/Arsenal.luau:85"
+   ]
+  },
+  "airstrike": {
+   "sources": [
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://97597884564003",
+     "ref": "src/shared/Assets/ArsenalArt.luau:12",
+     "repo_png": "assets/arsenal/ui/airstrike.png"
+    }
+   ],
+   "resolved": "ArsenalArt.ui",
+   "godot": "res://assets/arsenal/ui/airstrike.png",
+   "used_at": []
+  },
+  "slug": {
+   "sources": [
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://74359376650198",
+     "ref": "src/shared/Assets/ArsenalArt.luau:13",
+     "repo_png": "assets/arsenal/ui/slug.png"
+    }
+   ],
+   "resolved": "ArsenalArt.ui",
+   "godot": "res://assets/arsenal/ui/slug.png",
+   "used_at": []
+  },
+  "star": {
+   "sources": [
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://123717027950196",
+     "ref": "src/shared/Assets/ArsenalArt.luau:14",
+     "repo_png": "assets/arsenal/ui/star.png"
+    }
+   ],
+   "resolved": "ArsenalArt.ui",
+   "godot": "res://assets/arsenal/ui/star.png",
+   "used_at": [
+    "src/client/UI/Arsenal.luau:228",
+    "src/client/UI/Arsenal.luau:484",
+    "src/client/UI/Arsenal.luau:966",
+    "src/client/UI/Arsenal.luau:970",
+    "src/client/UI/Arsenal.luau:1004",
+    "src/client/UI/ArsenalButton.luau:155",
+    "src/client/UI/GameOver.luau:379",
+    "src/client/UI/GeneralButton.luau:163",
+    "src/client/UI/GeneralOffer.luau:105",
+    "src/client/UI/GeneralOffer.luau:174",
+    "src/shared/Data/Arsenal.luau:152"
+   ]
+  },
+  "lock": {
+   "sources": [
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://115477224449087",
+     "ref": "src/shared/Assets/ArsenalArt.luau:15",
+     "repo_png": "assets/arsenal/ui/lock.png"
+    }
+   ],
+   "resolved": "ArsenalArt.ui",
+   "godot": "res://assets/arsenal/ui/lock.png",
+   "used_at": [
+    "src/client/UI/BuildButton.luau:282",
+    "src/client/UI/BuildButton.luau:414"
+   ]
+  },
+  "reload": {
+   "sources": [
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://98646122722253",
+     "ref": "src/shared/Assets/ArsenalArt.luau:16",
+     "repo_png": "assets/arsenal/ui/reload.png"
+    }
+   ],
+   "resolved": "ArsenalArt.ui",
+   "godot": "res://assets/arsenal/ui/reload.png",
+   "used_at": [
+    "src/shared/Data/Arsenal.luau:167"
+   ]
+  },
+  "arsenal": {
+   "sources": [
+    {
+     "group": "ArsenalArt.ui",
+     "asset": "rbxassetid://100317438832041",
+     "ref": "src/shared/Assets/ArsenalArt.luau:17",
+     "repo_png": "assets/arsenal/ui/arsenal.png"
+    }
+   ],
+   "resolved": "ArsenalArt.ui",
+   "godot": "res://assets/arsenal/ui/arsenal.png",
+   "used_at": [
+    "src/client/UI/Arsenal.luau:213",
+    "src/client/UI/ArsenalButton.luau:87",
+    "src/client/UI/ArsenalButton.luau:88",
+    "src/client/UI/ShopSlot.luau:133"
+   ]
+  }
+ },
+ "unused_or_dynamic_keys_used": [
+  "calm",
+  "crate",
+  "robux"
+ ]
+}
