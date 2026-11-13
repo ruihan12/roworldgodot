@@ -108,6 +108,6 @@ func run(H) -> void:
 	H.expect_eq(SimRules.nuke_cost_named("warhead"), -1.0, "nuke_cost_named warhead rejected")
 	H.intentional("nuke flight uses a custom clock / ballistic arc in main.gd, not Rules.nuke_arc", "SimRules has no nuke_arc; intentional")
 	H.expect_eq(SimRules.DEFAULT_ATTACK_RATIO, 0.2, "sim fallback DEFAULT_ATTACK_RATIO is 20% when an order carries no ratio")
-	var src = FileAccess.get_file_as_string("res://main.gd")
+	var src = preload("res://tests/upstream/_harness.gd").game_src()
 	H.expect(src.find("0.10, 0.25, 0.35, 0.50, 0.75") >= 0 or src.find("0.10,0.25,0.35,0.50,0.75") >= 0, "HUD SHARES are 10/25/35/50/75 (upstream UICtx.RATIO_STOPS)", "")
 	H.expect(src.find("share_i := 1") >= 0 or src.find("var share_i := 1") >= 0, "HUD default share_i is 1 (25%), matching UICtx.DEFAULT_RATIO", "")

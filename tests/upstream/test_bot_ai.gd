@@ -19,7 +19,7 @@ func run(H) -> void:
 	H.expect_eq(SimRules.HUMAN_GRACE_JITTER, 900, "grace jitter 900 ticks")
 
 	var ai_src = _read("res://sim/ai.gd")
-	var main_src = _read("res://main.gd")
+	var main_src = preload("res://tests/upstream/_harness.gd").game_src()
 	var has_smart = (ai_src + main_src).find("SMART_BOTS") >= 0 or (ai_src + main_src).find("NOVICE_SKILL") >= 0 or (ai_src + main_src).find("is_novice_bot") >= 0
 	if has_smart:
 		H.ok("SMART_BOTS / novice-bot split is present")
@@ -46,7 +46,7 @@ func run(H) -> void:
 
 	# no capital / no ice: documented intentional; maps tests live with executor 2
 	H.section("intentional map deviations", "growth_rules.luau")
-	var maps_src = _read("res://sim/upstream_maps.gd") + _read("res://main.gd")
+	var maps_src = _read("res://sim/upstream_maps.gd") + preload("res://tests/upstream/_harness.gd").game_src()
 	H.intentional("Antarctica is present as white snow (code 4) playing like plains; no impassable ice (0x9F); no capital", "maps document code 4 snow; main.gd colours it white and uses plains rules")
 	H.expect(maps_src.find("is_snow") >= 0 or maps_src.find("code 4") >= 0 or maps_src.find("== 4") >= 0, "snow / Antarctica terrain is in the port", "")
 	H.expect(maps_src.find("plains") >= 0 and (maps_src.find("SNOW") >= 0 or maps_src.find("snow") >= 0), "snow uses plains rules / white colour", "")

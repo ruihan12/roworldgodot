@@ -10,7 +10,7 @@ func run(H) -> void:
 	H.expect_eq(SimRules.TRAITOR_TICKS, 300, "traitor debuff 300 ticks (30 s)")
 	H.expect_eq(SimRules.AI_MAX_ALLIES, 3, "AI_MAX_ALLIES 3")
 	H.expect_eq(SimRules.HOSTILE_TICKS, 600, "hostile / grudge-style 600 ticks")
-	var src = FileAccess.get_file_as_string("res://main.gd")
+	var src = preload("res://tests/upstream/_harness.gd").game_src()
 	H.expect(src.find("func has_request") >= 0 and src.find("func propose_alliance") >= 0 and src.find("func ally_reply") >= 0, "request / reply / ask-back APIs are in main.gd", "")
 	H.expect(src.find("randi_range(20, 45)") >= 0, "AI reply is due in 20..45 ticks", "")
 	H.expect(src.find("p := 0.3") >= 0 and src.find("p += 0.35") >= 0, "AI accept best case 0.65 = 0.3+0.35 (ratio > 1.5)", "")

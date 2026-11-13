@@ -1,6 +1,16 @@
 # Headless test harness for RoWorld -> Frontline Conquest parity checks.
 extends RefCounted
 
+# main.gd is the leaf of a chain of scripts under res://game/; source-text checks read them all.
+static func game_src() -> String:
+	var out := FileAccess.get_file_as_string("res://main.gd")
+	var d := DirAccess.open("res://game")
+	if d != null:
+		for fn in d.get_files():
+			if fn.ends_with(".gd"):
+				out += "\n" + FileAccess.get_file_as_string("res://game/" + fn)
+	return out
+
 const PASS := "pass"
 const FAIL := "fail"
 const MISSING := "missing"

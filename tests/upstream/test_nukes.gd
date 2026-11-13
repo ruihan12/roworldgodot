@@ -4,10 +4,7 @@ extends RefCounted
 const R := preload("res://sim/rules.gd")
 
 func _read_main() -> String:
-	var f = FileAccess.open("res://main.gd", FileAccess.READ)
-	if f == null:
-		return ""
-	return f.get_as_text()
+	return preload("res://tests/upstream/_harness.gd").game_src()
 
 func _has(src: String, pat: String) -> bool:
 	return src.find(pat) >= 0
