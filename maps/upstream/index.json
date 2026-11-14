@@ -116,6 +116,75 @@
    ]
   },
   {
+   "id": "unitedstates",
+   "name": "United States",
+   "source_kind": "game",
+   "categories": [
+    "regional",
+    "north_america"
+   ],
+   "k_lin": 0.9046,
+   "scale": 1.10549,
+   "land_tiles": 1226342,
+   "nations": 44,
+   "src_size": [
+    1621,
+    918
+   ]
+  },
+  {
+   "id": "mediterranean",
+   "name": "Mediterranean",
+   "source_kind": "game",
+   "categories": [
+    "regional",
+    "europe",
+    "africa"
+   ],
+   "k_lin": 0.9336,
+   "scale": 1.07113,
+   "land_tiles": 972309,
+   "nations": 48,
+   "src_size": [
+    1673,
+    798
+   ]
+  },
+  {
+   "id": "middleeast",
+   "name": "Middle East",
+   "source_kind": "game",
+   "categories": [
+    "regional",
+    "asia"
+   ],
+   "k_lin": 0.615,
+   "scale": 1.626134,
+   "land_tiles": 2144800,
+   "nations": 48,
+   "src_size": [
+    1102,
+    976
+   ]
+  },
+  {
+   "id": "oceania",
+   "name": "Oceania",
+   "source_kind": "game",
+   "categories": [
+    "regional",
+    "oceania"
+   ],
+   "k_lin": 0.9481,
+   "scale": 1.054738,
+   "land_tiles": 464733,
+   "nations": 42,
+   "src_size": [
+    1705,
+    1195
+   ]
+  },
+  {
    "id": "pangaea",
    "name": "Pangaea",
    "source_kind": "test_fixture",

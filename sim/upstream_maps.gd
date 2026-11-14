@@ -1,4 +1,5 @@
-# Upstream RoWorld maps (World, Africa, Asia, Europe, North America, South America + the two test
+# Upstream RoWorld maps (World, Africa, Asia, Europe, North America, South America, Mediterranean,
+# Middle East, Oceania, United States + the two test
 # fixtures Pangaea and Onion), decoded from the Luau data modules (MapCodec: base64 -> zstd -> tile
 # bytes) and converted to 1792x1600 by tools/convert_upstream_maps.py. Data: res://maps/upstream/.
 #   <id>.codes.bin  zlib, W*H u8: 0 water 1 plains 2 highland 3 mountain 4 snow (same as RealMaps b64
@@ -20,7 +21,8 @@ const T_MOUNTAIN := 3
 const T_SNOW := 4  # passable, conquerable land treated as plains; only its colour differs
 const SNOW_COLOR := Color8(0xF4, 0xF7, 0xFA)
 # Menu order (the game's maps first, then the two upstream test fixtures). Edit to hide fixtures.
-const ORDER := ["world", "europe", "asia", "northamerica", "southamerica", "africa", "pangaea", "onion"]
+const ORDER := ["world", "europe", "asia", "northamerica", "southamerica", "africa", "mediterranean", "middleeast",
+	"oceania", "unitedstates", "pangaea", "onion"]
 
 static var _index := {}
 static var _meta := {}

@@ -220,6 +220,8 @@ func _rw_spawn_all() -> void:
 		if t >= 0:
 			_claim_disc(id, t, R.spawn_radius); _spawn_note(t); nations[id].spawn_tile = t
 			nations[id].troops = R.max_troops(SimRules.KIND_NATION, nations[id].land, 0, diff_i)
+		nations[id]["authored_color"] = hex != ""
+	_nudge_nation_colors()
 	for k in SimRules.DEFAULT_TRIBES:
 		var grey_v := rng.randf_range(0.40, 0.58)
 		var id := _new_nation(_name(), Color.from_hsv(0.60, rng.randf_range(0.02, 0.07), grey_v), true)
@@ -230,6 +232,28 @@ func _rw_spawn_all() -> void:
 			nations[id].troops = R.max_troops(SimRules.KIND_TRIBE, nations[id].land, 0, diff_i)
 		else:
 			nations[id].alive = false
+
+# Sim._create_nations colour pass (COLOR_NEAR_NATION = 70 legacy tiles): an authored flag colour stays unless a
+# capital nearby is too similar (minimal nudge); a nation without one gets the human-palette colour most
+# distinct from its neighbours. Several nations sharing one flag (the US states) end up distinguishable.
+const COLOR_NEAR_NATION := 70.0
+func _nudge_nation_colors() -> void:
+	var r: float = COLOR_NEAR_NATION * sim_rules.legacy_lin
+	var r2 := r * r
+	for id in range(2, nations.size()):
+		var t: int = int(nations[id].get("spawn_tile", -1))
+		if t < 0 or not nations[id].alive: continue
+		var p := Vector2(t % W, t / W)
+		var refs := []
+		for o in range(2, nations.size()):
+			if o == id or not nations[o].alive: continue
+			var to: int = int(nations[o].get("spawn_tile", -1))
+			if to < 0: continue
+			if p.distance_squared_to(Vector2(to % W, to / W)) <= r2: refs.append(SimColors.oklab(nations[o].color))
+		if nations[id].get("authored_color", false):
+			nations[id].color = SimColors.nudge(nations[id].color, refs)
+		else:
+			nations[id].color = SimColors.pick(SimColors.human_palette(), refs, rng)
 
 func _place_start(t: int) -> void:
 	if t < 0 or (owner_map[t] != NEUTRAL and owner_map[t] != PLAYER):

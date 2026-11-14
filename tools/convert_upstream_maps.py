@@ -29,6 +29,10 @@ FILES = [
     ("src/server/MapData/Europe.luau", "game"),
     ("src/server/MapData/NorthAmerica.luau", "game"),
     ("src/server/MapData/SouthAmerica.luau", "game"),
+    ("src/server/MapData/UnitedStates.luau", "game"),
+    ("src/server/MapData/Mediterranean.luau", "game"),
+    ("src/server/MapData/MiddleEast.luau", "game"),
+    ("src/server/MapData/Oceania.luau", "game"),
     ("tests/fixtures/maps/Pangaea.luau", "test_fixture"),
     ("tests/fixtures/maps/Onion.luau", "test_fixture"),
 ]
