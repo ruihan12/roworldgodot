@@ -547,6 +547,11 @@ func open_arsenal(key = null, from = "") -> void:
 
 
 ## UIRoot.screen: "title", "spawn", "play" or "over".
+## UIRoot:toggle_leaderboard: the Tab key.
+func toggle_leaderboard() -> void:
+	board.toggle()
+
+
 func screen() -> String:
 	match str(g.state):
 		"pick":

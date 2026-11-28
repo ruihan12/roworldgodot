@@ -817,6 +817,17 @@ before the Esc then Tab change); that line is gone. tests/test_console_keys.gd (
 or the arg, neither key opens it; it reruns itself with --console, where F2 opens and closes it, Esc then Tab
 opens it, a lone Tab doesn't, Esc closes it, and F2 does nothing on the title screen. No sim change.
 
+### Tab toggles the leaderboard, as upstream
+
+Owner (Nov 28 2026), asked whether Tab should toggle the leaderboard like upstream: "Yes, match upstream".
+Upstream UIInteract.luau: `elseif key == K.Tab then if ui:screen() == "title" then handled = false else
+ui:toggle_leaderboard() end`. client/ui/ui_interact.gd on_key does the same (ClientHud.toggle_leaderboard, new,
+calls Leaderboard.toggle). The owner console keeps F2 and Esc then Tab: game/shop.gd _input runs before
+_unhandled_input and marks the event handled, so Esc then Tab opens the console without toggling the board. The
+help screen says "Tab: Leaderboard" as upstream, plus a row "F2 / Esc then Tab: Console (owner only)".
+tests/test_console_keys.gd checks a lone Tab toggles the board in a match (owner or not) and back, Tab on the title
+screen leaves it, and Esc then Tab leaves it for the owner. No sim change.
+
 ## Results
 
 | step | commit | parity | hash (seed 5516, 6000 ticks) | perf AVG ms/tick (seed 12345) | tests |
@@ -855,6 +866,7 @@ opens it, a lone Tab doesn't, Esc closes it, and F2 does nothing on the title sc
 | crate reveal names fit | see git log | 467/0/5 | 3683567526 | 11.73 / 12.18, rerun 11.20 / 12.09 (beside a headless Chrome run; UI-only change, sim code untouched) | same + crate_names 8/8 |
 | strike buff x2.5 (owner custom) | see git log | 467/0/6 (473) | 3683567526 (bots build no Arsenal structures) | 11.42 / 11.22 | same |
 | owner console on F2 | see git log | 467/0/6 (473) | 3683567526 | 11.81 / 13.15; alternating HEAD vs this: 13.66 / 11.68 vs 12.88 / 12.78 (noise; input-only change) | same + console_keys 14/14 |
+| Tab toggles the leaderboard | see git log | 467/0/6 (473) | 3683567526 | 12.10 / 12.95 (input-only change) | same + console_keys 20/20 |
 
 ## Customs touched per step
 

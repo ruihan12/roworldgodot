@@ -570,6 +570,13 @@ func on_key(key: int, echo: bool) -> bool:
 		handled = escape()
 	elif key == KEY_H:
 		ui.toggle_help()
+	elif key == KEY_TAB:
+		# the leaderboard (UIInteract: Tab, as in most games), not on the title screen; the owner console's
+		# Esc then Tab is taken first by game/shop.gd _input
+		if scr == "title":
+			handled = false
+		else:
+			ui.toggle_leaderboard()
 	elif key == KEY_SPACE:
 		if scr == "play" or scr == "spawn":
 			primary_at_hover()

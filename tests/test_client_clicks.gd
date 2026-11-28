@@ -131,6 +131,8 @@ func _initialize() -> void:
 	it.on_key(KEY_E, false)
 	_check(c.ctx.ratio > r0, "E raises the attack ratio")
 	it._held.clear()
-	_check(not it.on_key(KEY_TAB, false), "Tab is left to the console")
+	var b0: bool = c.board.expanded
+	_check(it.on_key(KEY_TAB, false) and c.board.expanded != b0, "Tab toggles the leaderboard (as upstream; the console is F2 / Esc then Tab)")
+	it.on_key(KEY_TAB, false)
 	print("CLIENT_CLICKS_TEST %s fails=%d" % ["PASS" if fails == 0 else "FAIL", fails])
 	quit(0 if fails == 0 else 1)

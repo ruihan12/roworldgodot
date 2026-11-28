@@ -2,7 +2,8 @@
 # F2 is one that Edge and Chrome leave to the page) and still with Esc then Tab, only for the owner. This run has
 # no owner token and no --console arg, so neither key opens it; then it runs itself again with the local
 # --console arg (the owner stand-in offline), where F2 opens and closes it, Esc then Tab opens it, a lone Tab
-# doesn't, and F2 does nothing on the title screen.
+# doesn't, and F2 does nothing on the title screen. A lone Tab toggles the leaderboard in a match (upstream
+# UIInteract, owner request 2026-11-28 "Yes, match upstream"), for everyone, and Esc then Tab leaves it alone.
 #   godot --headless --path . -s res://tests/test_console_keys.gd
 extends SceneTree
 
@@ -32,6 +33,11 @@ func _key(m, code: Key) -> void:
 	m.get_viewport().push_input(up)
 
 
+func _board(m) -> bool:
+	var hud = m.client
+	return hud != null and hud.board != null and hud.board.expanded
+
+
 func _run() -> void:
 	var owner_run := "--console" in OS.get_cmdline_user_args()
 	var hs = load("res://sim/headless_sim.gd").new(self)
@@ -42,9 +48,18 @@ func _run() -> void:
 		_check(m.state != "play" and m.state != "pick", "the title screen is up first (state %s)" % m.state)
 		_key(m, KEY_F2)
 		_check(not m.console_panel.visible, "%s: F2 on the title screen opens nothing" % who)
+		var t0: bool = _board(m)
+		_key(m, KEY_TAB)
+		_check(_board(m) == t0, "%s: Tab on the title screen leaves the leaderboard alone" % who)
 	hs.start(0, 0, Vector2(0.5, 0.38), 0, -1.0)
 	await process_frame
 	_check(m.state == "play" or m.state == "pick", "a match is running (state %s)" % m.state)
+	m._esc_msec = -100000
+	var b0: bool = _board(m)
+	_key(m, KEY_TAB)
+	_check(_board(m) != b0 and not m.console_panel.visible, "%s: a lone Tab toggles the leaderboard (%s to %s)" % [who, b0, _board(m)])
+	_key(m, KEY_TAB)
+	_check(_board(m) == b0, "%s: Tab again toggles it back" % who)
 	_check(m.console_panel != null and not m.console_panel.visible, "%s: the console starts closed" % who)
 	_key(m, KEY_F2)
 	if owner_run:
@@ -54,9 +69,11 @@ func _run() -> void:
 		m._esc_msec = -100000
 		_key(m, KEY_TAB)
 		_check(not m.console_panel.visible, "%s: a lone Tab doesn't open it" % who)
+		var b1: bool = _board(m)
 		_key(m, KEY_ESCAPE)
 		_key(m, KEY_TAB)
 		_check(m.console_panel.visible, "%s: Esc then Tab still opens it" % who)
+		_check(_board(m) == b1, "%s: Esc then Tab leaves the leaderboard alone" % who)
 		_key(m, KEY_ESCAPE)
 		_check(not m.console_panel.visible, "%s: Esc closes it" % who)
 	else:

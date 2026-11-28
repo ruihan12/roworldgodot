@@ -53,7 +53,8 @@ const KEYS_DESKTOP := [
 	["− / +", "Game speed"],
 	["Esc / Right-click", "Cancel · game menu"],
 	["H", "This help"],
-	["Tab", "Console"],
+	["Tab", "Leaderboard"],
+	["F2 / Esc then Tab", "Console (owner only)"],
 	["Click a warship", "Then click the sea to move it"],
 ]
 const KEYS_TOUCH := [
