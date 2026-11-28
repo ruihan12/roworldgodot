@@ -697,6 +697,7 @@ func _economy(dt: float) -> void:
 	# FALLBACK (docs/LUAU_PORT.md Step 6): when this returns no Luau, this module's GDScript code runs (no extension, NO_LUAU_SIM).
 	var lu_on := not net_remote and luau_link != null and luau_link.on and not OS.has_environment("NO_LUAU_SIM")
 	var lu_rows := PackedFloat64Array()
+	var payouts: Array = []  # [victim, killer, gold]: Sim._eliminate's _conquest_gold, paid after the growth (below)
 	for id in range(1, nations.size()):
 		var n = nations[id]
 		if not n.alive:
@@ -705,6 +706,14 @@ func _economy(dt: float) -> void:
 		if is_nan(n.gold) or is_inf(n.gold): n.gold = 0.0
 		if n.land <= 0 and (id != PLAYER or state == "play"):
 			n.alive = false
+			# upstream Sim._eliminate: the owner that took the last tile (o_killer = last_by here; capitulation and
+			# nukes set it too) takes conquer_gold of what is left (all of a nation's or tribe's, half of a human's).
+			# After an annex this is only the gold earned since (annex zeroed it); owner request 2026-11-28
+			# "Match upstream". Queued so the Luau growth, which writes gold back whole, can't drop it.
+			var kb: int = int(n.get("last_by", 0))
+			if kb > 0 and kb < nations.size():
+				payouts.append([id, kb, sim_rules.conquer_gold(kind_of(id), n.gold)])
+				n.gold = 0.0
 			if id != PLAYER and n.get("last_by", 0) == PLAYER:
 				stats.elims += 1; sfx("eliminate")  # upstream UIAdvisor.on_owner_eliminated: the kill sound, not the old 3 s conquer sting
 				if kind_of(id) != SimRules.KIND_TRIBE: stats["conq"] = int(stats.get("conq", 0)) + 1  # Stars: tribes don't count
@@ -732,6 +741,13 @@ func _economy(dt: float) -> void:
 		n.reinf_cd = maxf(0.0, n.reinf_cd - dt)
 		if id == PLAYER: _econ_console(n, cap)
 	if lu_on and not lu_rows.is_empty(): _economy_luau(lu_rows, dt, city_lv)
+	for p in payouts:
+		var vic: int = p[0]; var kb: int = p[1]; var gold: float = p[2]
+		nations[kb].gold += gold
+		# Ev.CONQUEST once per victim (the conqueror's "+ gold" popup); a payout after an annex is silent
+		if not nations[vic].get("conq_sent", false):
+			nations[vic]["conq_sent"] = true
+			_on_conquest(vic, kb, gold)
 
 # CUSTOM: the console's god mode, infinite gold and no cooldown (Tab / owner console) on the player's numbers
 func _econ_console(n: Dictionary, cap: float) -> void:

@@ -638,6 +638,7 @@ func annex(victim: int, by: int) -> void:
 	var taken: float = R.conquer_gold(g.kind_of(victim), nv.gold)
 	g.nations[by].gold += taken
 	nv.gold = 0.0
+	nv["conq_sent"] = true  # (Sim._conquest_sent: the elimination payout after this one is silent)
 	if g.has_method("_on_conquest"): g._on_conquest(victim, by, taken)  # (the view: a victory flag)
 	nv["last_by"] = by
 	nv["killer"] = by

@@ -828,6 +828,22 @@ help screen says "Tab: Leaderboard" as upstream, plus a row "F2 / Esc then Tab: 
 tests/test_console_keys.gd checks a lone Tab toggles the board in a match (owner or not) and back, Tab on the title
 screen leaves it, and Esc then Tab leaves it for the owner. No sim change.
 
+### Elimination gold, as upstream Sim._eliminate
+
+Owner (Nov 28 2026), asked whether to match upstream's payout on elimination: "Match upstream". The port only
+paid Rules.conquer_gold (all of a nation's or tribe's gold, half of a human's) inside annex (sim/attacks.gd
+annex, Luau SimAttacks annex via EV_CONQUEST). Upstream also pays it in Sim._eliminate to o_killer, the owner that
+took the last tile (SimState set_owner; SimNukes and Sim.capitulate set it too), which covers capitulation, nukes,
+a human worn down tile by tile, and pocket gold earned after an annex. The port's o_killer is last_by
+(game/map.gd _set_owner, sim/arsenal.gd for nukes). game/economy.gd _economy now takes conquer_gold of the gold
+left when a player goes out with last_by > 0 and zeroes it, and pays it after the growth (the Luau SimEconomy
+writes gold back whole, so paying inside the loop could be dropped); the elimination check runs in GDScript on
+both sim paths. The "+ gold" popup (_on_conquest, upstream Ev.CONQUEST) goes once per victim: annex sets
+conq_sent, so the later payout is silent. tests/test_elim_gold.gd (new, in VERIFY; runs once with Luau and once
+with NO_LUAU_SIM): a nation's 1000 gold all goes to the taker, a human's half, nothing twice after an annex.
+The seed-5516 hash is unchanged (3683567526): every elimination in that run is a tribe annexed the same tick, with
+its gold already zeroed.
+
 ## Results
 
 | step | commit | parity | hash (seed 5516, 6000 ticks) | perf AVG ms/tick (seed 12345) | tests |
@@ -867,6 +883,7 @@ screen leaves it, and Esc then Tab leaves it for the owner. No sim change.
 | strike buff x2.5 (owner custom) | see git log | 467/0/6 (473) | 3683567526 (bots build no Arsenal structures) | 11.42 / 11.22 | same |
 | owner console on F2 | see git log | 467/0/6 (473) | 3683567526 | 11.81 / 13.15; alternating HEAD vs this: 13.66 / 11.68 vs 12.88 / 12.78 (noise; input-only change) | same + console_keys 14/14 |
 | Tab toggles the leaderboard | see git log | 467/0/6 (473) | 3683567526 | 12.10 / 12.95 (input-only change) | same + console_keys 20/20 |
+| elimination gold as upstream | see git log | 467/0/6 (473) | 3683567526 (no non-annex elimination in this run) | 11.19 / 12.38 | same + elim_gold 21/21 |
 
 ## Customs touched per step
 

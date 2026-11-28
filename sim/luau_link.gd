@@ -153,6 +153,7 @@ func _event(g, ev: PackedFloat64Array, k: int) -> void:
 			var nv: Dictionary = g.nations[a]
 			g.nations[b].gold += taken
 			nv.gold = 0.0
+			nv["conq_sent"] = true  # (Sim._conquest_sent: the elimination payout after this one is silent)
 			if g.has_method("_on_conquest"): g._on_conquest(a, b, taken)  # (the view: a victory flag)
 			nv["last_by"] = b
 			nv["killer"] = b
